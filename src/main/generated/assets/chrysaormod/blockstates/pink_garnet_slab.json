@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "chrysaormod:block/pink_garnet_slab"
+    },
+    "type=double": {
+      "model": "chrysaormod:block/pink_garnet_block"
+    },
+    "type=top": {
+      "model": "chrysaormod:block/pink_garnet_slab_top"
+    }
+  }
+}

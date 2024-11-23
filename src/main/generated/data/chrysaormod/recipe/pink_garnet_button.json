@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "chrysaormod:pink_garnet_block"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "chrysaormod:pink_garnet_button"
+  }
+}

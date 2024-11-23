@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "chrysaormod:block/pink_garnet_lamp"
+    },
+    "clicked=true": {
+      "model": "chrysaormod:block/pink_garnet_lamp_on"
+    }
+  }
+}
