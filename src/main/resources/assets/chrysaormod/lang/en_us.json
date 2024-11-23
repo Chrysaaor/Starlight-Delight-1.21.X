@@ -5,15 +5,31 @@
   "item.chrysaormod.cauliflower": "Cauliflower",
   "item.chrysaormod.starlight_ashes": "Starlight Ashes",
 
+
   "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
   "block.chrysaormod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
   "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore",
   "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
+  "block.chrysaormod.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.chrysaormod.pink_garnet_slab": "Pink Garnet Slab",
+
+  "block.chrysaormod.pink_garnet_button": "Pink Garnet Button",
+  "block.chrysaormod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+
+  "block.chrysaormod.pink_garnet_fence": "Pink Garnet Fence",
+  "block.chrysaormod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.chrysaormod.pink_garnet_wall": "Pink Garnet Wall",
+
+  "block.chrysaormod.pink_garnet_door": "Pink Garnet Door",
+  "block.chrysaormod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+
   "block.chrysaormod.magic_block": "Magic Block",
+
 
   "itemgroup.chrysaormod.chrysaor_items": "Chrysaor's Items",
   "itemgroup.chrysaormod.chrysaor_blocks": "Chrysaor's Blocks",
+
 
   "tooltip.chrysaormod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
 
