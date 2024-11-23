@@ -1,0 +1,24 @@
+{
+  "item.chrysaormod.pink_garnet": "Pink Garnet",
+  "item.chrysaormod.raw_pink_garnet": "Raw Pink Garnet",
+  "item.chrysaormod.chisel": "Chisel",
+  "item.chrysaormod.cauliflower": "Cauliflower",
+  "item.chrysaormod.starlight_ashes": "Starlight Ashes",
+
+  "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
+  "block.chrysaormod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
+  "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore",
+  "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+
+  "block.chrysaormod.magic_block": "Magic Block",
+
+  "itemgroup.chrysaormod.chrysaor_items": "Chrysaor's Items",
+  "itemgroup.chrysaormod.chrysaor_blocks": "Chrysaor's Blocks",
+
+  "tooltip.chrysaormod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
+
+  "tooltip.chrysaormod.chisel.shift_down": "This item §uchisels§r blocks into Bricks!",
+  "tooltip.chrysaormod.chisel": "Press §6Shift§r for more information!",
+
+  "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!"
+}
