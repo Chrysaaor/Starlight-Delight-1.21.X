@@ -5,6 +5,7 @@ import net.chrysaor.chrysaormod.component.ModDataComponentTypes;
 import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
+import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.chrysaor.chrysaormod.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
@@ -19,6 +20,7 @@ public class ChrysaorMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+		ModSounds.registerSounds();
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();

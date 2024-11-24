@@ -1,0 +1,38 @@
+{
+  "chisel_use": {
+    "subtitle": "sounds.chryaormod.chisel_use",
+    "sounds": [
+      "chrysaormod:chisel_use"
+    ]
+  },
+  "magic_block_break": {
+    "subtitle": "sounds.chryaormod.magic_block_break",
+    "sounds": [
+      "chrysaormod:magic_block_break"
+    ]
+  },
+  "magic_block_place": {
+    "subtitle": "sounds.chryaormod.magic_block_place",
+    "sounds": [
+      "chrysaormod:magic_block_place"
+    ]
+  },
+  "magic_block_step": {
+    "subtitle": "sounds.chryaormod.magic_block_step",
+    "sounds": [
+      "chrysaormod:magic_block_step"
+    ]
+  },
+  "magic_block_fall": {
+    "subtitle": "sounds.chryaormod.magic_block_fall",
+    "sounds": [
+      "chrysaormod:magic_block_fall"
+    ]
+  },
+  "magic_block_hit": {
+    "subtitle": "sounds.chryaormod.magic_block_hit",
+    "sounds": [
+      "chrysaormod:magic_block_hit"
+    ]
+  }
+}
