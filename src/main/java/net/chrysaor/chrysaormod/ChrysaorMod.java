@@ -5,8 +5,10 @@ import net.chrysaor.chrysaormod.component.ModDataComponentTypes;
 import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
+import net.chrysaor.chrysaormod.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +26,7 @@ public class ChrysaorMod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModRegistries.registerModFuels();
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
