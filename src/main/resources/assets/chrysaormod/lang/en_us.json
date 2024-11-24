@@ -33,9 +33,9 @@
   "itemgroup.chrysaormod.chrysaor_blocks": "Chrysaor's Blocks",
 
 
-  "tooltip.chrysaormod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
+  "tooltip.chrysaormod.magic_block.tooltip": "This block is very, very §dMAGICAL§r",
 
-  "tooltip.chrysaormod.chisel.shift_down": "This item §uchisels§r blocks into Bricks!",
+  "tooltip.chrysaormod.chisel.shift_down": "This item §bchisels§r blocks into Bricks!",
   "tooltip.chrysaormod.chisel": "Press §6Shift§r for more information!",
 
   "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!"
