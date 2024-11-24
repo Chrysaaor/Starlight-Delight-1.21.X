@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chrysaormod:item/chisel"
+    "layer0": "chrysaormod:item/chisel_used"
   }
 }
