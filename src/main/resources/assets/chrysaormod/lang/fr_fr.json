@@ -1,3 +1,59 @@
 {
+  "item.chrysaormod.pink_garnet": "Grenat Rose",
+  "item.chrysaormod.raw_pink_garnet": "Grenat Rose Brut",
+  "item.chrysaormod.chisel": "Burin",
+  "item.chrysaormod.cauliflower": "Chou-fleur",
+  "item.chrysaormod.starlight_ashes": "Cendres Stellaires",
 
+  "item.chrysaormod.pink_garnet_sword": "Épée en Grenat Rose",
+  "item.chrysaormod.pink_garnet_pickaxe": "Pioche en Grenat Rose",
+  "item.chrysaormod.pink_garnet_shovel": "Pelle en Grenat Rose",
+  "item.chrysaormod.pink_garnet_axe": "Hache en Grenat Rose",
+  "item.chrysaormod.pink_garnet_hoe": "Houe en Grenat Rose",
+
+  "item.chrysaormod.pink_garnet_hammer": "Marteau en Grenat Rose",
+
+  "item.chrysaormod.pink_garnet_helmet": "Casque en Grenat Rose",
+  "item.chrysaormod.pink_garnet_chestplate": "Plastron en Grenat Rose",
+  "item.chrysaormod.pink_garnet_leggings": "Jambières en Grenat Rose",
+  "item.chrysaormod.pink_garnet_boots": "Bottes en Grenat Rose",
+
+  "item.chrysaormod.pink_garnet_horse_armor": "Armure en Grenat Rose pour cheval",
+
+  "item.chrysaormod.kaupen_bow": "Arc de Kaupen",
+
+
+  "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
+  "block.chrysaormod.raw_pink_garnet_block": "Bloc de Grenat Rose brut",
+
+  "block.chrysaormod.pink_garnet_ore": "Minerai de Grenat Rose", "block.chrysaormod.pink_garnet_deepslate_ore": "Minerai de Grenat Rose des abîmes",
+
+  "block.chrysaormod.pink_garnet_stairs": "Escalier en Grenat Rose",
+  "block.chrysaormod.pink_garnet_slab": "Dalle de Grenat Rose",
+
+  "block.chrysaormod.pink_garnet_button": "Bouton en Grenat Rose",
+  "block.chrysaormod.pink_garnet_pressure_plate": "Plaque de pression en Grenat Rose",
+
+  "block.chrysaormod.pink_garnet_fence": "Barrière en Grenat Rose",
+  "block.chrysaormod.pink_garnet_fence_gate": "Portillon en Grenat Rose",
+  "block.chrysaormod.pink_garnet_wall": "Muret en Grenat Rose",
+
+  "block.chrysaormod.pink_garnet_door": "Porte en Grenat Rose",
+  "block.chrysaormod.pink_garnet_trapdoor": "Trappe en Grenat Rose",
+
+  "block.chrysaormod.magic_block": "Bloc Magique",
+
+  "block.chrysaormod.pink_garnet_lamp": "Lampe en Grenat Rose",
+
+
+  "itemgroup.chrysaormod.chrysaor_items": "Items de Chrysaor",
+  "itemgroup.chrysaormod.chrysaor_blocks": "Blocs de Chrysaor",
+
+
+  "tooltip.chrysaormod.magic_block.tooltip": "Ce bloc est très, très §dMAGIQUE§r",
+
+  "tooltip.chrysaormod.chisel.shift_down": "Cet item §btaille§r les blocs en briques!",
+  "tooltip.chrysaormod.chisel": "Appuie sur §6Maj Gauche§r pour plus d'informations!",
+
+  "tooltip.chrysaormod.cauliflower.tooltip": "C'est délicieux!"
 }
