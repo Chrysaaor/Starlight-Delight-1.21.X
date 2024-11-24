@@ -38,6 +38,7 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_LEGGINGS);
                         entries.add(ModItems.PINK_GARNET_BOOTS);
 
+                        entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
