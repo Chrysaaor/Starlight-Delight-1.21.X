@@ -1,2 +1,7 @@
-// 1.21	2024-11-23T20:38:18.4300518	Chrysaor Mod/Tags for minecraft:item
+// 1.21	2024-11-24T12:26:09.4761697	Chrysaor Mod/Tags for minecraft:item
+8a94477a5fe899e04edeaf6c7dd69bd17aacf7f2 data\minecraft\tags\item\hoes.json
+a8aa0eaf3d8ceabd69fad86e275200c1fe6297b2 data\minecraft\tags\item\swords.json
+4a280e89b403f5bd32bd5f0c02e45f85670d6e34 data\minecraft\tags\item\pickaxes.json
 b506c8e0f9d72c38fb3bcd595f0ca53c22342c46 data\chrysaormod\tags\item\transformable_items.json
+dd5b0223cd123d82dae74af2c5a2551e13a5e0ba data\minecraft\tags\item\axes.json
+4b1979a7dbfab95ef04f47e4f277bfc9c5e1ef14 data\minecraft\tags\item\shovels.json
