@@ -22,11 +22,14 @@
 
   "item.chrysaormod.kaupen_bow": "Kaupen Bow",
 
+  "item.chrysaormod.cauliflower_seeds": "Cauliflower Seeds",
+
 
   "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
   "block.chrysaormod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
-  "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore", "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+  "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore",
+  "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
   "block.chrysaormod.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.chrysaormod.pink_garnet_slab": "Pink Garnet Slab",
@@ -44,6 +47,8 @@
   "block.chrysaormod.magic_block": "Magic Block",
 
   "block.chrysaormod.pink_garnet_lamp": "Pink Garnet Lamp",
+
+  "block.chrysaormod.cauliflower_crop": "Cauliflower Crop",
 
 
   "enchantment.chrysaormod.lightning_striker": "Lightning Striker",

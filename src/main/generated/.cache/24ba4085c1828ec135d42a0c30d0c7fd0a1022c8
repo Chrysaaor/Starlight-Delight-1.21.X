@@ -1,8 +1,9 @@
-// 1.21	2024-11-27T16:31:18.8610631	Chrysaor Mod/Block Loot Tables
+// 1.21	2024-11-27T17:20:47.4829689	Chrysaor Mod/Block Loot Tables
 45e78c152dc0cf5e7a244a3f2433b58a577dcc5e data\chrysaormod\loot_table\blocks\pink_garnet_door.json
 5a2e123aa6a4f7a41159ca3040197f50009efddb data\chrysaormod\loot_table\blocks\pink_garnet_ore.json
 a118ea95478eac60f09c303f484400f4c5598cbc data\chrysaormod\loot_table\blocks\pink_garnet_trapdoor.json
 8f7c60c4a1019370e7a51ab1de441ffb548b8734 data\chrysaormod\loot_table\blocks\pink_garnet_pressure_plate.json
+61ccfef840562521699d1ff1ea5198754927b0e0 data\chrysaormod\loot_table\blocks\cauliflower_crop.json
 a6382e37b490458213f406bf9353d167c8bfde33 data\chrysaormod\loot_table\blocks\pink_garnet_deepslate_ore.json
 8f44a70ce7b098c255ea55d4c21a3d1d9a110e4b data\chrysaormod\loot_table\blocks\pink_garnet_block.json
 f3b9408f033ab778763aa1306690fafdac543338 data\chrysaormod\loot_table\blocks\pink_garnet_wall.json

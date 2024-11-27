@@ -22,6 +22,8 @@
 
   "item.chrysaormod.kaupen_bow": "Arc de Kaupen",
 
+  "item.chrysaormod.cauliflower_seeds": "Graines de Chou-fleur",
+
 
   "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
   "block.chrysaormod.raw_pink_garnet_block": "Bloc de Grenat Rose brut",
@@ -45,6 +47,11 @@
   "block.chrysaormod.magic_block": "Bloc Magique",
 
   "block.chrysaormod.pink_garnet_lamp": "Lampe en Grenat Rose",
+
+  "block.chrysaormod.cauliflower_crop": "Pousse de Chou-fleur",
+
+
+  "enchantment.chrysaormod.lightning_striker": "Électrisant",
 
 
   "itemgroup.chrysaormod.chrysaor_items": "Items de Chrysaor",

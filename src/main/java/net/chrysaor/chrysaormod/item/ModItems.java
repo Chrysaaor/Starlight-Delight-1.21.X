@@ -1,6 +1,7 @@
 package net.chrysaor.chrysaormod.item;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
+import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.item.custom.ChiselItem;
 import net.chrysaor.chrysaormod.item.custom.HammerItem;
 import net.chrysaor.chrysaormod.item.custom.ModArmorItem;
@@ -69,6 +70,11 @@ public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_hor
 
 public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
         new BowItem(new Item.Settings().maxDamage(500)));
+
+public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+        new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ChrysaorMod.MOD_ID, name), item);

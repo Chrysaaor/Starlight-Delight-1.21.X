@@ -11,6 +11,7 @@ import net.chrysaor.chrysaormod.util.HammerUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +32,9 @@ public class ChrysaorMod implements ModInitializer {
 		ModEnchantmentEffects.registerEnchantmentEffects();
 
 		ModRegistries.registerModFuels();
+		ModRegistries.registerModCropCompostable();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+
 	}
 }
