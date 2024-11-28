@@ -1,7 +1,6 @@
 package net.chrysaor.chrysaormod.component;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
-import net.minecraft.component.Component;
 import net.minecraft.component.ComponentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,8 +13,6 @@ public class ModDataComponentTypes {
 
     public static final ComponentType<BlockPos> COORDINATES =
             register("coordinates", builder -> builder.codec(BlockPos.CODEC));
-
-
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(ChrysaorMod.MOD_ID, name),

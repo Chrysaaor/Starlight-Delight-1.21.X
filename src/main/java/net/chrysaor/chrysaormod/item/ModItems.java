@@ -4,6 +4,7 @@ import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.item.custom.ChiselItem;
 import net.chrysaor.chrysaormod.item.custom.HammerItem;
+import net.chrysaor.chrysaormod.item.custom.HoelyBeheaderItem;
 import net.chrysaor.chrysaormod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -12,6 +13,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 import java.util.List;
 
@@ -52,6 +54,11 @@ public class ModItems {
             new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
 
+    public static final Item HOELY_BEHEADER = registerItem("hoely_beheader",
+            new HoelyBeheaderItem(ToolMaterials.NETHERITE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2f))
+                    .rarity(Rarity.EPIC)));
+
 public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
         new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                 .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
@@ -73,6 +80,7 @@ public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
 
 public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
 
 
 
