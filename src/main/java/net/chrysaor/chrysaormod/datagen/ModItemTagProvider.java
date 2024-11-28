@@ -1,5 +1,6 @@
 package net.chrysaor.chrysaormod.datagen;
 
+import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.chrysaor.chrysaormod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -19,10 +20,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.PINK_GARNET)
-                .add(ModItems.RAW_PINK_GARNET)
-                .add(Items.STICK)
-                .add(Items.APPLE)
-                .add(Items.COAL);
+                .add(ModItems.STARLIGHT_ASHES)
+                .add(Items.GOLD_BLOCK);
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PINK_GARNET_SWORD);

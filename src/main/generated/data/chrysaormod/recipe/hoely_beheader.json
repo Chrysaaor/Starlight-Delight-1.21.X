@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "G": {
+      "item": "chrysaormod:pink_garnet"
+    },
+    "H": {
+      "item": "minecraft:netherite_hoe"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "GAG",
+    "NHN",
+    "GAG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "chrysaormod:hoely_beheader"
+  }
+}
