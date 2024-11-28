@@ -8,6 +8,7 @@ import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.chrysaor.chrysaormod.util.HammerUsageEvent;
+import net.chrysaor.chrysaormod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
@@ -30,6 +31,8 @@ public class ChrysaorMod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		ModRegistries.registerModFuels();
 		ModRegistries.registerModCropCompostable();
