@@ -24,7 +24,7 @@
 
   "item.chrysaormod.cauliflower_seeds": "Cauliflower Seeds",
 
-  "item.chrysaormod.hoely_beheader": "§cHoely Beheader§r",
+  "item.chrysaormod.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
 
 
   "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
@@ -32,6 +32,9 @@
 
   "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore",
   "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
+
+  "block.chrysaormod.starlight_ore": "Starlight Ore",
+  "block.chrysaormod.starlight_deepslate_ore": "Starlight Deepslate Ore",
 
   "block.chrysaormod.pink_garnet_stairs": "Pink Garnet Stairs",
   "block.chrysaormod.pink_garnet_slab": "Pink Garnet Slab",
@@ -65,5 +68,11 @@
   "tooltip.chrysaormod.chisel.shift_down": "This item §bchisels§r blocks into Bricks!",
   "tooltip.chrysaormod.chisel": "Press §6Shift§r for more information!",
 
-  "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!"
+  "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!",
+
+  "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
+  "tooltip.chrysaormod.hoely_beheader.tooltip1": "This §4occult§r scythe feeds off of",
+  "tooltip.chrysaormod.hoely_beheader.tooltip2": "its owner's §4life force§r",
+  "tooltip.chrysaormod.hoely_beheader.tooltip3": "in exchange for §benhanced powers§r.",
+  "tooltip.chrysaormod.hoely_beheader.tooltip4": " "
 }

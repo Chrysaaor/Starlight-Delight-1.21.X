@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
      public static final RegistryKey<PlacedFeature> PINK_GARNET_ORE_PLACED_KEY = registerKey("pink_garnet_ore_placed");
+     public static final RegistryKey<PlacedFeature> STARLIGHT_ORE_PLACED_KEY = registerKey("starlight_ore_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -26,6 +27,10 @@ public class ModPlacedFeatures {
         register(context, PINK_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.PINK_GARNET_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(6, // Veins per Chunk
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+
+        register(context, STARLIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.STARLIGHT_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(3,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(40))));
 
     }
 

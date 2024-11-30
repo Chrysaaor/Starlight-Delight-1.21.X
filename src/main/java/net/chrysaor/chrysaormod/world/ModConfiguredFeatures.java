@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registryKey("pink_garnet_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> STARLIGHT_ORE_KEY = registryKey("starlight_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -27,7 +28,12 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.PINK_GARNET_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.PINK_GARNET_DEEPSLATE_ORE.getDefaultState()));
 
+        List<OreFeatureConfig.Target> overworldStarlightOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.STARLIGHT_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.STARLIGHT_DEEPSLATE_ORE.getDefaultState()));
+
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 10));
+        register(context, STARLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldStarlightOres, 10));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {

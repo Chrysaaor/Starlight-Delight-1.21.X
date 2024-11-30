@@ -57,7 +57,17 @@ public class ModItems {
     public static final Item HOELY_BEHEADER = registerItem("hoely_beheader",
             new HoelyBeheaderItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2f))
-                    .rarity(Rarity.EPIC)));
+                    .rarity(Rarity.EPIC)) {
+        @Override
+        public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip"));
+            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip1"));
+            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip2"));
+            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip3"));
+            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip4"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
 
 public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
         new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()

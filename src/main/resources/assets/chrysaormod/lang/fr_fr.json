@@ -24,7 +24,7 @@
 
   "item.chrysaormod.cauliflower_seeds": "Graines de Chou-fleur",
 
-  "item.chrysaormod.hoely_beheader": "§cSainte Gui-houe-tine§r",
+  "item.chrysaormod.hoely_beheader": "§4§l◊ Sainte Gui-houe-tine ◊§r",
 
 
   "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
@@ -53,7 +53,7 @@
   "block.chrysaormod.cauliflower_crop": "Pousse de Chou-fleur",
 
 
-  "enchantment.chrysaormod.lightning_striker": "Électrisant",
+  "enchantment.chrysaormod.lightning_striker": "Coup de Foudre",
 
 
   "itemgroup.chrysaormod.chrysaor_items": "Items de Chrysaor",
@@ -65,5 +65,11 @@
   "tooltip.chrysaormod.chisel.shift_down": "Cet item §btaille§r les blocs en briques!",
   "tooltip.chrysaormod.chisel": "Appuie sur §6Maj Gauche§r pour plus d'informations!",
 
-  "tooltip.chrysaormod.cauliflower.tooltip": "C'est délicieux!"
+  "tooltip.chrysaormod.cauliflower.tooltip": "C'est délicieux!",
+
+  "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
+  "tooltip.chrysaormod.hoely_beheader.tooltip1": "Cette houe §4occulte§r se nourrit",
+  "tooltip.chrysaormod.hoely_beheader.tooltip2": "de la §4force vitale§r de son propriétaire",
+  "tooltip.chrysaormod.hoely_beheader.tooltip3": "en contre-partie de §bcapacités accrues§r.",
+  "tooltip.chrysaormod.hoely_beheader.tooltip4": " "
 }
