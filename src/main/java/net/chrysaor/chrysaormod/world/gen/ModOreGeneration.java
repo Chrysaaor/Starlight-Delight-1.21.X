@@ -13,4 +13,3 @@ public class ModOreGeneration {
                 GenerationStep.Feature.UNDERGROUND_ORES, ModPlacedFeatures.STARLIGHT_ORE_PLACED_KEY);
     }
 }
-
