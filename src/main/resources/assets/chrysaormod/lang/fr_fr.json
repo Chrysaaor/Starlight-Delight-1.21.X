@@ -3,7 +3,19 @@
   "item.chrysaormod.raw_pink_garnet": "Grenat Rose Brut",
   "item.chrysaormod.chisel": "Burin",
   "item.chrysaormod.cauliflower": "Chou-fleur",
+
   "item.chrysaormod.starlight_ashes": "Cendres Stellaires",
+  "item.chrysaormod.starlight_fragment": "Fragment d'Étoile",
+
+  "item.chrysaormod.starlight_upgrade_smithing_template": "Modèle de Forge Astral",
+
+  "item.chrysaormod.starlight_helmet": "Casque Astral",
+  "item.chrysaormod.starlight_chestplate": "Plastron Astral",
+  "item.chrysaormod.starlight_leggings": "Jambières Astrales",
+  "item.chrysaormod.starlight_boots": "Bottes Astrales",
+
+  "item.chrysaormod.starlight_pickaxe": "Pioche Astrale",
+  "item.chrysaormod.starlight_axe": "Hache Astrale",
 
   "item.chrysaormod.pink_garnet_sword": "Épée en Grenat Rose",
   "item.chrysaormod.pink_garnet_pickaxe": "Pioche en Grenat Rose",
@@ -32,6 +44,9 @@
 
   "block.chrysaormod.pink_garnet_ore": "Minerai de Grenat Rose",
   "block.chrysaormod.pink_garnet_deepslate_ore": "Minerai de Grenat Rose des abîmes",
+
+  "block.chrysaormod.starlight_ore": "Minerai Stellaire",
+  "block.chrysaormod.starlight_deepslate_ore": "Minerai Stellaire des abîmes",
 
   "block.chrysaormod.pink_garnet_stairs": "Escalier en Grenat Rose",
   "block.chrysaormod.pink_garnet_slab": "Dalle de Grenat Rose",

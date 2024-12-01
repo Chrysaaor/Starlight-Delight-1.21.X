@@ -29,8 +29,8 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
         register(context, STARLIGHT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.STARLIGHT_ORE_KEY),
-                ModOrePlacement.modifiersWithCount(3,
-                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(40))));
+                ModOrePlacement.modifiersWithCount(1,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(10))));
 
     }
 

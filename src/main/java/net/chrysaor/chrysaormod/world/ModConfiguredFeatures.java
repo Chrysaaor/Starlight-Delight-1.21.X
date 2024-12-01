@@ -33,7 +33,7 @@ public class ModConfiguredFeatures {
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.STARLIGHT_DEEPSLATE_ORE.getDefaultState()));
 
         register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 10));
-        register(context, STARLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldStarlightOres, 10));
+        register(context, STARLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldStarlightOres, 6));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {

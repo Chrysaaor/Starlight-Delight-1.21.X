@@ -26,18 +26,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.PINK_GARNET_SWORD);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.STARLIGHT_PICKAXE)
                 .add(ModItems.PINK_GARNET_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(ModItems.PINK_GARNET_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.STARLIGHT_AXE)
                 .add(ModItems.PINK_GARNET_AXE);
         getOrCreateTagBuilder(ItemTags.HOES)
                 .add(ModItems.PINK_GARNET_HOE);
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.STARLIGHT_HELMET)
+                .add(ModItems.STARLIGHT_CHESTPLATE)
+                .add(ModItems.STARLIGHT_LEGGINGS)
+                .add(ModItems.STARLIGHT_BOOTS)
+
                 .add(ModItems.PINK_GARNET_HELMET)
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
                 .add(ModItems.PINK_GARNET_LEGGINGS)
                 .add(ModItems.PINK_GARNET_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
     }
 }

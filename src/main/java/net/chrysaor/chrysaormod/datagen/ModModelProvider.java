@@ -58,6 +58,12 @@ public class ModModelProvider extends FabricModelProvider {
        // itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STARLIGHT_FRAGMENT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.STARLIGHT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.STARLIGHT_AXE, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.PINK_GARNET_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PINK_GARNET_PICKAXE, Models.HANDHELD);
@@ -71,6 +77,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PINK_GARNET_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_BOOTS));
 
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
     }

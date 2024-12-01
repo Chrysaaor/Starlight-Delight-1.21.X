@@ -24,6 +24,17 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER);
 
                         entries.add(ModItems.STARLIGHT_ASHES);
+                        entries.add(ModItems.STARLIGHT_FRAGMENT);
+
+                        entries.add(ModItems.STARLIGHT_HELMET);
+                        entries.add(ModItems.STARLIGHT_CHESTPLATE);
+                        entries.add(ModItems.STARLIGHT_LEGGINGS);
+                        entries.add(ModItems.STARLIGHT_BOOTS);
+
+                        entries.add(ModItems.STARLIGHT_PICKAXE);
+                        entries.add(ModItems.STARLIGHT_AXE);
+
+                        entries.add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
