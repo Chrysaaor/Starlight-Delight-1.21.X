@@ -20,7 +20,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         super(entityType, world);
     }
 
-    @ModifyExpressionValue(method="spawnSweepAttackParticles", at=@At(value="FIELD", target="ENTITY_PLAYER_ATTACK_SWEEP "))
+    @ModifyExpressionValue(method = "spawnSweepAttackParticles", at=@At(value="FIELD", target="Lnet/minecraft/particle/ParticleTypes;SWEEP_ATTACK:Lnet/minecraft/particle/SimpleParticleType;"))
     private void spawnSweepAttackHoelyBeheader(void original) {
         PlayerEntity player = (PlayerEntity) (Object) this;
         if (player.getMainHandStack().isOf(ModItems.HOELY_BEHEADER)) {
