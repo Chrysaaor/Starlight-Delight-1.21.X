@@ -6,6 +6,7 @@ import net.chrysaor.chrysaormod.enchantment.ModEnchantmentEffects;
 import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
+import net.chrysaor.chrysaormod.particle.ModParticles;
 import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.chrysaor.chrysaormod.util.HammerUsageEvent;
 import net.chrysaor.chrysaormod.world.gen.ModWorldGeneration;
@@ -27,6 +28,8 @@ public class ChrysaorMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModParticles.registerParticle();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

@@ -95,26 +95,26 @@ public class ModItems {
         }
     });
 
-public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
+    public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
         new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                 .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
-public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
+    public static final Item PINK_GARNET_CHESTPLATE = registerItem("pink_garnet_chestplate",
         new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                 .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));
-public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
+    public static final Item PINK_GARNET_LEGGINGS = registerItem("pink_garnet_leggings",
         new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                 .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
-public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
+    public static final Item PINK_GARNET_BOOTS = registerItem("pink_garnet_boots",
         new ArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                 .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));
 
-public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
+    public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
         new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
-public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
+    public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
         new BowItem(new Item.Settings().maxDamage(500)));
 
-public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
+    public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
 
