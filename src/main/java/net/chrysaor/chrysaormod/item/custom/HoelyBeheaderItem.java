@@ -1,5 +1,6 @@
 package net.chrysaor.chrysaormod.item.custom;
 
+
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -23,7 +24,6 @@ public class HoelyBeheaderItem extends SwordItem {
             user.getItemCooldownManager().set(this, 30);
             user.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(10f);
             user.getAttributeInstance(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO).setBaseValue(0.85f);
-
         }
         else {
             user.removeStatusEffect(StatusEffects.STRENGTH);

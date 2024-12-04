@@ -1,13 +1,10 @@
 package net.chrysaor.chrysaormod.particle.custom;
 
 
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.SimpleParticleType;
 
-@Environment(EnvType.CLIENT)
 public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
     private final SpriteProvider spriteProvider;
 
@@ -42,7 +39,6 @@ public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
         return ParticleTextureSheet.PARTICLE_SHEET_LIT;
     }
 
-    @Environment(EnvType.CLIENT)
     public static class Factory implements ParticleFactory<SimpleParticleType> {
         private final SpriteProvider spriteProvider;
 
