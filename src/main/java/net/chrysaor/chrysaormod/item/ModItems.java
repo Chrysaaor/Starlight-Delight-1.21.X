@@ -11,7 +11,6 @@ import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -33,32 +32,31 @@ public class ModItems {
         }
     });
 
-    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
-    public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new Item(new Item.Settings()));
+    public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
+    public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new Item(new Item.Settings().fireproof()));
 
-    public static final Item STARLIGHT_UPGRADE_SMITHING_TEMPLATE = registerItem("starlight_upgrade_smithing_template",
-            SmithingTemplateItem.of(Identifier.of(ChrysaorMod.MOD_ID, "starlight_upgrade"), FeatureFlags.VANILLA));
+    public static final Item STARLIGHT_UPGRADE_SMITHING_TEMPLATE = registerItem("starlight_upgrade_smithing_template", ModTemplateItem.createStarlightUpgrade());
 
     public static final Item STARLIGHT_HELMET = registerItem("starlight_helmet",
             new ModArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_CHESTPLATE = registerItem("starlight_chestplate",
             new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_LEGGINGS = registerItem("starlight_leggings",
             new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20))));
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_BOOTS = registerItem("starlight_boots",
             new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).fireproof()));
 
     public static final Item STARLIGHT_PICKAXE = registerItem("starlight_pickaxe",
             new PickaxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f)).fireproof()));
 
     public static final Item STARLIGHT_AXE = registerItem("starlight_axe",
             new AxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f))));
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f)).fireproof()));
 
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
             new SwordItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
@@ -83,6 +81,7 @@ public class ModItems {
     public static final Item HOELY_BEHEADER = registerItem("hoely_beheader",
             new HoelyBeheaderItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2f))
+                    .fireproof()
                     .rarity(Rarity.EPIC)) {
         @Override
         public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -116,7 +115,6 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
-
 
 
 

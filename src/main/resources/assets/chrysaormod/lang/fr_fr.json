@@ -7,7 +7,7 @@
   "item.chrysaormod.starlight_ashes": "Cendres Stellaires",
   "item.chrysaormod.starlight_fragment": "Fragment d'Étoile",
 
-  "item.chrysaormod.starlight_upgrade_smithing_template": "Modèle de Forge Astral",
+  "item.chrysaormod.smithing_template": "Modèle de Forge Astral",
 
   "item.chrysaormod.starlight_helmet": "Casque Astral",
   "item.chrysaormod.starlight_chestplate": "Plastron Astral",
@@ -37,6 +37,12 @@
   "item.chrysaormod.cauliflower_seeds": "Graines de Chou-fleur",
 
   "item.chrysaormod.hoely_beheader": "§4§l◊ Sainte Gui-houe-tine ◊§r",
+
+  "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
+  "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
+  "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Ajoutez une Armure ou un Outil en Netherite",
+  "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Fragment d'Étoile",
+  "upgrade.chrysaormod.starlight_upgrade": "Amélioration Astrale",
 
 
   "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
