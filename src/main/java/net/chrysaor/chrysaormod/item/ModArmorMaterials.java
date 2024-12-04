@@ -28,10 +28,10 @@ public class ModArmorMaterials {
 
     public static final RegistryEntry<ArmorMaterial> STARLIGHT_ARMOR_MATERIAL = registerArmorMaterial("starlight",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.BOOTS, 4);
-                map.put(ArmorItem.Type.LEGGINGS, 7);
-                map.put(ArmorItem.Type.CHESTPLATE, 9);
-                map.put(ArmorItem.Type.HELMET, 4);
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 8);
+                map.put(ArmorItem.Type.HELMET, 3);
                 map.put(ArmorItem.Type.BODY, 12);
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(ChrysaorMod.MOD_ID, "starlight"))), 4.0f, 0.1f));

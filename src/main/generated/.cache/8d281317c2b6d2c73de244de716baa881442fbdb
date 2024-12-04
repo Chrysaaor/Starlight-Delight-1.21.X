@@ -1,9 +1,10 @@
-// 1.21	2024-12-01T22:45:25.4390414	Chrysaor Mod/Tags for minecraft:item
+// 1.21	2024-12-04T18:29:43.3817534	Chrysaor Mod/Tags for minecraft:item
 8a94477a5fe899e04edeaf6c7dd69bd17aacf7f2 data\minecraft\tags\item\hoes.json
 af5576811ab6a7586b4eec26feb35a5fffb87cad data\minecraft\tags\item\trimmable_armor.json
-a8aa0eaf3d8ceabd69fad86e275200c1fe6297b2 data\minecraft\tags\item\swords.json
+faf0ad9d4e7964574e50f8021a1ffb17a76282cf data\minecraft\tags\item\swords.json
 25f2b2eeb5bdee36a5d1218f739b87a9fe98ebfd data\minecraft\tags\item\pickaxes.json
 3d5297b56ee06f835e2703dca7b910416f5953cb data\minecraft\tags\item\trim_templates.json
 6d730e4f55a0e595ad2826a6baeb9c90838c6ca1 data\chrysaormod\tags\item\transformable_items.json
 718dbd6ae1581741148bc64f69ae9f842360508d data\minecraft\tags\item\axes.json
+5fde13e1d8775837c1982074f9f89d3426d6135e data\minecraft\tags\item\enchantable\armor.json
 4b1979a7dbfab95ef04f47e4f277bfc9c5e1ef14 data\minecraft\tags\item\shovels.json
