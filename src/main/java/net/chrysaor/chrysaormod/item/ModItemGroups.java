@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup CHRYSAOR_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(ChrysaorMod.MOD_ID, "chrysaor_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STARLIGHT_ASHES))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STARLIGHT_FRAGMENT))
                     .displayName(Text.translatable("itemgroup.chrysaormod.chrysaor_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.PINK_GARNET);
