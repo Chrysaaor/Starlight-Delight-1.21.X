@@ -8,7 +8,12 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_boots"
+    "id": "chrysaormod:starlight_boots",
+    "components": {
+      "minecraft:enchantments": {
+        "enchancement:gale": 2
+      }
+    }
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"

@@ -36,5 +36,11 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+
+	"custom": {
+		"cardinal-components": [
+			"chrysaormod:"
+		]
 	}
 }

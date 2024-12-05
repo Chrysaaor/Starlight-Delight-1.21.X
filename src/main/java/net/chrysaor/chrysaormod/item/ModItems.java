@@ -1,5 +1,7 @@
 package net.chrysaor.chrysaormod.item;
 
+import moriyashiine.enchancement.common.Enchancement;
+import moriyashiine.enchancement.common.init.ModEnchantments;
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.item.custom.ChiselItem;
@@ -7,6 +9,9 @@ import net.chrysaor.chrysaormod.item.custom.HammerItem;
 import net.chrysaor.chrysaormod.item.custom.HoelyBeheaderItem;
 import net.chrysaor.chrysaormod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.ComponentType;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ItemEnchantmentsComponent;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;

@@ -8,7 +8,12 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_pickaxe"
+    "id": "chrysaormod:starlight_pickaxe",
+    "components": {
+      "minecraft:enchantments": {
+        "enchancement:molten": 1
+      }
+    }
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"
