@@ -2,7 +2,6 @@ package net.chrysaor.chrysaormod.particle;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
-import net.minecraft.client.particle.SweepAttackParticle;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.registry.Registries;
