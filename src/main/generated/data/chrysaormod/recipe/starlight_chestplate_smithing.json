@@ -8,12 +8,7 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_chestplate",
-    "components": {
-      "minecraft:enchantments": {
-        "enchancement:strafe": 2
-      }
-    }
+    "id": "chrysaormod:starlight_chestplate"
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"

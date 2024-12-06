@@ -23,6 +23,13 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
 
+        public static final TagKey<Item> STARLIGHT_FOOT_ARMOR = createTag("starlight_foot_armor");
+        public static final TagKey<Item> STARLIGHT_LEG_ARMOR = createTag("starlight_leg_armor");
+        public static final TagKey<Item> STARLIGHT_CHEST_ARMOR = createTag("starlight_chest_armor");
+        public static final TagKey<Item> STARLIGHT_HEAD_ARMOR = createTag("starlight_head_armor");
+        public static final TagKey<Item> STARLIGHT_PICKAXE = createTag("starlight_pickaxe");
+        public static final TagKey<Item> STARLIGHT_AXE = createTag("starlight_axe");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(ChrysaorMod.MOD_ID, name));
         }

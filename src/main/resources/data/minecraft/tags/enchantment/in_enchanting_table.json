@@ -2,6 +2,14 @@
   "replace": true,
   "values": [
     "chrysaormod:lightning_striker",
+
+    "enchancement:assimilation",
+    "enchancement:strafe",
+    "enchancement:dash",
+    "enchancement:gale",
+    "enchancement:molten",
+    "enchancement:lumberjack",
+
     "minecraft:protection",
     "minecraft:fire_protection",
     "minecraft:feather_falling",

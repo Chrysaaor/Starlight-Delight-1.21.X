@@ -8,12 +8,7 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_helmet",
-    "components": {
-      "minecraft:enchantments": {
-        "enchancement:assimilation": 2
-      }
-    }
+    "id": "chrysaormod:starlight_helmet"
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"

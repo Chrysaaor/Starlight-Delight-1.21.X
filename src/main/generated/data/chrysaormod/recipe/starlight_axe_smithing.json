@@ -8,12 +8,7 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_axe",
-    "components": {
-      "minecraft:enchantments": {
-        "enchancement:lumberjack": 2
-      }
-    }
+    "id": "chrysaormod:starlight_axe"
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"

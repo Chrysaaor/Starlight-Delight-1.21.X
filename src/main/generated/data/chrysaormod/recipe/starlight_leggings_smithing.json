@@ -8,12 +8,7 @@
   },
   "result": {
     "count": 1,
-    "id": "chrysaormod:starlight_leggings",
-    "components": {
-      "minecraft:enchantments": {
-        "enchancement:dash": 2
-      }
-    }
+    "id": "chrysaormod:starlight_leggings"
   },
   "template": {
     "item": "chrysaormod:starlight_upgrade_smithing_template"

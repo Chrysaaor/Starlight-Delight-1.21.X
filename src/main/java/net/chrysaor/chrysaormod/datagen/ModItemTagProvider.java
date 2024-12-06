@@ -66,5 +66,24 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_HEAD_ARMOR)
+                .add(ModItems.STARLIGHT_HELMET);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_CHEST_ARMOR)
+                .add(ModItems.STARLIGHT_CHESTPLATE);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_LEG_ARMOR)
+                .add(ModItems.STARLIGHT_LEGGINGS);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_FOOT_ARMOR)
+                .add(ModItems.STARLIGHT_BOOTS);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_PICKAXE)
+                .add(ModItems.STARLIGHT_PICKAXE);
+
+        getOrCreateTagBuilder(ModTags.Items.STARLIGHT_AXE)
+                .add(ModItems.STARLIGHT_AXE);
+
     }
 }
