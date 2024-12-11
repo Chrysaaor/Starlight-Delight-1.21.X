@@ -1,4 +1,4 @@
-// 1.21	2024-12-06T16:46:56.323644	Chrysaor Mod/Recipes
+// 1.21	2024-12-11T16:28:01.8070248	Chrysaor Mod/Recipes
 0a3f0da5156559a9159e394afaa8117e9e55f026 data\chrysaormod\recipe\pink_garnet_shovel.json
 b66b55058a05bd0e6f404ebfa2153349d30006b0 data\chrysaormod\advancement\recipes\combat\pink_garnet_sword.json
 55df453cad7c26a4f39bc6dbce0965d486f612bc data\chrysaormod\advancement\recipes\building_blocks\pink_garnet_wall.json
@@ -58,7 +58,7 @@ e6c4a4dced0bf190ecb2513bd1d50655193b2651 data\chrysaormod\advancement\recipes\to
 0de3a021f56ed0ebec2d2c4305a758f77ef04727 data\chrysaormod\advancement\recipes\redstone\pink_garnet_button_from_pink_garnet_block_stonecutting.json
 7300e3358394517726ae8056ab957403ea298c0a data\chrysaormod\advancement\recipes\building_blocks\pink_garnet_trapdoor_from_pink_garnet_block_stonecutting.json
 5503e0f4feade84d82ac2aa96c70748ad95d84a7 data\chrysaormod\advancement\recipes\decorations\pink_garnet_fence.json
-51463aa9d3a91d7a3613340dc6b02c2f656fba81 data\chrysaormod\recipe\starlight_upgrade_smithing_template.json
+8874275c37b703bb217114bfcbdb832a38df5142 data\chrysaormod\recipe\starlight_upgrade_smithing_template.json
 15ad4c1fde661efc93fa45ee15e436112b1c1ed5 data\chrysaormod\recipe\chisel.json
 1a6d5ea927dd8372ec03e1c4f804fff1e40a8292 data\chrysaormod\advancement\recipes\combat\pink_garnet_boots.json
 8d8ad9603f67fb5e28888cf916627a0b88b01ac4 data\chrysaormod\advancement\recipes\misc\magic_block.json

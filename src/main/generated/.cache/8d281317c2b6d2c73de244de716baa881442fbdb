@@ -1,17 +1,11 @@
-// 1.21	2024-12-06T16:46:56.3256434	Chrysaor Mod/Tags for minecraft:item
-856250c9d8c9f1a7ff68772257486d3f90ff7014 data\chrysaormod\tags\item\starlight_axe.json
-95c2addfcceee16b6ecf185507167d97401c8cb5 data\chrysaormod\tags\item\starlight_foot_armor.json
-f8d258034974a1fd2eea3fe3aa0ad93ad6ff2759 data\chrysaormod\tags\item\starlight_head_armor.json
-6d730e4f55a0e595ad2826a6baeb9c90838c6ca1 data\chrysaormod\tags\item\transformable_items.json
-159fa2c719de94f270e9da883a7c58300086c514 data\chrysaormod\tags\item\starlight_pickaxe.json
-4b1979a7dbfab95ef04f47e4f277bfc9c5e1ef14 data\minecraft\tags\item\shovels.json
+// 1.21	2024-12-11T16:28:01.8100258	Chrysaor Mod/Tags for minecraft:item
 8a94477a5fe899e04edeaf6c7dd69bd17aacf7f2 data\minecraft\tags\item\hoes.json
 af5576811ab6a7586b4eec26feb35a5fffb87cad data\minecraft\tags\item\trimmable_armor.json
 6a1dbdbe50a861c72d65ae0b46e83e1a907b2f66 data\minecraft\tags\item\enchantable\bow.json
 b59f3283ddb5f65b3dfcfad4cc6d0f4b9d5cdba8 data\minecraft\tags\item\swords.json
-c52ed03c7d1e7723d19a4266b1948e9bcf3c8812 data\chrysaormod\tags\item\starlight_leg_armor.json
 ae7b315ad41a7adc8bce4f0a2a01a17fbc166ffd data\minecraft\tags\item\pickaxes.json
 3d5297b56ee06f835e2703dca7b910416f5953cb data\minecraft\tags\item\trim_templates.json
-8e44535de35ed214524958e106a01df17de20825 data\chrysaormod\tags\item\starlight_chest_armor.json
+6d730e4f55a0e595ad2826a6baeb9c90838c6ca1 data\chrysaormod\tags\item\transformable_items.json
 5fde13e1d8775837c1982074f9f89d3426d6135e data\minecraft\tags\item\enchantable\armor.json
 718dbd6ae1581741148bc64f69ae9f842360508d data\minecraft\tags\item\axes.json
+4b1979a7dbfab95ef04f47e4f277bfc9c5e1ef14 data\minecraft\tags\item\shovels.json

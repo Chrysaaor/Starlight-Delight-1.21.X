@@ -103,7 +103,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_fragment"));
 
-        offerSmithingTemplateCopyingRecipe(recipeExporter, ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE, Ingredient.ofItems(ModItems.STARLIGHT_ASHES));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE, 2)
+                .pattern("ASA")
+                .pattern("ANA")
+                .pattern("AAA")
+                .input('A', ModItems.STARLIGHT_ASHES)
+                .input('N', Items.NETHERITE_INGOT)
+                .input('S', ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_upgrade_smithing_template"));
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
                 Ingredient.ofItems(Items.NETHERITE_HELMET), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.COMBAT, ModItems.STARLIGHT_HELMET)
