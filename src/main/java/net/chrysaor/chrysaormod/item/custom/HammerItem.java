@@ -20,7 +20,7 @@ public class HammerItem extends MiningToolItem {
     public static List<BlockPos> getBlocksToBeDestroyed(int range, BlockPos initalBlockPos, ServerPlayerEntity player) {
         List<BlockPos> positions = new ArrayList<>();
         HitResult hit = player.raycast(20, 0, false);
-        if (hit.getType() == HitResult.Type.BLOCK) {
+        if (hit.getType() == HitResult.Type.BLOCK && !player.isSneaking()) {
             BlockHitResult blockHit = (BlockHitResult) hit;
 
             if(blockHit.getSide() == Direction.DOWN || blockHit.getSide() == Direction.UP) {
