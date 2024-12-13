@@ -32,7 +32,7 @@ public class ModConfiguredFeatures {
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.STARLIGHT_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.STARLIGHT_DEEPSLATE_ORE.getDefaultState()));
 
-        register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 10));
+        register(context, PINK_GARNET_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldPinkGarnetOres, 8));
         register(context, STARLIGHT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldStarlightOres, 5));
     }
 

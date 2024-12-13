@@ -76,7 +76,7 @@ public class ModItems {
 
     public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
             new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 7, -3.4f))));
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 3, -3.4f))));
 
     public static final Item HOELY_BEHEADER = registerItem("hoely_beheader",
             new HoelyBeheaderItem(ToolMaterials.NETHERITE, new Item.Settings()
