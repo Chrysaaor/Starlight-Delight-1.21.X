@@ -37,7 +37,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
 
-                        entries.add(ModItems.KAUPEN_BOW);
                         entries.add(ModItems.CHISEL);
 
                         entries.add(ModItems.PINK_GARNET_SWORD);
