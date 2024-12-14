@@ -1,6 +1,7 @@
 package net.chrysaor.chrysaormod.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.chrysaor.chrysaormod.effect.ModEffects;
 import net.chrysaor.chrysaormod.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -19,9 +20,14 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL,
-                            List.of(new StatusEffectInstance(StatusEffects.HASTE, 400, 0, false, false),
-                                    new StatusEffectInstance(StatusEffects.SPEED, 400, 0, false, false)
-                            )).build();
+                            List.of(new StatusEffectInstance(StatusEffects.HASTE, 100, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.SPEED, 100, 0, false, false)
+                            )).put(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL,
+                            List.of(new StatusEffectInstance(StatusEffects.SPEED, 100, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.LUCK, 100, 0, false, false),
+                                    new StatusEffectInstance(ModEffects.LIGHT, 100, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.JUMP_BOOST, 100, 0, false, false)
+                                    )).build();
 
 
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {

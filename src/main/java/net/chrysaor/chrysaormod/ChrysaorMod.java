@@ -2,6 +2,7 @@ package net.chrysaor.chrysaormod;
 
 import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.component.ModDataComponentTypes;
+import net.chrysaor.chrysaormod.effect.ModEffects;
 import net.chrysaor.chrysaormod.enchantment.ModEnchantmentEffects;
 import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
@@ -35,6 +36,8 @@ public class ChrysaorMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModParticles.registerParticle();
+
+		ModEffects.registerEffects();
 
 		ModDataComponentTypes.registerDataComponentTypes();
 

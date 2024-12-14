@@ -1,9 +1,9 @@
 package net.chrysaor.chrysaormod.item.custom;
 
 
+import net.chrysaor.chrysaormod.effect.ModEffects;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
@@ -19,18 +19,14 @@ public class HoelyBeheaderItem extends SwordItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if (!user.hasStatusEffect(StatusEffects.STRENGTH) && user.getMaxHealth() == 20f) {
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, -1, 2, false, false));
-            user.getItemCooldownManager().set(this, 30);
-            user.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(10f);
-            user.getAttributeInstance(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO).setBaseValue(0.85f);
+        if (!user.hasStatusEffect(ModEffects.BERSERKER)) {
+            user.addStatusEffect(new StatusEffectInstance(ModEffects.BERSERKER, -1, 0, false, true));
+            user.getItemCooldownManager().set(this, 60);
         }
         else {
-            user.removeStatusEffect(StatusEffects.STRENGTH);
-            user.getItemCooldownManager().set(this, 30);
-            user.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH).setBaseValue(20f);
+            user.removeStatusEffect(ModEffects.BERSERKER);
+            user.getItemCooldownManager().set(this, 60);
             user.heal(10f);
-            user.getAttributeInstance(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO).setBaseValue(0f);
         }
         return super.use(world, user, hand);
     }

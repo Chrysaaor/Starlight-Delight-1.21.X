@@ -93,6 +93,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "magic_block"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PINK_GARNET_LAMP)
+                .pattern(" R ")
+                .pattern("RGR")
+                .pattern(" R ")
+                .input('R', ModItems.PINK_GARNET)
+                .input('G', Items.GLOWSTONE)
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "pink_garnet_lamp"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_FRAGMENT)
                 .pattern(" A ")
                 .pattern("ANA")
@@ -157,7 +166,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("GAG")
                 .pattern("NHN")
                 .pattern("GAG")
-                .input('G', ModItems.PINK_GARNET)
+                .input('G', ModItems.STARLIGHT_ASHES)
                 .input('H', Items.NETHERITE_HOE)
                 .input('A', Items.AMETHYST_SHARD)
                 .input('N', Items.NETHERITE_INGOT)
