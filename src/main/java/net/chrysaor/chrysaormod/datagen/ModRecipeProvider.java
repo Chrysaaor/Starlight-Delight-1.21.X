@@ -6,7 +6,6 @@ import net.chrysaor.chrysaormod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -143,14 +142,27 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_boots_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
-                Ingredient.ofItems(Items.NETHERITE_PICKAXE), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.COMBAT, ModItems.STARLIGHT_PICKAXE)
+                Ingredient.ofItems(Items.NETHERITE_PICKAXE), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.TOOLS, ModItems.STARLIGHT_PICKAXE)
                 .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_pickaxe_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
-                Ingredient.ofItems(Items.NETHERITE_AXE), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.COMBAT, ModItems.STARLIGHT_AXE)
+                Ingredient.ofItems(Items.NETHERITE_AXE), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.TOOLS, ModItems.STARLIGHT_AXE)
                 .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_axe_smithing"));
+
+
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(ModItems.NETHERITE_HAMMER), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.TOOLS, ModItems.STARLIGHT_HAMMER)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_hammer_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(ModItems.DIAMOND_HAMMER), Ingredient.ofItems(Items.NETHERITE_INGOT), RecipeCategory.TOOLS, ModItems.NETHERITE_HAMMER)
+                .criterion(hasItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "netherite_hammer_smithing"));
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CHISEL)
                 .pattern("  G")
@@ -233,8 +245,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createHoeRecipe(ModItems.PINK_GARNET_HOE, Ingredient.ofItems(ModItems.PINK_GARNET))
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter);
+
         createHammerRecipe(ModItems.PINK_GARNET_HAMMER, Ingredient.ofItems(ModItems.PINK_GARNET))
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+        createHammerRecipe(ModItems.DIAMOND_HAMMER, Ingredient.ofItems(Items.DIAMOND))
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(recipeExporter);
 
         createHelmetRecipe(ModItems.PINK_GARNET_HELMET, Ingredient.ofItems(ModItems.PINK_GARNET))

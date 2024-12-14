@@ -19,9 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET);
                         entries.add(ModItems.RAW_PINK_GARNET);
 
-                        entries.add(ModItems.CHISEL);
-
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
 
                         entries.add(ModItems.STARLIGHT_ASHES);
                         entries.add(ModItems.STARLIGHT_FRAGMENT);
@@ -34,7 +33,12 @@ public class ModItemGroups {
                         entries.add(ModItems.STARLIGHT_PICKAXE);
                         entries.add(ModItems.STARLIGHT_AXE);
 
+                        entries.add(ModItems.STARLIGHT_HAMMER);
+
                         entries.add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
+
+                        entries.add(ModItems.KAUPEN_BOW);
+                        entries.add(ModItems.CHISEL);
 
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
@@ -43,8 +47,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_HOE);
 
                         entries.add(ModItems.PINK_GARNET_HAMMER);
-
-                        entries.add(ModItems.KAUPEN_BOW);
+                        entries.add(ModItems.DIAMOND_HAMMER);
+                        entries.add(ModItems.NETHERITE_HAMMER);
 
                         entries.add(ModItems.PINK_GARNET_HELMET);
                         entries.add(ModItems.PINK_GARNET_CHESTPLATE);
@@ -52,8 +56,6 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_BOOTS);
 
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
-
-                        entries.add(ModItems.CAULIFLOWER_SEEDS);
 
                         entries.add(ModItems.HOELY_BEHEADER);
                     }).build());

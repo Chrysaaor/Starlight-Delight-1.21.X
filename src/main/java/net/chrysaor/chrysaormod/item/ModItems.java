@@ -37,6 +37,7 @@ public class ModItems {
 
     public static final Item STARLIGHT_UPGRADE_SMITHING_TEMPLATE = registerItem("starlight_upgrade_smithing_template", ModTemplateItem.createStarlightUpgrade());
 
+    //Starlight Armor
     public static final Item STARLIGHT_HELMET = registerItem("starlight_helmet",
             new ModArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20)).fireproof()));
@@ -50,14 +51,15 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).fireproof()));
 
+    //Starlight Tools
     public static final Item STARLIGHT_PICKAXE = registerItem("starlight_pickaxe",
             new PickaxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f)).fireproof()));
-
     public static final Item STARLIGHT_AXE = registerItem("starlight_axe",
             new AxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f)).fireproof()));
 
+    //Pink Garnet Tools
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
             new SwordItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 2, -2.4f))));
@@ -74,10 +76,21 @@ public class ModItems {
             new HoeItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 0, -3f))));
 
+    //Hammers
     public static final Item PINK_GARNET_HAMMER = registerItem("pink_garnet_hammer",
             new HammerItem(ModToolMaterials.PINK_GARNET, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.PINK_GARNET, 3, -3.4f))));
+    public static final Item DIAMOND_HAMMER = registerItem("diamond_hammer",
+            new HammerItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.DIAMOND, 3, -3.4f))));
+    public static final Item NETHERITE_HAMMER = registerItem("netherite_hammer",
+            new HammerItem(ToolMaterials.NETHERITE, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 3, -3.4f))));
+    public static final Item STARLIGHT_HAMMER = registerItem("starlight_hammer",
+            new HammerItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 3, -3.4f))));
 
+    //Hoely Beheader
     public static final Item HOELY_BEHEADER = registerItem("hoely_beheader",
             new HoelyBeheaderItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterials.NETHERITE, 2, -2f))
@@ -94,6 +107,7 @@ public class ModItems {
         }
     });
 
+    //Pink Garnet Armor
     public static final Item PINK_GARNET_HELMET = registerItem("pink_garnet_helmet",
         new ModArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                 .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
