@@ -1,28 +1,28 @@
 package net.chrysaor.chrysaormod.mixin;
 
-import net.chrysaor.chrysaormod.ChrysaorMod;
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.render.model.ModelLoader;
 import net.minecraft.client.util.ModelIdentifier;
-import net.minecraft.util.profiler.Profiler;
+import net.minecraft.util.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-
-import java.util.Map;
+import static net.chrysaor.chrysaormod.ChrysaorMod.MOD_ID;
 
 @Mixin(ModelLoader.class)
 public abstract class ModelLoaderMixin {
-
     @Shadow
-    protected abstract void loadItemModel(ModelIdentifier modelId);
-
-    @Inject(method = "<init>", at = @At(value = "INVOKE",
-            target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V",
-            ordinal = 3, shift = At.Shift.AFTER))
-    public void addHoelyBeheader(BlockColors blockColors, Profiler profiler, Map jsonUnbakedModels, Map blockStates, CallbackInfo ci) {
-        this.loadItemModel(new ModelIdentifier(ChrysaorMod.identifier(), "item_3d"));
+    protected abstract void loadItemModel(ModelIdentifier id);
+    @Inject(
+            method = {"<init>"},
+            at = {@At(
+                    value = "INVOKE",
+                    ordinal = 0,
+                    target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V"
+            )}
+    )
+    private void addHoelyBeheader(CallbackInfo info) {
+        this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "hoely_beheader_in_hand")));
     }
 }
