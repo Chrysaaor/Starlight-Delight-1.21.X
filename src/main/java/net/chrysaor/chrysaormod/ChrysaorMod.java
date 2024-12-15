@@ -26,6 +26,9 @@ public class ChrysaorMod implements ModInitializer {
     public static Identifier id(String value) {
 		return Identifier.of(MOD_ID, value);
     }
+	public static Identifier identifier() {
+		return Identifier.of(MOD_ID);
+	}
 
     @Override
 	public void onInitialize() {

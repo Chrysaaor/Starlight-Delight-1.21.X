@@ -6,6 +6,9 @@
 	],
 	"client": [
 		"AbstractClientPlayerEntityMixin",
+		"ItemRendererAccessor",
+		"ItemRendererMixin",
+		"ModelLoaderMixin",
 		"PlayerEntityMixin"
 	],
 	"injectors": {
