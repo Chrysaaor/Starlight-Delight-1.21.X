@@ -21,7 +21,7 @@ public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
     }
 
     public int getBrightness(float tint) {
-        return 15728880;
+        return 15728890;
     }
 
     public void tick() {
