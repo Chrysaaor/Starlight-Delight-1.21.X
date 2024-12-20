@@ -41,11 +41,14 @@
 
   "item.chrysaormod.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
 
+
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
   "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Add Netherite Armor, Weapon, or Tool",
   "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Starlight Fragment",
   "upgrade.chrysaormod.starlight_upgrade": "Starlight Upgrade",
+
+  "item.chrysaormod.mantis_spawn_egg": "Mantis Spawn Egg",
 
 
   "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
@@ -99,5 +102,8 @@
   "tooltip.chrysaormod.hoely_beheader.tooltip1": "This §4occult§r scythe feeds off of",
   "tooltip.chrysaormod.hoely_beheader.tooltip2": "its owner's §4life force§r",
   "tooltip.chrysaormod.hoely_beheader.tooltip3": "in exchange for §benhanced powers§r.",
-  "tooltip.chrysaormod.hoely_beheader.tooltip4": " "
+  "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
+
+
+  "entity.chrysaormod.mantis": "Mantis"
 }

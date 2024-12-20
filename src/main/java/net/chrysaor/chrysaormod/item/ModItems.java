@@ -2,6 +2,7 @@ package net.chrysaor.chrysaormod.item;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.ModBlocks;
+import net.chrysaor.chrysaormod.entity.ModEntities;
 import net.chrysaor.chrysaormod.item.custom.ChiselItem;
 import net.chrysaor.chrysaormod.item.custom.HammerItem;
 import net.chrysaor.chrysaormod.item.custom.HoelyBeheaderItem;
@@ -130,7 +131,8 @@ public class ModItems {
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
-
+    public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
+            new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(ChrysaorMod.MOD_ID, name), item);

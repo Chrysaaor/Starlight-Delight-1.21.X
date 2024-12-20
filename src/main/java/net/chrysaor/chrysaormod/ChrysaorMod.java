@@ -4,6 +4,8 @@ import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.component.ModDataComponentTypes;
 import net.chrysaor.chrysaormod.effect.ModEffects;
 import net.chrysaor.chrysaormod.enchantment.ModEnchantmentEffects;
+import net.chrysaor.chrysaormod.entity.ModEntities;
+import net.chrysaor.chrysaormod.entity.custom.MantisEntity;
 import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
@@ -15,6 +17,7 @@ import net.chrysaor.chrysaormod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,10 +53,13 @@ public class ChrysaorMod implements ModInitializer {
 
 		ModWorldGeneration.generateModWorldGen();
 
+		ModEntities.registerModEntities();
+
 		ModRegistries.registerModFuels();
 		ModRegistries.registerModCropCompostable();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
+		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}
 }

@@ -47,6 +47,8 @@
   "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Fragment d'Étoile",
   "upgrade.chrysaormod.starlight_upgrade": "Amélioration Astrale",
 
+  "item.chrysaormod.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
+
 
   "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
   "block.chrysaormod.raw_pink_garnet_block": "Bloc de Grenat Rose brut",
@@ -99,5 +101,8 @@
   "tooltip.chrysaormod.hoely_beheader.tooltip1": "Cette houe §4occulte§r se nourrit",
   "tooltip.chrysaormod.hoely_beheader.tooltip2": "de la §4force vitale§r de son propriétaire",
   "tooltip.chrysaormod.hoely_beheader.tooltip3": "en contre-partie de §bcapacités accrues§r.",
-  "tooltip.chrysaormod.hoely_beheader.tooltip4": " "
+  "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
+
+
+  "entity.chrysaormod.mantis": "Mante Religieuse"
 }

@@ -12,7 +12,7 @@ public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
         super(world, x, y, z, (double)0.0F, (double)0.0F, (double)0.0F);
         this.spriteProvider = spriteProvider;
         this.maxAge = 4;
-        float f = this.random.nextFloat() * 0.6F + 0.4F;
+        float f = this.alpha;
         this.red = f;
         this.green = f;
         this.blue = f;
@@ -20,8 +20,8 @@ public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
         this.setSpriteForAge(spriteProvider);
     }
 
-    public int getBrightness(float tint) {
-        return 15728890;
+    public int getBrightness(int tint) {
+        return 0;
     }
 
     public void tick() {

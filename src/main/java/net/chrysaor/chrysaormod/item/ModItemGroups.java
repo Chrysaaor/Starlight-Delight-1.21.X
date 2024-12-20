@@ -57,6 +57,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
 
                         entries.add(ModItems.HOELY_BEHEADER);
+
+                        entries.add(ModItems.MANTIS_SPAWN_EGG);
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
