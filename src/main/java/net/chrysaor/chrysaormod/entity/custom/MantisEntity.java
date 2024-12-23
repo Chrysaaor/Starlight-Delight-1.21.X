@@ -4,7 +4,9 @@ import net.chrysaor.chrysaormod.entity.ModEntities;
 import net.chrysaor.chrysaormod.entity.ai.MantisAttackGoal;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.minecraft.entity.AnimationState;
+import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -16,8 +18,12 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.util.Util;
+import net.minecraft.world.LocalDifficulty;
+import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
@@ -31,6 +37,8 @@ public class MantisEntity extends AnimalEntity {
     public final AnimationState attackingAnimationState = new AnimationState();
     public int attackingAnimationCooldown = 0;
 
+    private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
+            DataTracker.registerData(MantisEntity.class, TrackedDataHandlerRegistry.INTEGER);
 
     public MantisEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -56,9 +64,9 @@ public class MantisEntity extends AnimalEntity {
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 18)
-                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 5)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.35);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30);
     }
 
     private void setupAnimationStates() {
@@ -96,6 +104,7 @@ public class MantisEntity extends AnimalEntity {
         super.initDataTracker(builder);
 
         builder.add(ATTACKING, false);
+        builder.add(DATA_ID_TYPE_VARIANT, 0);
 
     }
 
@@ -116,6 +125,42 @@ public class MantisEntity extends AnimalEntity {
     @Nullable
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
+        MantisEntity baby = ModEntities.MANTIS.create(world);
+        MantisVariant variant = Util.getRandom(MantisVariant.values(), this.random);
+        setVariant(variant);
         return ModEntities.MANTIS.create(world);
+    }
+
+    //VARIANT
+    public MantisVariant getVariant() {
+        return MantisVariant.byId(this.getTypeVariant() & 255);
+    }
+
+    private int getTypeVariant() {
+        return this.dataTracker.get(DATA_ID_TYPE_VARIANT);
+    }
+
+    private void setVariant(MantisVariant variant) {
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, variant.getId() & 255);
+    }
+
+    @Override
+    public void writeCustomDataToNbt(NbtCompound nbt) {
+        super.writeCustomDataToNbt(nbt);
+        nbt.putInt("Variant", this.getTypeVariant());
+    }
+
+    @Override
+    public void readCustomDataFromNbt(NbtCompound nbt) {
+        super.readCustomDataFromNbt(nbt);
+        this.dataTracker.set(DATA_ID_TYPE_VARIANT, nbt.getInt("Variant"));
+    }
+
+    @Override
+    public EntityData initialize(ServerWorldAccess world, LocalDifficulty difficulty, SpawnReason spawnReason,
+                                 @Nullable EntityData entityData) {
+        MantisVariant variant = Util.getRandom(MantisVariant.values(), this.random);
+        setVariant(variant);
+        return super.initialize(world, difficulty, spawnReason, entityData);
     }
 }
