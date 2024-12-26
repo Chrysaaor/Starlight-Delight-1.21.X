@@ -26,7 +26,7 @@ public abstract class AbstractClientPlayerEntityMixin extends PlayerEntity {
     private void getFovMultiplierMixin(CallbackInfoReturnable<Float> info, float f) {
         Item item = this.getActiveItem().getItem();
         ItemStack itemStack = this.getActiveItem();
-        if (this.isUsingItem() && itemStack.isOf(ModItems.KAUPEN_BOW)) {
+        if (this.isUsingItem() && itemStack.isOf(ModItems.STARLIGHT_BOW)) {
             int i = this.getItemUseTime();
             float g = (float)i / 20.0f;
             g = g > 1.0f ? 1.0f : g * g;

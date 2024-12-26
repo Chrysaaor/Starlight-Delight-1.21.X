@@ -49,7 +49,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_PICKAXE);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
-                .add(ModItems.PINK_GARNET_SHOVEL);
+                .add(ModItems.PINK_GARNET_SHOVEL)
+                .add(ModItems.STARLIGHT_SHOVEL);
 
         getOrCreateTagBuilder(ItemTags.AXES)
                 .add(ModItems.STARLIGHT_AXE)
@@ -59,7 +60,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_HOE);
 
         getOrCreateTagBuilder(ItemTags.BOW_ENCHANTABLE)
-                .add(ModItems.KAUPEN_BOW);
+                .add(ModItems.STARLIGHT_BOW);
 
 
         //Armors

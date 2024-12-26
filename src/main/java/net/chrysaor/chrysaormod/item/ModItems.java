@@ -59,6 +59,11 @@ public class ModItems {
     public static final Item STARLIGHT_AXE = registerItem("starlight_axe",
             new AxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f)).fireproof()));
+    public static final Item STARLIGHT_SHOVEL = registerItem("starlight_shovel",
+            new ShovelItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1.5F, -3.0f)).fireproof()));
+    public static final Item STARLIGHT_BOW = registerItem("starlight_bow",
+            new BowItem(new Item.Settings().maxDamage(500)));
 
     //Pink Garnet Tools
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",
@@ -124,9 +129,6 @@ public class ModItems {
 
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
         new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
-
-    public static final Item KAUPEN_BOW = registerItem("kaupen_bow",
-        new BowItem(new Item.Settings().maxDamage(500)));
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));

@@ -14,8 +14,11 @@
   "item.chrysaormod.starlight_leggings": "Starlight Leggings",
   "item.chrysaormod.starlight_boots": "Starlight Boots",
 
+  "item.chrysaormod.starlight_bow": "Starlight Bow",
+
   "item.chrysaormod.starlight_pickaxe": "Starlight Pickaxe",
   "item.chrysaormod.starlight_axe": "Starlight Axe",
+  "item.chrysaormod.starlight_shovel": "Starlight Shovel",
 
   "item.chrysaormod.pink_garnet_sword": "Pink Garnet Sword",
   "item.chrysaormod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
@@ -35,11 +38,11 @@
 
   "item.chrysaormod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
 
-  "item.chrysaormod.kaupen_bow": "Kaupen Bow",
-
   "item.chrysaormod.cauliflower_seeds": "Cauliflower Seeds",
 
   "item.chrysaormod.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
+
+  "item.chrysaormod.mantis_spawn_egg": "Mantis Spawn Egg",
 
 
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
@@ -47,8 +50,6 @@
   "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Add Netherite Armor, Weapon, or Tool",
   "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Starlight Fragment",
   "upgrade.chrysaormod.starlight_upgrade": "Starlight Upgrade",
-
-  "item.chrysaormod.mantis_spawn_egg": "Mantis Spawn Egg",
 
 
   "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
@@ -105,5 +106,14 @@
   "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
 
 
-  "entity.chrysaormod.mantis": "Mantis"
+  "entity.chrysaormod.mantis": "Mantis",
+
+
+  "sounds.chrysaormod.chisel_use": "Chisel used",
+
+  "sounds.chrysaormod.magic_block_place": "Magic Block placed",
+  "sounds.chrysaormod.magic_block_break": "Magic Block destroyed",
+  "sounds.chrysaormod.magic_block_hit": "Magic Block hit",
+  "sounds.chrysaormod.magic_block_step": "Something stepped on a Magic Block",
+  "sounds.chrysaormod.magic_block_fall": "Something fell on a Magic Block"
 }
