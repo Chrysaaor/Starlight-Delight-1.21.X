@@ -71,7 +71,7 @@ public class MantisEntity extends AnimalEntity {
 
     private void setupAnimationStates() {
         if (this.idleAnimationCooldown <= 0) {
-            this.idleAnimationCooldown = 40;
+            this.idleAnimationCooldown = 80;
             this.idleAnimationState.start(this.age);
         } else {
             --this.idleAnimationCooldown;
