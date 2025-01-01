@@ -74,7 +74,7 @@ public class MantisEntity extends AnimalEntity {
 
     private void setupAnimationStates() {
         if (this.idleAnimationCooldown <= 0) {
-            this.idleAnimationCooldown = 40;
+            this.idleAnimationCooldown = 80;
             this.idleAnimationState.start(this.age);
         } else {
             --this.idleAnimationCooldown;
@@ -130,8 +130,8 @@ public class MantisEntity extends AnimalEntity {
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         MantisEntity baby = ModEntities.MANTIS.create(world);
         MantisVariant variant = Util.getRandom(MantisVariant.values(), this.random);
-        setVariant(variant);
-        return ModEntities.MANTIS.create(world);
+        baby.setVariant(variant);
+        return baby;
     }
 
     //VARIANT

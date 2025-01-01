@@ -14,8 +14,11 @@
   "item.chrysaormod.starlight_leggings": "Jambières Astrales",
   "item.chrysaormod.starlight_boots": "Bottes Astrales",
 
+  "item.chrysaormod.starlight_bow": "Arc Astral",
+
   "item.chrysaormod.starlight_pickaxe": "Pioche Astrale",
   "item.chrysaormod.starlight_axe": "Hache Astrale",
+  "item.chrysaormod.starlight_shovel": "Pelle Astrale",
 
   "item.chrysaormod.pink_garnet_sword": "Épée en Grenat Rose",
   "item.chrysaormod.pink_garnet_pickaxe": "Pioche en Grenat Rose",
@@ -35,19 +38,17 @@
 
   "item.chrysaormod.pink_garnet_horse_armor": "Armure en Grenat Rose pour cheval",
 
-  "item.chrysaormod.kaupen_bow": "Arc de Kaupen",
-
   "item.chrysaormod.cauliflower_seeds": "Graines de Chou-fleur",
 
   "item.chrysaormod.hoely_beheader": "§4§l◊ Sainte Gui-houe-tine ◊§r",
+
+  "item.chrysaormod.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
 
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
   "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Ajoutez une Armure ou un Outil en Netherite",
   "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Fragment d'Étoile",
   "upgrade.chrysaormod.starlight_upgrade": "Amélioration Astrale",
-
-  "item.chrysaormod.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
 
 
   "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
@@ -104,5 +105,14 @@
   "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
 
 
-  "entity.chrysaormod.mantis": "Mante Religieuse"
+  "entity.chrysaormod.mantis": "Mante Religieuse",
+
+
+  "sounds.chrysaormod.chisel_use": "Burin utilisé",
+
+  "sounds.chrysaormod.magic_block_place": "Bloc Magique posé",
+  "sounds.chrysaormod.magic_block_break": "Bloc Magique détruit",
+  "sounds.chrysaormod.magic_block_hit": "Bloc Magique tapé",
+  "sounds.chrysaormod.magic_block_step": "Quelque chose marche sur un Bloc Magique",
+  "sounds.chrysaormod.magic_block_fall": "Quelque chose est tombé sur un Bloc Magique"
 }

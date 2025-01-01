@@ -12,7 +12,7 @@ public class ModModelPredicates {
         ModelPredicateProviderRegistry.register(ModItems.CHISEL, Identifier.of(ChrysaorMod.MOD_ID, "used"),
                 (stack, world, entity, seed) -> stack.get(ModDataComponentTypes.COORDINATES) != null ? 1f : 0f);
 
-        registerCustomBow(ModItems.KAUPEN_BOW);
+        registerCustomBow(ModItems.STARLIGHT_BOW);
     }
 
     private static void registerCustomBow(Item item) {

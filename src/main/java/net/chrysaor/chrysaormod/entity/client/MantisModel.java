@@ -103,7 +103,7 @@ public class MantisModel<T extends MantisEntity> extends SinglePartEntityModel<T
         this.setHeadAngles(netHeadYaw, headPitch);
 
         this.animateMovement(MantisAnimations.ANIM_MANTIS_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
-        this.updateAnimation(entity.idleAnimationState, MantisAnimations.ANIM_MANTIS_IDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.idleAnimationState, MantisAnimations.ANIM_MANTIS_IDLE, ageInTicks, 0.5f);
         this.updateAnimation(entity.attackingAnimationState, MantisAnimations.ANIM_MANTIS_ATTACK, ageInTicks, 1f);
     }
 
