@@ -169,7 +169,6 @@ public class MantisEntity extends AnimalEntity {
 
     //SOUNDS
 
-
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
         return SoundEvents.ENTITY_PARROT_AMBIENT;
