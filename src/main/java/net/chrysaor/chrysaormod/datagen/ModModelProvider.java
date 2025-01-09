@@ -48,6 +48,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CHAIR);
     }
 
     @Override

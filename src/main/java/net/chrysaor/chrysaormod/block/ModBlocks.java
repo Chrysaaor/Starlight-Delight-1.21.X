@@ -2,6 +2,7 @@ package net.chrysaor.chrysaormod.block;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.custom.CauliflowerCropBlock;
+import net.chrysaor.chrysaormod.block.custom.ChairBlock;
 import net.chrysaor.chrysaormod.block.custom.MagicBlock;
 import net.chrysaor.chrysaormod.block.custom.PinkGarnetLampBlock;
 import net.chrysaor.chrysaormod.sound.ModSounds;
@@ -73,6 +74,8 @@ public class ModBlocks {
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
+    public static final Block CHAIR = registerBlock("chair",
+            new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
 
