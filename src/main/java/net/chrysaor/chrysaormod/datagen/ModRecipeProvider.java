@@ -45,6 +45,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, output, 1).input('#', input).input('S', Items.STICK)
                 .pattern("###").pattern("#S#").pattern(" S ");
     }
+    public static CraftingRecipeJsonBuilder createTomahawkRecipe(ItemConvertible output, Ingredient input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 4).input('#', input).input('S', Items.STICK)
+                .pattern("#  ").pattern("#S ").pattern(" S ");
+    }
 
     public static CraftingRecipeJsonBuilder createHelmetRecipe(ItemConvertible output, Ingredient input) {
         return ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1).input('#', input)
@@ -250,6 +254,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter);
         createHammerRecipe(ModItems.DIAMOND_HAMMER, Ingredient.ofItems(Items.DIAMOND))
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .offerTo(recipeExporter);
+
+        createTomahawkRecipe(ModItems.IRON_TOMAHAWK, Ingredient.ofItems(Items.IRON_INGOT))
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter);
+        createTomahawkRecipe(ModItems.GOLD_TOMAHAWK, Ingredient.ofItems(Items.GOLD_INGOT))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(recipeExporter);
+        createTomahawkRecipe(ModItems.PINK_GARNET_TOMAHAWK, Ingredient.ofItems(ModItems.PINK_GARNET))
+                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
+                .offerTo(recipeExporter);
+        createTomahawkRecipe(ModItems.DIAMOND_TOMAHAWK, Ingredient.ofItems(Items.DIAMOND))
                 .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .offerTo(recipeExporter);
 
