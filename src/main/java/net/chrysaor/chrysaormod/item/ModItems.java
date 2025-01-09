@@ -3,10 +3,7 @@ package net.chrysaor.chrysaormod.item;
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.ModBlocks;
 import net.chrysaor.chrysaormod.entity.ModEntities;
-import net.chrysaor.chrysaormod.item.custom.ChiselItem;
-import net.chrysaor.chrysaormod.item.custom.HammerItem;
-import net.chrysaor.chrysaormod.item.custom.HoelyBeheaderItem;
-import net.chrysaor.chrysaormod.item.custom.ModArmorItem;
+import net.chrysaor.chrysaormod.item.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -129,6 +126,15 @@ public class ModItems {
 
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
         new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
+
+    public static final Item IRON_TOMAHAWK = registerItem("iron_tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
+    public static final Item GOLD_TOMAHAWK = registerItem("gold_tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(32)));
+    public static final Item PINK_GARNET_TOMAHAWK = registerItem("pink_garnet_tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
+    public static final Item DIAMOND_TOMAHAWK = registerItem("diamond_tomahawk",
+            new TomahawkItem(new Item.Settings().maxCount(16)));
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));

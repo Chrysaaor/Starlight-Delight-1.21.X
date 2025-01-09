@@ -44,6 +44,11 @@
 
   "item.chrysaormod.mantis_spawn_egg": "Mantis Spawn Egg",
 
+  "item.chrysaormod.iron_tomahawk": "Iron Tomahawk",
+  "item.chrysaormod.gold_tomahawk": "Gold Tomahawk",
+  "item.chrysaormod.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
+  "item.chrysaormod.diamond_tomahawk": "Diamond Tomahawk",
+
 
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
@@ -109,6 +114,7 @@
 
 
   "entity.chrysaormod.mantis": "Mantis",
+  "entity.chrysaormod.tomahawk": "Tomahawk",
 
 
   "sounds.chrysaormod.chisel_use": "Chisel used",

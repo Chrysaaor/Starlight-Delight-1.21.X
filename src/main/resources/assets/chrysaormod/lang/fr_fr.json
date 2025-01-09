@@ -44,6 +44,12 @@
 
   "item.chrysaormod.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
 
+  "item.chrysaormod.iron_tomahawk": "Tomahawk en Fer",
+  "item.chrysaormod.gold_tomahawk": "Tomahawk en Or",
+  "item.chrysaormod.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
+  "item.chrysaormod.diamond_tomahawk": "Tomahawk en Diamant",
+
+
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
   "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Ajoutez une Armure ou un Outil en Netherite",
@@ -108,6 +114,7 @@
 
 
   "entity.chrysaormod.mantis": "Mante Religieuse",
+  "entity.chrysaormod.tomahawk": "Tomahawk",
 
 
   "sounds.chrysaormod.chisel_use": "Burin utilisé",

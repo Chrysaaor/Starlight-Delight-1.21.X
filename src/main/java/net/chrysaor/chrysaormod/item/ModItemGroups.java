@@ -42,6 +42,11 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHISEL);
 
+                        entries.add(ModItems.IRON_TOMAHAWK);
+                        entries.add(ModItems.GOLD_TOMAHAWK);
+                        entries.add(ModItems.PINK_GARNET_TOMAHAWK);
+                        entries.add(ModItems.DIAMOND_TOMAHAWK);
+
                         entries.add(ModItems.PINK_GARNET_SWORD);
                         entries.add(ModItems.PINK_GARNET_PICKAXE);
                         entries.add(ModItems.PINK_GARNET_SHOVEL);
