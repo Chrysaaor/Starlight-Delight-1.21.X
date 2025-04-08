@@ -1,6 +1,7 @@
 package net.chrysaor.chrysaormod.entity;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
+import net.chrysaor.chrysaormod.entity.custom.GoldTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.entity.custom.IronTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.entity.custom.MantisEntity;
 import net.minecraft.entity.EntityType;
@@ -18,6 +19,11 @@ public class ModEntities {
     public static final EntityType<IronTomahawkProjectileEntity> IRON_TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(ChrysaorMod.MOD_ID, "iron_tomahawk"),
             EntityType.Builder.<IronTomahawkProjectileEntity>create(IronTomahawkProjectileEntity::new, SpawnGroup.MISC)
+                    .dimensions(0.5f, 1.15f).build());
+
+    public static final EntityType<GoldTomahawkProjectileEntity> GOLD_TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ChrysaorMod.MOD_ID, "gold_tomahawk"),
+            EntityType.Builder.<GoldTomahawkProjectileEntity>create(GoldTomahawkProjectileEntity::new, SpawnGroup.MISC)
                     .dimensions(0.5f, 1.15f).build());
 
     public static void registerModEntities() {

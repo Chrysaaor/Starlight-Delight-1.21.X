@@ -1,5 +1,6 @@
 package net.chrysaor.chrysaormod.item.custom;
 
+import net.chrysaor.chrysaormod.entity.custom.GoldTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.entity.custom.IronTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.minecraft.entity.player.PlayerEntity;
@@ -28,7 +29,7 @@ public class TomahawkItem extends Item {
             world.spawnEntity(tomahawk);
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.GOLD_TOMAHAWK) {
-            IronTomahawkProjectileEntity tomahawk = new IronTomahawkProjectileEntity(world, user);
+            GoldTomahawkProjectileEntity tomahawk = new GoldTomahawkProjectileEntity(world, user);
             tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0f);
             world.spawnEntity(tomahawk);
         }

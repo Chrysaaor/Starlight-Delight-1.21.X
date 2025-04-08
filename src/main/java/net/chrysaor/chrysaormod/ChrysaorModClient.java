@@ -2,10 +2,7 @@ package net.chrysaor.chrysaormod;
 
 import net.chrysaor.chrysaormod.block.ModBlockRenderLayerMap;
 import net.chrysaor.chrysaormod.entity.ModEntities;
-import net.chrysaor.chrysaormod.entity.client.IronTomahawkProjectileModel;
-import net.chrysaor.chrysaormod.entity.client.IronTomahawkProjectileRenderer;
-import net.chrysaor.chrysaormod.entity.client.MantisModel;
-import net.chrysaor.chrysaormod.entity.client.MantisRenderer;
+import net.chrysaor.chrysaormod.entity.client.*;
 import net.chrysaor.chrysaormod.particle.ModParticles;
 import net.chrysaor.chrysaormod.particle.custom.HoelyBeheaderSweepParticle;
 import net.chrysaor.chrysaormod.util.ModModelPredicates;
@@ -28,6 +25,8 @@ public class ChrysaorModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(IronTomahawkProjectileModel.TOMAHAWK, IronTomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.IRON_TOMAHAWK, IronTomahawkProjectileRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(GoldTomahawkProjectileModel.TOMAHAWK, GoldTomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.GOLD_TOMAHAWK, GoldTomahawkProjectileRenderer::new);
 
 
         ParticleFactoryRegistry.getInstance()

@@ -35,7 +35,7 @@ public class GoldTomahawkProjectileRenderer extends EntityRenderer<GoldTomahawkP
         } else {
             matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.groundedOffset.getY()));
             matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(entity.groundedOffset.getX()));
-            matrices.translate(0, -1.0f, 0);
+            matrices.translate(0, -0.5f, 0);
         }
 
         VertexConsumer vertexConsumer = ItemRenderer.getDirectItemGlintConsumer(vertexConsumers,

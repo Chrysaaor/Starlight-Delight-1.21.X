@@ -57,23 +57,23 @@ public class IronTomahawkProjectileEntity extends PersistentProjectileEntity {
         super.onBlockHit(blockHitResult);
 
         if (blockHitResult.getSide() == Direction.SOUTH) {
-            groundedOffset = new Vector2f(215f, 180f);
+            groundedOffset = new Vector2f(215f, this.getYaw());
         }
         if (blockHitResult.getSide() == Direction.NORTH) {
-            groundedOffset = new Vector2f(215f, 0f);
+            groundedOffset = new Vector2f(215f, this.getYaw());
         }
         if (blockHitResult.getSide() == Direction.EAST) {
-            groundedOffset = new Vector2f(215f, -90f);
+            groundedOffset = new Vector2f(215f, this.getYaw());
         }
         if (blockHitResult.getSide() == Direction.WEST) {
-            groundedOffset = new Vector2f(215f, 90f);
+            groundedOffset = new Vector2f(215f, this.getYaw());
         }
 
         if (blockHitResult.getSide() == Direction.DOWN) {
-            groundedOffset = new Vector2f(115f, 180f);
+            groundedOffset = new Vector2f((this.getPitch() - 180.0F), this.getYaw());
         }
         if (blockHitResult.getSide() == Direction.UP) {
-            groundedOffset = new Vector2f(285f, 180f);
+            groundedOffset = new Vector2f((this.getPitch() * -1.0F - 90.0F), this.getYaw());
         }
     }
 }
