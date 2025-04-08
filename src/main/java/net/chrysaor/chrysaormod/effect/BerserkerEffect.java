@@ -15,6 +15,7 @@ public class BerserkerEffect extends StatusEffect {
     }
 
 
+
     @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;

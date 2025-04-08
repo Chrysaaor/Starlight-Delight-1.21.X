@@ -1,6 +1,7 @@
 package net.chrysaor.chrysaormod;
 
 import net.chrysaor.chrysaormod.block.ModBlockRenderLayerMap;
+import net.chrysaor.chrysaormod.client.BerserkerHudOverlay;
 import net.chrysaor.chrysaormod.entity.ModEntities;
 import net.chrysaor.chrysaormod.entity.client.*;
 import net.chrysaor.chrysaormod.particle.ModParticles;
@@ -10,6 +11,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
 
 public class ChrysaorModClient implements ClientModInitializer {
 
@@ -27,6 +29,9 @@ public class ChrysaorModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.IRON_TOMAHAWK, IronTomahawkProjectileRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(GoldTomahawkProjectileModel.TOMAHAWK, GoldTomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.GOLD_TOMAHAWK, GoldTomahawkProjectileRenderer::new);
+
+
+        HudRenderCallback.EVENT.register(new BerserkerHudOverlay());
 
 
         ParticleFactoryRegistry.getInstance()
