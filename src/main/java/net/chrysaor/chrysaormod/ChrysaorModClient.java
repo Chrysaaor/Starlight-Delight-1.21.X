@@ -29,6 +29,10 @@ public class ChrysaorModClient implements ClientModInitializer {
         EntityRendererRegistry.register(ModEntities.IRON_TOMAHAWK, IronTomahawkProjectileRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(GoldTomahawkProjectileModel.TOMAHAWK, GoldTomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.GOLD_TOMAHAWK, GoldTomahawkProjectileRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(PinkGarnetTomahawkProjectileModel.TOMAHAWK, PinkGarnetTomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.PINK_GARNET_TOMAHAWK, PinkGarnetTomahawkProjectileRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(DiamondTomahawkProjectileModel.TOMAHAWK, DiamondTomahawkProjectileModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.DIAMOND_TOMAHAWK, DiamondTomahawkProjectileRenderer::new);
 
 
         HudRenderCallback.EVENT.register(new BerserkerHudOverlay());

@@ -13,21 +13,21 @@ import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
 
-public class GoldTomahawkProjectileEntity extends PersistentProjectileEntity {
+public class DiamondTomahawkProjectileEntity extends PersistentProjectileEntity {
     private float rotation;
     public Vector2f groundedOffset;
 
-    public GoldTomahawkProjectileEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
+    public DiamondTomahawkProjectileEntity(EntityType<? extends PersistentProjectileEntity> entityType, World world) {
         super(entityType, world);
     }
 
-    public GoldTomahawkProjectileEntity(World world, PlayerEntity player) {
-        super(ModEntities.GOLD_TOMAHAWK, player, world, new ItemStack(ModItems.GOLD_TOMAHAWK), null);
+    public DiamondTomahawkProjectileEntity(World world, PlayerEntity player) {
+        super(ModEntities.DIAMOND_TOMAHAWK, player, world, new ItemStack(ModItems.DIAMOND_TOMAHAWK), null);
     }
 
     @Override
     protected ItemStack getDefaultItemStack() {
-        return new ItemStack(ModItems.GOLD_TOMAHAWK);
+        return new ItemStack(ModItems.DIAMOND_TOMAHAWK);
     }
 
     public float getRenderingRotation() {
@@ -44,7 +44,7 @@ public class GoldTomahawkProjectileEntity extends PersistentProjectileEntity {
     protected void onEntityHit(EntityHitResult entityHitResult) {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity();
-        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), 1);
+        entity.damage(this.getDamageSources().thrown(this, this.getOwner()), 9);
 
         if (!this.getWorld().isClient()) {
             this.getWorld().sendEntityStatus(this, (byte)3);

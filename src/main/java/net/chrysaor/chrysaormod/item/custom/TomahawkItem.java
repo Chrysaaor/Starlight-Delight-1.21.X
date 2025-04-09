@@ -1,7 +1,9 @@
 package net.chrysaor.chrysaormod.item.custom;
 
+import net.chrysaor.chrysaormod.entity.custom.DiamondTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.entity.custom.GoldTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.entity.custom.IronTomahawkProjectileEntity;
+import net.chrysaor.chrysaormod.entity.custom.PinkGarnetTomahawkProjectileEntity;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -30,17 +32,17 @@ public class TomahawkItem extends Item {
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.GOLD_TOMAHAWK) {
             GoldTomahawkProjectileEntity tomahawk = new GoldTomahawkProjectileEntity(world, user);
-            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0f);
+            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 0f);
             world.spawnEntity(tomahawk);
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.PINK_GARNET_TOMAHAWK) {
-            IronTomahawkProjectileEntity tomahawk = new IronTomahawkProjectileEntity(world, user);
+            PinkGarnetTomahawkProjectileEntity tomahawk = new PinkGarnetTomahawkProjectileEntity(world, user);
             tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0f);
             world.spawnEntity(tomahawk);
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.DIAMOND_TOMAHAWK) {
-            IronTomahawkProjectileEntity tomahawk = new IronTomahawkProjectileEntity(world, user);
-            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.5f, 0f);
+            DiamondTomahawkProjectileEntity tomahawk = new DiamondTomahawkProjectileEntity(world, user);
+            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 1.25f, 0f);
             world.spawnEntity(tomahawk);
         }
 
