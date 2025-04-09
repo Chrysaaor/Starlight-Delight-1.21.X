@@ -1,6 +1,6 @@
-// 1.21	2025-01-09T21:17:49.2391605	Chrysaor Mod/
+// 1.21	2025-04-09T16:06:02.6747852	Chrysaor Mod/
 56aaf455ff77243d59038ff6eeee4585c8972dc9 data\chrysaormod\enchantment\lightning_striker.json
-58fb151eb26f8eb30a3a165df6484280449038a6 data\chrysaormod\worldgen\configured_feature\starlight_ore.json
-4b0acf2b7a706a27d1f817acd7b0a437ccbb7cd5 data\chrysaormod\worldgen\placed_feature\starlight_ore_placed.json
 eb86d4c0bca426e4e3397c583e929fce619465bf data\chrysaormod\worldgen\configured_feature\pink_garnet_ore.json
 9fc9451747313d1b784a3baad502e106d7b11565 data\chrysaormod\worldgen\placed_feature\pink_garnet_ore_placed.json
+4b0acf2b7a706a27d1f817acd7b0a437ccbb7cd5 data\chrysaormod\worldgen\placed_feature\starlight_ore_placed.json
+58fb151eb26f8eb30a3a165df6484280449038a6 data\chrysaormod\worldgen\configured_feature\starlight_ore.json

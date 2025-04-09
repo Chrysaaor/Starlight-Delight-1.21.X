@@ -27,7 +27,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STARLIGHT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STARLIGHT_DEEPSLATE_ORE);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK);
 
         pinkGarnetPool.stairs(ModBlocks.PINK_GARNET_STAIRS);
         pinkGarnetPool.slab(ModBlocks.PINK_GARNET_SLABS);
@@ -49,7 +48,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
 
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CHAIR);
     }
 
     @Override
@@ -58,6 +56,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_PINK_GARNET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SWEET_BERRIES_PIE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHEESE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.HOELY_BEHEADER, Models.HANDHELD);
 

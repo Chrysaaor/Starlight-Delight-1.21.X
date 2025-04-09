@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_magic_block": {
+    "has_sweet_berries": {
       "conditions": {
         "items": [
           {
-            "items": "chrysaormod:magic_block"
+            "items": "minecraft:sweet_berries"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "chrysaormod:chisel"
+        "recipe": "chrysaormod:sweet_berries_pie"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_magic_block"
+      "has_sweet_berries"
     ]
   ],
   "rewards": {
     "recipes": [
-      "chrysaormod:chisel"
+      "chrysaormod:sweet_berries_pie"
     ]
   }
 }

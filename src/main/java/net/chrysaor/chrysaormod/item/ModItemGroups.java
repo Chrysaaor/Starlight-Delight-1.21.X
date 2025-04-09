@@ -40,8 +40,6 @@ public class ModItemGroups {
 
                         entries.add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
 
-                        entries.add(ModItems.CHISEL);
-
                         entries.add(ModItems.IRON_TOMAHAWK);
                         entries.add(ModItems.GOLD_TOMAHAWK);
                         entries.add(ModItems.PINK_GARNET_TOMAHAWK);
@@ -67,6 +65,9 @@ public class ModItemGroups {
                         entries.add(ModItems.HOELY_BEHEADER);
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
+
+                        entries.add(ModItems.SWEET_BERRIES_PIE);
+                        entries.add(ModItems.CHEESE);
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -83,8 +84,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STARLIGHT_ORE);
                         entries.add(ModBlocks.STARLIGHT_DEEPSLATE_ORE);
 
-                        entries.add(ModBlocks.MAGIC_BLOCK);
-
                         entries.add(ModBlocks.PINK_GARNET_STAIRS);
                         entries.add(ModBlocks.PINK_GARNET_SLABS);
 
@@ -99,8 +98,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
-
-                        entries.add(ModBlocks.CHAIR);
                     }).build());
 
 

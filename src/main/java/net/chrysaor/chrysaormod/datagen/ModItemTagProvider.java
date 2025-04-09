@@ -19,13 +19,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
-        getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(ModItems.PINK_GARNET)
-                .add(ModItems.STARLIGHT_ASHES)
-                .add(Items.GOLD_BLOCK);
-
-
-
         getOrCreateTagBuilder(ItemTags.MINING_ENCHANTABLE)
                 .add(ModItems.PINK_GARNET_HAMMER)
                 .add(ModItems.DIAMOND_HAMMER)

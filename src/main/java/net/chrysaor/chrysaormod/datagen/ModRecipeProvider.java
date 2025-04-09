@@ -8,7 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
@@ -66,6 +66,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output, 1).input('#', input)
                 .pattern("# #").pattern("# #");
     }
+    public static void offerSmoking(RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, String group) {
+        offerMultipleOptions(exporter, RecipeSerializer.SMOKING, SmokingRecipe::new, inputs, category, output, experience, cookingTime, group, "_from_smoking");
+    }
 
 
     @Override
@@ -78,6 +81,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE)
+                .input(Ingredient.ofItems(Items.MILK_BUCKET))
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "cheese"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEET_BERRIES_PIE)
+                .input(Ingredient.ofItems(Items.SWEET_BERRIES))
+                .input(Ingredient.ofItems(Items.SUGAR))
+                .input(Ingredient.ofItems(Items.EGG))
+                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "sweet_berries_pie"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
@@ -86,15 +102,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_PINK_GARNET), conditionsFromItem(ModItems.RAW_PINK_GARNET))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "raw_pink_garnet_block_from_raw_pink_garnet"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK)
-                .pattern("RDR")
-                .pattern("DED")
-                .pattern("RDR")
-                .input('R', ModItems.PINK_GARNET)
-                .input('D', Items.DIAMOND)
-                .input('E', Items.ENCHANTED_BOOK)
-                .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
-                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "magic_block"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.PINK_GARNET_LAMP)
                 .pattern(" R ")
@@ -167,16 +174,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "netherite_hammer_smithing"));
 
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.CHISEL)
-                .pattern("  G")
-                .pattern(" M ")
-                .pattern("S  ")
-                .input('G', ModItems.PINK_GARNET)
-                .input('M', ModBlocks.MAGIC_BLOCK)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModBlocks.MAGIC_BLOCK), conditionsFromItem(ModBlocks.MAGIC_BLOCK))
-                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "chisel"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.HOELY_BEHEADER)
                 .pattern("GAG")

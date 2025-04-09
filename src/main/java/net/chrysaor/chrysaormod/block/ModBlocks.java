@@ -2,10 +2,7 @@ package net.chrysaor.chrysaormod.block;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.custom.CauliflowerCropBlock;
-import net.chrysaor.chrysaormod.block.custom.ChairBlock;
-import net.chrysaor.chrysaormod.block.custom.MagicBlock;
 import net.chrysaor.chrysaormod.block.custom.PinkGarnetLampBlock;
-import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -40,9 +37,6 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
-    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
-            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(ModSounds.MAGIC_BLOCK_SOUNDS)));
-
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
             new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
@@ -73,9 +67,6 @@ public class ModBlocks {
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
-
-    public static final Block CHAIR = registerBlock("chair",
-            new ChairBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
 

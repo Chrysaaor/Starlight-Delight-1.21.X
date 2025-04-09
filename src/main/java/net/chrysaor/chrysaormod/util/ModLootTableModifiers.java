@@ -60,7 +60,7 @@ public class ModLootTableModifiers {
             if (source.isBuiltin() && TALL_GRASS_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1.0f))
-                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.075f))
                         .with(ItemEntry.builder(ModItems.CAULIFLOWER_SEEDS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -69,7 +69,7 @@ public class ModLootTableModifiers {
             if (source.isBuiltin() && SHORT_GRASS_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1.0f))
-                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.075f))
                         .with(ItemEntry.builder(ModItems.CAULIFLOWER_SEEDS))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 

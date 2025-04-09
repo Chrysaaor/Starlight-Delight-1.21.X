@@ -1,7 +1,6 @@
 {
   "item.chrysaormod.pink_garnet": "Pink Garnet",
   "item.chrysaormod.raw_pink_garnet": "Raw Pink Garnet",
-  "item.chrysaormod.chisel": "Chisel",
   "item.chrysaormod.cauliflower": "Cauliflower",
 
   "item.chrysaormod.starlight_ashes": "Starlight Ashes",
@@ -49,6 +48,9 @@
   "item.chrysaormod.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
   "item.chrysaormod.diamond_tomahawk": "Diamond Tomahawk",
 
+  "item.chrysaormod.sweet_berries_pie": "Sweet Berries Pie",
+  "item.chrysaormod.cheese": "Cheese",
+
 
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
@@ -79,7 +81,6 @@
   "block.chrysaormod.pink_garnet_door": "Pink Garnet Door",
   "block.chrysaormod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
-  "block.chrysaormod.magic_block": "Magic Block",
 
   "block.chrysaormod.pink_garnet_lamp": "Pink Garnet Lamp",
 
@@ -99,11 +100,6 @@
   "itemgroup.chrysaormod.chrysaor_blocks": "Chrysaor's Blocks",
 
 
-  "tooltip.chrysaormod.magic_block.tooltip": "This block is very, very §dMAGICAL§r",
-
-  "tooltip.chrysaormod.chisel.shift_down": "This item §bchisels§r blocks into Bricks!",
-  "tooltip.chrysaormod.chisel": "Press §6Shift§r for more information!",
-
   "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!",
 
   "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
@@ -114,14 +110,7 @@
 
 
   "entity.chrysaormod.mantis": "Mantis",
-  "entity.chrysaormod.tomahawk": "Tomahawk",
+  "entity.chrysaormod.tomahawk": "Tomahawk"
 
 
-  "sounds.chrysaormod.chisel_use": "Chisel used",
-
-  "sounds.chrysaormod.magic_block_place": "Magic Block placed",
-  "sounds.chrysaormod.magic_block_break": "Magic Block destroyed",
-  "sounds.chrysaormod.magic_block_hit": "Magic Block hit",
-  "sounds.chrysaormod.magic_block_step": "Something stepped on a Magic Block",
-  "sounds.chrysaormod.magic_block_fall": "Something fell on a Magic Block"
 }

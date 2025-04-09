@@ -1,7 +1,6 @@
 {
   "item.chrysaormod.pink_garnet": "Grenat Rose",
   "item.chrysaormod.raw_pink_garnet": "Grenat Rose Brut",
-  "item.chrysaormod.chisel": "Burin",
   "item.chrysaormod.cauliflower": "Chou-fleur",
 
   "item.chrysaormod.starlight_ashes": "Cendres Stellaires",
@@ -49,6 +48,9 @@
   "item.chrysaormod.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
   "item.chrysaormod.diamond_tomahawk": "Tomahawk en Diamant",
 
+  "item.chrysaormod.sweet_berries_pie": "Tarte aux Baies Sucrées",
+  "item.chrysaormod.cheese": "Fromage",
+
 
   "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
   "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
@@ -79,8 +81,6 @@
   "block.chrysaormod.pink_garnet_door": "Porte en Grenat Rose",
   "block.chrysaormod.pink_garnet_trapdoor": "Trappe en Grenat Rose",
 
-  "block.chrysaormod.magic_block": "Bloc Magique",
-
   "block.chrysaormod.pink_garnet_lamp": "Lampe en Grenat Rose",
 
   "block.chrysaormod.cauliflower_crop": "Pousse de Chou-fleur",
@@ -99,11 +99,6 @@
   "itemgroup.chrysaormod.chrysaor_blocks": "Blocs de Chrysaor",
 
 
-  "tooltip.chrysaormod.magic_block.tooltip": "Ce bloc est très, très §dMAGIQUE§r",
-
-  "tooltip.chrysaormod.chisel.shift_down": "Cet item §btaille§r les blocs en briques!",
-  "tooltip.chrysaormod.chisel": "Appuie sur §6Maj Gauche§r pour plus d'informations!",
-
   "tooltip.chrysaormod.cauliflower.tooltip": "C'est délicieux!",
 
   "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
@@ -114,14 +109,5 @@
 
 
   "entity.chrysaormod.mantis": "Mante Religieuse",
-  "entity.chrysaormod.tomahawk": "Tomahawk",
-
-
-  "sounds.chrysaormod.chisel_use": "Burin utilisé",
-
-  "sounds.chrysaormod.magic_block_place": "Bloc Magique posé",
-  "sounds.chrysaormod.magic_block_break": "Bloc Magique détruit",
-  "sounds.chrysaormod.magic_block_hit": "Bloc Magique tapé",
-  "sounds.chrysaormod.magic_block_step": "Quelque chose marche sur un Bloc Magique",
-  "sounds.chrysaormod.magic_block_fall": "Quelque chose est tombé sur un Bloc Magique"
+  "entity.chrysaormod.tomahawk": "Tomahawk"
 }
