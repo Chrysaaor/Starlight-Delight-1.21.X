@@ -2,10 +2,8 @@ package net.chrysaor.chrysaormod.datagen;
 
 
 import net.chrysaor.chrysaormod.item.ModItems;
-import net.chrysaor.chrysaormod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 

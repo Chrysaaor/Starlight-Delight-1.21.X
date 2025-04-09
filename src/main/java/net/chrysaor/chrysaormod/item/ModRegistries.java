@@ -11,6 +11,7 @@ public class ModRegistries {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
         registry.add(ModItems.STARLIGHT_ASHES, 3200);
+        registry.add(ModItems.STARLIGHT_FRAGMENT, 16000);
     }
 
     public static void registerModCropCompostable() {
