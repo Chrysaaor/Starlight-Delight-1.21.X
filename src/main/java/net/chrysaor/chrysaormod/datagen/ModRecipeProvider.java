@@ -162,6 +162,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_axe_smithing"));
 
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_SHOVEL), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.TOOLS, ModItems.STARLIGHT_SHOVEL)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_shovel_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_SWORD), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.COMBAT, ModItems.STARLIGHT_SWORD)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_sword_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(Items.BOW), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.COMBAT, ModItems.STARLIGHT_BOW)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_bow_smithing"));
+
 
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),

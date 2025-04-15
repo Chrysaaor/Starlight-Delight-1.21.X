@@ -33,7 +33,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         //Tools
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.HOELY_BEHEADER)
-                .add(ModItems.PINK_GARNET_SWORD);
+                .add(ModItems.PINK_GARNET_SWORD)
+                .add(ModItems.STARLIGHT_SWORD);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.STARLIGHT_PICKAXE)

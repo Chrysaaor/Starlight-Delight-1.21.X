@@ -68,6 +68,9 @@ public class ModItems {
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1.5F, -3.0f)).fireproof()));
     public static final Item STARLIGHT_BOW = registerItem("starlight_bow",
             new BowItem(new Item.Settings().maxDamage(600).fireproof()));
+    public static final Item STARLIGHT_SWORD = registerItem("starlight_sword",
+            new StarlightSwordItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(StarlightSwordItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 3, -2.2F)).fireproof()));
 
     //Pink Garnet Tools
     public static final Item PINK_GARNET_SWORD = registerItem("pink_garnet_sword",

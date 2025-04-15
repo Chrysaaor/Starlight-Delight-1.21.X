@@ -14,6 +14,11 @@ public class ModEntities {
             EntityType.Builder.create(MantisEntity::new, SpawnGroup.CREATURE)
                     .dimensions(2, 2.5f).build());
 
+    public static final EntityType<StarlightSwordProjectileEntity> STARLIGHT_SWORD = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(ChrysaorMod.MOD_ID, "starlight_sword"),
+            EntityType.Builder.<StarlightSwordProjectileEntity>create(StarlightSwordProjectileEntity::new, SpawnGroup.MISC)
+                    .dimensions(1.0f, 1.0f).build());
+
     public static final EntityType<IronTomahawkProjectileEntity> IRON_TOMAHAWK = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(ChrysaorMod.MOD_ID, "iron_tomahawk"),
             EntityType.Builder.<IronTomahawkProjectileEntity>create(IronTomahawkProjectileEntity::new, SpawnGroup.MISC)

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "chrysaormod:starlight_fragment"
+  },
+  "base": {
+    "item": "minecraft:netherite_shovel"
+  },
+  "result": {
+    "count": 1,
+    "id": "chrysaormod:starlight_shovel"
+  },
+  "template": {
+    "item": "chrysaormod:starlight_upgrade_smithing_template"
+  }
+}
