@@ -71,7 +71,7 @@ public class StarlightSwordProjectileEntity extends ProjectileEntity {
                         }
                     }
                 }
-                this.playSound(SoundEvents.ENTITY_ARROW_HIT, 0.8F, 0.9F + 0.6F * this.random.nextFloat());
+                this.playSound(SoundEvents.BLOCK_AMETHYST_CLUSTER_BREAK, 0.8F, 0.9F + 0.6F * this.random.nextFloat());
                 this.getWorld().sendEntityStatus(this, (byte)100);
                 this.discard();
             } else {
@@ -84,19 +84,21 @@ public class StarlightSwordProjectileEntity extends ProjectileEntity {
     protected void onBlockHit(BlockHitResult blockHitResult) {
         super.onBlockHit(blockHitResult);
         if (!this.isRemoved()) {
-            this.getWorld().playSound((PlayerEntity) null, this.getX(), this.getY(), this.getZ(), SoundEvents.ENTITY_ARROW_HIT, SoundCategory.PLAYERS, 0.8F, 0.9F + 0.6F * this.random.nextFloat());
+            this.getWorld().playSound((PlayerEntity) null, this.getX(), this.getY(), this.getZ(), SoundEvents.BLOCK_AMETHYST_CLUSTER_BREAK, SoundCategory.PLAYERS, 0.5F, 0.9F + 0.6F * this.random.nextFloat());
             this.getWorld().sendEntityStatus(this, (byte)100);
             this.discard();
         }
 
-    }public void setVelocity(double x, double y, double z, float speed, float divergence) {
+    }
+
+    public void setVelocity(double x, double y, double z, float speed, float divergence) {
         Vec3d vec3d = (new Vec3d(x, y, z)).normalize().add(this.random.nextTriangular((double)0.0F, 0.0172275 * (double)divergence), this.random.nextTriangular((double)0.0F, 0.0172275 * (double)divergence), this.random.nextTriangular((double)0.0F, 0.0172275 * (double)divergence)).multiply((double)speed);
         this.setVelocity(vec3d);
     }
 
     public void tick() {
         super.tick();
-        if (this.age > 6000) {
+        if (this.age > 300) {
             this.discard();
         }
 
@@ -166,7 +168,7 @@ public class StarlightSwordProjectileEntity extends ProjectileEntity {
             if (ItemStack.areEqual(player.getMainHandStack(), this.weaponStack)) {
                 if (this.getVelocity().equals(Vec3d.ZERO)) {
                     if (player.handSwingTicks == -1) {
-                        this.playSound(SoundEvents.ENTITY_WIND_CHARGE_THROW, 0.5F, (float)((double)1.0F + this.random.nextGaussian() / (double)10.0F));
+                        this.playSound(SoundEvents.ENTITY_ALLAY_ITEM_THROWN, 1.0F, (float)((double)1.0F + this.random.nextGaussian() / (double)10.0F));
                         this.setVelocity(player, this.getPitch(), this.getYaw(), 0.0F, 1.0F, 0.0F);
                     }
                 } else {

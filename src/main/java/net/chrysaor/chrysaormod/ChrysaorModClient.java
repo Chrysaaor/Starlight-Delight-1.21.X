@@ -28,6 +28,8 @@ public class ChrysaorModClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(StarlightSwordProjectileModel.STARLIGHT_SWORD, StarlightSwordProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.STARLIGHT_SWORD, StarlightSwordProjectileRenderer::new);
 
+
+
         EntityModelLayerRegistry.registerModelLayer(IronTomahawkProjectileModel.TOMAHAWK, IronTomahawkProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.IRON_TOMAHAWK, IronTomahawkProjectileRenderer::new);
         EntityModelLayerRegistry.registerModelLayer(GoldTomahawkProjectileModel.TOMAHAWK, GoldTomahawkProjectileModel::getTexturedModelData);

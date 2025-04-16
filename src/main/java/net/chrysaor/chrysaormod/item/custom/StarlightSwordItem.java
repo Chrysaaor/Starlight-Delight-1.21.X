@@ -25,7 +25,7 @@ public class StarlightSwordItem extends SwordItem {
     public Text getName(ItemStack stack) {
         Text var3 = super.getName(stack);
         if (var3 instanceof MutableText mutableText) {
-            return mutableText.withColor(6260173);
+            return mutableText.withColor(16762407);
         } else {
             return super.getName(stack);
         }
@@ -40,7 +40,7 @@ public class StarlightSwordItem extends SwordItem {
         starlightSwordProjectileEntity.setOwner(user);
         starlightSwordProjectileEntity.weaponStack = user.getStackInHand(hand);
         world.spawnEntity(starlightSwordProjectileEntity);
-        user.playSound(SoundEvents.BLOCK_BEACON_POWER_SELECT, 1.0F, (float)((double)1.0F + user.getRandom().nextGaussian() / (double)10.0F));
+        user.playSound(SoundEvents.BLOCK_BEACON_POWER_SELECT, 0.05F, (float)((double)2.5F + user.getRandom().nextGaussian() / (double)10.0F));
         if (!user.isCreative()) {
             user.getItemCooldownManager().set(user.getStackInHand(hand).getItem(), 40);
         }

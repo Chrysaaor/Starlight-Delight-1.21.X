@@ -38,36 +38,36 @@ public class ModItems {
 
     //
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
-    public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new Item(new Item.Settings().fireproof()));
+    public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new StarlightFragmentItem(new Item.Settings().fireproof()));
 
     public static final Item STARLIGHT_UPGRADE_SMITHING_TEMPLATE = registerItem("starlight_upgrade_smithing_template", ModTemplateItem.createStarlightUpgrade());
 
     //Starlight Armor
     public static final Item STARLIGHT_HELMET = registerItem("starlight_helmet",
-            new ModArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new StarlightArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_CHESTPLATE = registerItem("starlight_chestplate",
-            new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new StarlightArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_LEGGINGS = registerItem("starlight_leggings",
-            new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new StarlightArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(20)).fireproof()));
     public static final Item STARLIGHT_BOOTS = registerItem("starlight_boots",
-            new ArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+            new StarlightArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).fireproof()));
 
     //Starlight Tools
     public static final Item STARLIGHT_PICKAXE = registerItem("starlight_pickaxe",
-            new PickaxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f)).fireproof()));
+            new StarlightPickaxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(StarlightPickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f)).fireproof()));
     public static final Item STARLIGHT_AXE = registerItem("starlight_axe",
-            new AxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f)).fireproof()));
+            new StarlightAxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(StarlightAxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 6, -3.2f)).fireproof()));
     public static final Item STARLIGHT_SHOVEL = registerItem("starlight_shovel",
-            new ShovelItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1.5F, -3.0f)).fireproof()));
+            new StarlightShovelItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(StarlightShovelItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1.5F, -3.0f)).fireproof()));
     public static final Item STARLIGHT_BOW = registerItem("starlight_bow",
-            new BowItem(new Item.Settings().maxDamage(600).fireproof()));
+            new StarlightBowItem(new Item.Settings().maxDamage(600).fireproof()));
     public static final Item STARLIGHT_SWORD = registerItem("starlight_sword",
             new StarlightSwordItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(StarlightSwordItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 3, -2.2F)).fireproof()));
@@ -100,7 +100,7 @@ public class ModItems {
             new HammerItem(ToolMaterials.NETHERITE, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterials.NETHERITE, 3, -3.4f))));
     public static final Item STARLIGHT_HAMMER = registerItem("starlight_hammer",
-            new HammerItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+            new StarlightHammerItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 3, -3.4f))));
 
     //Hoely Beheader

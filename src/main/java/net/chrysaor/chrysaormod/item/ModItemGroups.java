@@ -30,9 +30,9 @@ public class ModItemGroups {
                         entries.add(ModItems.STARLIGHT_LEGGINGS);
                         entries.add(ModItems.STARLIGHT_BOOTS);
 
-                        entries.add(ModItems.STARLIGHT_BOW);
-
                         entries.add(ModItems.STARLIGHT_SWORD);
+
+                        entries.add(ModItems.STARLIGHT_BOW);
 
                         entries.add(ModItems.STARLIGHT_PICKAXE);
                         entries.add(ModItems.STARLIGHT_AXE);

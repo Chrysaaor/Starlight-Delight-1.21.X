@@ -23,10 +23,10 @@ public class StarlightSwordProjectileRenderer extends EntityRenderer<StarlightSw
     @Override
     public void render(StarlightSwordProjectileEntity entity, float yaw, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light) {
         matrices.push();
-        matrices.translate((double)0.0F, 0.3, (double)0.0F);
+        matrices.translate((double)0.0F, 0.5, (double)0.0F);
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(-entity.prevYaw + 90.0F));
-        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(entity.prevPitch + 90.0F));
-        matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.age * 5.0F));
+        matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(entity.prevPitch));
+        matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(entity.age * 5.0F));
         matrices.multiply(RotationAxis.POSITIVE_Z.rotationDegrees(-45.0F));
 
         VertexConsumer vertexConsumer = ItemRenderer.getDirectItemGlintConsumer(vertexConsumers,

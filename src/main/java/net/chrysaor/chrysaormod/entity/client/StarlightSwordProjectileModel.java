@@ -14,23 +14,30 @@ public class StarlightSwordProjectileModel extends EntityModel<StarlightSwordPro
     private final ModelPart lightSword;
 
     public StarlightSwordProjectileModel(ModelPart root){
-        this.lightSword = root.getChild("light_sword");
+        this.lightSword = root.getChild("lightSword");
     }
 
     public static TexturedModelData getTexturedModelData() {
         ModelData modelData = new ModelData();
         ModelPartData modelPartData = modelData.getRoot();
-        ModelPartData tomahawk = modelPartData.addChild("light_sword", ModelPartBuilder.create(), ModelTransform.pivot(0.0F, 16.5F, 0.0F));
-
-        ModelPartData cube_r1 = tomahawk.addChild("cube_r1", ModelPartBuilder.create().uv(8, 7).cuboid(1.5F, 2.5F, -0.5F, 1.0F, 1.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.0F, -4.0F, 0.0F, -1.5708F, 0.0F));
-
-        ModelPartData cube_r2 = tomahawk.addChild("cube_r2", ModelPartBuilder.create().uv(7, 9).cuboid(0.5F, -1.5F, -0.5F, 2.0F, 5.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.0F, -5.0F, 0.0F, -1.5708F, 0.0F));
-
-        ModelPartData cube_r3 = tomahawk.addChild("cube_r3", ModelPartBuilder.create().uv(3, 10).cuboid(-2.5F, -1.5F, -0.5F, 1.0F, 4.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.0F, 5.0F, 0.0F, -1.5708F, 0.0F));
-
-        ModelPartData cube_r4 = tomahawk.addChild("cube_r4", ModelPartBuilder.create().uv(1, 4).cuboid(-2.5F, -1.5F, 0.0F, 5.0F, 3.0F, 0.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -7.0F, 0.0F, 0.0F, -1.5708F, 0.0F));
-
-        ModelPartData cube_r5 = tomahawk.addChild("cube_r5", ModelPartBuilder.create().uv(18, 1).cuboid(-0.5F, -9.0F, -0.5F, 1.0F, 18.0F, 1.0F, new Dilation(0.0F)), ModelTransform.of(0.0F, -1.5F, 0.0F, 0.0F, -0.7854F, 0.0F));
+        ModelPartData lightSword = modelPartData.addChild("lightSword", ModelPartBuilder.create().uv(10, 4).cuboid(4.0F, -4.0F, -0.5F, 2.0F, 2.0F, 1.0F, new Dilation(0.0F))
+                .uv(8, 12).cuboid(3.0F, -5.0F, -0.5F, 2.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(12, 14).cuboid(3.0F, -4.0F, -0.5F, 1.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(14, 0).cuboid(2.0F, -6.0F, -0.5F, 2.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(0, 15).cuboid(2.0F, -5.0F, -0.5F, 1.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(0, 5).cuboid(1.0F, -9.0F, -0.5F, 2.0F, 3.0F, 1.0F, new Dilation(0.0F))
+                .uv(14, 7).cuboid(3.0F, -10.0F, -0.5F, 1.0F, 3.0F, 1.0F, new Dilation(0.0F))
+                .uv(14, 11).cuboid(4.0F, -10.0F, -0.5F, 1.0F, 2.0F, 1.0F, new Dilation(0.0F))
+                .uv(6, 0).cuboid(-1.0F, -6.0F, -0.5F, 3.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(6, 2).cuboid(-2.0F, -5.0F, -0.5F, 3.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(14, 2).cuboid(-2.0F, -4.0F, -0.5F, 2.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(0, 0).cuboid(-1.0F, -10.0F, -0.5F, 2.0F, 4.0F, 1.0F, new Dilation(0.0F))
+                .uv(6, 4).cuboid(-2.0F, -12.0F, -0.5F, 1.0F, 5.0F, 1.0F, new Dilation(0.0F))
+                .uv(4, 16).cuboid(-1.0F, -11.0F, -0.5F, 1.0F, 1.0F, 1.0F, new Dilation(0.0F))
+                .uv(0, 9).cuboid(-3.0F, -13.0F, -0.5F, 1.0F, 5.0F, 1.0F, new Dilation(0.0F))
+                .uv(4, 10).cuboid(-4.0F, -14.0F, -0.5F, 1.0F, 5.0F, 1.0F, new Dilation(0.0F))
+                .uv(10, 7).cuboid(-5.0F, -14.0F, -0.5F, 1.0F, 4.0F, 1.0F, new Dilation(0.0F))
+                .uv(8, 14).cuboid(-6.0F, -14.0F, -0.5F, 1.0F, 3.0F, 1.0F, new Dilation(0.0F)), ModelTransform.pivot(0.0F, 8.0F, 0.0F));
         return TexturedModelData.of(modelData, 32, 32);
     }
 
