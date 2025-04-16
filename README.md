@@ -1,4 +1,4 @@
-# Chrysaor's Mod  
+# Starlight & Delight
   
 Voici le mod via lequel j'apprends comment modder minecraft :)  
 Des bisous et merci à Kaupenjoe qui fait de très bonnes vidéos tuto.  
