@@ -57,6 +57,9 @@ public class ModItems {
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).fireproof()));
 
     //Starlight Tools
+    public static final Item STARLIGHT_HOE = registerItem("starlight_hoe",
+            new StarlightHoeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
+                    .attributeModifiers(StarlightHoeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, -4.0F, 0.0F)).fireproof()));
     public static final Item STARLIGHT_PICKAXE = registerItem("starlight_pickaxe",
             new StarlightPickaxeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(StarlightPickaxeItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1, -2.8f)).fireproof()));

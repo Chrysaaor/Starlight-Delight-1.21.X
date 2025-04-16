@@ -16,12 +16,6 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STARLIGHT_FRAGMENT))
                     .displayName(Text.translatable("itemgroup.chrysaormod.chrysaor_items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.PINK_GARNET);
-                        entries.add(ModItems.RAW_PINK_GARNET);
-
-                        entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.CAULIFLOWER_SEEDS);
-
                         entries.add(ModItems.STARLIGHT_ASHES);
                         entries.add(ModItems.STARLIGHT_FRAGMENT);
 
@@ -37,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STARLIGHT_PICKAXE);
                         entries.add(ModItems.STARLIGHT_AXE);
                         entries.add(ModItems.STARLIGHT_SHOVEL);
+                        entries.add(ModItems.STARLIGHT_HOE);
 
                         entries.add(ModItems.STARLIGHT_HAMMER);
 
@@ -47,15 +42,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PINK_GARNET_TOMAHAWK);
                         entries.add(ModItems.DIAMOND_TOMAHAWK);
 
-                        entries.add(ModItems.PINK_GARNET_SWORD);
-                        entries.add(ModItems.PINK_GARNET_PICKAXE);
-                        entries.add(ModItems.PINK_GARNET_SHOVEL);
-                        entries.add(ModItems.PINK_GARNET_AXE);
-                        entries.add(ModItems.PINK_GARNET_HOE);
-
-                        entries.add(ModItems.PINK_GARNET_HAMMER);
-                        entries.add(ModItems.DIAMOND_HAMMER);
-                        entries.add(ModItems.NETHERITE_HAMMER);
+                        entries.add(ModItems.PINK_GARNET);
+                        entries.add(ModItems.RAW_PINK_GARNET);
 
                         entries.add(ModItems.PINK_GARNET_HELMET);
                         entries.add(ModItems.PINK_GARNET_CHESTPLATE);
@@ -64,12 +52,24 @@ public class ModItemGroups {
 
                         entries.add(ModItems.PINK_GARNET_HORSE_ARMOR);
 
+                        entries.add(ModItems.PINK_GARNET_SWORD);
+                        entries.add(ModItems.PINK_GARNET_PICKAXE);
+                        entries.add(ModItems.PINK_GARNET_AXE);
+                        entries.add(ModItems.PINK_GARNET_SHOVEL);
+                        entries.add(ModItems.PINK_GARNET_HOE);
+
+                        entries.add(ModItems.PINK_GARNET_HAMMER);
+                        entries.add(ModItems.DIAMOND_HAMMER);
+                        entries.add(ModItems.NETHERITE_HAMMER);
+
                         entries.add(ModItems.HOELY_BEHEADER);
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
 
                         entries.add(ModItems.SWEET_BERRIES_PIE);
                         entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CAULIFLOWER_SEEDS);
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

@@ -177,6 +177,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_bow_smithing"));
 
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),
+                Ingredient.ofItems(Items.NETHERITE_HOE), Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT), RecipeCategory.TOOLS, ModItems.STARLIGHT_HOE)
+                .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
+                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "starlight_hoe_smithing"));
+
 
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE),

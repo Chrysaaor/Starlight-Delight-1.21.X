@@ -13,6 +13,7 @@ import net.chrysaor.chrysaormod.particle.ModParticles;
 import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.chrysaor.chrysaormod.util.HammerUsageEvent;
 import net.chrysaor.chrysaormod.util.ModLootTableModifiers;
+import net.chrysaor.chrysaormod.util.StarlightHoeUsageEvent;
 import net.chrysaor.chrysaormod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -59,6 +60,7 @@ public class ChrysaorMod implements ModInitializer {
 		ModRegistries.registerModCropCompostable();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
+		PlayerBlockBreakEvents.BEFORE.register(new StarlightHoeUsageEvent());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
 	}

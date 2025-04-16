@@ -1,4 +1,4 @@
-// 1.21	2025-04-15T16:47:54.974426	Chrysaor Mod/Recipes
+// 1.21	2025-04-16T19:49:53.7773686	Chrysaor Mod/Recipes
 22a95a68ce7f9a88902c6daf3cbbaca04063b625 data\chrysaormod\advancement\recipes\combat\starlight_sword_smithing.json
 0a3f0da5156559a9159e394afaa8117e9e55f026 data\chrysaormod\recipe\pink_garnet_shovel.json
 b66b55058a05bd0e6f404ebfa2153349d30006b0 data\chrysaormod\advancement\recipes\combat\pink_garnet_sword.json
@@ -18,6 +18,7 @@ ca1daea1f7f2e68745d57e1dd6d70c6a5bdc413e data\chrysaormod\advancement\recipes\mi
 1d17975e65f696e623aa10e3b37e87e80271067d data\chrysaormod\advancement\recipes\combat\starlight_leggings_smithing.json
 fe5cd71817dae9a811a310cd4321eb2c4c1891f4 data\chrysaormod\recipe\pink_garnet_wall.json
 945f52011a28701baf02e149542b194224abc282 data\chrysaormod\advancement\recipes\redstone\pink_garnet_door.json
+3de67e90edc9378d54bea20dfdee42bd10e771ca data\chrysaormod\advancement\recipes\tools\starlight_hoe_smithing.json
 f026b410e16748f43aafe8cc725a74d8ad398f00 data\chrysaormod\recipe\pink_garnet_trapdoor.json
 5faa67e9b7c585528bbdb28702abb15971cef4a5 data\chrysaormod\recipe\pink_garnet_lamp.json
 bcca9f389dd7b896dd844145fe4ecbbf431b1291 data\chrysaormod\advancement\recipes\redstone\pink_garnet_pressure_plate_from_pink_garnet_block_stonecutting.json
@@ -76,6 +77,7 @@ e6c4a4dced0bf190ecb2513bd1d50655193b2651 data\chrysaormod\advancement\recipes\to
 3d4daae61bd396e80fa1e5aa001f66bae937fba7 data\chrysaormod\advancement\recipes\tools\starlight_hammer_smithing.json
 5503e0f4feade84d82ac2aa96c70748ad95d84a7 data\chrysaormod\advancement\recipes\decorations\pink_garnet_fence.json
 8874275c37b703bb217114bfcbdb832a38df5142 data\chrysaormod\recipe\starlight_upgrade_smithing_template.json
+3e83a7b7874791cd57109fe32fbb4f3f8e43c292 data\chrysaormod\recipe\starlight_hoe_smithing.json
 6a7a1b4f879ba550bdc8bbc809458382cceb8dd3 data\chrysaormod\advancement\recipes\redstone\pink_garnet_lamp.json
 4c455aa1f359ac8e333fb4604c088706af62f0a5 data\chrysaormod\advancement\recipes\combat\pink_garnet_tomahawk.json
 1a6d5ea927dd8372ec03e1c4f804fff1e40a8292 data\chrysaormod\advancement\recipes\combat\pink_garnet_boots.json
