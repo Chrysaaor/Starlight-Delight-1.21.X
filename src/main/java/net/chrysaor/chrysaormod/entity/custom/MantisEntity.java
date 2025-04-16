@@ -66,9 +66,10 @@ public class MantisEntity extends AnimalEntity {
 
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
-                .add(EntityAttributes.GENERIC_MAX_HEALTH, 18)
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 14)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4)
                 .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20)
+                .add(EntityAttributes.GENERIC_SCALE, 0.3)
                 .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.30);
     }
 
