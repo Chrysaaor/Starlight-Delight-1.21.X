@@ -14,6 +14,7 @@ import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeInputProvider;
 import net.minecraft.recipe.RecipeMatcher;
 import net.minecraft.recipe.RecipeUnlocker;
+import net.minecraft.registry.DynamicRegistryManager;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
@@ -21,18 +22,13 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 
 @Mixin(AbstractFurnaceBlockEntity.class)
 public class AbstractFurnaceBlockEntityMixin extends LockableContainerBlockEntity implements SidedInventory, RecipeUnlocker, RecipeInputProvider {
 
-    @Shadow protected DefaultedList<ItemStack> inventory;
-    @Shadow protected static final int INPUT_SLOT_INDEX = 0;
-
     protected AbstractFurnaceBlockEntityMixin(BlockEntityType<?> blockEntityType, BlockPos blockPos, BlockState blockState) {
         super(blockEntityType, blockPos, blockState);
-        this.inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
     }
 
     @Override
@@ -95,10 +91,13 @@ public class AbstractFurnaceBlockEntityMixin extends LockableContainerBlockEntit
             method = "craftRecipe",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;decrement(I)V")
     )
-    private static void craftRecipeHandler(ItemStack instance, int amount, Operation<Void> original) {
+    private static void craftRecipeHandler(ItemStack instance, int amount, Operation<Void> original, DynamicRegistryManager registryManager, @Nullable RecipeEntry<?> recipe, DefaultedList<ItemStack> slots, int count){
+        ItemStack itemStack = slots.get(0);
 
-        if (instance.isOf(Items.MILK_BUCKET)) {
-            (0, new ItemStack(Items.BUCKET));
+        if (itemStack.isOf(Items.MILK_BUCKET)) {
+            slots.set(0, new ItemStack(Items.BUCKET));
         }
+
+        original.call(instance, amount);
     }
 }
