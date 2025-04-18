@@ -1,10 +1,10 @@
-// 1.21	2025-04-16T19:49:53.7793674	Chrysaor Mod/Tags for minecraft:item
+// 1.21	2025-04-16T22:51:47.8194207	Chrysaor Mod/Tags for minecraft:item
 d056cba88f522d2202cbb8ff1d35589ce9df8e76 data\minecraft\tags\item\enchantable\mining.json
 be2aca42fe9f6bdf60df1b22032e3a4625df322d data\minecraft\tags\item\chest_armor.json
 d056cba88f522d2202cbb8ff1d35589ce9df8e76 data\minecraft\tags\item\enchantable\durability.json
 c8e70cafddb7d19061af04616d9708a62f25df65 data\minecraft\tags\item\shovels.json
-af5576811ab6a7586b4eec26feb35a5fffb87cad data\minecraft\tags\item\trimmable_armor.json
 9f57f8233d766c96935569af11b8bd994e8db23b data\minecraft\tags\item\hoes.json
+af5576811ab6a7586b4eec26feb35a5fffb87cad data\minecraft\tags\item\trimmable_armor.json
 eb3269ee5de92bbb7b5ef4d09418b89545be9d5d data\minecraft\tags\item\enchantable\bow.json
 f26a76ac1326edbe8163b7775a240249c351f4bb data\minecraft\tags\item\foot_armor.json
 8e81d67742e08b764af58e09c8341c546ae5895e data\minecraft\tags\item\swords.json
