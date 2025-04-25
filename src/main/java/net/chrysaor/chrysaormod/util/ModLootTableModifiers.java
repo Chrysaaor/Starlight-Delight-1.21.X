@@ -51,7 +51,12 @@ public class ModLootTableModifiers {
                         .rolls(ConstantLootNumberProvider.create(1.0f))
                         .conditionally(RandomChanceLootCondition.builder(0.3f))
                         .with(ItemEntry.builder(ModItems.PINK_GARNET_HORSE_ARMOR))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
+
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.55f))
+                        .with(ItemEntry.builder(ModItems.CHEESE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 7.0f)).build());
 
                 tableBuilder.pool(poolBuilder);
             }

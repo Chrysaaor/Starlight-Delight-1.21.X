@@ -6,7 +6,6 @@
 	],
 	"client": [
 		"AbstractClientPlayerEntityMixin",
-		"AbstractFurnaceBlockEntityMixin",
 		"AutoSmeltMixin",
 		"ItemRendererAccessor",
 		"ItemRendererMixin",

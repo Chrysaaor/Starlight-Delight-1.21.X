@@ -1,6 +1,8 @@
 package net.chrysaor.chrysaormod;
 
 import net.chrysaor.chrysaormod.block.ModBlockRenderLayerMap;
+import net.chrysaor.chrysaormod.block.entity.ModBlockEntities;
+import net.chrysaor.chrysaormod.block.entity.renderer.PedestalBlockEntityRenderer;
 import net.chrysaor.chrysaormod.client.BerserkerHudOverlay;
 import net.chrysaor.chrysaormod.entity.ModEntities;
 import net.chrysaor.chrysaormod.entity.client.*;
@@ -12,6 +14,7 @@ import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class ChrysaorModClient implements ClientModInitializer {
 
@@ -41,6 +44,8 @@ public class ChrysaorModClient implements ClientModInitializer {
 
 
         HudRenderCallback.EVENT.register(new BerserkerHudOverlay());
+
+        BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
 
 
         ParticleFactoryRegistry.getInstance()

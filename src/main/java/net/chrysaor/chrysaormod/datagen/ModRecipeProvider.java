@@ -6,7 +6,6 @@ import net.chrysaor.chrysaormod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.*;
@@ -82,14 +81,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
-        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.MILK_BUCKET), RecipeCategory.FOOD, ModItems.CHEESE, 0.1f, 200)
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
-                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "cheese_smoking"));
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.CHEESE)
-                .input(Ingredient.ofItems(Items.MILK_BUCKET))
-                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
-                .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "cheese_from_test"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEET_BERRIES_PIE)
                 .input(Ingredient.ofItems(Items.SWEET_BERRIES))

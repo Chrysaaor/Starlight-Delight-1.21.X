@@ -2,6 +2,7 @@ package net.chrysaor.chrysaormod.block;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.custom.CauliflowerCropBlock;
+import net.chrysaor.chrysaormod.block.custom.PedestalBlock;
 import net.chrysaor.chrysaormod.block.custom.PinkGarnetLampBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
@@ -68,6 +69,8 @@ public class ModBlocks {
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
 
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
