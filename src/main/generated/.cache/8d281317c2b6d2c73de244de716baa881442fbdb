@@ -1,15 +1,15 @@
-// 1.21	2025-04-25T08:14:43.4824938	Chrysaor Mod/Tags for minecraft:item
-c8e70cafddb7d19061af04616d9708a62f25df65 data\minecraft\tags\item\shovels.json
-871bc908a1df101737c9ca41b5ac5823142c81e3 data\minecraft\tags\item\head_armor.json
-1c200e5fd9eda6155e15cf94f168874021ae1f5d data\minecraft\tags\item\leg_armor.json
-f26a76ac1326edbe8163b7775a240249c351f4bb data\minecraft\tags\item\foot_armor.json
-718dbd6ae1581741148bc64f69ae9f842360508d data\minecraft\tags\item\axes.json
-9f57f8233d766c96935569af11b8bd994e8db23b data\minecraft\tags\item\hoes.json
-d056cba88f522d2202cbb8ff1d35589ce9df8e76 data\minecraft\tags\item\enchantable\durability.json
-25f2b2eeb5bdee36a5d1218f739b87a9fe98ebfd data\minecraft\tags\item\pickaxes.json
+// 1.21	2025-04-26T01:29:32.9609535	Chrysaor Mod/Tags for minecraft:item
 d056cba88f522d2202cbb8ff1d35589ce9df8e76 data\minecraft\tags\item\enchantable\mining.json
-8e81d67742e08b764af58e09c8341c546ae5895e data\minecraft\tags\item\swords.json
-eb3269ee5de92bbb7b5ef4d09418b89545be9d5d data\minecraft\tags\item\enchantable\bow.json
 be2aca42fe9f6bdf60df1b22032e3a4625df322d data\minecraft\tags\item\chest_armor.json
+d056cba88f522d2202cbb8ff1d35589ce9df8e76 data\minecraft\tags\item\enchantable\durability.json
+c8e70cafddb7d19061af04616d9708a62f25df65 data\minecraft\tags\item\shovels.json
+9f57f8233d766c96935569af11b8bd994e8db23b data\minecraft\tags\item\hoes.json
 af5576811ab6a7586b4eec26feb35a5fffb87cad data\minecraft\tags\item\trimmable_armor.json
+eb3269ee5de92bbb7b5ef4d09418b89545be9d5d data\minecraft\tags\item\enchantable\bow.json
+f26a76ac1326edbe8163b7775a240249c351f4bb data\minecraft\tags\item\foot_armor.json
+8e81d67742e08b764af58e09c8341c546ae5895e data\minecraft\tags\item\swords.json
+25f2b2eeb5bdee36a5d1218f739b87a9fe98ebfd data\minecraft\tags\item\pickaxes.json
+871bc908a1df101737c9ca41b5ac5823142c81e3 data\minecraft\tags\item\head_armor.json
 3d5297b56ee06f835e2703dca7b910416f5953cb data\minecraft\tags\item\trim_templates.json
+718dbd6ae1581741148bc64f69ae9f842360508d data\minecraft\tags\item\axes.json
+1c200e5fd9eda6155e15cf94f168874021ae1f5d data\minecraft\tags\item\leg_armor.json

@@ -81,6 +81,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.PINK_GARNET, RecipeCategory.DECORATIONS, ModBlocks.PINK_GARNET_BLOCK);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.FERMENTER)
+                        .pattern("CCC")
+                        .pattern("CBC")
+                        .pattern("CCC")
+                        .input('C', Items.COPPER_INGOT)
+                        .input('B', Items.BARREL)
+                        .criterion(hasItem(Items.COPPER_INGOT), conditionsFromItem(Items.COPPER_INGOT))
+                        .criterion(hasItem(Items.BARREL), conditionsFromItem(Items.BARREL))
+                        .offerTo(recipeExporter, Identifier.of(ChrysaorMod.MOD_ID, "fermenter"));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.SWEET_BERRIES_PIE)
                 .input(Ingredient.ofItems(Items.SWEET_BERRIES))
