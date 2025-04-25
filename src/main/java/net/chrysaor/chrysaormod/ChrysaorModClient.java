@@ -8,12 +8,15 @@ import net.chrysaor.chrysaormod.entity.ModEntities;
 import net.chrysaor.chrysaormod.entity.client.*;
 import net.chrysaor.chrysaormod.particle.ModParticles;
 import net.chrysaor.chrysaormod.particle.custom.HoelyBeheaderSweepParticle;
+import net.chrysaor.chrysaormod.screen.ModScreenHandlers;
+import net.chrysaor.chrysaormod.screen.custom.FermenterScreen;
 import net.chrysaor.chrysaormod.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 
 public class ChrysaorModClient implements ClientModInitializer {
@@ -46,6 +49,8 @@ public class ChrysaorModClient implements ClientModInitializer {
         HudRenderCallback.EVENT.register(new BerserkerHudOverlay());
 
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
+
+        HandledScreens.register(ModScreenHandlers.FERMENTER_SCREEN_HANDLER, FermenterScreen::new);
 
 
         ParticleFactoryRegistry.getInstance()

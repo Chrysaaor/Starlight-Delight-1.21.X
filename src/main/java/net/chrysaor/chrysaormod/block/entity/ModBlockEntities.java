@@ -2,6 +2,7 @@ package net.chrysaor.chrysaormod.block.entity;
 
 import net.chrysaor.chrysaormod.ChrysaorMod;
 import net.chrysaor.chrysaormod.block.ModBlocks;
+import net.chrysaor.chrysaormod.block.entity.custom.FermenterBlockEntity;
 import net.chrysaor.chrysaormod.block.entity.custom.PedestalBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
@@ -13,6 +14,9 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(ChrysaorMod.MOD_ID, "pedestal_be"),
                     BlockEntityType.Builder.create(PedestalBlockEntity::new, ModBlocks.PEDESTAL).build(null));
 
+    public static final BlockEntityType<FermenterBlockEntity> FERMENTER_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(ChrysaorMod.MOD_ID, "fermenter_be"),
+                    BlockEntityType.Builder.create(FermenterBlockEntity::new, ModBlocks.FERMENTER).build(null));
 
     public static void registerBlockEntities() {
         ChrysaorMod.LOGGER.info("Registering Block Entities for " + ChrysaorMod.MOD_ID);
