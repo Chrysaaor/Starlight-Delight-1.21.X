@@ -11,6 +11,7 @@ import net.chrysaor.chrysaormod.item.ModRegistries;
 import net.chrysaor.chrysaormod.item.ModItemGroups;
 import net.chrysaor.chrysaormod.item.ModItems;
 import net.chrysaor.chrysaormod.particle.ModParticles;
+import net.chrysaor.chrysaormod.recipe.ModRecipes;
 import net.chrysaor.chrysaormod.screen.ModScreenHandlers;
 import net.chrysaor.chrysaormod.sound.ModSounds;
 import net.chrysaor.chrysaormod.util.HammerUsageEvent;
@@ -61,6 +62,8 @@ public class ChrysaorMod implements ModInitializer {
 		ModEntities.registerModEntities();
 
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModRecipes.registerRecipes();
 
 		ModRegistries.registerModFuels();
 		ModRegistries.registerModCropCompostable();
