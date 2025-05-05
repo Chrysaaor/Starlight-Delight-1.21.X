@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "chrysaormod:block/pedestal"
+      "model": "starlightdelight:block/pedestal"
     }
   }
 }
