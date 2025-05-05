@@ -1,117 +1,117 @@
 {
-  "item.chrysaormod.pink_garnet": "Grenat Rose",
-  "item.chrysaormod.raw_pink_garnet": "Grenat Rose Brut",
-  "item.chrysaormod.cauliflower": "Chou-fleur",
+  "item.starlightdelight.pink_garnet": "Grenat Rose",
+  "item.starlightdelight.raw_pink_garnet": "Grenat Rose Brut",
+  "item.starlightdelight.cauliflower": "Chou-fleur",
 
-  "item.chrysaormod.starlight_ashes": "Cendres Stellaires",
-  "item.chrysaormod.starlight_fragment": "Fragment d'Étoile",
+  "item.starlightdelight.starlight_ashes": "Cendres Stellaires",
+  "item.starlightdelight.starlight_fragment": "Fragment d'Étoile",
 
-  "item.chrysaormod.smithing_template": "Modèle de Forge Astral",
+  "item.starlightdelight.smithing_template": "Modèle de Forge Astral",
 
-  "item.chrysaormod.starlight_helmet": "Casque Astral",
-  "item.chrysaormod.starlight_chestplate": "Plastron Astral",
-  "item.chrysaormod.starlight_leggings": "Jambières Astrales",
-  "item.chrysaormod.starlight_boots": "Bottes Astrales",
+  "item.starlightdelight.starlight_helmet": "Casque Astral",
+  "item.starlightdelight.starlight_chestplate": "Plastron Astral",
+  "item.starlightdelight.starlight_leggings": "Jambières Astrales",
+  "item.starlightdelight.starlight_boots": "Bottes Astrales",
 
-  "item.chrysaormod.starlight_bow": "Arc Astral",
+  "item.starlightdelight.starlight_bow": "Arc Astral",
 
-  "item.chrysaormod.starlight_pickaxe": "Pioche Astrale",
-  "item.chrysaormod.starlight_axe": "Hache Astrale",
-  "item.chrysaormod.starlight_shovel": "Pelle Astrale",
-  "item.chrysaormod.starlight_hoe": "Houe Astrale",
-  "item.chrysaormod.starlight_sword": "Épée Astrale",
+  "item.starlightdelight.starlight_pickaxe": "Pioche Astrale",
+  "item.starlightdelight.starlight_axe": "Hache Astrale",
+  "item.starlightdelight.starlight_shovel": "Pelle Astrale",
+  "item.starlightdelight.starlight_hoe": "Houe Astrale",
+  "item.starlightdelight.starlight_sword": "Épée Astrale",
 
-  "item.chrysaormod.pink_garnet_sword": "Épée en Grenat Rose",
-  "item.chrysaormod.pink_garnet_pickaxe": "Pioche en Grenat Rose",
-  "item.chrysaormod.pink_garnet_shovel": "Pelle en Grenat Rose",
-  "item.chrysaormod.pink_garnet_axe": "Hache en Grenat Rose",
-  "item.chrysaormod.pink_garnet_hoe": "Houe en Grenat Rose",
+  "item.starlightdelight.pink_garnet_sword": "Épée en Grenat Rose",
+  "item.starlightdelight.pink_garnet_pickaxe": "Pioche en Grenat Rose",
+  "item.starlightdelight.pink_garnet_shovel": "Pelle en Grenat Rose",
+  "item.starlightdelight.pink_garnet_axe": "Hache en Grenat Rose",
+  "item.starlightdelight.pink_garnet_hoe": "Houe en Grenat Rose",
 
-  "item.chrysaormod.pink_garnet_hammer": "Marteau en Grenat Rose",
-  "item.chrysaormod.diamond_hammer": "Marteau en Diamant",
-  "item.chrysaormod.netherite_hammer": "Marteau en Netherite",
-  "item.chrysaormod.starlight_hammer": "Marteau Astral",
+  "item.starlightdelight.pink_garnet_hammer": "Marteau en Grenat Rose",
+  "item.starlightdelight.diamond_hammer": "Marteau en Diamant",
+  "item.starlightdelight.netherite_hammer": "Marteau en Netherite",
+  "item.starlightdelight.starlight_hammer": "Marteau Astral",
 
-  "item.chrysaormod.pink_garnet_helmet": "Casque en Grenat Rose",
-  "item.chrysaormod.pink_garnet_chestplate": "Plastron en Grenat Rose",
-  "item.chrysaormod.pink_garnet_leggings": "Jambières en Grenat Rose",
-  "item.chrysaormod.pink_garnet_boots": "Bottes en Grenat Rose",
+  "item.starlightdelight.pink_garnet_helmet": "Casque en Grenat Rose",
+  "item.starlightdelight.pink_garnet_chestplate": "Plastron en Grenat Rose",
+  "item.starlightdelight.pink_garnet_leggings": "Jambières en Grenat Rose",
+  "item.starlightdelight.pink_garnet_boots": "Bottes en Grenat Rose",
 
-  "item.chrysaormod.pink_garnet_horse_armor": "Armure en Grenat Rose pour cheval",
+  "item.starlightdelight.pink_garnet_horse_armor": "Armure en Grenat Rose pour cheval",
 
-  "item.chrysaormod.cauliflower_seeds": "Graines de Chou-fleur",
+  "item.starlightdelight.cauliflower_seeds": "Graines de Chou-fleur",
 
-  "item.chrysaormod.hoely_beheader": "§4§l◊ Sainte Gui-houe-tine ◊§r",
+  "item.starlightdelight.hoely_beheader": "§4§l◊ Sainte Gui-houe-tine ◊§r",
 
-  "item.chrysaormod.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
+  "item.starlightdelight.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
 
-  "item.chrysaormod.iron_tomahawk": "Tomahawk en Fer",
-  "item.chrysaormod.gold_tomahawk": "Tomahawk en Or",
-  "item.chrysaormod.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
-  "item.chrysaormod.diamond_tomahawk": "Tomahawk en Diamant",
+  "item.starlightdelight.iron_tomahawk": "Tomahawk en Fer",
+  "item.starlightdelight.gold_tomahawk": "Tomahawk en Or",
+  "item.starlightdelight.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
+  "item.starlightdelight.diamond_tomahawk": "Tomahawk en Diamant",
 
-  "item.chrysaormod.sweet_berries_pie": "Tarte aux Baies Sucrées",
-  "item.chrysaormod.cheese": "Fromage",
-
-
-  "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
-  "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
-  "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Ajoutez une Armure ou un Outil en Netherite",
-  "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Fragment d'Étoile",
-  "upgrade.chrysaormod.starlight_upgrade": "Amélioration Astrale",
+  "item.starlightdelight.sweet_berries_pie": "Tarte aux Baies Sucrées",
+  "item.starlightdelight.cheese": "Fromage",
 
 
-  "block.chrysaormod.pink_garnet_block": "Bloc de Grenat Rose",
-  "block.chrysaormod.raw_pink_garnet_block": "Bloc de Grenat Rose brut",
-
-  "block.chrysaormod.pink_garnet_ore": "Minerai de Grenat Rose",
-  "block.chrysaormod.pink_garnet_deepslate_ore": "Minerai de Grenat Rose des abîmes",
-
-  "block.chrysaormod.starlight_ore": "Minerai Stellaire",
-  "block.chrysaormod.starlight_deepslate_ore": "Minerai Stellaire des abîmes",
-
-  "block.chrysaormod.pink_garnet_stairs": "Escalier en Grenat Rose",
-  "block.chrysaormod.pink_garnet_slab": "Dalle de Grenat Rose",
-
-  "block.chrysaormod.pink_garnet_button": "Bouton en Grenat Rose",
-  "block.chrysaormod.pink_garnet_pressure_plate": "Plaque de pression en Grenat Rose",
-
-  "block.chrysaormod.pink_garnet_fence": "Barrière en Grenat Rose",
-  "block.chrysaormod.pink_garnet_fence_gate": "Portillon en Grenat Rose",
-  "block.chrysaormod.pink_garnet_wall": "Muret en Grenat Rose",
-
-  "block.chrysaormod.pink_garnet_door": "Porte en Grenat Rose",
-  "block.chrysaormod.pink_garnet_trapdoor": "Trappe en Grenat Rose",
-
-  "block.chrysaormod.pink_garnet_lamp": "Lampe en Grenat Rose",
-
-  "block.chrysaormod.cauliflower_crop": "Pousse de Chou-fleur",
-
-  "block.chrysaormod.pedestal": "Piédestal",
-
-  "block.chrysaormod.fermenter": "Fermenteur",
+  "item.starlightdelight.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
+  "item.starlightdelight.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
+  "item.starlightdelight.smithing_template.starlight_upgrade.base_slot_description": "Ajoutez une Armure ou un Outil en Netherite",
+  "item.starlightdelight.smithing_template.starlight_upgrade.ingredients": "Fragment d'Étoile",
+  "upgrade.starlightdelight.starlight_upgrade": "Amélioration Astrale",
 
 
-  "enchantment.chrysaormod.lightning_striker": "Coup de Foudre",
+  "block.starlightdelight.pink_garnet_block": "Bloc de Grenat Rose",
+  "block.starlightdelight.raw_pink_garnet_block": "Bloc de Grenat Rose brut",
+
+  "block.starlightdelight.pink_garnet_ore": "Minerai de Grenat Rose",
+  "block.starlightdelight.pink_garnet_deepslate_ore": "Minerai de Grenat Rose des abîmes",
+
+  "block.starlightdelight.starlight_ore": "Minerai Stellaire",
+  "block.starlightdelight.starlight_deepslate_ore": "Minerai Stellaire des abîmes",
+
+  "block.starlightdelight.pink_garnet_stairs": "Escalier en Grenat Rose",
+  "block.starlightdelight.pink_garnet_slab": "Dalle de Grenat Rose",
+
+  "block.starlightdelight.pink_garnet_button": "Bouton en Grenat Rose",
+  "block.starlightdelight.pink_garnet_pressure_plate": "Plaque de pression en Grenat Rose",
+
+  "block.starlightdelight.pink_garnet_fence": "Barrière en Grenat Rose",
+  "block.starlightdelight.pink_garnet_fence_gate": "Portillon en Grenat Rose",
+  "block.starlightdelight.pink_garnet_wall": "Muret en Grenat Rose",
+
+  "block.starlightdelight.pink_garnet_door": "Porte en Grenat Rose",
+  "block.starlightdelight.pink_garnet_trapdoor": "Trappe en Grenat Rose",
+
+  "block.starlightdelight.pink_garnet_lamp": "Lampe en Grenat Rose",
+
+  "block.starlightdelight.cauliflower_crop": "Pousse de Chou-fleur",
+
+  "block.starlightdelight.pedestal": "Piédestal",
+
+  "block.starlightdelight.fermenter": "Fermenteur",
 
 
-  "effect.chrysaormod.light": "Léger",
-  "effect.chrysaormod.berserker": "Sanguinaire",
+  "enchantment.starlightdelight.lightning_striker": "Coup de Foudre",
 
 
-  "itemgroup.chrysaormod.chrysaor_items": "Items de Chrysaor",
-  "itemgroup.chrysaormod.chrysaor_blocks": "Blocs de Chrysaor",
+  "effect.starlightdelight.light": "Léger",
+  "effect.starlightdelight.berserker": "Sanguinaire",
 
 
-  "tooltip.chrysaormod.cauliflower.tooltip": "C'est délicieux!",
-
-  "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
-  "tooltip.chrysaormod.hoely_beheader.tooltip1": "Cette houe §4occulte§r se nourrit",
-  "tooltip.chrysaormod.hoely_beheader.tooltip2": "de la §4force vitale§r de son propriétaire",
-  "tooltip.chrysaormod.hoely_beheader.tooltip3": "en contre-partie de §bcapacités accrues§r.",
-  "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
+  "itemgroup.starlightdelight.chrysaor_items": "Items Starlight & Delight",
+  "itemgroup.starlightdelight.chrysaor_blocks": "Blocs Starlight & Delight",
 
 
-  "entity.chrysaormod.mantis": "Mante Religieuse",
-  "entity.chrysaormod.tomahawk": "Tomahawk"
+  "tooltip.starlightdelight.cauliflower.tooltip": "C'est délicieux!",
+
+  "tooltip.starlightdelight.hoely_beheader.tooltip": " ",
+  "tooltip.starlightdelight.hoely_beheader.tooltip1": "Cette houe §4occulte§r se nourrit",
+  "tooltip.starlightdelight.hoely_beheader.tooltip2": "de la §4force vitale§r de son propriétaire",
+  "tooltip.starlightdelight.hoely_beheader.tooltip3": "en contre-partie de §bcapacités accrues§r.",
+  "tooltip.starlightdelight.hoely_beheader.tooltip4": " ",
+
+
+  "entity.starlightdelight.mantis": "Mante Religieuse",
+  "entity.starlightdelight.tomahawk": "Tomahawk"
 }

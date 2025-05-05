@@ -1,6 +1,6 @@
 {
-    "parent": "chrysaormod:item/starlight_bow",
+    "parent": "starlightdelight:item/starlight_bow",
     "textures": {
-        "layer0": "chrysaormod:item/starlight_bow_pulling_2"
+        "layer0": "starlightdelight:item/starlight_bow_pulling_2"
     }
 }

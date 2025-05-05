@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"1": "chrysaormod:item/hoely_beheader_3d",
-		"particle": "chrysaormod:item/hoely_beheader_3d"
+		"1": "starlightdelight:item/hoely_beheader_3d",
+		"particle": "starlightdelight:item/hoely_beheader_3d"
 	},
 	"elements": [
 		{

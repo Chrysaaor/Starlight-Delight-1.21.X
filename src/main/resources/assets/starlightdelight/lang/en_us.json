@@ -1,119 +1,119 @@
 {
-  "item.chrysaormod.pink_garnet": "Pink Garnet",
-  "item.chrysaormod.raw_pink_garnet": "Raw Pink Garnet",
-  "item.chrysaormod.cauliflower": "Cauliflower",
+  "item.starlightdelight.pink_garnet": "Pink Garnet",
+  "item.starlightdelight.raw_pink_garnet": "Raw Pink Garnet",
+  "item.starlightdelight.cauliflower": "Cauliflower",
 
-  "item.chrysaormod.starlight_ashes": "Starlight Ashes",
-  "item.chrysaormod.starlight_fragment": "Starlight Fragment",
+  "item.starlightdelight.starlight_ashes": "Starlight Ashes",
+  "item.starlightdelight.starlight_fragment": "Starlight Fragment",
 
-  "item.chrysaormod.smithing_template": "Starlight Smithing Template",
+  "item.starlightdelight.smithing_template": "Starlight Smithing Template",
 
-  "item.chrysaormod.starlight_helmet": "Starlight Helmet",
-  "item.chrysaormod.starlight_chestplate": "Starlight Chestplate",
-  "item.chrysaormod.starlight_leggings": "Starlight Leggings",
-  "item.chrysaormod.starlight_boots": "Starlight Boots",
+  "item.starlightdelight.starlight_helmet": "Starlight Helmet",
+  "item.starlightdelight.starlight_chestplate": "Starlight Chestplate",
+  "item.starlightdelight.starlight_leggings": "Starlight Leggings",
+  "item.starlightdelight.starlight_boots": "Starlight Boots",
 
-  "item.chrysaormod.starlight_bow": "Starlight Bow",
+  "item.starlightdelight.starlight_bow": "Starlight Bow",
 
-  "item.chrysaormod.starlight_pickaxe": "Starlight Pickaxe",
-  "item.chrysaormod.starlight_axe": "Starlight Axe",
-  "item.chrysaormod.starlight_shovel": "Starlight Shovel",
-  "item.chrysaormod.starlight_hoe": "Starlight Hoe",
-  "item.chrysaormod.starlight_sword": "Starlight Sword",
+  "item.starlightdelight.starlight_pickaxe": "Starlight Pickaxe",
+  "item.starlightdelight.starlight_axe": "Starlight Axe",
+  "item.starlightdelight.starlight_shovel": "Starlight Shovel",
+  "item.starlightdelight.starlight_hoe": "Starlight Hoe",
+  "item.starlightdelight.starlight_sword": "Starlight Sword",
 
-  "item.chrysaormod.pink_garnet_sword": "Pink Garnet Sword",
-  "item.chrysaormod.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
-  "item.chrysaormod.pink_garnet_shovel": "Pink Garnet Shovel",
-  "item.chrysaormod.pink_garnet_axe": "Pink Garnet Axe",
-  "item.chrysaormod.pink_garnet_hoe": "Pink Garnet Hoe",
+  "item.starlightdelight.pink_garnet_sword": "Pink Garnet Sword",
+  "item.starlightdelight.pink_garnet_pickaxe": "Pink Garnet Pickaxe",
+  "item.starlightdelight.pink_garnet_shovel": "Pink Garnet Shovel",
+  "item.starlightdelight.pink_garnet_axe": "Pink Garnet Axe",
+  "item.starlightdelight.pink_garnet_hoe": "Pink Garnet Hoe",
 
-  "item.chrysaormod.pink_garnet_hammer": "Pink Garnet Hammer",
-  "item.chrysaormod.diamond_hammer": "Diamond Hammer",
-  "item.chrysaormod.netherite_hammer": "Netherite Hammer",
-  "item.chrysaormod.starlight_hammer": "Starlight Hammer",
+  "item.starlightdelight.pink_garnet_hammer": "Pink Garnet Hammer",
+  "item.starlightdelight.diamond_hammer": "Diamond Hammer",
+  "item.starlightdelight.netherite_hammer": "Netherite Hammer",
+  "item.starlightdelight.starlight_hammer": "Starlight Hammer",
 
-  "item.chrysaormod.pink_garnet_helmet": "Pink Garnet Helmet",
-  "item.chrysaormod.pink_garnet_chestplate": "Pink Garnet Chestplate",
-  "item.chrysaormod.pink_garnet_leggings": "Pink Garnet Leggings",
-  "item.chrysaormod.pink_garnet_boots": "Pink Garnet Boots",
+  "item.starlightdelight.pink_garnet_helmet": "Pink Garnet Helmet",
+  "item.starlightdelight.pink_garnet_chestplate": "Pink Garnet Chestplate",
+  "item.starlightdelight.pink_garnet_leggings": "Pink Garnet Leggings",
+  "item.starlightdelight.pink_garnet_boots": "Pink Garnet Boots",
 
-  "item.chrysaormod.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
+  "item.starlightdelight.pink_garnet_horse_armor": "Pink Garnet Horse Armor",
 
-  "item.chrysaormod.cauliflower_seeds": "Cauliflower Seeds",
+  "item.starlightdelight.cauliflower_seeds": "Cauliflower Seeds",
 
-  "item.chrysaormod.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
+  "item.starlightdelight.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
 
-  "item.chrysaormod.mantis_spawn_egg": "Mantis Spawn Egg",
+  "item.starlightdelight.mantis_spawn_egg": "Mantis Spawn Egg",
 
-  "item.chrysaormod.iron_tomahawk": "Iron Tomahawk",
-  "item.chrysaormod.gold_tomahawk": "Gold Tomahawk",
-  "item.chrysaormod.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
-  "item.chrysaormod.diamond_tomahawk": "Diamond Tomahawk",
+  "item.starlightdelight.iron_tomahawk": "Iron Tomahawk",
+  "item.starlightdelight.gold_tomahawk": "Gold Tomahawk",
+  "item.starlightdelight.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
+  "item.starlightdelight.diamond_tomahawk": "Diamond Tomahawk",
 
-  "item.chrysaormod.sweet_berries_pie": "Sweet Berries Pie",
-  "item.chrysaormod.cheese": "Cheese",
-
-
-  "item.chrysaormod.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
-  "item.chrysaormod.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
-  "item.chrysaormod.smithing_template.starlight_upgrade.base_slot_description": "Add Netherite Armor, Weapon, or Tool",
-  "item.chrysaormod.smithing_template.starlight_upgrade.ingredients": "Starlight Fragment",
-  "upgrade.chrysaormod.starlight_upgrade": "Starlight Upgrade",
+  "item.starlightdelight.sweet_berries_pie": "Sweet Berries Pie",
+  "item.starlightdelight.cheese": "Cheese",
 
 
-  "block.chrysaormod.pink_garnet_block": "Block of Pink Garnet",
-  "block.chrysaormod.raw_pink_garnet_block": "Block of Raw Pink Garnet",
-
-  "block.chrysaormod.pink_garnet_ore": "Pink Garnet Ore",
-  "block.chrysaormod.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
-
-  "block.chrysaormod.starlight_ore": "Starlight Ore",
-  "block.chrysaormod.starlight_deepslate_ore": "Starlight Deepslate Ore",
-
-  "block.chrysaormod.pink_garnet_stairs": "Pink Garnet Stairs",
-  "block.chrysaormod.pink_garnet_slab": "Pink Garnet Slab",
-
-  "block.chrysaormod.pink_garnet_button": "Pink Garnet Button",
-  "block.chrysaormod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
-
-  "block.chrysaormod.pink_garnet_fence": "Pink Garnet Fence",
-  "block.chrysaormod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
-  "block.chrysaormod.pink_garnet_wall": "Pink Garnet Wall",
-
-  "block.chrysaormod.pink_garnet_door": "Pink Garnet Door",
-  "block.chrysaormod.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
+  "item.starlightdelight.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
+  "item.starlightdelight.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
+  "item.starlightdelight.smithing_template.starlight_upgrade.base_slot_description": "Add Netherite Armor, Weapon, or Tool",
+  "item.starlightdelight.smithing_template.starlight_upgrade.ingredients": "Starlight Fragment",
+  "upgrade.starlightdelight.starlight_upgrade": "Starlight Upgrade",
 
 
-  "block.chrysaormod.pink_garnet_lamp": "Pink Garnet Lamp",
+  "block.starlightdelight.pink_garnet_block": "Block of Pink Garnet",
+  "block.starlightdelight.raw_pink_garnet_block": "Block of Raw Pink Garnet",
 
-  "block.chrysaormod.cauliflower_crop": "Cauliflower Crop",
+  "block.starlightdelight.pink_garnet_ore": "Pink Garnet Ore",
+  "block.starlightdelight.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
 
-  "block.chrysaormod.pedestal": "Pedestal",
-  "block.chrysaormod.fermenter": "Fermenter",
+  "block.starlightdelight.starlight_ore": "Starlight Ore",
+  "block.starlightdelight.starlight_deepslate_ore": "Starlight Deepslate Ore",
 
+  "block.starlightdelight.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.starlightdelight.pink_garnet_slab": "Pink Garnet Slab",
 
-  "enchantment.chrysaormod.lightning_striker": "Lightning Striker",
+  "block.starlightdelight.pink_garnet_button": "Pink Garnet Button",
+  "block.starlightdelight.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
 
+  "block.starlightdelight.pink_garnet_fence": "Pink Garnet Fence",
+  "block.starlightdelight.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.starlightdelight.pink_garnet_wall": "Pink Garnet Wall",
 
-  "effect.chrysaormod.light": "Light",
-  "effect.chrysaormod.berserker": "Berserker",
-
-
-  "itemgroup.chrysaormod.chrysaor_items": "Chrysaor's Items",
-  "itemgroup.chrysaormod.chrysaor_blocks": "Chrysaor's Blocks",
-
-
-  "tooltip.chrysaormod.cauliflower.tooltip": "This is delicious!",
-
-  "tooltip.chrysaormod.hoely_beheader.tooltip": " ",
-  "tooltip.chrysaormod.hoely_beheader.tooltip1": "This §4occult§r scythe feeds off of",
-  "tooltip.chrysaormod.hoely_beheader.tooltip2": "its owner's §4life force§r",
-  "tooltip.chrysaormod.hoely_beheader.tooltip3": "in exchange for §benhanced powers§r.",
-  "tooltip.chrysaormod.hoely_beheader.tooltip4": " ",
+  "block.starlightdelight.pink_garnet_door": "Pink Garnet Door",
+  "block.starlightdelight.pink_garnet_trapdoor": "Pink Garnet Trapdoor",
 
 
-  "entity.chrysaormod.mantis": "Mantis",
-  "entity.chrysaormod.tomahawk": "Tomahawk"
+  "block.starlightdelight.pink_garnet_lamp": "Pink Garnet Lamp",
+
+  "block.starlightdelight.cauliflower_crop": "Cauliflower Crop",
+
+  "block.starlightdelight.pedestal": "Pedestal",
+  "block.starlightdelight.fermenter": "Fermenter",
+
+
+  "enchantment.starlightdelight.lightning_striker": "Lightning Striker",
+
+
+  "effect.starlightdelight.light": "Light",
+  "effect.starlightdelight.berserker": "Berserker",
+
+
+  "itemgroup.starlightdelight.chrysaor_items": "Starlight & Delight Items",
+  "itemgroup.starlightdelight.chrysaor_blocks": "Starlight & Delight Blocks",
+
+
+  "tooltip.starlightdelight.cauliflower.tooltip": "This is delicious!",
+
+  "tooltip.starlightdelight.hoely_beheader.tooltip": " ",
+  "tooltip.starlightdelight.hoely_beheader.tooltip1": "This §4occult§r scythe feeds off of",
+  "tooltip.starlightdelight.hoely_beheader.tooltip2": "its owner's §4life force§r",
+  "tooltip.starlightdelight.hoely_beheader.tooltip3": "in exchange for §benhanced powers§r.",
+  "tooltip.starlightdelight.hoely_beheader.tooltip4": " ",
+
+
+  "entity.starlightdelight.mantis": "Mantis",
+  "entity.starlightdelight.tomahawk": "Tomahawk"
 
 
 }

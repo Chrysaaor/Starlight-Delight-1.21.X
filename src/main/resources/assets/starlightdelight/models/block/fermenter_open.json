@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "chrysaormod:block/fermenter_open",
-		"particle": "chrysaormod:block/fermenter_open"
+		"0": "starlightdelight:block/fermenter_open",
+		"particle": "starlightdelight:block/fermenter_open"
 	},
 	"elements": [
 		{

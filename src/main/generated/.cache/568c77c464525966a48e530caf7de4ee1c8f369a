@@ -1,0 +1,7 @@
+// 1.21	2025-05-05T10:34:26.2259351	Starlight & Delight/Tags for minecraft:block
+6ee960b8a832d0b99d3ead9b81c46b9284d00f88 data\minecraft\tags\block\fences.json
+49d46e9a003524301f2393dee6bc927b1db1c2b0 data\minecraft\tags\block\walls.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
+c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
+f3124b974c14492a0b050053b9045231cc531b88 data\minecraft\tags\block\fence_gates.json
+e419d2b6b719592397931ec69e225c9c40a59742 data\minecraft\tags\block\mineable\pickaxe.json
