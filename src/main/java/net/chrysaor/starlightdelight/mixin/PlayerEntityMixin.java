@@ -21,6 +21,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             method = "spawnSweepAttackParticles",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/server/world/ServerWorld;spawnParticles(Lnet/minecraft/particle/ParticleEffect;DDDIDDDD)I"), index = 0
     )
+    @SuppressWarnings("unchecked")
     private <T extends ParticleEffect> T modifySweepParticle(T particle) {
         return getMainHandStack().isOf(ModItems.HOELY_BEHEADER) ? (T) ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE : particle;
     }
