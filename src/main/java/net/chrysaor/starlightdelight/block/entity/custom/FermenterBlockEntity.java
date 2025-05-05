@@ -80,7 +80,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("block.chrysaormod.fermenter");
+        return Text.translatable("block.starlightdelight.fermenter");
     }
 
     @Override
