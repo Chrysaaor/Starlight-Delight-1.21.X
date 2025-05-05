@@ -3,6 +3,6 @@
     "#minecraft:incorrect_for_iron_tool"
   ],
   "remove": [
-    "#chrysaormod:needs_pink_garnet_tool"
+    "#starlightdelight:needs_pink_garnet_tool"
   ]
 }

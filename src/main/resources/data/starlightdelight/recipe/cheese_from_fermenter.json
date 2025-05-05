@@ -1,10 +1,10 @@
 {
-  "type": "chrysaormod:fermenter",
+  "type": "starlightdelight:fermenter",
   "ingredient": {
     "item": "minecraft:milk_bucket"
   },
   "result": {
     "count": 4,
-    "id": "chrysaormod:cheese"
+    "id": "starlightdelight:cheese"
   }
 }
