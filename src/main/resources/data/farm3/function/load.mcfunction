@@ -3,4 +3,4 @@ scoreboard objectives add farm3_potatoesmined minecraft.mined:minecraft.potatoes
 scoreboard objectives add farm3_carrotsmined minecraft.mined:minecraft.carrots
 scoreboard objectives add farm3_beetrootsmined minecraft.mined:minecraft.beetroots
 scoreboard objectives add farm3_netherwartmined minecraft.mined:minecraft.nether_wart
-scoreboard objectives add farm3_cauliflowermined minecraft.mined:chrysaormod.cauliflower_crop
+scoreboard objectives add farm3_cauliflowermined minecraft.mined:starlightdelight.cauliflower_crop

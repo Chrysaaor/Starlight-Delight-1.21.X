@@ -12,9 +12,9 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
     public static final ItemGroup CHRYSAOR_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(StarlightDelight.MOD_ID, "chrysaor_items"),
+            Identifier.of(StarlightDelight.MOD_ID, "starlightdelight_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STARLIGHT_FRAGMENT))
-                    .displayName(Text.translatable("itemgroup.chrysaormod.chrysaor_items"))
+                    .displayName(Text.translatable("itemgroup.starlightdelight.chrysaor_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.STARLIGHT_ASHES);
                         entries.add(ModItems.STARLIGHT_FRAGMENT);
@@ -73,9 +73,9 @@ public class ModItemGroups {
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(StarlightDelight.MOD_ID, "chrysaor_blocks"),
+            Identifier.of(StarlightDelight.MOD_ID, "starlightdelight_blocks"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
-                    .displayName(Text.translatable("itemgroup.chrysaormod.chrysaor_blocks"))
+                    .displayName(Text.translatable("itemgroup.starlightdelight.chrysaor_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);

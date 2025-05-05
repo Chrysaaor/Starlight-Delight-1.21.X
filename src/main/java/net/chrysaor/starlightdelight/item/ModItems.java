@@ -26,7 +26,7 @@ public class ModItems {
             .food(ModFoodComponents.CAULIFLOWER)) {
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-            tooltip.add(Text.translatable("tooltip.chrysaormod.cauliflower.tooltip"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.cauliflower.tooltip"));
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
@@ -114,11 +114,11 @@ public class ModItems {
                     .rarity(Rarity.EPIC)) {
         @Override
         public void appendTooltip(ItemStack stack, Item.TooltipContext context, List<Text> tooltip, TooltipType type) {
-            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip"));
-            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip1"));
-            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip2"));
-            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip3"));
-            tooltip.add(Text.translatable("tooltip.chrysaormod.hoely_beheader.tooltip4"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.hoely_beheader.tooltip"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.hoely_beheader.tooltip1"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.hoely_beheader.tooltip2"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.hoely_beheader.tooltip3"));
+            tooltip.add(Text.translatable("tooltip.starlightdelight.hoely_beheader.tooltip4"));
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
