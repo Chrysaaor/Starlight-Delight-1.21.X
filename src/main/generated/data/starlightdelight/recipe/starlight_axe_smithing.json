@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "starlightdelight:starlight_fragment"
+  },
+  "base": {
+    "item": "minecraft:netherite_axe"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:starlight_axe"
+  },
+  "template": {
+    "item": "starlightdelight:starlight_upgrade_smithing_template"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "chrysaormod:block/pink_garnet_block",
-    "side": "chrysaormod:block/pink_garnet_block",
-    "top": "chrysaormod:block/pink_garnet_block"
-  }
-}

@@ -1,9 +1,9 @@
 {
 	"schemaVersion": 1,
-	"id": "chrysaormod",
+	"id": "starlightdelight",
 	"version": "${version}",
-	"name": "Chrysaor Mod",
-	"description": "Mod test Chrysaor",
+	"name": "Starlight & Delight",
+	"description": "Harvest and forge Starlight Fragments while savouring delicious meals!",
 	"authors": [
 		"Chrysaor!"
 	],
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/Chrysaaor/Chrysaor-Mod-1.21.X"
 	},
 	"license": "Apache-2.0",
-	"icon": "assets/chrysaormod/icon.png",
+	"icon": "assets/starlightdelight/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.chrysaor.chrysaormod.ChrysaorMod"
+          "net.chrysaor.starlightdelight.StarlightDelight"
 		],
 		"fabric-datagen": [
-			"net.chrysaor.chrysaormod.ChrysaorModDataGenerator"
+			"net.chrysaor.starlightdelight.StarlightDelightDataGenerator"
 		],
 		"client": [
-			"net.chrysaor.chrysaormod.ChrysaorModClient"
+			"net.chrysaor.starlightdelight.StarlightDelightClient"
 		]
 	},
 	"mixins": [
-		"chrysaormod.mixins.json"
+		"starlightdelight.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",
@@ -40,7 +40,7 @@
 
 	"custom": {
 		"cardinal-components": [
-			"chrysaormod:"
+			"starlightdelight:"
 		]
 	}
 }

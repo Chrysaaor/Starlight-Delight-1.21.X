@@ -1,10 +1,10 @@
 {
   "values": [
-    "chrysaormod:pink_garnet_block",
-    "chrysaormod:raw_pink_garnet_block",
-    "chrysaormod:pink_garnet_ore",
-    "chrysaormod:pink_garnet_deepslate_ore",
-    "chrysaormod:starlight_ore",
-    "chrysaormod:starlight_deepslate_ore"
+    "starlightdelight:pink_garnet_block",
+    "starlightdelight:raw_pink_garnet_block",
+    "starlightdelight:pink_garnet_ore",
+    "starlightdelight:pink_garnet_deepslate_ore",
+    "starlightdelight:starlight_ore",
+    "starlightdelight:starlight_deepslate_ore"
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "starlightdelight:block/pink_garnet_block",
+    "side": "starlightdelight:block/pink_garnet_block",
+    "top": "starlightdelight:block/pink_garnet_block"
+  }
+}
