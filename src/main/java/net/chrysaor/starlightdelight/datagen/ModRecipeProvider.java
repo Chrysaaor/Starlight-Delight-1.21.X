@@ -98,6 +98,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
                 .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "sweet_berries_pie"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.PEDESTAL)
+                .pattern(" F ")
+                .pattern(" S ")
+                .pattern("SSS")
+                .input('F', Items.ITEM_FRAME)
+                .input('S', Items.STONE_BRICKS)
+                .criterion(hasItem(Items.ITEM_FRAME), conditionsFromItem(Items.ITEM_FRAME))
+                .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "pedestal"));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RAW_PINK_GARNET_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
