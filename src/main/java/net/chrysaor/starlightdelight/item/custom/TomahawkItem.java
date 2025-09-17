@@ -32,7 +32,7 @@ public class TomahawkItem extends Item {
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.GOLD_TOMAHAWK) {
             GoldTomahawkProjectileEntity tomahawk = new GoldTomahawkProjectileEntity(world, user);
-            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.5f, 0f);
+            tomahawk.setVelocity(user, user.getPitch(), user.getYaw(), 0.0f, 2.0f, 0f);
             world.spawnEntity(tomahawk);
         }
         if (!world.isClient && user.getStackInHand(hand).getItem() == ModItems.PINK_GARNET_TOMAHAWK) {

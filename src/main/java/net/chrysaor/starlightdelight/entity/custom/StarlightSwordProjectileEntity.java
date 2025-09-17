@@ -30,7 +30,7 @@ import net.minecraft.world.World;
 import org.jetbrains.annotations.NotNull;
 
 public class StarlightSwordProjectileEntity extends ProjectileEntity {
-    public static final float DAMAGE = 5.0F;
+    public static final float DAMAGE = 6.0F;
     public ItemStack weaponStack;
     public float pitchVel;
     public float yawVel;
@@ -52,7 +52,7 @@ public class StarlightSwordProjectileEntity extends ProjectileEntity {
             }
 
             target.timeUntilRegen = 0;
-            if (target.damage(damageSource, 5.0F)) {
+            if (target.damage(damageSource, 6.0F)) {
                 if (target.getType() == EntityType.ENDERMAN) {
                     return;
                 }
