@@ -162,9 +162,5 @@ public class ModItems {
     public static void registerModItems() {
         StarlightDelight.LOGGER.info("Registering Mod Items for " + StarlightDelight.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-           entries.add(PINK_GARNET);
-           entries.add(RAW_PINK_GARNET);
-        });
     }
 }
