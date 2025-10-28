@@ -10,10 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.slot.CrafterOutputSlot;
 import net.minecraft.screen.slot.FurnaceOutputSlot;
 import net.minecraft.screen.slot.Slot;
-import net.minecraft.screen.slot.TradeOutputSlot;
 import net.minecraft.util.math.BlockPos;
 
 public class FermenterScreenHandler extends ScreenHandler {
