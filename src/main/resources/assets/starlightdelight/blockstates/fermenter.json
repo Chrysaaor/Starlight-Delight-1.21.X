@@ -1,7 +1,8 @@
 {
   "variants": {
-    "": {
-      "model": "starlightdelight:block/fermenter"
-    }
+    "facing=north": { "model": "starlightdelight:block/fermenter_north", "uvlock": true },
+    "facing=east":  { "model": "starlightdelight:block/fermenter_east", "uvlock": true },
+    "facing=south": { "model": "starlightdelight:block/fermenter_south", "uvlock": true },
+    "facing=west":  { "model": "starlightdelight:block/fermenter_west", "uvlock": true }
   }
 }

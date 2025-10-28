@@ -10,7 +10,10 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.slot.CrafterOutputSlot;
+import net.minecraft.screen.slot.FurnaceOutputSlot;
 import net.minecraft.screen.slot.Slot;
+import net.minecraft.screen.slot.TradeOutputSlot;
 import net.minecraft.util.math.BlockPos;
 
 public class FermenterScreenHandler extends ScreenHandler {
@@ -30,7 +33,7 @@ public class FermenterScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
 
         this.addSlot(new Slot(inventory, 0, 54, 34));
-        this.addSlot(new Slot(inventory, 1, 104, 34));
+        this.addSlot(new FurnaceOutputSlot(playerInventory.player, inventory, 1, 104, 34));
 
         addPlayerHotbar(playerInventory);
         addPlayerInventory(playerInventory);
