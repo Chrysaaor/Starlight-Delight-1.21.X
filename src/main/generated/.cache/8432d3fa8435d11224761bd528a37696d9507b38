@@ -1,6 +1,6 @@
-// 1.21	2025-05-17T00:12:14.9915297	Starlight & Delight/
-cc357c89a19359d791913d84daa53fc52abc100d data\starlightdelight\worldgen\configured_feature\pink_garnet_ore.json
-6762b80c5925398832ca991d59d50eec1b41e9ce data\starlightdelight\worldgen\placed_feature\pink_garnet_ore_placed.json
+// 1.21	2025-10-29T03:06:45.1286861	Starlight & Delight/
 bcd1037f76e3c1e630b0c01509a5346e81e72066 data\starlightdelight\worldgen\placed_feature\starlight_ore_placed.json
-8a81d421fb597d9fceeffe1a964b45b5c333b23d data\starlightdelight\worldgen\configured_feature\starlight_ore.json
 527f05a0cab65bff94240fcda4048602b3b5d324 data\starlightdelight\enchantment\lightning_striker.json
+6762b80c5925398832ca991d59d50eec1b41e9ce data\starlightdelight\worldgen\placed_feature\pink_garnet_ore_placed.json
+cc357c89a19359d791913d84daa53fc52abc100d data\starlightdelight\worldgen\configured_feature\pink_garnet_ore.json
+8a81d421fb597d9fceeffe1a964b45b5c333b23d data\starlightdelight\worldgen\configured_feature\starlight_ore.json

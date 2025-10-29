@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_pink_garnet_block": {
+    "has_pink_garnet": {
       "conditions": {
         "items": [
           {
-            "items": "starlightdelight:pink_garnet_block"
+            "items": "starlightdelight:pink_garnet"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_pink_garnet_block"
+      "has_pink_garnet"
     ]
   ],
   "rewards": {
