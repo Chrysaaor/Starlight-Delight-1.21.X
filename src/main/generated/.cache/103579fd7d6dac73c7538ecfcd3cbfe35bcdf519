@@ -1,4 +1,4 @@
-// 1.21	2025-10-30T00:42:26.4467985	Starlight & Delight/Model Definitions
+// 1.21	2025-10-30T00:47:43.9165817	Starlight & Delight/Model Definitions
 3d6c6cb2dbf8f62e7b7f61b18b7bcf8c494522f4 assets\starlightdelight\models\item\starlight_boots_diamond_trim.json
 a05f83cd6e35ca9e8545f99e5172167967bd6d36 assets\starlightdelight\models\item\pink_garnet_boots_quartz_trim.json
 5962d3a73d8731f473f3a5923df20739b55daaa6 assets\starlightdelight\models\item\pink_garnet_chestplate_gold_trim.json
@@ -124,8 +124,8 @@ ad14e8f2115de2711bfe5083cf2bf7a514d1d34e assets\starlightdelight\models\item\pin
 673249fe52e4afbf383bbc9aba962fdfdfedb7b4 assets\starlightdelight\models\block\pink_garnet_fence_post.json
 b5f7b68708ac041bc32c3f12c21814241a4c76d3 assets\starlightdelight\models\item\pink_garnet_shovel.json
 9c84c78f268bb9eccb3570fb3ea73a0087e1ea86 assets\starlightdelight\models\item\pink_garnet_leggings.json
-38e74feeca0a9e04f3c60bfef24bc21ab6dbfd65 assets\starlightdelight\models\item\pink_garnet_leggings_redstone_trim.json
 42c7dd5890a1c6d8231e65eb4a59ca35faf34d5b assets\starlightdelight\models\item\pink_garnet_helmet_amethyst_trim.json
+38e74feeca0a9e04f3c60bfef24bc21ab6dbfd65 assets\starlightdelight\models\item\pink_garnet_leggings_redstone_trim.json
 35fafade849cc4afe7d9e80874069d6b4bfcdf29 assets\starlightdelight\models\item\pink_garnet_chestplate_emerald_trim.json
 5e74f148d7abd17ac1788916af24ece6ca1ed2a7 assets\starlightdelight\blockstates\grape_bush.json
 ec944b219036c7d711db5f39a89d7a36bb89322f assets\starlightdelight\models\item\starlight_leggings_copper_trim.json
