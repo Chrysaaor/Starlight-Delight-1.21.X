@@ -7,18 +7,16 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.PlacedFeature;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.placementmodifier.*;
 
 import java.util.List;
 
 public class ModPlacedFeatures {
      public static final RegistryKey<PlacedFeature> PINK_GARNET_ORE_PLACED_KEY = registerKey("pink_garnet_ore_placed");
      public static final RegistryKey<PlacedFeature> STARLIGHT_ORE_PLACED_KEY = registerKey("starlight_ore_placed");
+
+     public static final RegistryKey<PlacedFeature> GRAPE_BUSH_PLACED_KEY = registerKey("grape_bush_placed");
 
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -32,6 +30,8 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(1,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(10))));
 
+        register(context, GRAPE_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRAPE_BUSH_KEY),
+                RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
