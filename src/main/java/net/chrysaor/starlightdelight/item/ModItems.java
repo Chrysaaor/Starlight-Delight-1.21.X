@@ -4,7 +4,6 @@ import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.entity.ModEntities;
 import net.chrysaor.starlightdelight.item.custom.*;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -151,6 +150,9 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
+    public static final Item GRAPES = registerItem("grapes",
+            new AliasedBlockItem(ModBlocks.GRAPE_BUSH, new Item.Settings().food(ModFoodComponents.GRAPES)));
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));

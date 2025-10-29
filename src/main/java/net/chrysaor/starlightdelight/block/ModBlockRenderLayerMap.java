@@ -11,6 +11,7 @@ public class ModBlockRenderLayerMap {
         BlockRenderLayerMap registry = BlockRenderLayerMap.INSTANCE;
 
         registry.putBlock(ModBlocks.CAULIFLOWER_CROP, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.GRAPE_BUSH, RenderLayer.getCutout());
 
         registry.putBlock(ModBlocks.PINK_GARNET_DOOR, RenderLayer.getCutout());
         registry.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());

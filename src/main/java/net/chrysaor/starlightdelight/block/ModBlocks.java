@@ -1,10 +1,7 @@
 package net.chrysaor.starlightdelight.block;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
-import net.chrysaor.starlightdelight.block.custom.CauliflowerCropBlock;
-import net.chrysaor.starlightdelight.block.custom.FermenterBlock;
-import net.chrysaor.starlightdelight.block.custom.PedestalBlock;
-import net.chrysaor.starlightdelight.block.custom.PinkGarnetLampBlock;
+import net.chrysaor.starlightdelight.block.custom.*;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -69,6 +66,9 @@ public class ModBlocks {
     public static final Block CAULIFLOWER_CROP = registerBlockWithoutBlockItem("cauliflower_crop",
             new CauliflowerCropBlock(AbstractBlock.Settings.create().noCollision()
                     .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.DARK_GREEN)));
+
+    public static final Block GRAPE_BUSH = registerBlockWithoutBlockItem("grape_bush",
+            new GrapeBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));

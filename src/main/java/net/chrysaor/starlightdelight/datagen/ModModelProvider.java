@@ -2,6 +2,7 @@ package net.chrysaor.starlightdelight.datagen;
 
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.block.custom.CauliflowerCropBlock;
+import net.chrysaor.starlightdelight.block.custom.GrapeBushBlock;
 import net.chrysaor.starlightdelight.block.custom.PinkGarnetLampBlock;
 import net.chrysaor.starlightdelight.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -47,6 +48,8 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(PinkGarnetLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GRAPE_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                GrapeBushBlock.AGE, 0, 1, 2, 3);
     }
 
     @Override

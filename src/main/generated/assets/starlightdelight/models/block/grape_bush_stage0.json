@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "starlightdelight:block/grape_bush_stage0"
+  }
+}

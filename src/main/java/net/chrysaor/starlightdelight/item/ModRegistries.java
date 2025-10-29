@@ -20,5 +20,6 @@ public class ModRegistries {
 
         registry.add(ModItems.CAULIFLOWER_SEEDS, 0.25f);
         registry.add(ModItems.CAULIFLOWER, 0.5f);
+        registry.add(ModItems.GRAPES, 0.35f);
     }
 }
