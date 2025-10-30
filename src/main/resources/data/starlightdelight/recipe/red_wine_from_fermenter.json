@@ -1,0 +1,10 @@
+{
+  "type": "starlightdelight:fermenter",
+  "ingredient": {
+    "item": "starlightdelight:grapes"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:red_wine"
+  }
+}

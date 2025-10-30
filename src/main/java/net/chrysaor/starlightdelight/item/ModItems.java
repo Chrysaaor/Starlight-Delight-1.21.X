@@ -34,6 +34,11 @@ public class ModItems {
             .food(ModFoodComponents.SWEET_BERRIES_PIE)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()
             .food(ModFoodComponents.CHEESE)));
+    public static final Item GRAPES = registerItem("grapes", new AliasedBlockItem(ModBlocks.GRAPE_BUSH, new Item.Settings()
+            .food(ModFoodComponents.GRAPES)));
+    public static final Item RED_WINE = registerItem("red_wine", new RedWineItem(new Item.Settings()
+            .food(ModFoodComponents.RED_WINE).maxCount(16)));
+
 
     //
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
@@ -150,9 +155,6 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
-
-    public static final Item GRAPES = registerItem("grapes",
-            new AliasedBlockItem(ModBlocks.GRAPE_BUSH, new Item.Settings().food(ModFoodComponents.GRAPES)));
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
