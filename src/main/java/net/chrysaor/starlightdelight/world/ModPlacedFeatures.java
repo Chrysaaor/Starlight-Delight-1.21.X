@@ -31,7 +31,7 @@ public class ModPlacedFeatures {
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(10))));
 
         register(context, GRAPE_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRAPE_BUSH_KEY),
-                RarityFilterPlacementModifier.of(2), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+                RarityFilterPlacementModifier.of(128), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
