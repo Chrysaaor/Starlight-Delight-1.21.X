@@ -16,7 +16,7 @@ public class RedWineItem extends Item {
 
     @Override
     public int getMaxUseTime(ItemStack stack, LivingEntity user) {
-        return 40;
+        return 30;
     }
 
     @Override
