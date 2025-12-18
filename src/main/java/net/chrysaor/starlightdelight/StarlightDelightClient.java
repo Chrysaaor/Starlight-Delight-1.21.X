@@ -7,7 +7,7 @@ import net.chrysaor.starlightdelight.client.BerserkerHudOverlay;
 import net.chrysaor.starlightdelight.entity.ModEntities;
 import net.chrysaor.starlightdelight.entity.client.*;
 import net.chrysaor.starlightdelight.particle.ModParticles;
-import net.chrysaor.starlightdelight.particle.custom.HoelyBeheaderSweepParticle;
+import net.chrysaor.starlightdelight.particle.custom.CustomSweepParticle;
 import net.chrysaor.starlightdelight.screen.ModScreenHandlers;
 import net.chrysaor.starlightdelight.screen.custom.FermenterScreen;
 import net.chrysaor.starlightdelight.util.ModModelPredicates;
@@ -54,6 +54,6 @@ public class StarlightDelightClient implements ClientModInitializer {
 
 
         ParticleFactoryRegistry.getInstance()
-                .register(ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE, HoelyBeheaderSweepParticle.Factory::new);
+                .register(ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE, CustomSweepParticle.Factory::new);
     }
 }

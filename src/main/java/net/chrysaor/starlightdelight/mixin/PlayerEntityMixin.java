@@ -23,6 +23,11 @@ public abstract class PlayerEntityMixin extends LivingEntity {
     )
     @SuppressWarnings("unchecked")
     private <T extends ParticleEffect> T modifySweepParticle(T particle) {
-        return getMainHandStack().isOf(ModItems.HOELY_BEHEADER) ? (T) ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE : particle;
+        if (getMainHandStack().isOf(ModItems.HOELY_BEHEADER)) {
+            return getMainHandStack().isOf(ModItems.HOELY_BEHEADER) ? (T) ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE : particle;
+        } else if (getMainHandStack().isOf(ModItems.STARLIGHT_SWORD)) {
+            return getMainHandStack().isOf(ModItems.STARLIGHT_SWORD) ? (T) ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE : particle;
+        }
+        return particle;
     }
 }

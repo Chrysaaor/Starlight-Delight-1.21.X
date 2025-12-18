@@ -5,10 +5,10 @@ import net.minecraft.client.particle.*;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.particle.SimpleParticleType;
 
-public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
+public class CustomSweepParticle extends SpriteBillboardParticle {
     private final SpriteProvider spriteProvider;
 
-    HoelyBeheaderSweepParticle(ClientWorld world, double x, double y, double z, double d, SpriteProvider spriteProvider) {
+    CustomSweepParticle(ClientWorld world, double x, double y, double z, double d, SpriteProvider spriteProvider) {
         super(world, x, y, z, (double)0.0F, (double)0.0F, (double)0.0F);
         this.spriteProvider = spriteProvider;
         this.maxAge = 4;
@@ -47,7 +47,7 @@ public class HoelyBeheaderSweepParticle extends SpriteBillboardParticle {
         }
 
         public Particle createParticle(SimpleParticleType simpleParticleType, ClientWorld clientWorld, double d, double e, double f, double g, double h, double i) {
-            return new HoelyBeheaderSweepParticle(clientWorld, d, e, f, g, this.spriteProvider);
+            return new CustomSweepParticle(clientWorld, d, e, f, g, this.spriteProvider);
         }
     }
 }
