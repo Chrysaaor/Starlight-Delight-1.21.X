@@ -4,9 +4,10 @@
   "item.starlightdelight.cauliflower": "Chou-fleur",
 
   "item.starlightdelight.starlight_ashes": "Cendres Stellaires",
+  "item.starlightdelight.starlight_shard": "Éclat Stellaire",
   "item.starlightdelight.starlight_fragment": "Fragment d'Étoile",
 
-  "item.starlightdelight.smithing_template": "Modèle de Forge Astral",
+  "item.starlightdelight.smithing_template": "Modèle de forge Astral",
 
   "item.starlightdelight.starlight_helmet": "Casque Astral",
   "item.starlightdelight.starlight_chestplate": "Plastron Astral",
@@ -116,5 +117,25 @@
 
 
   "entity.starlightdelight.mantis": "Mante Religieuse",
-  "entity.starlightdelight.tomahawk": "Tomahawk"
+  "entity.starlightdelight.tomahawk": "Tomahawk",
+
+
+  "advancements.starlightdelight.root.title": "Starlight & Delight",
+  "advancements.starlightdelight.root.description": "Des trucs brillants et appétissants",
+  "advancements.starlightdelight.pink_garnet.title": "C'est pas Censé être Rouge ça?",
+  "advancements.starlightdelight.pink_garnet.description": "Faites fondre du Grenat Rose (c'est pas un Rubis)",
+  "advancements.starlightdelight.pretty_armor.title": "Fabuleux!",
+  "advancements.starlightdelight.pretty_armor.description": "Protégez-vous mais avec *style*",
+  "advancements.starlightdelight.hammer.title": "Complétement Marteau",
+  "advancements.starlightdelight.hammer.description": "Obtenez un Marteau (vous devriez raser une montagne, pour rigoler)",
+  "advancements.starlightdelight.starlight_ashes.title": "Nouveauté dans les Abîmes...",
+  "advancements.starlightdelight.starlight_ashes.description": "Trouvez des Cendres Stellaires",
+  "advancements.starlightdelight.hoely_beheader.title": "Dévouement... Inquiétant",
+  "advancements.starlightdelight.hoely_beheader.description": "Fabriquez une Sainte Gui-houe-tine, puis regardez les autres réévaluer leurs choix de vie",
+  "advancements.starlightdelight.starlight_fragment.title": "Nouveaux Horizons?",
+  "advancements.starlightdelight.starlight_fragment.description": "Fabriquez un Fragment d'Étoile",
+  "advancements.starlightdelight.starlight_upgrade.title": "Forge Stellaire",
+  "advancements.starlightdelight.starlight_upgrade.description": "Trouvez un Modèle de forge Astral",
+  "advancements.starlightdelight.starlight_armor.title": "Protection Astrale",
+  "advancements.starlightdelight.starlight_armor.description": "Obtenez une Armure Astrale complète"
 }

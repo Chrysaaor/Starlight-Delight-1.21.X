@@ -5,6 +5,7 @@
   "item.starlightdelight.cauliflower": "Cauliflower",
 
   "item.starlightdelight.starlight_ashes": "Starlight Ashes",
+  "item.starlightdelight.starlight_shard": "Starlight Shard",
   "item.starlightdelight.starlight_fragment": "Starlight Fragment",
 
   "item.starlightdelight.smithing_template": "Starlight Smithing Template",
@@ -117,7 +118,26 @@
 
 
   "entity.starlightdelight.mantis": "Mantis",
-  "entity.starlightdelight.tomahawk": "Tomahawk"
+  "entity.starlightdelight.tomahawk": "Tomahawk",
 
+
+  "advancements.starlightdelight.root.title": "Starlight & Delight",
+  "advancements.starlightdelight.root.description": "Shiny and tasty things",
+  "advancements.starlightdelight.pink_garnet.title": "Isn't that Supposed to be Red?",
+  "advancements.starlightdelight.pink_garnet.description": "Smelt a Pink Garnet (Not a Ruby)",
+  "advancements.starlightdelight.pretty_armor.title": "Marvelous!",
+  "advancements.starlightdelight.pretty_armor.description": "Protect yourself, but with *style*",
+  "advancements.starlightdelight.hammer.title": "Hammer Go Brrrr",
+  "advancements.starlightdelight.hammer.description": "Get a Hammer (you should flatten a mountain, for fun)",
+  "advancements.starlightdelight.starlight_ashes.title": "New Depths...",
+  "advancements.starlightdelight.starlight_ashes.description": "Find Starlight Ashes",
+  "advancements.starlightdelight.hoely_beheader.title": "Scary Dedication",
+  "advancements.starlightdelight.hoely_beheader.description": "Craft a Hoely Beheader, and then watch others reevaluate their life choices",
+  "advancements.starlightdelight.starlight_fragment.title": "New Heights?",
+  "advancements.starlightdelight.starlight_fragment.description": "Craft a Starlight Fragment",
+  "advancements.starlightdelight.starlight_upgrade.title": "Star Forge",
+  "advancements.starlightdelight.starlight_upgrade.description": "Find a Starlight Smithing Template",
+  "advancements.starlightdelight.starlight_armor.title": "The Full Concentrated Power of the Stars",
+  "advancements.starlightdelight.starlight_armor.description": "Get a full suit of Starlight Armor"
 
 }

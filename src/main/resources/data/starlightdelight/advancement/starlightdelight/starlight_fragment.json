@@ -1,0 +1,33 @@
+{
+  "parent": "starlightdelight:starlightdelight/starlight_ashes",
+  "criteria": {
+    "starlight_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:starlight_fragment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.starlight_fragment.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:starlight_fragment"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.starlight_fragment.title"
+    }
+  },
+  "requirements": [
+    [
+      "starlight_fragment"
+    ]
+  ]
+}

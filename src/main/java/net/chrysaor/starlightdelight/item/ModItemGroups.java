@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.starlightdelight.chrysaor_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.STARLIGHT_ASHES);
+                        entries.add(ModItems.STARLIGHT_SHARD);
                         entries.add(ModItems.STARLIGHT_FRAGMENT);
 
                         entries.add(ModItems.STARLIGHT_HELMET);

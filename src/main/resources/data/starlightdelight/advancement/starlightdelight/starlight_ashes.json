@@ -1,0 +1,33 @@
+{
+  "parent": "starlightdelight:starlightdelight/root",
+  "criteria": {
+    "starlight_ashes": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:starlight_ashes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "hidden": true,
+    "description": {
+      "translate": "advancements.starlightdelight.starlight_ashes.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:starlight_ashes"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.starlight_ashes.title"
+    }
+  },
+  "requirements": [
+    [
+      "starlight_ashes"
+    ]
+  ]
+}

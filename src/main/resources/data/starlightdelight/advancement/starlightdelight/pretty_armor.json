@@ -1,0 +1,41 @@
+{
+  "parent": "starlightdelight:starlightdelight/pink_garnet",
+  "criteria": {
+    "pink_garnet_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:pink_garnet_helmet"
+          },
+          {
+            "items": "starlightdelight:pink_garnet_chestplate"
+          },
+          {
+            "items": "starlightdelight:pink_garnet_leggings"
+          },
+          {
+            "items": "starlightdelight:pink_garnet_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.pretty_armor.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:pink_garnet_helmet"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.pretty_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "pink_garnet_armor"
+    ]
+  ]
+}

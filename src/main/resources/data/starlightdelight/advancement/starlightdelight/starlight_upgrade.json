@@ -1,0 +1,33 @@
+{
+  "parent": "starlightdelight:starlightdelight/starlight_fragment",
+  "criteria": {
+    "starlight_upgrade": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:starlight_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.starlight_upgrade.description"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:starlight_upgrade_smithing_template"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.starlight_upgrade.title"
+    }
+  },
+  "requirements": [
+    [
+      "starlight_upgrade"
+    ]
+  ]
+}

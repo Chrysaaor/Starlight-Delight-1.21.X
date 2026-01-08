@@ -1,0 +1,32 @@
+{
+  "parent": "starlightdelight:starlightdelight/root",
+  "criteria": {
+    "pink_garnet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:pink_garnet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.pink_garnet.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:pink_garnet"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.pink_garnet.title"
+    }
+  },
+  "requirements": [
+    [
+      "pink_garnet"
+    ]
+  ]
+}

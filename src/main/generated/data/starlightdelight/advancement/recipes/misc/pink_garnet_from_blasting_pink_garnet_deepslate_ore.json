@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:pink_garnet_from_blasting_pink_garnet_deepslate_ore"
+        "recipe": "starlightdelight:pink_garnet_from_blasting_pink_garnet_deepslate_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:pink_garnet_from_blasting_pink_garnet_deepslate_ore"
+      "starlightdelight:pink_garnet_from_blasting_pink_garnet_deepslate_ore"
     ]
   }
 }

@@ -42,6 +42,7 @@ public class ModItems {
 
     //
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
+    public static final Item STARLIGHT_SHARD = registerItem("starlight_shard", new Item(new Item.Settings().fireproof()));
     public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new StarlightFragmentItem(new Item.Settings().fireproof()));
 
     public static final Item STARLIGHT_UPGRADE_SMITHING_TEMPLATE = registerItem("starlight_upgrade_smithing_template", ModTemplateItem.createStarlightUpgrade());

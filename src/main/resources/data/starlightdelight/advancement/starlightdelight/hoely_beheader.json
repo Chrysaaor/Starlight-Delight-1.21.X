@@ -1,0 +1,36 @@
+{
+  "parent": "starlightdelight:starlightdelight/starlight_ashes",
+  "criteria": {
+    "hoely_beheader": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:hoely_beheader"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.hoely_beheader.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:hoely_beheader"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.hoely_beheader.title"
+    }
+  },
+  "requirements": [
+    [
+      "hoely_beheader"
+    ]
+  ],
+  "rewards": {
+    "experience": 150
+  }
+}

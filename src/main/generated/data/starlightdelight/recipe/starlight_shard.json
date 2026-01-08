@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "starlightdelight:starlight_ashes"
+    },
+    {
+      "item": "starlightdelight:starlight_ashes"
+    },
+    {
+      "item": "starlightdelight:starlight_ashes"
+    },
+    {
+      "item": "starlightdelight:starlight_ashes"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:starlight_shard"
+  }
+}

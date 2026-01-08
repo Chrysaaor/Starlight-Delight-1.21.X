@@ -125,13 +125,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.PINK_GARNET), conditionsFromItem(ModItems.PINK_GARNET))
                 .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "pink_garnet_lamp"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_FRAGMENT)
-                .pattern(" A ")
-                .pattern("ANA")
-                .pattern(" A ")
-                .input('A', ModItems.STARLIGHT_ASHES)
-                .input('N', Items.NETHER_STAR)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_SHARD)
+                .input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES)).input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES))
+                .input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES)).input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES))
+                .input(Ingredient.ofItems(Items.AMETHYST_SHARD))
+                .input(Ingredient.ofItems(Items.DIAMOND)).input(Ingredient.ofItems(Items.DIAMOND))
+                .input(Ingredient.ofItems(Items.DIAMOND)).input(Ingredient.ofItems(Items.DIAMOND))
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
                 .criterion(hasItem(ModItems.STARLIGHT_ASHES), conditionsFromItem(ModItems.STARLIGHT_ASHES))
+                .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "starlight_shard"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_FRAGMENT)
+                .pattern(" S ")
+                .pattern("SNS")
+                .pattern(" S ")
+                .input('S', ModItems.STARLIGHT_SHARD)
+                .input('N', Items.NETHER_STAR)
+                .criterion(hasItem(ModItems.STARLIGHT_SHARD), conditionsFromItem(ModItems.STARLIGHT_SHARD))
                 .criterion(hasItem(Items.NETHER_STAR), conditionsFromItem(Items.NETHER_STAR))
                 .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "starlight_fragment"));
 

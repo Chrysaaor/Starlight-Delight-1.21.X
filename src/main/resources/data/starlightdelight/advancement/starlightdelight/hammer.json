@@ -1,0 +1,43 @@
+{
+  "parent": "starlightdelight:starlightdelight/pink_garnet",
+  "criteria": {
+    "pink_garnet_hammer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:pink_garnet_hammer"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "diamond_hammer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:diamond_hammer"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.hammer.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:pink_garnet_hammer"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.hammer.title"
+    }
+  },
+  "requirements": [
+    [
+      "pink_garnet_hammer",
+      "diamond_hammer"
+    ]
+  ]
+}

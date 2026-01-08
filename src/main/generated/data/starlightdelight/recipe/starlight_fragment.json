@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "A": {
-      "item": "starlightdelight:starlight_ashes"
-    },
     "N": {
       "item": "minecraft:nether_star"
+    },
+    "S": {
+      "item": "starlightdelight:starlight_shard"
     }
   },
   "pattern": [
-    " A ",
-    "ANA",
-    " A "
+    " S ",
+    "SNS",
+    " S "
   ],
   "result": {
     "count": 1,

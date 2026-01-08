@@ -1,21 +1,21 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_nether_star": {
+    "has_diamond": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:nether_star"
+            "items": "minecraft:diamond"
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_starlight_shard": {
+    "has_starlight_ashes": {
       "conditions": {
         "items": [
           {
-            "items": "starlightdelight:starlight_shard"
+            "items": "starlightdelight:starlight_ashes"
           }
         ]
       },
@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "starlightdelight:starlight_fragment"
+        "recipe": "starlightdelight:starlight_shard"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -31,13 +31,13 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_starlight_shard",
-      "has_nether_star"
+      "has_diamond",
+      "has_starlight_ashes"
     ]
   ],
   "rewards": {
     "recipes": [
-      "starlightdelight:starlight_fragment"
+      "starlightdelight:starlight_shard"
     ]
   }
 }

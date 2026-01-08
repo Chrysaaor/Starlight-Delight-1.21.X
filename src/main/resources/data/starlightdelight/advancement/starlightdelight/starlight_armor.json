@@ -1,0 +1,45 @@
+{
+  "parent": "starlightdelight:starlightdelight/starlight_upgrade",
+  "criteria": {
+    "starlight_armor": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:starlight_helmet"
+          },
+          {
+            "items": "starlightdelight:starlight_chestplate"
+          },
+          {
+            "items": "starlightdelight:starlight_leggings"
+          },
+          {
+            "items": "starlightdelight:starlight_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.starlight_armor.description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:starlight_chestplate"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.starlight_armor.title"
+    }
+  },
+  "requirements": [
+    [
+      "starlight_armor"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}

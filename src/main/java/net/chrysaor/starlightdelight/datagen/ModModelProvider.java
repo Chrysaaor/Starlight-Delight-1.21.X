@@ -65,6 +65,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HOELY_BEHEADER, Models.HANDHELD);
 
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STARLIGHT_SHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_FRAGMENT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
