@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "starlightdelight:starlight_ashes"
+      "item": "starlightdelight:starlight_shard"
     },
     "N": {
       "item": "minecraft:netherite_ingot"
@@ -13,9 +13,9 @@
     }
   },
   "pattern": [
-    "ASA",
+    " S ",
     "ANA",
-    "AAA"
+    " A "
   ],
   "result": {
     "count": 2,

@@ -145,10 +145,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "starlight_fragment"));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE, 2)
-                .pattern("ASA")
+                .pattern(" S ")
                 .pattern("ANA")
-                .pattern("AAA")
-                .input('A', ModItems.STARLIGHT_ASHES)
+                .pattern(" A ")
+                .input('A', ModItems.STARLIGHT_SHARD)
                 .input('N', Items.NETHERITE_INGOT)
                 .input('S', ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE)
                 .criterion(hasItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE))
