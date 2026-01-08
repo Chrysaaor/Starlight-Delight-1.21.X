@@ -128,10 +128,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STARLIGHT_SHARD)
                 .input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES)).input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES))
                 .input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES)).input(Ingredient.ofItems(ModItems.STARLIGHT_ASHES))
-                .input(Ingredient.ofItems(Items.AMETHYST_SHARD))
-                .input(Ingredient.ofItems(Items.DIAMOND)).input(Ingredient.ofItems(Items.DIAMOND))
-                .input(Ingredient.ofItems(Items.DIAMOND)).input(Ingredient.ofItems(Items.DIAMOND))
-                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .input(Ingredient.ofItems(Items.AMETHYST_SHARD)).input(Ingredient.ofItems(Items.AMETHYST_SHARD))
+                .input(Ingredient.ofItems(Items.AMETHYST_SHARD)).input(Ingredient.ofItems(Items.AMETHYST_SHARD))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .criterion(hasItem(ModItems.STARLIGHT_ASHES), conditionsFromItem(ModItems.STARLIGHT_ASHES))
                 .offerTo(recipeExporter, Identifier.of(StarlightDelight.MOD_ID, "starlight_shard"));
 
