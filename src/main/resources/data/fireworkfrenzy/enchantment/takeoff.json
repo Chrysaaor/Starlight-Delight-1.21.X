@@ -1,0 +1,46 @@
+{
+  "anvil_cost": 8,
+  "description": {
+    "translate": "enchantment.fireworkfrenzy.takeoff"
+  },
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+        "effect": {},
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "is_direct": false,
+            "source_entity": {
+              "distance": {
+                "absolute": {
+                  "max": 9.999999747378752E-6
+                }
+              }
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "fireworkfrenzy:is_firework"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 60,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 23,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/foot_armor",
+  "weight": 1
+}
