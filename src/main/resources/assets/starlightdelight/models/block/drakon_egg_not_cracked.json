@@ -1,0 +1,11 @@
+{
+  "parent": "starlightdelight:block/drakon_egg",
+  "textures": {
+    "bottom": "starlightdelight:block/drakon_egg_bottom",
+    "east": "starlightdelight:block/drakon_egg_east",
+    "north": "starlightdelight:block/drakon_egg_north",
+    "south": "starlightdelight:block/drakon_egg_south",
+    "top": "starlightdelight:block/drakon_egg_top",
+    "west": "starlightdelight:block/drakon_egg_west"
+  }
+}

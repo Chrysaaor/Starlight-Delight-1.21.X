@@ -104,6 +104,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
 
+                        entries.add(ModBlocks.DRAKON_EGG);
+
                         entries.add(ModBlocks.PEDESTAL);
 
                         entries.add(ModBlocks.FERMENTER);

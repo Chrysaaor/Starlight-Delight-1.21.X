@@ -1,0 +1,19 @@
+{
+  "textures": {
+    "particle": "starlightdelight:block/drakon_egg_north"
+  },
+  "elements": [
+    {
+      "from": [1, 0, 2],
+      "to": [15, 16, 14],
+      "faces": {
+        "north": {"uv": [0, 0, 14, 16], "texture": "starlightdelight:block/drakon_egg_north"},
+        "east": {"uv": [0, 0, 12, 16], "texture": "starlightdelight:block/drakon_egg_east"},
+        "south": {"uv": [0, 0, 14, 16], "texture": "starlightdelight:block/drakon_egg_south"},
+        "west": {"uv": [0, 0, 12, 16], "texture": "starlightdelight:block/drakon_egg_west"},
+        "up": {"uv": [0, 0, 14, 12], "texture": "starlightdelight:block/drakon_egg_top", "cullface": "up"},
+        "down": {"uv": [0, 0, 14, 12], "texture": "starlightdelight:block/drakon_egg_bottom", "cullface": "down"}
+      }
+    }
+  ]
+}
