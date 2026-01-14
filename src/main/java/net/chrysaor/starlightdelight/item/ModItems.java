@@ -22,13 +22,7 @@ public class ModItems {
 
     //Foods
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings()
-            .food(ModFoodComponents.CAULIFLOWER)) {
-        @Override
-        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-            tooltip.add(Text.translatable("tooltip.starlightdelight.cauliflower.tooltip"));
-            super.appendTooltip(stack, context, tooltip, type);
-        }
-    });
+            .food(ModFoodComponents.CAULIFLOWER)));
 
     public static final Item SWEET_BERRIES_PIE = registerItem("sweet_berries_pie", new Item(new Item.Settings()
             .food(ModFoodComponents.SWEET_BERRIES_PIE)));
@@ -156,6 +150,9 @@ public class ModItems {
 
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
+    public static final Item DRAKON_EGG = registerItem("drakon_egg",
+            new AliasedBlockItem(ModBlocks.DRAKON_EGG, new Item.Settings()));
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));

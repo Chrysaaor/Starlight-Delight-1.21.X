@@ -77,7 +77,7 @@ public class ModBlocks {
             new FermenterBlock(AbstractBlock.Settings.create().nonOpaque()));
 
     public static  final Block DRAKON_EGG = registerBlock("drakon_egg",
-            new SnifferEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)
+            new DrakonEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)
                     .strength(0.75f).sounds(BlockSoundGroup.METAL).nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {

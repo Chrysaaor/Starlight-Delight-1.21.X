@@ -57,6 +57,8 @@
   "item.starlightdelight.grapes": "Grapes",
   "item.starlightdelight.red_wine": "Red Wine",
 
+  "item.starlightdelight.drakon_egg": "Drakon Egg",
+
 
   "item.starlightdelight.smithing_template.starlight_upgrade.additions_slot_description": "Add Starlight Fragment",
   "item.starlightdelight.smithing_template.starlight_upgrade.applies_to": "Netherite Equipment",
@@ -110,8 +112,6 @@
   "itemgroup.starlightdelight.chrysaor_blocks": "Starlight & Delight Blocks",
 
 
-  "tooltip.starlightdelight.cauliflower.tooltip": "This is delicious!",
-
   "tooltip.starlightdelight.hoely_beheader.tooltip": " ",
   "tooltip.starlightdelight.hoely_beheader.tooltip1": "This §4occult§r scythe feeds off of",
   "tooltip.starlightdelight.hoely_beheader.tooltip2": "its owner's §4life force§r",
@@ -127,7 +127,7 @@
   "advancements.starlightdelight.root.description": "Shiny and tasty things",
   "advancements.starlightdelight.pink_garnet.title": "Isn't that Supposed to be Red?",
   "advancements.starlightdelight.pink_garnet.description": "Smelt a Pink Garnet (Not a Ruby)",
-  "advancements.starlightdelight.pretty_armor.title": "Marvelous!",
+  "advancements.starlightdelight.pretty_armor.title": "Fabulous!",
   "advancements.starlightdelight.pretty_armor.description": "Protect yourself, but with *style*",
   "advancements.starlightdelight.hammer.title": "Hammer Go Brrrr",
   "advancements.starlightdelight.hammer.description": "Get a Hammer (you should flatten a mountain, for fun)",
@@ -141,5 +141,4 @@
   "advancements.starlightdelight.starlight_upgrade.description": "Find a Starlight Smithing Template",
   "advancements.starlightdelight.starlight_armor.title": "The Full Concentrated Power of the Stars",
   "advancements.starlightdelight.starlight_armor.description": "Get a full suit of Starlight Armor"
-
 }

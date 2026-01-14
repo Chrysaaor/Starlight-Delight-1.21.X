@@ -56,6 +56,8 @@
   "item.starlightdelight.grapes": "Raisins",
   "item.starlightdelight.red_wine": "Vin Rouge",
 
+  "item.starlightdelight.drakon_egg": "Oeuf de Drakon",
+
 
   "item.starlightdelight.smithing_template.starlight_upgrade.additions_slot_description": "Ajoutez un Fragment d'Étoile",
   "item.starlightdelight.smithing_template.starlight_upgrade.applies_to": "Équipement en Netherite",
@@ -109,8 +111,6 @@
   "itemgroup.starlightdelight.chrysaor_blocks": "Blocs Starlight & Delight",
 
 
-  "tooltip.starlightdelight.cauliflower.tooltip": "C'est délicieux!",
-
   "tooltip.starlightdelight.hoely_beheader.tooltip": " ",
   "tooltip.starlightdelight.hoely_beheader.tooltip1": "Cette houe §4occulte§r se nourrit",
   "tooltip.starlightdelight.hoely_beheader.tooltip2": "de la §4force vitale§r de son propriétaire",
@@ -126,7 +126,7 @@
   "advancements.starlightdelight.root.description": "Des trucs brillants et appétissants",
   "advancements.starlightdelight.pink_garnet.title": "C'est pas Censé être Rouge ça?",
   "advancements.starlightdelight.pink_garnet.description": "Faites fondre du Grenat Rose (c'est pas un Rubis)",
-  "advancements.starlightdelight.pretty_armor.title": "Fabuleux!",
+  "advancements.starlightdelight.pretty_armor.title": "Voir la Vie en Rose!",
   "advancements.starlightdelight.pretty_armor.description": "Protégez-vous mais avec *style*",
   "advancements.starlightdelight.hammer.title": "Complétement Marteau",
   "advancements.starlightdelight.hammer.description": "Obtenez un Marteau (vous devriez raser une montagne, pour rigoler)",

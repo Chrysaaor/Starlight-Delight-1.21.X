@@ -67,6 +67,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
 
+                        entries.add(ModItems.DRAKON_EGG);
+
                         entries.add(ModItems.SWEET_BERRIES_PIE);
                         entries.add(ModItems.CHEESE);
                         entries.add(ModItems.CAULIFLOWER);
@@ -77,7 +79,7 @@ public class ModItemGroups {
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(StarlightDelight.MOD_ID, "starlightdelight_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.FERMENTER))
                     .displayName(Text.translatable("itemgroup.starlightdelight.chrysaor_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
@@ -103,8 +105,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);
-
-                        entries.add(ModBlocks.DRAKON_EGG);
 
                         entries.add(ModBlocks.PEDESTAL);
 

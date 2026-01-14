@@ -1,11 +1,11 @@
 {
   "parent": "starlightdelight:block/drakon_egg",
   "textures": {
-    "bottom": "starlightdelight:block/drakon_egg_bottom",
-    "east": "starlightdelight:block/drakon_egg_east",
-    "north": "starlightdelight:block/drakon_egg_north",
-    "south": "starlightdelight:block/drakon_egg_south",
-    "top": "starlightdelight:block/drakon_egg_top",
-    "west": "starlightdelight:block/drakon_egg_west"
+    "bottom": "starlightdelight:block/drakon_egg_bottom_not_cracked",
+    "east": "starlightdelight:block/drakon_egg_east_not_cracked",
+    "north": "starlightdelight:block/drakon_egg_north_not_cracked",
+    "south": "starlightdelight:block/drakon_egg_south_not_cracked",
+    "top": "starlightdelight:block/drakon_egg_top_not_cracked",
+    "west": "starlightdelight:block/drakon_egg_west_not_cracked"
   }
 }

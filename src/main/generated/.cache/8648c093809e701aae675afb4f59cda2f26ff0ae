@@ -1,15 +1,15 @@
-// 1.21.1	2026-01-08T13:49:25.627616	Starlight & Delight/Tags for minecraft:item
+// 1.21.1	2026-01-14T00:12:09.8279433	Starlight & Delight/Tags for minecraft:item
 f857c05519d80fbaefaab948d9cb70313a1195ac data\minecraft\tags\item\enchantable\bow.json
 81ba4bab655c2e425552c5e3e64a1863e522fb8f data\minecraft\tags\item\swords.json
 5e7fcb5f8822ef032542905c93d6e8fb01ecc22e data\minecraft\tags\item\enchantable\durability.json
 ad413580d3de0481dfbdd4c2b63478cd1c5bc71c data\minecraft\tags\item\hoes.json
-f8a8e71b55ed5636c556b74406702dce82b096c4 data\minecraft\tags\item\shovels.json
 c95db0c1c42abf10ee7de81f2846dba0d361b5c0 data\minecraft\tags\item\axes.json
-ea5c9809d6a8ad99c6b98ac5b217be8322f57f44 data\minecraft\tags\item\trim_templates.json
-5e7fcb5f8822ef032542905c93d6e8fb01ecc22e data\minecraft\tags\item\enchantable\mining.json
 fc499781061a2ef6dc652c2a0b877fa9650c3e3f data\minecraft\tags\item\head_armor.json
-3d261eda8f1a7c07f78a802e399c871585ee1060 data\minecraft\tags\item\leg_armor.json
-e21db15c13a8030f136686af6c31c767f258905f data\minecraft\tags\item\pickaxes.json
 1fcd8ea189cbc98622ca9d60b674ec115a0db837 data\minecraft\tags\item\foot_armor.json
 65af79e31c9af8713eedd29fcd6a9acd62602e22 data\minecraft\tags\item\chest_armor.json
 1f4d83d1d78814b38697ad36780fc357065f99f0 data\minecraft\tags\item\trimmable_armor.json
+f8a8e71b55ed5636c556b74406702dce82b096c4 data\minecraft\tags\item\shovels.json
+ea5c9809d6a8ad99c6b98ac5b217be8322f57f44 data\minecraft\tags\item\trim_templates.json
+5e7fcb5f8822ef032542905c93d6e8fb01ecc22e data\minecraft\tags\item\enchantable\mining.json
+3d261eda8f1a7c07f78a802e399c871585ee1060 data\minecraft\tags\item\leg_armor.json
+e21db15c13a8030f136686af6c31c767f258905f data\minecraft\tags\item\pickaxes.json
