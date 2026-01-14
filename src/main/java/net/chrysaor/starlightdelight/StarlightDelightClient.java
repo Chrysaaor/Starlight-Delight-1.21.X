@@ -10,6 +10,7 @@ import net.chrysaor.starlightdelight.particle.ModParticles;
 import net.chrysaor.starlightdelight.particle.custom.CustomSweepParticle;
 import net.chrysaor.starlightdelight.screen.ModScreenHandlers;
 import net.chrysaor.starlightdelight.screen.custom.FermenterScreen;
+import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreen;
 import net.chrysaor.starlightdelight.util.ModModelPredicates;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -51,6 +52,8 @@ public class StarlightDelightClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.PEDESTAL_BE, PedestalBlockEntityRenderer::new);
 
         HandledScreens.register(ModScreenHandlers.FERMENTER_SCREEN_HANDLER, FermenterScreen::new);
+
+        HandledScreens.register(ModScreenHandlers.PREPARATION_TABLE_SCREEN_HANDLER, PreparationTableScreen::new);
 
 
         ParticleFactoryRegistry.getInstance()

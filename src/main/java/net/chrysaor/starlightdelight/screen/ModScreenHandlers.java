@@ -2,6 +2,7 @@ package net.chrysaor.starlightdelight.screen;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.screen.custom.FermenterScreenHandler;
+import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +15,9 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(StarlightDelight.MOD_ID, "fermenter_screen_handler"),
                     new ExtendedScreenHandlerType<>(FermenterScreenHandler::new, BlockPos.PACKET_CODEC));
 
+    public static final ScreenHandlerType<PreparationTableScreenHandler> PREPARATION_TABLE_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(StarlightDelight.MOD_ID, "preparation_table_screen_handler"),
+                    new ExtendedScreenHandlerType<>(PreparationTableScreenHandler::new, BlockPos.PACKET_CODEC));
 
 
     public static void registerScreenHandlers() {

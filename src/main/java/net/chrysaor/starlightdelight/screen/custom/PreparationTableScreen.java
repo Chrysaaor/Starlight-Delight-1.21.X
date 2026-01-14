@@ -9,14 +9,14 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class FermenterScreen extends HandledScreen<FermenterScreenHandler> {
+public class PreparationTableScreen  extends HandledScreen<PreparationTableScreenHandler> {
     private static final Identifier GUI_TEXTURE =
             Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/fermenter_gui.png");
     private static final Identifier ARROW_TEXTURE =
             Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/ferment_progress.png");
 
 
-    public FermenterScreen(FermenterScreenHandler handler, PlayerInventory inventory, Text title) {
+    public PreparationTableScreen(PreparationTableScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
 

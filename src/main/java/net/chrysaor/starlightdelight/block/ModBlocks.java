@@ -71,10 +71,13 @@ public class ModBlocks {
             new GrapeBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block PEDESTAL = registerBlock("pedestal",
-            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque()));
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)));
 
     public static final Block FERMENTER = registerBlock("fermenter",
-            new FermenterBlock(AbstractBlock.Settings.create().nonOpaque()));
+            new FermenterBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block PREPARATION_TABLE = registerBlock("preparation_table",
+            new PreparationTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
 
     public static  final Block DRAKON_EGG = registerBlock("drakon_egg",
             new DrakonEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)

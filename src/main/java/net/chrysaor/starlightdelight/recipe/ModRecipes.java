@@ -19,8 +19,20 @@ public class ModRecipes {
                 public String toString() {
                     return "fermenter";
                 }});
+
+
+
+    public static final RecipeSerializer<PreparationTableRecipe> PREPARATION_TABLE_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(StarlightDelight.MOD_ID, "prepartion_table"),
+            new PreparationTableRecipe.Serializer());
+
+    public static final RecipeType<PreparationTableRecipe> PREPARATION_TABLE_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(StarlightDelight.MOD_ID, "preparation_table"),
+            new RecipeType<PreparationTableRecipe>() {@Override public String toString() {return "preparation_table";}});
+
+
+
     public static void registerRecipes() {
         StarlightDelight.LOGGER.info("Registering Recipes for " + StarlightDelight.MOD_ID);
     }
-
 }

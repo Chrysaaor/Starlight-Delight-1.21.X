@@ -4,6 +4,8 @@ import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.block.entity.custom.FermenterBlockEntity;
 import net.chrysaor.starlightdelight.block.entity.custom.PedestalBlockEntity;
+import net.chrysaor.starlightdelight.block.entity.custom.PreparationTableBlockEntity;
+import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,6 +19,10 @@ public class ModBlockEntities {
     public static final BlockEntityType<FermenterBlockEntity> FERMENTER_BE =
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(StarlightDelight.MOD_ID, "fermenter_be"),
                     BlockEntityType.Builder.create(FermenterBlockEntity::new, ModBlocks.FERMENTER).build(null));
+
+    public static final BlockEntityType<PreparationTableBlockEntity> PREPARATION_TABLE_BE =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(StarlightDelight.MOD_ID, "preparation_table_be"),
+                    BlockEntityType.Builder.create(PreparationTableBlockEntity::new, ModBlocks.PREPARATION_TABLE).build(null));
 
     public static void registerBlockEntities() {
         StarlightDelight.LOGGER.info("Registering Block Entities for " + StarlightDelight.MOD_ID);
