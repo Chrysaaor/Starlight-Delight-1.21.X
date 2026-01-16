@@ -13,7 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.util.BlockRotation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
@@ -21,7 +20,6 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
-import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -71,7 +69,7 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
 
     @Override
     public @Nullable BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx).with(FACING, ctx.getHorizontalPlayerFacing().rotateYClockwise());
+        return super.getPlacementState(ctx).with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     @Override
@@ -116,13 +114,13 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
     }
 
     private static final VoxelShape NORTH_SHAPE =
-            Block.createCuboidShape(2, 0, 0, 16, 16, 16);
-    private static final VoxelShape WEST_SHAPE =
             Block.createCuboidShape(0, 0, 0, 16, 16, 14);
-    private static final VoxelShape SOUTH_SHAPE =
+    private static final VoxelShape WEST_SHAPE =
             Block.createCuboidShape(0, 0, 0, 14, 16, 16);
-    private static final VoxelShape EAST_SHAPE =
+    private static final VoxelShape SOUTH_SHAPE =
             Block.createCuboidShape(0, 0, 2, 16, 16, 16);
+    private static final VoxelShape EAST_SHAPE =
+            Block.createCuboidShape(2, 0, 0, 16, 16, 16);
 
     public static final DirectionProperty FACING;
 

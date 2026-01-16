@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "starlightdelight:block/preparation_table",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "starlightdelight:block/preparation_table"
+    },
+    "facing=south": {
+      "model": "starlightdelight:block/preparation_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "starlightdelight:block/preparation_table",
+      "y": 270
+    }
+  }
+}

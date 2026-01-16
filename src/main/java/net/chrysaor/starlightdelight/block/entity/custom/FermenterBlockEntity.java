@@ -39,7 +39,7 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 1200;
 
 
     public FermenterBlockEntity(BlockPos pos, BlockState state) {
@@ -104,13 +104,14 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
 
     private void resetProgress() {
         this.progress = 0;
-        this.maxProgress = 72;
+        this.maxProgress = 1200;
     }
 
     private void craftItem() {
         Optional<RecipeEntry<FermenterRecipe>> recipe = getCurrentRecipe();
 
         ItemStack output = recipe.get().value().output();
+        ItemStack input = this.getStack(INPUT_SLOT);
 
         if (this.getStack(INPUT_SLOT).isOf(Items.MILK_BUCKET)) {
             this.removeStack(INPUT_SLOT, 1);
@@ -118,9 +119,10 @@ public class FermenterBlockEntity extends BlockEntity implements ExtendedScreenH
             this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
                     this.getStack(OUTPUT_SLOT).getCount() + output.getCount()));
         } else {
-            this.removeStack(INPUT_SLOT, 1);
+
+            this.removeStack(INPUT_SLOT);
             this.setStack(OUTPUT_SLOT, new ItemStack(output.getItem(),
-                    this.getStack(OUTPUT_SLOT).getCount() + output.getCount()));
+                    this.getStack(OUTPUT_SLOT).getCount() + output.getCount() * input.getCount()));
         }
     }
 

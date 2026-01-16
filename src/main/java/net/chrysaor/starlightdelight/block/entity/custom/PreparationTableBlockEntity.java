@@ -3,7 +3,7 @@ package net.chrysaor.starlightdelight.block.entity.custom;
 import net.chrysaor.starlightdelight.block.entity.ImplementedInventory;
 import net.chrysaor.starlightdelight.block.entity.ModBlockEntities;
 import net.chrysaor.starlightdelight.recipe.*;
-import net.chrysaor.starlightdelight.screen.custom.FermenterScreenHandler;
+import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -83,7 +83,7 @@ public class PreparationTableBlockEntity extends BlockEntity implements Extended
 
     @Override
     public @Nullable ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new FermenterScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
+        return new PreparationTableScreenHandler(syncId, playerInventory, this, this.propertyDelegate);
     }
 
     public void tick(World world, BlockPos pos, BlockState state) {
