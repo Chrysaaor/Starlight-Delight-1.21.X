@@ -1,21 +1,17 @@
 package net.chrysaor.starlightdelight.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import net.chrysaor.starlightdelight.block.entity.ModBlockEntities;
-import net.chrysaor.starlightdelight.block.entity.custom.PreparationTableBlockEntity;
+import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreenHandler;
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.item.ItemStack;
 import net.minecraft.screen.NamedScreenHandlerFactory;
+import net.minecraft.screen.ScreenHandlerContext;
+import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.DirectionProperty;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ItemActionResult;
-import net.minecraft.util.ItemScatterer;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
@@ -24,8 +20,13 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class PreparationTableBlock  extends BlockWithEntity implements BlockEntityProvider {
+public class PreparationTableBlock  extends CraftingTableBlock {
     public static final MapCodec<PreparationTableBlock> CODEC = PreparationTableBlock.createCodec(PreparationTableBlock::new);
+    private static final Text SCREEN_TITLE = Text.translatable("container.starlightdelight.preparation_table");
+
+    public MapCodec<PreparationTableBlock> getCodec() {
+        return CODEC;
+    }
 
     public PreparationTableBlock(Settings settings) {
         super(settings);
@@ -53,16 +54,6 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
     }
 
     @Override
-    protected MapCodec<? extends BlockWithEntity> getCodec() {
-        return CODEC;
-    }
-
-    @Override
-    public @Nullable BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new PreparationTableBlockEntity(pos, state);
-    }
-
-    @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
@@ -77,40 +68,18 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
         return BlockRenderType.MODEL;
     }
 
-
-    @Override
-    protected void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
-        if(state.getBlock() != newState.getBlock()) {
-            BlockEntity blockEntity = world.getBlockEntity(pos);
-            if(blockEntity instanceof PreparationTableBlockEntity) {
-                ItemScatterer.spawn(world, pos, ((PreparationTableBlockEntity) blockEntity));
-                world.updateComparators(pos, this);
-            }
-            super.onStateReplaced(state, world, pos, newState, moved);
-        }
+    protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new PreparationTableScreenHandler(syncId, inventory, (ScreenHandlerContext) ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
     }
 
     @Override
-    protected ItemActionResult onUseWithItem(ItemStack stack, BlockState state, World world, BlockPos pos,
-                                             PlayerEntity player, Hand hand, BlockHitResult hit) {
-        if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = ((PreparationTableBlockEntity) world.getBlockEntity(pos));
-            if (screenHandlerFactory != null) {
-                player.openHandledScreen(screenHandlerFactory);
-            }
+    protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
+        if (world.isClient) {
+            return ActionResult.SUCCESS;
+        } else {
+            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
+            return ActionResult.CONSUME;
         }
-        return ItemActionResult.SUCCESS;
-    }
-
-    @Nullable
-    @Override
-    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        if(world.isClient()) {
-            return null;
-        }
-
-        return validateTicker(type, ModBlockEntities.PREPARATION_TABLE_BE,
-                (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 
     private static final VoxelShape NORTH_SHAPE =

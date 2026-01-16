@@ -53,7 +53,7 @@ public class StarlightDelightClient implements ClientModInitializer {
 
         HandledScreens.register(ModScreenHandlers.FERMENTER_SCREEN_HANDLER, FermenterScreen::new);
 
-        HandledScreens.register(ModScreenHandlers.PREPARATION_TABLE_SCREEN_HANDLER, PreparationTableScreen::new);
+
 
 
         ParticleFactoryRegistry.getInstance()

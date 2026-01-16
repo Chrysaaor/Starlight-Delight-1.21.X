@@ -6,6 +6,8 @@ import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreenHandler
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
+import net.minecraft.screen.ScreenHandlerContext;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
@@ -17,7 +19,7 @@ public class ModScreenHandlers {
 
     public static final ScreenHandlerType<PreparationTableScreenHandler> PREPARATION_TABLE_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(StarlightDelight.MOD_ID, "preparation_table_screen_handler"),
-                    new ExtendedScreenHandlerType<>(PreparationTableScreenHandler::new, BlockPos.PACKET_CODEC));
+                    new ScreenHandlerType<>(PreparationTableScreenHandler::new, FeatureFlags.VANILLA_FEATURES));
 
 
     public static void registerScreenHandlers() {

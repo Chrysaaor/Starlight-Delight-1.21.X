@@ -3,47 +3,179 @@ package net.chrysaor.starlightdelight.screen.custom;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.chrysaor.starlightdelight.StarlightDelight;
 import net.minecraft.client.gui.DrawContext;
+import net.minecraft.client.gui.screen.ingame.CyclingSlotIcon;
+import net.minecraft.client.gui.screen.ingame.ForgingScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
+import net.minecraft.client.gui.screen.ingame.InventoryScreen;
 import net.minecraft.client.render.GameRenderer;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.decoration.ArmorStandEntity;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.SmithingTemplateItem;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.SmithingScreenHandler;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+import org.jetbrains.annotations.Nullable;
+import org.joml.Quaternionf;
+import org.joml.Vector3f;
 
-public class PreparationTableScreen  extends HandledScreen<PreparationTableScreenHandler> {
-    private static final Identifier GUI_TEXTURE =
-            Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/fermenter_gui.png");
-    private static final Identifier ARROW_TEXTURE =
-            Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/ferment_progress.png");
+import java.util.List;
+import java.util.Optional;
 
+public class PreparationTableScreen extends ForgingScreen<SmithingScreenHandler> {
+    private static final Identifier ERROR_TEXTURE = Identifier.ofVanilla("container/smithing/error");
+    private static final Identifier EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM_TEXTURE = Identifier.ofVanilla("item/empty_slot_smithing_template_armor_trim");
+    private static final Identifier EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE_TEXTURE = Identifier.ofVanilla("item/empty_slot_smithing_template_netherite_upgrade");
+    private static final Text MISSING_TEMPLATE_TOOLTIP = Text.translatable("container.upgrade.missing_template_tooltip");
+    private static final Text ERROR_TOOLTIP = Text.translatable("container.upgrade.error_tooltip");
+    private static final List<Identifier> EMPTY_SLOT_TEXTURES;
+    private static final int field_42057 = 44;
+    private static final int field_42058 = 15;
+    private static final int field_42059 = 28;
+    private static final int field_42060 = 21;
+    private static final int field_42061 = 65;
+    private static final int field_42062 = 46;
+    private static final int field_42063 = 115;
+    private static final int field_42068 = 210;
+    private static final int field_42047 = 25;
+    private static final Vector3f field_45497;
+    private static final Quaternionf ARMOR_STAND_ROTATION;
+    private static final int field_42049 = 25;
+    private static final int field_42050 = 75;
+    private static final int field_42051 = 141;
+    private final CyclingSlotIcon templateSlotIcon = new CyclingSlotIcon(0);
+    private final CyclingSlotIcon baseSlotIcon = new CyclingSlotIcon(1);
+    private final CyclingSlotIcon additionsSlotIcon = new CyclingSlotIcon(2);
+    @Nullable
+    private ArmorStandEntity armorStand;
 
-    public PreparationTableScreen(PreparationTableScreenHandler handler, PlayerInventory inventory, Text title) {
-        super(handler, inventory, title);
+    public PreparationTableScreen(SmithingScreenHandler handler, PlayerInventory playerInventory, Text title) {
+        super(handler, playerInventory, title, Identifier.ofVanilla("textures/gui/container/smithing.png"));
+        this.titleX = 44;
+        this.titleY = 15;
     }
 
-    @Override
+    protected void setup() {
+        this.armorStand = new ArmorStandEntity(this.client.world, (double)0.0F, (double)0.0F, (double)0.0F);
+        this.armorStand.setHideBasePlate(true);
+        this.armorStand.setShowArms(true);
+        this.armorStand.bodyYaw = 210.0F;
+        this.armorStand.setPitch(25.0F);
+        this.armorStand.headYaw = this.armorStand.getYaw();
+        this.armorStand.prevHeadYaw = this.armorStand.getYaw();
+        this.equipArmorStand(((SmithingScreenHandler)this.handler).getSlot(3).getStack());
+    }
+
+    public void handledScreenTick() {
+        super.handledScreenTick();
+        Optional<SmithingTemplateItem> optional = this.getSmithingTemplate();
+        this.templateSlotIcon.updateTexture(EMPTY_SLOT_TEXTURES);
+        this.baseSlotIcon.updateTexture((List)optional.map(SmithingTemplateItem::getEmptyBaseSlotTextures).orElse(List.of()));
+        this.additionsSlotIcon.updateTexture((List)optional.map(SmithingTemplateItem::getEmptyAdditionsSlotTextures).orElse(List.of()));
+    }
+
+    private Optional<SmithingTemplateItem> getSmithingTemplate() {
+        ItemStack itemStack = ((SmithingScreenHandler)this.handler).getSlot(0).getStack();
+        if (!itemStack.isEmpty()) {
+            Item var3 = itemStack.getItem();
+            if (var3 instanceof SmithingTemplateItem) {
+                SmithingTemplateItem smithingTemplateItem = (SmithingTemplateItem)var3;
+                return Optional.of(smithingTemplateItem);
+            }
+        }
+
+        return Optional.empty();
+    }
+
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        super.render(context, mouseX, mouseY, delta);
+        this.renderSlotTooltip(context, mouseX, mouseY);
+    }
+
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        RenderSystem.setShader(GameRenderer::getPositionTexProgram);
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.setShaderTexture(0, GUI_TEXTURE);
-
-        int x = (width - backgroundWidth) / 2;
-        int y = (height - backgroundHeight) / 2;
-
-        context.drawTexture(GUI_TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
-
-        renderProgressArrow(context, x, y);
+        super.drawBackground(context, delta, mouseX, mouseY);
+        this.templateSlotIcon.render(this.handler, context, delta, this.x, this.y);
+        this.baseSlotIcon.render(this.handler, context, delta, this.x, this.y);
+        this.additionsSlotIcon.render(this.handler, context, delta, this.x, this.y);
+        InventoryScreen.drawEntity(context, (float)(this.x + 141), (float)(this.y + 75), 25.0F, field_45497, ARMOR_STAND_ROTATION, (Quaternionf)null, this.armorStand);
     }
 
-    private void renderProgressArrow(DrawContext context, int x, int y) {
-        if (handler.isCrafting()) {
-            context.drawTexture(ARROW_TEXTURE, x + 73, y + 35, 0, 0,
-                    handler.getScaledArrowProgress(), 16, 24, 16);
+    public void onSlotUpdate(ScreenHandler handler, int slotId, ItemStack stack) {
+        if (slotId == 3) {
+            this.equipArmorStand(stack);
+        }
+
+    }
+
+    private void equipArmorStand(net.minecraft.item.ItemStack stack) {
+        if (this.armorStand != null) {
+            for(EquipmentSlot equipmentSlot : EquipmentSlot.values()) {
+                this.armorStand.equipStack(equipmentSlot, net.minecraft.item.ItemStack.EMPTY);
+            }
+
+            if (!stack.isEmpty()) {
+                ItemStack itemStack = stack.copy();
+                Item var8 = stack.getItem();
+                if (var8 instanceof ArmorItem) {
+                    ArmorItem armorItem = (ArmorItem)var8;
+                    this.armorStand.equipStack(armorItem.getSlotType(), itemStack);
+                } else {
+                    this.armorStand.equipStack(EquipmentSlot.OFFHAND, itemStack);
+                }
+            }
+
         }
     }
 
-    @Override
-    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        super.render(context, mouseX, mouseY, delta);
-        drawMouseoverTooltip(context, mouseX, mouseY);
+    protected void drawInvalidRecipeArrow(DrawContext context, int x, int y) {
+        if (this.hasInvalidRecipe()) {
+            context.drawGuiTexture(ERROR_TEXTURE, x + 65, y + 46, 28, 21);
+        }
+
+    }
+
+    private void renderSlotTooltip(DrawContext context, int mouseX, int mouseY) {
+        Optional<Text> optional = Optional.empty();
+        if (this.hasInvalidRecipe() && this.isPointWithinBounds(65, 46, 28, 21, (double)mouseX, (double)mouseY)) {
+            optional = Optional.of(ERROR_TOOLTIP);
+        }
+
+        if (this.focusedSlot != null) {
+            ItemStack itemStack = ((SmithingScreenHandler)this.handler).getSlot(0).getStack();
+            ItemStack itemStack2 = this.focusedSlot.getStack();
+            if (itemStack.isEmpty()) {
+                if (this.focusedSlot.id == 0) {
+                    optional = Optional.of(MISSING_TEMPLATE_TOOLTIP);
+                }
+            } else {
+                Item var8 = itemStack.getItem();
+                if (var8 instanceof SmithingTemplateItem) {
+                    SmithingTemplateItem smithingTemplateItem = (SmithingTemplateItem)var8;
+                    if (itemStack2.isEmpty()) {
+                        if (this.focusedSlot.id == 1) {
+                            optional = Optional.of(smithingTemplateItem.getBaseSlotDescription());
+                        } else if (this.focusedSlot.id == 2) {
+                            optional = Optional.of(smithingTemplateItem.getAdditionsSlotDescription());
+                        }
+                    }
+                }
+            }
+        }
+
+        optional.ifPresent((text) -> context.drawOrderedTooltip(this.textRenderer, this.textRenderer.wrapLines(text, 115), mouseX, mouseY));
+    }
+
+    private boolean hasInvalidRecipe() {
+        return ((SmithingScreenHandler)this.handler).getSlot(0).hasStack() && ((SmithingScreenHandler)this.handler).getSlot(1).hasStack() && ((SmithingScreenHandler)this.handler).getSlot(2).hasStack() && !((SmithingScreenHandler)this.handler).getSlot(((SmithingScreenHandler)this.handler).getResultSlotIndex()).hasStack();
+    }
+
+    static {
+        EMPTY_SLOT_TEXTURES = List.of(EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM_TEXTURE, EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE_TEXTURE);
+        field_45497 = new Vector3f();
+        ARMOR_STAND_ROTATION = (new Quaternionf()).rotationXYZ(0.43633232F, 0.0F, (float)Math.PI);
     }
 }
