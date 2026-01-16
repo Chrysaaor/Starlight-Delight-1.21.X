@@ -21,6 +21,7 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
@@ -34,12 +35,23 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        Direction direction = (Direction)state.get(FACING);
-        return direction.getAxis() == Direction.Axis.X ? X_AXIS_SHAPE : Z_AXIS_SHAPE;
-    }
-
-    public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return (BlockState) state.with(FACING, rotation.rotate((Direction) state.get(FACING)));
+        switch ((Direction)state.get(FACING)) {
+            case NORTH -> {
+                return NORTH_SHAPE;
+            }
+            case SOUTH -> {
+                return SOUTH_SHAPE;
+            }
+            case EAST -> {
+                return EAST_SHAPE;
+            }
+            case WEST -> {
+                return WEST_SHAPE;
+            }
+            default -> {
+                return NORTH_SHAPE;
+            }
+        }
     }
 
     @Override
@@ -103,11 +115,14 @@ public class PreparationTableBlock  extends BlockWithEntity implements BlockEnti
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 
-    private static final VoxelShape X_AXIS_SHAPE =
-            Block.createCuboidShape(0, 0, 2, 16, 16, 14);
-
-    private static final VoxelShape Z_AXIS_SHAPE =
-            Block.createCuboidShape(2, 0, 0, 14, 16, 16);
+    private static final VoxelShape NORTH_SHAPE =
+            Block.createCuboidShape(2, 0, 0, 16, 16, 16);
+    private static final VoxelShape WEST_SHAPE =
+            Block.createCuboidShape(0, 0, 0, 16, 16, 14);
+    private static final VoxelShape SOUTH_SHAPE =
+            Block.createCuboidShape(0, 0, 0, 14, 16, 16);
+    private static final VoxelShape EAST_SHAPE =
+            Block.createCuboidShape(0, 0, 2, 16, 16, 16);
 
     public static final DirectionProperty FACING;
 
