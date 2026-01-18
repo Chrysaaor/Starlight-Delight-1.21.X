@@ -20,6 +20,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
 public class PreparationTableBlock  extends CraftingTableBlock {
     public static final MapCodec<PreparationTableBlock> CODEC = PreparationTableBlock.createCodec(PreparationTableBlock::new);
     private static final Text SCREEN_TITLE = Text.translatable("container.starlightdelight.preparation_table");
@@ -34,7 +36,7 @@ public class PreparationTableBlock  extends CraftingTableBlock {
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
-        switch ((Direction)state.get(FACING)) {
+        switch (state.get(FACING)) {
             case NORTH -> {
                 return NORTH_SHAPE;
             }
@@ -60,7 +62,7 @@ public class PreparationTableBlock  extends CraftingTableBlock {
 
     @Override
     public @Nullable BlockState getPlacementState(ItemPlacementContext ctx) {
-        return super.getPlacementState(ctx).with(FACING, ctx.getHorizontalPlayerFacing());
+        return Objects.requireNonNull(super.getPlacementState(ctx)).with(FACING, ctx.getHorizontalPlayerFacing());
     }
 
     @Override
@@ -69,17 +71,19 @@ public class PreparationTableBlock  extends CraftingTableBlock {
     }
 
     protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new PreparationTableScreenHandler(syncId, inventory, (ScreenHandlerContext) ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new PreparationTableScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
     }
 
-    @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
-        if (world.isClient) {
-            return ActionResult.SUCCESS;
-        } else {
-            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
-            return ActionResult.CONSUME;
+        if (!world.isClient) {
+            NamedScreenHandlerFactory handledScreen = state.createScreenHandlerFactory(world, pos);
+
+            if (handledScreen != null) {
+                player.openHandledScreen(handledScreen);
+            }
         }
+
+        return ActionResult.SUCCESS;
     }
 
     private static final VoxelShape NORTH_SHAPE =

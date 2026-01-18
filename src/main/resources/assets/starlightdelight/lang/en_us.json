@@ -126,6 +126,7 @@
 
 
   "container.starlightdelight.preparation_table": "Prepare some Food !",
+  "container.starlightdelight.preparation_table.error_tooltip": "This recipe doesn't exist",
 
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",

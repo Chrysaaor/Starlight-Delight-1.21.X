@@ -124,6 +124,7 @@
 
 
   "container.starlightdelight.preparation_table": "Préparez un Bon Petit Plat !",
+  "container.starlightdelight.preparation_table.error_tooltip": "Cette recette n'existe pas",
 
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",

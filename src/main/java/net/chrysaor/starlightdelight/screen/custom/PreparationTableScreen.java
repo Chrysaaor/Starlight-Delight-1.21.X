@@ -1,181 +1,103 @@
 package net.chrysaor.starlightdelight.screen.custom;
 
-import com.mojang.blaze3d.systems.RenderSystem;
-import net.chrysaor.starlightdelight.StarlightDelight;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.screen.ingame.CyclingSlotIcon;
-import net.minecraft.client.gui.screen.ingame.ForgingScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
-import net.minecraft.client.gui.screen.ingame.InventoryScreen;
-import net.minecraft.client.render.GameRenderer;
-import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.decoration.ArmorStandEntity;
+import net.minecraft.client.gui.screen.recipebook.RecipeBookProvider;
+import net.minecraft.client.gui.screen.recipebook.RecipeBookWidget;
+import net.minecraft.client.gui.widget.TexturedButtonWidget;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.SmithingTemplateItem;
-import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.SmithingScreenHandler;
+import net.minecraft.screen.slot.Slot;
+import net.minecraft.screen.slot.SlotActionType;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.Nullable;
-import org.joml.Quaternionf;
-import org.joml.Vector3f;
 
-import java.util.List;
-import java.util.Optional;
+@Environment(EnvType.CLIENT)
+public class PreparationTableScreen extends HandledScreen<PreparationTableScreenHandler> implements RecipeBookProvider {
+    private static final Identifier TEXTURE = Identifier.ofVanilla("textures/gui/container/crafting_table.png");
+    private final RecipeBookWidget recipeBook = new RecipeBookWidget();
+    private boolean narrow;
 
-public class PreparationTableScreen extends ForgingScreen<SmithingScreenHandler> {
-    private static final Identifier ERROR_TEXTURE = Identifier.ofVanilla("container/smithing/error");
-    private static final Identifier EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM_TEXTURE = Identifier.ofVanilla("item/empty_slot_smithing_template_armor_trim");
-    private static final Identifier EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE_TEXTURE = Identifier.ofVanilla("item/empty_slot_smithing_template_netherite_upgrade");
-    private static final Text MISSING_TEMPLATE_TOOLTIP = Text.translatable("container.upgrade.missing_template_tooltip");
-    private static final Text ERROR_TOOLTIP = Text.translatable("container.upgrade.error_tooltip");
-    private static final List<Identifier> EMPTY_SLOT_TEXTURES;
-    private static final int field_42057 = 44;
-    private static final int field_42058 = 15;
-    private static final int field_42059 = 28;
-    private static final int field_42060 = 21;
-    private static final int field_42061 = 65;
-    private static final int field_42062 = 46;
-    private static final int field_42063 = 115;
-    private static final int field_42068 = 210;
-    private static final int field_42047 = 25;
-    private static final Vector3f field_45497;
-    private static final Quaternionf ARMOR_STAND_ROTATION;
-    private static final int field_42049 = 25;
-    private static final int field_42050 = 75;
-    private static final int field_42051 = 141;
-    private final CyclingSlotIcon templateSlotIcon = new CyclingSlotIcon(0);
-    private final CyclingSlotIcon baseSlotIcon = new CyclingSlotIcon(1);
-    private final CyclingSlotIcon additionsSlotIcon = new CyclingSlotIcon(2);
-    @Nullable
-    private ArmorStandEntity armorStand;
-
-    public PreparationTableScreen(SmithingScreenHandler handler, PlayerInventory playerInventory, Text title) {
-        super(handler, playerInventory, title, Identifier.ofVanilla("textures/gui/container/smithing.png"));
-        this.titleX = 44;
-        this.titleY = 15;
+    public PreparationTableScreen(PreparationTableScreenHandler handler, PlayerInventory inventory, Text title) {
+        super(handler, inventory, title);
     }
 
-    protected void setup() {
-        this.armorStand = new ArmorStandEntity(this.client.world, (double)0.0F, (double)0.0F, (double)0.0F);
-        this.armorStand.setHideBasePlate(true);
-        this.armorStand.setShowArms(true);
-        this.armorStand.bodyYaw = 210.0F;
-        this.armorStand.setPitch(25.0F);
-        this.armorStand.headYaw = this.armorStand.getYaw();
-        this.armorStand.prevHeadYaw = this.armorStand.getYaw();
-        this.equipArmorStand(((SmithingScreenHandler)this.handler).getSlot(3).getStack());
+    protected void init() {
+        super.init();
+        this.narrow = this.width < 379;
+        this.recipeBook.initialize(this.width, this.height, this.client, this.narrow, this.handler);
+        this.x = this.recipeBook.findLeftEdge(this.width, this.backgroundWidth);
+        this.addDrawableChild(new TexturedButtonWidget(this.x + 5, this.height / 2 - 49, 20, 18, RecipeBookWidget.BUTTON_TEXTURES, (button) -> {
+            this.recipeBook.toggleOpen();
+            this.x = this.recipeBook.findLeftEdge(this.width, this.backgroundWidth);
+            button.setPosition(this.x + 5, this.height / 2 - 49);
+        }));
+        this.addSelectableChild(this.recipeBook);
+        this.titleX = 29;
     }
 
     public void handledScreenTick() {
         super.handledScreenTick();
-        Optional<SmithingTemplateItem> optional = this.getSmithingTemplate();
-        this.templateSlotIcon.updateTexture(EMPTY_SLOT_TEXTURES);
-        this.baseSlotIcon.updateTexture((List)optional.map(SmithingTemplateItem::getEmptyBaseSlotTextures).orElse(List.of()));
-        this.additionsSlotIcon.updateTexture((List)optional.map(SmithingTemplateItem::getEmptyAdditionsSlotTextures).orElse(List.of()));
-    }
-
-    private Optional<SmithingTemplateItem> getSmithingTemplate() {
-        ItemStack itemStack = ((SmithingScreenHandler)this.handler).getSlot(0).getStack();
-        if (!itemStack.isEmpty()) {
-            Item var3 = itemStack.getItem();
-            if (var3 instanceof SmithingTemplateItem) {
-                SmithingTemplateItem smithingTemplateItem = (SmithingTemplateItem)var3;
-                return Optional.of(smithingTemplateItem);
-            }
-        }
-
-        return Optional.empty();
+        this.recipeBook.update();
     }
 
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-        super.render(context, mouseX, mouseY, delta);
-        this.renderSlotTooltip(context, mouseX, mouseY);
+        if (this.recipeBook.isOpen() && this.narrow) {
+            this.renderBackground(context, mouseX, mouseY, delta);
+            this.recipeBook.render(context, mouseX, mouseY, delta);
+        } else {
+            super.render(context, mouseX, mouseY, delta);
+            this.recipeBook.render(context, mouseX, mouseY, delta);
+            this.recipeBook.drawGhostSlots(context, this.x, this.y, true, delta);
+        }
+
+        this.drawMouseoverTooltip(context, mouseX, mouseY);
+        this.recipeBook.drawTooltip(context, this.x, this.y, mouseX, mouseY);
     }
 
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        super.drawBackground(context, delta, mouseX, mouseY);
-        this.templateSlotIcon.render(this.handler, context, delta, this.x, this.y);
-        this.baseSlotIcon.render(this.handler, context, delta, this.x, this.y);
-        this.additionsSlotIcon.render(this.handler, context, delta, this.x, this.y);
-        InventoryScreen.drawEntity(context, (float)(this.x + 141), (float)(this.y + 75), 25.0F, field_45497, ARMOR_STAND_ROTATION, (Quaternionf)null, this.armorStand);
+        int i = this.x;
+        int j = (this.height - this.backgroundHeight) / 2;
+        context.drawTexture(TEXTURE, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
     }
 
-    public void onSlotUpdate(ScreenHandler handler, int slotId, ItemStack stack) {
-        if (slotId == 3) {
-            this.equipArmorStand(stack);
-        }
-
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        return this.recipeBook.keyPressed(keyCode, scanCode, modifiers) || super.keyPressed(keyCode, scanCode, modifiers);
     }
 
-    private void equipArmorStand(net.minecraft.item.ItemStack stack) {
-        if (this.armorStand != null) {
-            for(EquipmentSlot equipmentSlot : EquipmentSlot.values()) {
-                this.armorStand.equipStack(equipmentSlot, net.minecraft.item.ItemStack.EMPTY);
-            }
+    public boolean charTyped(char chr, int modifiers) {
+        return this.recipeBook.charTyped(chr, modifiers) || super.charTyped(chr, modifiers);
+    }
 
-            if (!stack.isEmpty()) {
-                ItemStack itemStack = stack.copy();
-                Item var8 = stack.getItem();
-                if (var8 instanceof ArmorItem) {
-                    ArmorItem armorItem = (ArmorItem)var8;
-                    this.armorStand.equipStack(armorItem.getSlotType(), itemStack);
-                } else {
-                    this.armorStand.equipStack(EquipmentSlot.OFFHAND, itemStack);
-                }
-            }
+    protected boolean isPointWithinBounds(int x, int y, int width, int height, double pointX, double pointY) {
+        return (!this.narrow || !this.recipeBook.isOpen()) && super.isPointWithinBounds(x, y, width, height, pointX, pointY);
+    }
 
+    public boolean mouseClicked(double mouseX, double mouseY, int button) {
+        if (this.recipeBook.mouseClicked(mouseX, mouseY, button)) {
+            this.setFocused(this.recipeBook);
+            return true;
+        } else {
+            return this.narrow && this.recipeBook.isOpen() || super.mouseClicked(mouseX, mouseY, button);
         }
     }
 
-    protected void drawInvalidRecipeArrow(DrawContext context, int x, int y) {
-        if (this.hasInvalidRecipe()) {
-            context.drawGuiTexture(ERROR_TEXTURE, x + 65, y + 46, 28, 21);
-        }
-
+    protected boolean isClickOutsideBounds(double mouseX, double mouseY, int left, int top, int button) {
+        boolean bl = mouseX < (double)left || mouseY < (double)top || mouseX >= (double)(left + this.backgroundWidth) || mouseY >= (double)(top + this.backgroundHeight);
+        return this.recipeBook.isClickOutsideBounds(mouseX, mouseY, this.x, this.y, this.backgroundWidth, this.backgroundHeight, button) && bl;
     }
 
-    private void renderSlotTooltip(DrawContext context, int mouseX, int mouseY) {
-        Optional<Text> optional = Optional.empty();
-        if (this.hasInvalidRecipe() && this.isPointWithinBounds(65, 46, 28, 21, (double)mouseX, (double)mouseY)) {
-            optional = Optional.of(ERROR_TOOLTIP);
-        }
-
-        if (this.focusedSlot != null) {
-            ItemStack itemStack = ((SmithingScreenHandler)this.handler).getSlot(0).getStack();
-            ItemStack itemStack2 = this.focusedSlot.getStack();
-            if (itemStack.isEmpty()) {
-                if (this.focusedSlot.id == 0) {
-                    optional = Optional.of(MISSING_TEMPLATE_TOOLTIP);
-                }
-            } else {
-                Item var8 = itemStack.getItem();
-                if (var8 instanceof SmithingTemplateItem) {
-                    SmithingTemplateItem smithingTemplateItem = (SmithingTemplateItem)var8;
-                    if (itemStack2.isEmpty()) {
-                        if (this.focusedSlot.id == 1) {
-                            optional = Optional.of(smithingTemplateItem.getBaseSlotDescription());
-                        } else if (this.focusedSlot.id == 2) {
-                            optional = Optional.of(smithingTemplateItem.getAdditionsSlotDescription());
-                        }
-                    }
-                }
-            }
-        }
-
-        optional.ifPresent((text) -> context.drawOrderedTooltip(this.textRenderer, this.textRenderer.wrapLines(text, 115), mouseX, mouseY));
+    protected void onMouseClick(Slot slot, int slotId, int button, SlotActionType actionType) {
+        super.onMouseClick(slot, slotId, button, actionType);
+        this.recipeBook.slotClicked(slot);
     }
 
-    private boolean hasInvalidRecipe() {
-        return ((SmithingScreenHandler)this.handler).getSlot(0).hasStack() && ((SmithingScreenHandler)this.handler).getSlot(1).hasStack() && ((SmithingScreenHandler)this.handler).getSlot(2).hasStack() && !((SmithingScreenHandler)this.handler).getSlot(((SmithingScreenHandler)this.handler).getResultSlotIndex()).hasStack();
+    public void refreshRecipeBook() {
+        this.recipeBook.refresh();
     }
 
-    static {
-        EMPTY_SLOT_TEXTURES = List.of(EMPTY_SLOT_SMITHING_TEMPLATE_ARMOR_TRIM_TEXTURE, EMPTY_SLOT_SMITHING_TEMPLATE_NETHERITE_UPGRADE_TEXTURE);
-        field_45497 = new Vector3f();
-        ARMOR_STAND_ROTATION = (new Quaternionf()).rotationXYZ(0.43633232F, 0.0F, (float)Math.PI);
+    public RecipeBookWidget getRecipeBookWidget() {
+        return this.recipeBook;
     }
 }

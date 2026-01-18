@@ -4,7 +4,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "starlightdelight:block/preparation_table",
-		"particle": "starlightdelight:block/preparation_table"
+		"particle": "minecraft:block/beehive_end"
 	},
 	"elements": [
 		{
