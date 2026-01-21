@@ -32,6 +32,8 @@ public class ModItems {
             .food(ModFoodComponents.GRAPES)));
     public static final Item RED_WINE = registerItem("red_wine", new RedWineItem(new Item.Settings()
             .food(ModFoodComponents.RED_WINE).maxCount(16)));
+    public static final Item KOUIGN_AMANN = registerItem("kouign_amann", new Item(new Item.Settings()
+            .food(ModFoodComponents.KOUIGN_AMANN)));
 
 
     //

@@ -1,0 +1,32 @@
+{
+  "parent": "starlightdelight:starlightdelight/new_food",
+  "criteria": {
+    "fermenter": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:fermenter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.fermenting.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:fermenter"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.fermenting.title"
+    }
+  },
+  "requirements": [
+    [
+      "fermenter"
+    ]
+  ]
+}

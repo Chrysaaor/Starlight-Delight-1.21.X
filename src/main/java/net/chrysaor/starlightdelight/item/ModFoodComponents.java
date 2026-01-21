@@ -20,4 +20,7 @@ public class ModFoodComponents {
     public static final FoodComponent RED_WINE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.2F)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.3f).alwaysEdible().build();
+
+    public static final FoodComponent KOUIGN_AMANN = new FoodComponent.Builder().nutrition(8).saturationModifier(2.2F)
+            .build();
 }

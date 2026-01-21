@@ -1,0 +1,32 @@
+{
+  "parent": "starlightdelight:starlightdelight/root",
+  "criteria": {
+    "preparation_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:preparation_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.new_food.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:preparation_table"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.new_food.title"
+    }
+  },
+  "requirements": [
+    [
+      "preparation_table"
+    ]
+  ]
+}

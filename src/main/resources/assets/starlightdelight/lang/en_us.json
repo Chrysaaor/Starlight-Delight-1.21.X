@@ -56,6 +56,7 @@
   "item.starlightdelight.cheese": "Cheese",
   "item.starlightdelight.grapes": "Grapes",
   "item.starlightdelight.red_wine": "Red Wine",
+  "item.starlightdelight.kouign_amann": "Kouign-Amann",
 
   "item.starlightdelight.drakon_egg": "Drakon Egg",
 
@@ -131,6 +132,7 @@
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",
   "advancements.starlightdelight.root.description": "Shiny and tasty things",
+
   "advancements.starlightdelight.pink_garnet.title": "Isn't that Supposed to be Red?",
   "advancements.starlightdelight.pink_garnet.description": "Smelt a Pink Garnet (Not a Ruby)",
   "advancements.starlightdelight.pretty_armor.title": "Fabulous!",
@@ -146,5 +148,10 @@
   "advancements.starlightdelight.starlight_upgrade.title": "Star Forge",
   "advancements.starlightdelight.starlight_upgrade.description": "Find a Starlight Smithing Template",
   "advancements.starlightdelight.starlight_armor.title": "The Full Concentrated Power of the Stars",
-  "advancements.starlightdelight.starlight_armor.description": "Get a full suit of Starlight Armor"
+  "advancements.starlightdelight.starlight_armor.description": "Get a full suit of Starlight Armor",
+
+  "advancements.starlightdelight.new_food.title": "Putting on the Apron",
+  "advancements.starlightdelight.new_food.description": "Craft a Preparation Table and discover new Foods",
+  "advancements.starlightdelight.fermenting.title": "The Process of Fermentation",
+  "advancements.starlightdelight.fermenting.description": "Craft a Fermenter"
 }

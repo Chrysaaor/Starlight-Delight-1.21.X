@@ -75,6 +75,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.GRAPES);
                         entries.add(ModItems.RED_WINE);
+                        entries.add(ModItems.KOUIGN_AMANN);
                     }).build());
 
     public static final ItemGroup CHRYSAOR_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
