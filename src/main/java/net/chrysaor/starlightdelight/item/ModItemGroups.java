@@ -71,6 +71,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.SWEET_BERRIES_PIE);
                         entries.add(ModItems.CHEESE);
+                        entries.add(ModItems.RAW_RACLETTE);
+                        entries.add(ModItems.RACLETTE);
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.GRAPES);

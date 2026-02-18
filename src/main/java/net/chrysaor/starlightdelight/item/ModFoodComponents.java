@@ -14,6 +14,12 @@ public class ModFoodComponents {
     public static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.9f)
             .build();
 
+    public static final FoodComponent RAW_RACLETTE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.9f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.75f).build();
+
+    public static final FoodComponent RACLETTE = new FoodComponent.Builder().nutrition(8).saturationModifier(1.8f)
+            .build();
+
     public static final FoodComponent GRAPES = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f)
             .snack().build();
 
