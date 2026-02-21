@@ -8,25 +8,28 @@ public class ModFoodComponents {
     public static final FoodComponent CAULIFLOWER = new FoodComponent.Builder().nutrition(4).saturationModifier(0.4f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 400), 0.15f).build();
 
-    public static final FoodComponent SWEET_BERRIES_PIE = new FoodComponent.Builder().nutrition(8).saturationModifier(0.7f)
+    public static final FoodComponent SWEET_BERRIES_PIE = new FoodComponent.Builder().nutrition(7).saturationModifier(0.9f)
             .build();
 
-    public static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.9f)
+    public static final FoodComponent CHEESE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.8f)
             .build();
 
-    public static final FoodComponent RAW_RACLETTE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.9f)
+    public static final FoodComponent RAW_RACLETTE = new FoodComponent.Builder().nutrition(5).saturationModifier(0.8f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.75f).build();
 
-    public static final FoodComponent RACLETTE = new FoodComponent.Builder().nutrition(8).saturationModifier(1.8f)
+    public static final FoodComponent RACLETTE = new FoodComponent.Builder().nutrition(10).saturationModifier(1.6f)
             .build();
 
     public static final FoodComponent GRAPES = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f)
             .snack().build();
 
-    public static final FoodComponent RED_WINE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.2F)
+    public static final FoodComponent RED_WINE = new FoodComponent.Builder().nutrition(0).saturationModifier(0.2F)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.3f).alwaysEdible().build();
 
     public static final FoodComponent KOUIGN_AMANN = new FoodComponent.Builder().nutrition(8).saturationModifier(2.2F)
+            .build();
+
+    public static final FoodComponent CINNAMON_ROLL = new FoodComponent.Builder().nutrition(6).saturationModifier(1.2f)
             .build();
 }

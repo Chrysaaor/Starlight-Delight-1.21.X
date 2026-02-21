@@ -18,7 +18,6 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, Identifier.of(StarlightDelight.MOD_ID, "fermenter_be"),
                     BlockEntityType.Builder.create(FermenterBlockEntity::new, ModBlocks.FERMENTER).build(null));
 
-
     public static void registerBlockEntities() {
         StarlightDelight.LOGGER.info("Registering Block Entities for " + StarlightDelight.MOD_ID);
     }

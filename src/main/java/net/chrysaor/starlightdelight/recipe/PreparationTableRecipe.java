@@ -3,6 +3,7 @@ package net.chrysaor.starlightdelight.recipe;
 import net.minecraft.recipe.Recipe;
 import net.minecraft.recipe.RecipeType;
 import net.minecraft.recipe.book.CraftingRecipeCategory;
+import net.minecraft.world.World;
 
 public interface PreparationTableRecipe extends Recipe<PreparationTableRecipeInput> {
     @Override
@@ -11,4 +12,6 @@ public interface PreparationTableRecipe extends Recipe<PreparationTableRecipeInp
     }
 
     CraftingRecipeCategory getCategory();
+
+    boolean matches(PreparationTableRecipeInput recipeInput, World world);
 }

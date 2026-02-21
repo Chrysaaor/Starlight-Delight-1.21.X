@@ -1,8 +1,6 @@
 package net.chrysaor.starlightdelight.screen.custom;
 
-import net.chrysaor.starlightdelight.recipe.PreparationTableRecipe;
-import net.chrysaor.starlightdelight.recipe.PreparationTableRecipeInput;
-import net.minecraft.block.Blocks;
+import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingInventory;
@@ -19,11 +17,11 @@ import net.minecraft.screen.slot.CraftingResultSlot;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
 
-import java.util.Objects;
 import java.util.Optional;
 
-public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<PreparationTableRecipeInput, PreparationTableRecipe> {
+public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<CraftingRecipeInput, CraftingRecipe> {
     public static final int RESULT_ID = 0;
     private static final int INPUT_START = 1;
     private static final int INPUT_END = 4;
@@ -37,7 +35,6 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
     private final PlayerEntity player;
     private boolean filling;
 
-
     public PreparationTableScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
@@ -49,12 +46,9 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
         this.context = context;
         this.player = playerInventory.player;
         this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 0, 124, 35));
-
-        for(int i = 0; i < 3; ++i) {
-            for(int j = 0; j < 1; ++j) {
-                this.addSlot(new Slot(this.input, j + i * 3, 30, 17 + i * 18));
-            }
-        }
+        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 1, 30, 35));
+        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 2, 48, 35));
+        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 3, 66, 35));
 
         for(int i = 0; i < 3; ++i) {
             for(int j = 0; j < 9; ++j) {
@@ -68,15 +62,15 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
 
     }
 
-    protected static void updateResult(ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory, RecipeEntry<PreparationTableRecipe> recipe) {
+    protected static void updateResult(ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory, @Nullable RecipeEntry<CraftingRecipe> recipe) {
         if (!world.isClient) {
             CraftingRecipeInput craftingRecipeInput = craftingInventory.createRecipeInput();
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeEntry<CraftingRecipe>> optional = Objects.requireNonNull(world.getServer()).getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingRecipeInput, world, recipe.id());
+            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingRecipeInput, world, recipe);
             if (optional.isPresent()) {
-                RecipeEntry<CraftingRecipe> recipeEntry = optional.get();
-                CraftingRecipe craftingRecipe = recipeEntry.value();
+                RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry)optional.get();
+                CraftingRecipe craftingRecipe = (CraftingRecipe)recipeEntry.value();
                 if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
                     ItemStack itemStack2 = craftingRecipe.craft(craftingRecipeInput, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
@@ -93,7 +87,7 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
 
     public void onContentChanged(Inventory inventory) {
         if (!this.filling) {
-            this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, null));
+            this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, (RecipeEntry)null));
         }
 
     }
@@ -102,7 +96,7 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
         this.filling = true;
     }
 
-    public void onInputSlotFillFinish(RecipeEntry<PreparationTableRecipe> recipe) {
+    public void onInputSlotFillFinish(RecipeEntry<CraftingRecipe> recipe) {
         this.filling = false;
         this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, recipe));
     }
@@ -116,9 +110,8 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
         this.result.clear();
     }
 
-    @Override
-    public boolean matches(RecipeEntry<PreparationTableRecipe> recipe) {
-        return true;
+    public boolean matches(RecipeEntry<CraftingRecipe> recipe) {
+        return ((CraftingRecipe)recipe.value()).matches(this.input.createRecipeInput(), this.player.getWorld());
     }
 
     public void onClosed(PlayerEntity player) {
@@ -127,13 +120,13 @@ public class PreparationTableScreenHandler  extends AbstractRecipeScreenHandler<
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, Blocks.CRAFTING_TABLE);
+        return canUse(this.context, player, ModBlocks.PREPARATION_TABLE);
     }
 
     public ItemStack quickMove(PlayerEntity player, int slot) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot2 = this.slots.get(slot);
-        if (slot2.hasStack()) {
+        Slot slot2 = (Slot)this.slots.get(slot);
+        if (slot2 != null && slot2.hasStack()) {
             ItemStack itemStack2 = slot2.getStack();
             itemStack = itemStack2.copy();
             if (slot == 0) {
