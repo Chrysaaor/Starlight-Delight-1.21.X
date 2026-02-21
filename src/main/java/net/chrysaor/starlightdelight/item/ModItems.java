@@ -23,7 +23,6 @@ public class ModItems {
     //Foods
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings()
             .food(ModFoodComponents.CAULIFLOWER)));
-
     public static final Item SWEET_BERRIES_PIE = registerItem("sweet_berries_pie", new Item(new Item.Settings()
             .food(ModFoodComponents.SWEET_BERRIES_PIE)));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()
@@ -42,7 +41,7 @@ public class ModItems {
             .food(ModFoodComponents.RACLETTE)));
 
 
-    //
+    //Starlight Upgrade Items
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
     public static final Item STARLIGHT_SHARD = registerItem("starlight_shard", new Item(new Item.Settings().fireproof()));
     public static final Item STARLIGHT_FRAGMENT = registerItem("starlight_fragment", new StarlightFragmentItem(new Item.Settings().fireproof()));
