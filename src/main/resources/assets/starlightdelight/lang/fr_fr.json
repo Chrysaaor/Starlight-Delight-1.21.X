@@ -100,7 +100,7 @@
   "block.starlightdelight.pedestal": "Piédestal",
 
   "block.starlightdelight.fermenter": "Fermenteur",
-  "block.starlightdelight.preparation_table": "Plan de Travail",
+  "block.starlightdelight.cooking_table": "Plan de Travail",
 
   "block.starlightdelight.drakon_egg": "Oeuf de Drakon",
 
@@ -131,8 +131,8 @@
   "entity.starlightdelight.starlight_sword": "Épée de Lumière",
 
 
-  "container.starlightdelight.preparation_table": "Préparez un Bon Petit Plat !",
-  "container.starlightdelight.preparation_table.error_tooltip": "Cette recette n'existe pas",
+  "container.starlightdelight.cooking_table": "Préparez un Bon Petit Plat !",
+  "container.starlightdelight.cooking_table.error_tooltip": "Cette recette n'existe pas",
 
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",

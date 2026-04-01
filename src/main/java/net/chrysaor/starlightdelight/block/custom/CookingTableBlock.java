@@ -1,7 +1,7 @@
 package net.chrysaor.starlightdelight.block.custom;
 
 import com.mojang.serialization.MapCodec;
-import net.chrysaor.starlightdelight.screen.custom.PreparationTableScreenHandler;
+import net.chrysaor.starlightdelight.screen.custom.CookingTableScreenHandler;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
@@ -22,15 +22,15 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
-public class PreparationTableBlock  extends CraftingTableBlock {
-    public static final MapCodec<PreparationTableBlock> CODEC = PreparationTableBlock.createCodec(PreparationTableBlock::new);
-    private static final Text SCREEN_TITLE = Text.translatable("container.starlightdelight.preparation_table");
+public class CookingTableBlock extends CraftingTableBlock {
+    public static final MapCodec<CookingTableBlock> CODEC = CookingTableBlock.createCodec(CookingTableBlock::new);
+    private static final Text SCREEN_TITLE = Text.translatable("container.starlightdelight.cooking_table");
 
-    public MapCodec<PreparationTableBlock> getCodec() {
+    public MapCodec<CookingTableBlock> getCodec() {
         return CODEC;
     }
 
-    public PreparationTableBlock(Settings settings) {
+    public CookingTableBlock(Settings settings) {
         super(settings);
         setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
     }
@@ -71,7 +71,7 @@ public class PreparationTableBlock  extends CraftingTableBlock {
     }
 
     protected NamedScreenHandlerFactory createScreenHandlerFactory(BlockState state, World world, BlockPos pos) {
-        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new PreparationTableScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
+        return new SimpleNamedScreenHandlerFactory((syncId, inventory, player) -> new CookingTableScreenHandler(syncId, inventory, ScreenHandlerContext.create(world, pos)), SCREEN_TITLE);
     }
 
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {

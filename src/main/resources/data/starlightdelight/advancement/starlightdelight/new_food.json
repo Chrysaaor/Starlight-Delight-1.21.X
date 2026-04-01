@@ -1,11 +1,11 @@
 {
   "parent": "starlightdelight:starlightdelight/root",
   "criteria": {
-    "preparation_table": {
+    "cooking_table": {
       "conditions": {
         "items": [
           {
-            "items": "starlightdelight:preparation_table"
+            "items": "starlightdelight:cooking_table"
           }
         ]
       },
@@ -18,7 +18,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "starlightdelight:preparation_table"
+      "id": "starlightdelight:cooking_table"
     },
     "title": {
       "translate": "advancements.starlightdelight.new_food.title"
@@ -26,7 +26,7 @@
   },
   "requirements": [
     [
-      "preparation_table"
+      "cooking_table"
     ]
   ]
 }

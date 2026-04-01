@@ -76,8 +76,8 @@ public class ModBlocks {
     public static final Block FERMENTER = registerBlock("fermenter",
             new FermenterBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
 
-    public static final Block PREPARATION_TABLE = registerBlock("preparation_table",
-            new PreparationTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+    public static final Block COOKING_TABLE = registerBlock("cooking_table",
+            new CookingTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
 
     public static  final Block DRAKON_EGG = registerBlock("drakon_egg",
             new DrakonEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)

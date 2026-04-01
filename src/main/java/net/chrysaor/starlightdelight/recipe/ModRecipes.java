@@ -21,9 +21,9 @@ public class ModRecipes {
                 }});
 
 
-    public static final RecipeType<PreparationTableRecipe> PREPARATION_TABLE_TYPE = Registry.register(
-            Registries.RECIPE_TYPE, Identifier.of(StarlightDelight.MOD_ID, "preparation_table"),
-            new RecipeType<PreparationTableRecipe>() {@Override public String toString() {return "preparation_table";}});
+    public static final RecipeType<CookingTableRecipe> COOKING_TABLE_TYPE = Registry.register(
+            Registries.RECIPE_TYPE, Identifier.of(StarlightDelight.MOD_ID, "cooking_table"),
+            new RecipeType<CookingTableRecipe>() {@Override public String toString() {return "cooking_table";}});
 
 
 

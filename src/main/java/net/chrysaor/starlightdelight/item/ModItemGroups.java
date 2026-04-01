@@ -114,7 +114,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PEDESTAL);
 
                         entries.add(ModBlocks.FERMENTER);
-                        entries.add(ModBlocks.PREPARATION_TABLE);
+                        entries.add(ModBlocks.COOKING_TABLE);
                     }).build());
 
 

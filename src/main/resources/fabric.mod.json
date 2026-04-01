@@ -12,7 +12,7 @@
 		"sources": "https://github.com/Chrysaaor/Starlight-Delight-1.21.X"
 	},
 	"license": "Apache-2.0",
-	"icon": "assets/starlightdelight/icon.png",
+	"icon": "assets/starlightdelight/textures/item/starlight_fragment.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

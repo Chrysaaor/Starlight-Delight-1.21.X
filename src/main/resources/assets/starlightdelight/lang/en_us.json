@@ -102,7 +102,7 @@
   "block.starlightdelight.pedestal": "Pedestal",
 
   "block.starlightdelight.fermenter": "Fermenter",
-  "block.starlightdelight.preparation_table": "Preparation Table",
+  "block.starlightdelight.cooking_table": "Cooking Table",
 
   "block.starlightdelight.drakon_egg": "Drakon Egg",
 
@@ -133,8 +133,8 @@
   "entity.starlightdelight.starlight_sword": "Light Sword",
 
 
-  "container.starlightdelight.preparation_table": "Prepare some Food !",
-  "container.starlightdelight.preparation_table.error_tooltip": "This recipe doesn't exist",
+  "container.starlightdelight.cooking_table": "Prepare some Food !",
+  "container.starlightdelight.cooking_table.error_tooltip": "This recipe doesn't exist",
 
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",
@@ -158,7 +158,7 @@
   "advancements.starlightdelight.starlight_armor.description": "Get a full suit of Starlight Armor",
 
   "advancements.starlightdelight.new_food.title": "Putting on the Apron",
-  "advancements.starlightdelight.new_food.description": "Craft a Preparation Table and discover new Foods",
+  "advancements.starlightdelight.new_food.description": "Craft a Cooking Table and discover new Foods",
   "advancements.starlightdelight.fermenting.title": "The Process of Fermentation",
   "advancements.starlightdelight.fermenting.description": "Craft a Fermenter"
 }

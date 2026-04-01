@@ -1,5 +1,7 @@
 package net.chrysaor.starlightdelight.screen.custom;
 
+import com.mojang.blaze3d.systems.RenderSystem;
+import net.chrysaor.starlightdelight.StarlightDelight;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.DrawContext;
@@ -7,6 +9,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.recipebook.RecipeBookProvider;
 import net.minecraft.client.gui.screen.recipebook.RecipeBookWidget;
 import net.minecraft.client.gui.widget.TexturedButtonWidget;
+import net.minecraft.client.render.GameRenderer;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.screen.slot.SlotActionType;
@@ -14,13 +17,15 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
-public class PreparationTableScreen extends HandledScreen<PreparationTableScreenHandler> implements RecipeBookProvider {
-    private static final Identifier TEXTURE = Identifier.ofVanilla("textures/gui/container/crafting_table.png");
+public class CookingTableScreen extends HandledScreen<CookingTableScreenHandler> implements RecipeBookProvider {
+    private static final Identifier TEXTURE =
+            Identifier.of(StarlightDelight.MOD_ID, "textures/gui/cooking_table/cooking_table_gui.png");
     private final RecipeBookWidget recipeBook = new RecipeBookWidget();
     private boolean narrow;
 
-    public PreparationTableScreen(PreparationTableScreenHandler handler, PlayerInventory inventory, Text title) {
+    public CookingTableScreen(CookingTableScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
+        this.titleY = 10;
     }
 
     protected void init() {
@@ -57,9 +62,14 @@ public class PreparationTableScreen extends HandledScreen<PreparationTableScreen
     }
 
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        int i = this.x;
-        int j = (this.height - this.backgroundHeight) / 2;
-        context.drawTexture(TEXTURE, i, j, 0, 0, this.backgroundWidth, this.backgroundHeight);
+        RenderSystem.setShader(GameRenderer::getPositionTexProgram);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        RenderSystem.setShaderTexture(0, TEXTURE);
+
+        int x = (width - backgroundWidth) / 2;
+        int y = (height - backgroundHeight) / 2;
+
+        context.drawTexture(TEXTURE, x, y, 0, 0, backgroundWidth, backgroundHeight);
     }
 
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {

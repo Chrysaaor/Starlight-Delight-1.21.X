@@ -1,6 +1,7 @@
 package net.chrysaor.starlightdelight.screen.custom;
 
 import net.chrysaor.starlightdelight.block.ModBlocks;
+import net.chrysaor.starlightdelight.screen.ModScreenHandlers;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.CraftingInventory;
@@ -19,9 +20,10 @@ import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
 import java.util.Optional;
 
-public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<CraftingRecipeInput, CraftingRecipe> {
+public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<CraftingRecipeInput, CraftingRecipe> {
     public static final int RESULT_ID = 0;
     private static final int INPUT_START = 1;
     private static final int INPUT_END = 4;
@@ -35,20 +37,21 @@ public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<C
     private final PlayerEntity player;
     private boolean filling;
 
-    public PreparationTableScreenHandler(int syncId, PlayerInventory playerInventory) {
+    public CookingTableScreenHandler(int syncId, PlayerInventory playerInventory) {
         this(syncId, playerInventory, ScreenHandlerContext.EMPTY);
     }
 
-    public PreparationTableScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
-        super(ScreenHandlerType.CRAFTING, syncId);
+    public CookingTableScreenHandler(int syncId, PlayerInventory playerInventory, ScreenHandlerContext context) {
+        super(ModScreenHandlers.COOKING_TABLE_SCREEN_HANDLER, syncId);
         this.input = new CraftingInventory(this, 3, 1);
         this.result = new CraftingResultInventory();
         this.context = context;
         this.player = playerInventory.player;
         this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 0, 124, 35));
-        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 1, 30, 35));
-        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 2, 48, 35));
-        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 3, 66, 35));
+
+        this.addSlot(new Slot(this.input, 0, 15, 35));
+        this.addSlot(new Slot(this.input, 1, 42, 35));
+        this.addSlot(new Slot(this.input, 2, 69, 35));
 
         for(int i = 0; i < 3; ++i) {
             for(int j = 0; j < 9; ++j) {
@@ -67,10 +70,10 @@ public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<C
             CraftingRecipeInput craftingRecipeInput = craftingInventory.createRecipeInput();
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
-            Optional<RecipeEntry<CraftingRecipe>> optional = world.getServer().getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingRecipeInput, world, recipe);
+            Optional<RecipeEntry<CraftingRecipe>> optional = Objects.requireNonNull(world.getServer()).getRecipeManager().getFirstMatch(RecipeType.CRAFTING, craftingRecipeInput, world, recipe);
             if (optional.isPresent()) {
-                RecipeEntry<CraftingRecipe> recipeEntry = (RecipeEntry)optional.get();
-                CraftingRecipe craftingRecipe = (CraftingRecipe)recipeEntry.value();
+                RecipeEntry<CraftingRecipe> recipeEntry = optional.get();
+                CraftingRecipe craftingRecipe = recipeEntry.value();
                 if (resultInventory.shouldCraftRecipe(world, serverPlayerEntity, recipeEntry)) {
                     ItemStack itemStack2 = craftingRecipe.craft(craftingRecipeInput, world.getRegistryManager());
                     if (itemStack2.isItemEnabled(world.getEnabledFeatures())) {
@@ -87,7 +90,7 @@ public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<C
 
     public void onContentChanged(Inventory inventory) {
         if (!this.filling) {
-            this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, (RecipeEntry)null));
+            this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, null));
         }
 
     }
@@ -111,7 +114,7 @@ public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<C
     }
 
     public boolean matches(RecipeEntry<CraftingRecipe> recipe) {
-        return ((CraftingRecipe)recipe.value()).matches(this.input.createRecipeInput(), this.player.getWorld());
+        return recipe.value().matches(this.input.createRecipeInput(), this.player.getWorld());
     }
 
     public void onClosed(PlayerEntity player) {
@@ -120,7 +123,7 @@ public class PreparationTableScreenHandler extends AbstractRecipeScreenHandler<C
     }
 
     public boolean canUse(PlayerEntity player) {
-        return canUse(this.context, player, ModBlocks.PREPARATION_TABLE);
+        return canUse(this.context, player, ModBlocks.COOKING_TABLE);
     }
 
     public ItemStack quickMove(PlayerEntity player, int slot) {
