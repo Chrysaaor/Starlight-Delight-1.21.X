@@ -48,7 +48,7 @@
   "item.starlightdelight.mantis_spawn_egg": "Mantis Spawn Egg",
 
   "item.starlightdelight.iron_tomahawk": "Iron Tomahawk",
-  "item.starlightdelight.gold_tomahawk": "Gold Tomahawk",
+  "item.starlightdelight.gold_tomahawk": "Golden Tomahawk",
   "item.starlightdelight.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
   "item.starlightdelight.diamond_tomahawk": "Diamond Tomahawk",
 
@@ -126,7 +126,11 @@
 
 
   "entity.starlightdelight.mantis": "Mantis",
-  "entity.starlightdelight.tomahawk": "Tomahawk",
+  "entity.starlightdelight.iron_tomahawk": "Iron Tomahawk",
+  "entity.starlightdelight.gold_tomahawk": "Golden Tomahawk",
+  "entity.starlightdelight.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
+  "entity.starlightdelight.diamond_tomahawk": "Diamond Tomahawk",
+  "entity.starlightdelight.starlight_sword": "Light Sword",
 
 
   "container.starlightdelight.preparation_table": "Prepare some Food !",
