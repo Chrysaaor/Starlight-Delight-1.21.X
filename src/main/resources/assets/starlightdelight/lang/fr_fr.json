@@ -46,8 +46,8 @@
 
   "item.starlightdelight.mantis_spawn_egg": "Oeuf d'Apparition de Mante Religieuse",
 
-  "item.starlightdelight.iron_tomahawk": "Tomahawk en Fer",
-  "item.starlightdelight.gold_tomahawk": "Tomahawk en Or",
+  "item.starlightdelight.iron_tomahawk": "Tomahawk en fer",
+  "item.starlightdelight.gold_tomahawk": "Tomahawk en or",
   "item.starlightdelight.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
   "item.starlightdelight.diamond_tomahawk": "Tomahawk en Diamant",
 
@@ -124,7 +124,10 @@
 
 
   "entity.starlightdelight.mantis": "Mante Religieuse",
-  "entity.starlightdelight.tomahawk": "Tomahawk",
+  "entity.starlightdelight.iron_tomahawk": "Tomahawk en fer",
+  "entity.starlightdelight.gold_tomahawk": "Tomahawk en or",
+  "entity.starlightdelight.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
+  "entity.starlightdelight.diamond_tomahawk": "Tomahawk en diamant",
   "entity.starlightdelight.starlight_sword": "Épée de Lumière",
 
 
