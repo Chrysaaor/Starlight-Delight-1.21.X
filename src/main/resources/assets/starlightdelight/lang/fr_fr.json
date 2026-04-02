@@ -110,6 +110,7 @@
 
   "effect.starlightdelight.light": "Léger",
   "effect.starlightdelight.berserker": "Sanguinaire",
+  "effect.starlightdelight.zapped": "Électrifié",
 
 
   "itemgroup.starlightdelight.chrysaor_items": "Items Starlight & Delight",
@@ -129,6 +130,9 @@
   "entity.starlightdelight.pink_garnet_tomahawk": "Tomahawk en Grenat Rose",
   "entity.starlightdelight.diamond_tomahawk": "Tomahawk en diamant",
   "entity.starlightdelight.starlight_sword": "Épée de Lumière",
+
+
+  "sounds.starlightdelight.zapped": "Entité électrifiée",
 
 
   "container.starlightdelight.cooking_table": "Préparez un Bon Petit Plat !",

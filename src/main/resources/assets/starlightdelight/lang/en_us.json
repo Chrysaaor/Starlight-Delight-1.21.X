@@ -112,6 +112,7 @@
 
   "effect.starlightdelight.light": "Light",
   "effect.starlightdelight.berserker": "Berserker",
+  "effect.starlightdelight.zapped": "Zapped",
 
 
   "itemgroup.starlightdelight.chrysaor_items": "Starlight & Delight Items",
@@ -131,6 +132,9 @@
   "entity.starlightdelight.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
   "entity.starlightdelight.diamond_tomahawk": "Diamond Tomahawk",
   "entity.starlightdelight.starlight_sword": "Light Sword",
+
+
+  "sounds.starlightdelight.zapped": "Entity zapped",
 
 
   "container.starlightdelight.cooking_table": "Prepare some Food !",

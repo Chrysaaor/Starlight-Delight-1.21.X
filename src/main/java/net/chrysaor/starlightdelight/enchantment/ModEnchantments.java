@@ -1,11 +1,8 @@
 package net.chrysaor.starlightdelight.enchantment;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
-import net.chrysaor.starlightdelight.enchantment.custom.LightningStrikerEnchantmentEffect;
-import net.minecraft.component.EnchantmentEffectComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.enchantment.Enchantment;
-import net.minecraft.enchantment.effect.EnchantmentEffectTarget;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -28,10 +25,7 @@ public class ModEnchantments {
                 Enchantment.leveledCost(25, 9),
                 2,
                 AttributeModifierSlot.MAINHAND))
-                .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
-                .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK,
-                        EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
-                        new LightningStrikerEnchantmentEffect()));
+                .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET)));
     }
 
 

@@ -1,2 +1,8 @@
 {
+  "zapped": {
+    "subtitle": "sounds.starlightdelight.zapped",
+    "sounds": [
+      "starlightdelight:zapped"
+    ]
+  }
 }

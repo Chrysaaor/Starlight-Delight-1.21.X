@@ -1,6 +1,7 @@
 package net.chrysaor.starlightdelight.effect;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
+import net.chrysaor.starlightdelight.sound.ModSounds;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffect;
@@ -25,6 +26,19 @@ public class ModEffects {
                     .addAttributeModifier(EntityAttributes.PLAYER_SWEEPING_DAMAGE_RATIO,
                             Identifier.of(StarlightDelight.MOD_ID, "berserker_sweep"),
                             0.85f, EntityAttributeModifier.Operation.ADD_VALUE));
+
+    public static final RegistryEntry<StatusEffect> ZAPPED = registerStatusEffect("zapped",
+            new ZappedEffect(StatusEffectCategory.HARMFUL, 11993087)
+                    .addAttributeModifier(EntityAttributes.GENERIC_JUMP_STRENGTH,
+                            Identifier.of(StarlightDelight.MOD_ID, "zapped_jump"),
+                            -0.5f, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(EntityAttributes.GENERIC_MOVEMENT_SPEED,
+                            Identifier.of(StarlightDelight.MOD_ID, "zapped_speed"),
+                            -0.5f, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .addAttributeModifier(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                            Identifier.of(StarlightDelight.MOD_ID, "zapped_range"),
+                            -0.25f, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
+                    .applySound(ModSounds.ZAPPED));
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(StarlightDelight.MOD_ID, name), statusEffect);

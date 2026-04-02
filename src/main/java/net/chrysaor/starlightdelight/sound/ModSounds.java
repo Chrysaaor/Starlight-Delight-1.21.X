@@ -8,6 +8,8 @@ import net.minecraft.util.Identifier;
 
 public class ModSounds {
 
+    public static SoundEvent ZAPPED = registerSoundEvent("zapped");
+
 
 
 

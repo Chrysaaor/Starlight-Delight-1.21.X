@@ -22,12 +22,16 @@ public class HoelyBeheaderItem extends SwordItem {
         if (!user.hasStatusEffect(ModEffects.BERSERKER)) {
             user.playSound(SoundEvents.BLOCK_BEACON_ACTIVATE, 1.0f, 0.5f + user.getRandom().nextFloat());
             user.addStatusEffect(new StatusEffectInstance(ModEffects.BERSERKER, -1, 0, false, true));
-            user.getItemCooldownManager().set(this, 60);
+            if (!user.isCreative()) {
+                user.getItemCooldownManager().set(this, 60);
+            }
         }
         else {
             user.playSound(SoundEvents.BLOCK_BEACON_DEACTIVATE, 1.0f, 0.8f * user.getRandom().nextFloat());
             user.removeStatusEffect(ModEffects.BERSERKER);
-            user.getItemCooldownManager().set(this, 60);
+            if (!user.isCreative()) {
+                user.getItemCooldownManager().set(this, 120);
+            }
             user.heal(10f);
         }
         return super.use(world, user, hand);
