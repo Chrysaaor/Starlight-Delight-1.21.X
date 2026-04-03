@@ -59,7 +59,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         //Armors
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
                 .add(ModItems.PINK_GARNET_HELMET)
-                .add(ModItems.STARLIGHT_HELMET);
+                .add(ModItems.STARLIGHT_HELMET)
+                .add(ModItems.CLIMBER_BANDANNA);
 
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
@@ -82,7 +83,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.PINK_GARNET_HELMET)
                 .add(ModItems.PINK_GARNET_CHESTPLATE)
                 .add(ModItems.PINK_GARNET_LEGGINGS)
-                .add(ModItems.PINK_GARNET_BOOTS);
+                .add(ModItems.PINK_GARNET_BOOTS)
+
+                .add(ModItems.CLIMBER_BANDANNA);
 
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)

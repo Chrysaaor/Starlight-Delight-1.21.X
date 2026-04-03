@@ -38,26 +38,26 @@ public class ModBlocks {
 
     public static final Block PINK_GARNET_STAIRS = registerBlock("pink_garnet_stairs",
             new StairsBlock(ModBlocks.PINK_GARNET_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+                    AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PINK_GARNET_SLABS = registerBlock("pink_garnet_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new SlabBlock(AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block PINK_GARNET_BUTTON = registerBlock("pink_garnet_button",
-            new ButtonBlock(BlockSetType.IRON, 2, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+            new ButtonBlock(BlockSetType.IRON, 2, AbstractBlock.Settings.create().strength(2f, 6f).requiresTool().noCollision()));
     public static final Block PINK_GARNET_PRESSURE_PLATE = registerBlock("pink_garnet_pressure_plate",
-            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block PINK_GARNET_FENCE = registerBlock("pink_garnet_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PINK_GARNET_FENCE_GATE = registerBlock("pink_garnet_fence_gate",
-            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PINK_GARNET_WALL = registerBlock("pink_garnet_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door",
-            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor",
-            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block PINK_GARNET_LAMP = registerBlock("pink_garnet_lamp",
             new PinkGarnetLampBlock(AbstractBlock.Settings.create()
@@ -71,13 +71,13 @@ public class ModBlocks {
             new GrapeBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
     public static final Block PEDESTAL = registerBlock("pedestal",
-            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE)));
+            new PedestalBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.STONE).strength(1.5F)));
 
     public static final Block FERMENTER = registerBlock("fermenter",
-            new FermenterBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+            new FermenterBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD).strength(2.5F)));
 
     public static final Block COOKING_TABLE = registerBlock("cooking_table",
-            new CookingTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD)));
+            new CookingTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD).strength(2.5F)));
 
     public static  final Block DRAKON_EGG = registerBlock("drakon_egg",
             new DrakonEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)

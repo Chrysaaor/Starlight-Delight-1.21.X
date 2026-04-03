@@ -17,6 +17,14 @@ public class ModLootTableModifiers {
             Identifier.ofVanilla("chests/nether_bridge");
     private static final Identifier SIMPLE_DUNGEON_ID =
             Identifier.ofVanilla("chests/simple_dungeon");
+    private static final Identifier ABANDONED_MINESHAFT =
+            Identifier.of("chests/abandoned_mineshaft");
+    private static final Identifier ANCIENT_CITY =
+            Identifier.of("chests/ancient_city");
+    private static final Identifier JUNGLE_TEMPLE =
+            Identifier.of("chests/jungle_temple");
+    private static final Identifier DESERT_PYRAMID =
+            Identifier.of("chests/desert_pyramid");
 
     private static final Identifier SHORT_GRASS_ID =
             Identifier.ofVanilla("blocks/short_grass");
@@ -40,7 +48,7 @@ public class ModLootTableModifiers {
             if (source.isBuiltin() && NETHER_BRIDGE_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1.0f))
-                        .conditionally(RandomChanceLootCondition.builder(0.2f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.PINK_GARNET_HORSE_ARMOR))
                         .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
@@ -49,17 +57,67 @@ public class ModLootTableModifiers {
             if (source.isBuiltin() && SIMPLE_DUNGEON_ID.equals(key.getValue())) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1.0f))
-                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .with(ItemEntry.builder(ModItems.PINK_GARNET_HORSE_ARMOR))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build())
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
 
-                        .rolls(ConstantLootNumberProvider.create(1.0f))
-                        .conditionally(RandomChanceLootCondition.builder(0.55f))
-                        .with(ItemEntry.builder(ModItems.CHEESE))
-                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 7.0f)).build());
 
                 tableBuilder.pool(poolBuilder);
             }
+            if (source.isBuiltin() && SIMPLE_DUNGEON_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.55f))
+                        .with(ItemEntry.builder(ModItems.CHEESE))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(3.0f, 7.0f)).build());
+
+                tableBuilder.pool(poolBuilder);
+            }
+            if (source.isBuiltin() && SIMPLE_DUNGEON_ID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.CLIMBER_BANDANNA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder);
+            }
+            if (source.isBuiltin() && ABANDONED_MINESHAFT.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.2f))
+                        .with(ItemEntry.builder(ModItems.CLIMBER_BANDANNA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder);
+            }
+            if (source.isBuiltin() && JUNGLE_TEMPLE.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.3f))
+                        .with(ItemEntry.builder(ModItems.CLIMBER_BANDANNA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder);
+            }
+            if (source.isBuiltin() && ANCIENT_CITY.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.CLIMBER_BANDANNA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder);
+            }
+            if (source.isBuiltin() && DESERT_PYRAMID.equals(key.getValue())) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1.0f))
+                        .conditionally(RandomChanceLootCondition.builder(0.2f))
+                        .with(ItemEntry.builder(ModItems.CLIMBER_BANDANNA))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+                tableBuilder.pool(poolBuilder);}
+
 
             //Blocks
             if (source.isBuiltin() && TALL_GRASS_ID.equals(key.getValue())) {

@@ -3,6 +3,7 @@ package net.chrysaor.starlightdelight.item;
 import net.chrysaor.starlightdelight.StarlightDelight;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -36,6 +37,15 @@ public class ModArmorMaterials {
             }), 20, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.STARLIGHT_FRAGMENT),
                     List.of(new ArmorMaterial.Layer(Identifier.of(StarlightDelight.MOD_ID, "starlight"))), 4.0f, 0.1f));
 
+    public static final RegistryEntry<ArmorMaterial> CLIMBER_BANDANNA = registerArmorMaterial("climber_bandanna",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 2);
+                map.put(ArmorItem.Type.LEGGINGS, 2);
+                map.put(ArmorItem.Type.CHESTPLATE, 2);
+                map.put(ArmorItem.Type.HELMET, 2);
+                map.put(ArmorItem.Type.BODY, 2);
+            }), 16, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(Items.LEATHER),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(StarlightDelight.MOD_ID, "climber_bandanna"))), 0, 0));
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {

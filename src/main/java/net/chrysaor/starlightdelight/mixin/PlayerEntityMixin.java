@@ -1,15 +1,21 @@
 package net.chrysaor.starlightdelight.mixin;
 
+import net.chrysaor.starlightdelight.effect.ModEffects;
 import net.chrysaor.starlightdelight.item.ModItems;
 import net.chrysaor.starlightdelight.particle.ModParticles;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleEffect;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity {
@@ -29,5 +35,16 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             return getMainHandStack().isOf(ModItems.STARLIGHT_SWORD) ? (T) ModParticles.HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE : particle;
         }
         return particle;
+    }
+
+    @Inject(
+            method= "updateTurtleHelmet",
+            at = @At(value = "TAIL")
+    )
+    private void updateClimberBandanna(CallbackInfo ci) {
+        ItemStack itemStack = this.getEquippedStack(EquipmentSlot.HEAD);
+        if (itemStack.isOf(ModItems.CLIMBER_BANDANNA)) {
+            this.addStatusEffect(new StatusEffectInstance(ModEffects.LIGHT, 1, 0, false, false, true));
+        }
     }
 }

@@ -1,6 +1,7 @@
 package net.chrysaor.starlightdelight.item.custom;
 
 import com.google.common.collect.ImmutableMap;
+import net.chrysaor.starlightdelight.effect.ModEffects;
 import net.chrysaor.starlightdelight.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -25,7 +26,10 @@ public class ModArmorItem extends ArmorItem {
                     .put(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL,
                             List.of(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 40, 0, false, false),
                                     new StatusEffectInstance(StatusEffects.LUCK, 40, 0, false, false)
-                                    )).build();
+                            ))
+                    .put(ModArmorMaterials.CLIMBER_BANDANNA,
+                            List.of(new StatusEffectInstance(ModEffects.LIGHT, 40, 0, false, false)
+                            )).build();
 
 
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
@@ -75,7 +79,8 @@ public class ModArmorItem extends ArmorItem {
 
         return !helmet.isEmpty() && !chestplate.isEmpty()
                 && !leggings.isEmpty() && !boots.isEmpty();
-    }
+        }
+
 
     private boolean hasCorrectArmorOn(RegistryEntry<ArmorMaterial> material, PlayerEntity player) {
         for (ItemStack armorStack: player.getInventory().armor) {
@@ -88,6 +93,7 @@ public class ModArmorItem extends ArmorItem {
         ArmorItem leggings = ((ArmorItem)player.getInventory().getArmorStack(1).getItem());
         ArmorItem chestplate = ((ArmorItem)player.getInventory().getArmorStack(2).getItem());
         ArmorItem helmet = ((ArmorItem)player.getInventory().getArmorStack(3).getItem());
+
 
         return helmet.getMaterial() == material && chestplate.getMaterial() == material
                 && leggings.getMaterial() == material && boots.getMaterial() == material;

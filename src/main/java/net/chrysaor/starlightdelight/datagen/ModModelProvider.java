@@ -103,6 +103,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.STARLIGHT_BOOTS));
 
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.CLIMBER_BANDANNA));
+
         itemModelGenerator.register(ModItems.PINK_GARNET_HORSE_ARMOR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,

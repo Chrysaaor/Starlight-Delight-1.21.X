@@ -146,6 +146,10 @@ public class ModItems {
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
         new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
+    public static final Item CLIMBER_BANDANNA = registerItem("climber_bandanna",
+            new ArmorItem(ModArmorMaterials.CLIMBER_BANDANNA, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
+
     public static final Item IRON_TOMAHAWK = registerItem("iron_tomahawk",
             new TomahawkItem(new Item.Settings().maxCount(16)));
     public static final Item GOLD_TOMAHAWK = registerItem("gold_tomahawk",

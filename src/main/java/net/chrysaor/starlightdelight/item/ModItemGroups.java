@@ -63,6 +63,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DIAMOND_HAMMER);
                         entries.add(ModItems.NETHERITE_HAMMER);
 
+                        entries.add(ModItems.CLIMBER_BANDANNA);
+
                         entries.add(ModItems.HOELY_BEHEADER);
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
