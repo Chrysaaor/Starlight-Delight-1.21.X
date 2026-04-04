@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+  ],
+  "textures": {
+    "layer0": "starlightdelight:item/starlight_glasses"
+  }
+}

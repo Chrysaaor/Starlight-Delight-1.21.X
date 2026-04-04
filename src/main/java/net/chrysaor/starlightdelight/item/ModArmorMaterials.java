@@ -47,6 +47,16 @@ public class ModArmorMaterials {
             }), 16, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(Items.LEATHER),
                     List.of(new ArmorMaterial.Layer(Identifier.of(StarlightDelight.MOD_ID, "climber_bandanna"))), 0, 0));
 
+    public static final RegistryEntry<ArmorMaterial> STARLIGHT_GLASSES = registerArmorMaterial("starlight_glasses",
+            () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                map.put(ArmorItem.Type.BOOTS, 1);
+                map.put(ArmorItem.Type.LEGGINGS, 1);
+                map.put(ArmorItem.Type.CHESTPLATE, 1);
+                map.put(ArmorItem.Type.HELMET, 1);
+                map.put(ArmorItem.Type.BODY, 1);
+            }), 20, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, () -> Ingredient.ofItems(ModItems.STARLIGHT_ASHES),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(StarlightDelight.MOD_ID, "starlight_glasses"))), 0, 0));
+
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material) {
         return Registry.registerReference(Registries.ARMOR_MATERIAL, Identifier.of(StarlightDelight.MOD_ID, name), material.get());

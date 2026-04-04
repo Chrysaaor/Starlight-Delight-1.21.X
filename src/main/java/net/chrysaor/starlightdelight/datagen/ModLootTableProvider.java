@@ -57,6 +57,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.PINK_GARNET_LAMP);
 
+        addDrop(ModBlocks.DRAKON_EGG);
+
         addDrop(ModBlocks.COOKING_TABLE);
         addDrop(ModBlocks.FERMENTER);
         addDrop(ModBlocks.PEDESTAL);

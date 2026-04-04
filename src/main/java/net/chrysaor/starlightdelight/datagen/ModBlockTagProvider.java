@@ -4,6 +4,7 @@ import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -58,5 +59,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.DRAKON_EGG_HATCH_BOOST)
+                .add(Blocks.MAGMA_BLOCK);
+
+        getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_DRAKON_EGG_HATCH)
+                .add(Blocks.OBSIDIAN)
+                .add(Blocks.CRYING_OBSIDIAN);
     }
 }

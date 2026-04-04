@@ -1,12 +1,12 @@
 package net.chrysaor.starlightdelight.block.custom;
 
 import com.mojang.serialization.MapCodec;
+import net.chrysaor.starlightdelight.util.ModTags;
 import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.passive.SnifferEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -27,8 +27,8 @@ public class DrakonEggBlock extends Block {
     public static final MapCodec<DrakonEggBlock> CODEC = createCodec(DrakonEggBlock::new);
     public static final int FINAL_HATCH_STAGE = 2;
     public static final IntProperty HATCH;
-    private static final int HATCHING_TIME = 24000;
-    private static final int BOOSTED_HATCHING_TIME = 12000;
+    private static final int HATCHING_TIME = 72000;
+    private static final int BOOSTED_HATCHING_TIME = 24000;
     private static final int MAX_RANDOM_CRACK_TIME_OFFSET = 300;
     private static final VoxelShape SHAPE;
 
@@ -77,11 +77,17 @@ public class DrakonEggBlock extends Block {
 
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         boolean bl = isAboveHatchBooster(world, pos);
+        boolean bl2 = isAboveHatchBlocker(world, pos);
         if (!world.isClient() && bl) {
             world.syncWorldEvent(3009, pos, 0);
         }
 
-        int i = bl ? 2400 : 2400;
+        if (bl2){
+            world.emitGameEvent(GameEvent.BLOCK_PLACE, pos, GameEvent.Emitter.of(state));
+            return;
+        }
+
+        int i = bl ? 24000 : 72000;
         int j = i / 3;
         world.emitGameEvent(GameEvent.BLOCK_PLACE, pos, GameEvent.Emitter.of(state));
         world.scheduleBlockTick(pos, this, j + world.random.nextInt(300));
@@ -92,7 +98,11 @@ public class DrakonEggBlock extends Block {
     }
 
     public static boolean isAboveHatchBooster(BlockView world, BlockPos pos) {
-        return world.getBlockState(pos.down()).isIn(BlockTags.SNIFFER_EGG_HATCH_BOOST);
+        return world.getBlockState(pos.down()).isIn(ModTags.Blocks.DRAKON_EGG_HATCH_BOOST);
+    }
+
+    public static boolean isAboveHatchBlocker(BlockView world, BlockPos pos) {
+        return world.getBlockState(pos.down()).isIn(ModTags.Blocks.INCORRECT_DRAKON_EGG_HATCH);
     }
 
     static {

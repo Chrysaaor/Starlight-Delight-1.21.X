@@ -7,6 +7,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleEffect;
@@ -45,6 +46,9 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         ItemStack itemStack = this.getEquippedStack(EquipmentSlot.HEAD);
         if (itemStack.isOf(ModItems.CLIMBER_BANDANNA)) {
             this.addStatusEffect(new StatusEffectInstance(ModEffects.LIGHT, 1, 0, false, false, true));
+        }
+        if (itemStack.isOf(ModItems.STARLIGHT_GLASSES)) {
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 220, 0, false, false, true));
         }
     }
 }

@@ -62,6 +62,10 @@ public class ModItems {
             new StarlightArmorItem(ModArmorMaterials.STARLIGHT_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(20)).fireproof()));
 
+    public static final Item STARLIGHT_GLASSES = registerItem("starlight_glasses",
+            new StarlightArmorItem(ModArmorMaterials.STARLIGHT_GLASSES, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20)).fireproof()));
+
     //Starlight Tools
     public static final Item STARLIGHT_HOE = registerItem("starlight_hoe",
             new StarlightHoeItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()

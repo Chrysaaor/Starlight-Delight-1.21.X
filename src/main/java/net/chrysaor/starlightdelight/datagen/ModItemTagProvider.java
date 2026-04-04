@@ -24,6 +24,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STARLIGHT_HAMMER);
 
         getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.STARLIGHT_GLASSES)
                 .add(ModItems.PINK_GARNET_HAMMER)
                 .add(ModItems.DIAMOND_HAMMER)
                 .add(ModItems.NETHERITE_HAMMER)

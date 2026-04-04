@@ -15,6 +15,10 @@ public class ModTags {
 
         public static final TagKey<Block> INCORRECT_FOR_STARLIGHT_TOOL = createTag("incorrect_for_starlight_tool");
 
+        public static final TagKey<Block> DRAKON_EGG_HATCH_BOOST = createTag("drakon_egg_hatch_boost");
+
+        public static final TagKey<Block> INCORRECT_DRAKON_EGG_HATCH = createTag("incorrect_drakon_egg_hatch");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(StarlightDelight.MOD_ID, name));
         }

@@ -65,6 +65,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CLIMBER_BANDANNA);
 
+                        entries.add(ModItems.STARLIGHT_GLASSES);
+
                         entries.add(ModItems.HOELY_BEHEADER);
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
