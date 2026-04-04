@@ -81,7 +81,7 @@ public class DrakonEggBlock extends Block {
             world.syncWorldEvent(3009, pos, 0);
         }
 
-        int i = bl ? 12000 : 24000;
+        int i = bl ? 2400 : 2400;
         int j = i / 3;
         world.emitGameEvent(GameEvent.BLOCK_PLACE, pos, GameEvent.Emitter.of(state));
         world.scheduleBlockTick(pos, this, j + world.random.nextInt(300));

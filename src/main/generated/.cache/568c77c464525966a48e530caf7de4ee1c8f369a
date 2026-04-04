@@ -1,7 +1,12 @@
-// 1.21.1	2026-02-21T16:28:07.8751667	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-04-04T00:14:50.8351984	Starlight & Delight/Tags for minecraft:block
 f3124b974c14492a0b050053b9045231cc531b88 data\minecraft\tags\block\fence_gates.json
+c9a74314b26165bc155effe1e2f400ec1645d64b data\minecraft\tags\block\pressure_plates.json
 6ee960b8a832d0b99d3ead9b81c46b9284d00f88 data\minecraft\tags\block\fences.json
+f6fc9b6dcbd06c917c4d14446dc51697799b1089 data\minecraft\tags\block\mineable\axe.json
+59292314275034598832508ebfc9745abb98e142 data\minecraft\tags\block\buttons.json
 c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
-32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
-e419d2b6b719592397931ec69e225c9c40a59742 data\minecraft\tags\block\mineable\pickaxe.json
+b21c0aaffe78823a26ddd9b732e142a87e4e1b57 data\minecraft\tags\block\mineable\pickaxe.json
 49d46e9a003524301f2393dee6bc927b1db1c2b0 data\minecraft\tags\block\walls.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
+79f978cd104038af3e64786c27ea58b5f67c2640 data\minecraft\tags\block\trapdoors.json
+09120de3b3e57eea8797ba21a33a23063f872f80 data\minecraft\tags\block\doors.json

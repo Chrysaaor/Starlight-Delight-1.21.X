@@ -1,0 +1,11 @@
+{
+  "parent": "starlightdelight:block/drakon_egg",
+  "textures": {
+    "bottom": "starlightdelight:block/drakon_egg_bottom_very_cracked",
+    "east": "starlightdelight:block/drakon_egg_east_very_cracked",
+    "north": "starlightdelight:block/drakon_egg_north_very_cracked",
+    "south": "starlightdelight:block/drakon_egg_south_very_cracked",
+    "top": "starlightdelight:block/drakon_egg_top_very_cracked",
+    "west": "starlightdelight:block/drakon_egg_west_very_cracked"
+  }
+}
