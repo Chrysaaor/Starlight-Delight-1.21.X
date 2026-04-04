@@ -48,7 +48,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
             this.addStatusEffect(new StatusEffectInstance(ModEffects.LIGHT, 1, 0, false, false, true));
         }
         if (itemStack.isOf(ModItems.STARLIGHT_GLASSES)) {
-            this.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 220, 0, false, false, true));
+            this.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 1, 0, false, false, true));
         }
     }
 }

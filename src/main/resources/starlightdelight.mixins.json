@@ -10,7 +10,8 @@
     "ItemRendererAccessor",
     "ItemRendererMixin",
     "ModelLoaderMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "GameRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1
