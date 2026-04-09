@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "starlightdelight:cheese"
+  },
+  "input2": {
+    "item": "minecraft:potato"
+  },
+  "input3": {
+    "item": "minecraft:porkchop"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:raw_raclette"
+  }
+}

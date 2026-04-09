@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "starlightdelight:flour"
+  },
+  "input2": {
+    "item": "minecraft:egg"
+  },
+  "input3": {
+    "item": "starlightdelight:butter"
+  },
+  "result": {
+    "count": 4,
+    "id": "starlightdelight:dough"
+  }
+}

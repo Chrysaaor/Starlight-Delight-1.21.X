@@ -75,12 +75,18 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
-                        entries.add(ModItems.SWEET_BERRIES_PIE);
+                        entries.add(ModItems.CINNAMON);
+                        entries.add(ModItems.FLOUR);
+                        entries.add(ModItems.DOUGH);
+                        entries.add(ModItems.CREAM);
+                        entries.add(ModItems.BUTTER);
                         entries.add(ModItems.CHEESE);
-                        entries.add(ModItems.RAW_RACLETTE);
-                        entries.add(ModItems.RACLETTE);
                         entries.add(ModItems.GRAPES);
                         entries.add(ModItems.RED_WINE);
+                        entries.add(ModItems.RAW_RACLETTE);
+                        entries.add(ModItems.RACLETTE);
+                        entries.add(ModItems.QUICHE);
+                        entries.add(ModItems.SWEET_BERRIES_PIE);
                         entries.add(ModItems.KOUIGN_AMANN);
                         entries.add(ModItems.CINNAMON_ROLL);
 

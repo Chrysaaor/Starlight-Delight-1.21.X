@@ -24,6 +24,9 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 2, 1), 1.0f)
             .build();
 
+    public static final FoodComponent QUICHE = new FoodComponent.Builder().nutrition(7).saturationModifier(1.2f)
+            .build();
+
     public static final FoodComponent GRAPES = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f)
             .snack().build();
 

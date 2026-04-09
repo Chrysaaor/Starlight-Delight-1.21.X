@@ -25,6 +25,11 @@ public class ModItems {
             .food(ModFoodComponents.CAULIFLOWER)));
     public static final Item SWEET_BERRIES_PIE = registerItem("sweet_berries_pie", new Item(new Item.Settings()
             .food(ModFoodComponents.SWEET_BERRIES_PIE)));
+    public static final Item CINNAMON = registerItem("cinnamon", new Item(new Item.Settings()));
+    public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));
+    public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));
+    public static final Item CREAM = registerItem("cream", new Item(new Item.Settings()));
+    public static final Item BUTTER = registerItem("butter", new Item(new Item.Settings()));
     public static final Item CHEESE = registerItem("cheese", new Item(new Item.Settings()
             .food(ModFoodComponents.CHEESE)));
     public static final Item GRAPES = registerItem("grapes", new AliasedBlockItem(ModBlocks.GRAPE_BUSH, new Item.Settings()
@@ -39,6 +44,8 @@ public class ModItems {
             .food(ModFoodComponents.RAW_RACLETTE)));
     public static final Item RACLETTE = registerItem("raclette", new Item(new Item.Settings()
             .food(ModFoodComponents.RACLETTE)));
+    public static final Item QUICHE = registerItem("quiche", new Item(new Item.Settings()
+            .food(ModFoodComponents.QUICHE)));
 
 
     //Starlight Upgrade Items
