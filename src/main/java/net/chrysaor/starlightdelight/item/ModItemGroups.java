@@ -75,6 +75,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.CINNAMON_BARK);
                         entries.add(ModItems.CINNAMON);
                         entries.add(ModItems.FLOUR);
                         entries.add(ModItems.DOUGH);

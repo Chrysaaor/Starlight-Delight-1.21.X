@@ -26,6 +26,7 @@ public class ModItems {
     public static final Item SWEET_BERRIES_PIE = registerItem("sweet_berries_pie", new Item(new Item.Settings()
             .food(ModFoodComponents.SWEET_BERRIES_PIE)));
     public static final Item CINNAMON = registerItem("cinnamon", new Item(new Item.Settings()));
+    public static final Item CINNAMON_BARK = registerItem("cinnamon_bark", new Item(new Item.Settings()));
     public static final Item FLOUR = registerItem("flour", new Item(new Item.Settings()));
     public static final Item DOUGH = registerItem("dough", new Item(new Item.Settings()));
     public static final Item CREAM = registerItem("cream", new Item(new Item.Settings()));

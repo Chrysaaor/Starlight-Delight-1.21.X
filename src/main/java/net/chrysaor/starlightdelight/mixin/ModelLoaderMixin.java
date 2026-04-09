@@ -22,7 +22,7 @@ public abstract class ModelLoaderMixin {
                     target = "Lnet/minecraft/client/render/model/ModelLoader;loadItemModel(Lnet/minecraft/client/util/ModelIdentifier;)V"
             )}
     )
-    private void addHoelyBeheader(CallbackInfo info) {
+    private void addInHandModel(CallbackInfo info) {
         this.loadItemModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "hoely_beheader_in_hand")));
     }
 }
