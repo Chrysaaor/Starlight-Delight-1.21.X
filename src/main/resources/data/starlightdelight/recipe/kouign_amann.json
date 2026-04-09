@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "minecraft:sugar"
+  },
+  "input2": {
+    "item": "minecraft:sugar"
+  },
+  "input3": {
+    "item": "minecraft:wheat"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:kouign_amann"
+  }
+}

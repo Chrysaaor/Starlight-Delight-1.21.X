@@ -25,7 +25,9 @@ public class ModRecipes {
             Registries.RECIPE_TYPE, Identifier.of(StarlightDelight.MOD_ID, "cooking_table"),
             new RecipeType<CookingTableRecipe>() {@Override public String toString() {return "cooking_table";}});
 
-
+    public static final RecipeSerializer<CookingTableRecipe> COOKING_TABLE_SERIALIZER = Registry.register(
+            Registries.RECIPE_SERIALIZER, Identifier.of(StarlightDelight.MOD_ID, "cooking_table"),
+            new CookingTableRecipe.Serializer());
 
     public static void registerRecipes() {
         StarlightDelight.LOGGER.info("Registering Recipes for " + StarlightDelight.MOD_ID);
