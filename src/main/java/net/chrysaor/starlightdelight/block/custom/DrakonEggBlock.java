@@ -6,14 +6,12 @@ import net.minecraft.block.*;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.pathing.NavigationType;
 import net.minecraft.entity.passive.SnifferEntity;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.state.property.Property;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
@@ -38,11 +36,11 @@ public class DrakonEggBlock extends Block {
 
     public DrakonEggBlock(AbstractBlock.Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(HATCH, 0));
+        this.setDefaultState(this.stateManager.getDefaultState().with(HATCH, 0));
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{HATCH});
+        builder.add(HATCH);
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -50,7 +48,7 @@ public class DrakonEggBlock extends Block {
     }
 
     public int getHatchStage(BlockState state) {
-        return (Integer)state.get(HATCH);
+        return state.get(HATCH);
     }
 
     private boolean isReadyToHatch(BlockState state) {
@@ -59,12 +57,12 @@ public class DrakonEggBlock extends Block {
 
     public void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         if (!this.isReadyToHatch(state)) {
-            world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_SNIFFER_EGG_CRACK, SoundCategory.BLOCKS, 0.7F, 0.9F + random.nextFloat() * 0.2F);
-            world.setBlockState(pos, (BlockState)state.with(HATCH, this.getHatchStage(state) + 1), 2);
+            world.playSound(null, pos, SoundEvents.BLOCK_SNIFFER_EGG_CRACK, SoundCategory.BLOCKS, 0.7F, 0.9F + random.nextFloat() * 0.2F);
+            world.setBlockState(pos, state.with(HATCH, this.getHatchStage(state) + 1), 2);
         } else {
-            world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_SNIFFER_EGG_HATCH, SoundCategory.BLOCKS, 0.7F, 0.9F + random.nextFloat() * 0.2F);
+            world.playSound(null, pos, SoundEvents.BLOCK_SNIFFER_EGG_HATCH, SoundCategory.BLOCKS, 0.7F, 0.9F + random.nextFloat() * 0.2F);
             world.breakBlock(pos, false);
-            SnifferEntity snifferEntity = (SnifferEntity) EntityType.SNIFFER.create(world);
+            SnifferEntity snifferEntity = EntityType.SNIFFER.create(world);
             if (snifferEntity != null) {
                 Vec3d vec3d = pos.toCenterPos();
                 snifferEntity.setBaby(true);
@@ -107,6 +105,6 @@ public class DrakonEggBlock extends Block {
 
     static {
         HATCH = Properties.HATCH;
-        SHAPE = Block.createCuboidShape((double)1.0F, (double)0.0F, (double)2.0F, (double)15.0F, (double)16.0F, (double)14.0F);
+        SHAPE = Block.createCuboidShape(1.0F, 0.0F, 2.0F, 15.0F, 16.0F, 14.0F);
     }
 }
