@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 400,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "starlightdelight:raw_raclette"
+  },
+  "result": {
+    "id": "starlightdelight:raclette"
+  }
+}
