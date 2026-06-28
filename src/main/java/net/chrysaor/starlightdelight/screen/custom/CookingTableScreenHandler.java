@@ -69,7 +69,12 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
 
     protected static void updateResult(ScreenHandler handler, World world, PlayerEntity player, RecipeInputInventory craftingInventory, CraftingResultInventory resultInventory, @Nullable RecipeEntry<CookingTableRecipe> recipe) {
         if (!world.isClient) {
-            CookingTableRecipeInput cookingTableRecipeInput = new CookingTableRecipeInput(craftingInventory.getStack(0), craftingInventory.getStack(1), craftingInventory.getStack(2));
+
+            CookingTableRecipeInput cookingTableRecipeInput = new CookingTableRecipeInput(
+                    craftingInventory.getStack(0),
+                    craftingInventory.getStack(1),
+                    craftingInventory.getStack(2));
+
             ServerPlayerEntity serverPlayerEntity = (ServerPlayerEntity)player;
             ItemStack itemStack = ItemStack.EMPTY;
             Optional<RecipeEntry<CookingTableRecipe>> optional = Objects.requireNonNull(world.getServer()).getRecipeManager().getFirstMatch(ModRecipes.COOKING_TABLE_TYPE, cookingTableRecipeInput, world, recipe);
