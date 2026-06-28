@@ -1,0 +1,32 @@
+{
+  "parent": "starlightdelight:starlightdelight/starlight_ashes",
+  "criteria": {
+    "starlight_glasses": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:starlight_glasses"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.starlight_glasses.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:starlight_glasses"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.starlight_glasses.title"
+    }
+  },
+  "requirements": [
+    [
+      "starlight_glasses"
+    ]
+  ]
+}
