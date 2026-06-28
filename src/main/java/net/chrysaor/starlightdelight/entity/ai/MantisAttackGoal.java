@@ -48,7 +48,7 @@ public class MantisAttackGoal extends MeleeAttackGoal {
     }
 
     private boolean isEnemyWithinAttackDistance(LivingEntity pEnemy) {
-        return this.entity.distanceTo(pEnemy) <= 3f; // TODO
+        return this.entity.distanceTo(pEnemy) <= 3f;
     }
 
     protected void resetAttackCooldown() {

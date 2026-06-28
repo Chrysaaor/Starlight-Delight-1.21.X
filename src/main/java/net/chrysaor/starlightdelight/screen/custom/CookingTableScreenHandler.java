@@ -89,6 +89,7 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
             serverPlayerEntity.networkHandler.sendPacket(new ScreenHandlerSlotUpdateS2CPacket(handler.syncId, handler.nextRevision(), 0, itemStack));
         }
     }
+//TODO: Solve issue with ingredients duplicating when crafting if more than 1 of an ingredient is present and not shift-clicking
 
     public void onContentChanged(Inventory inventory) {
         if (!this.filling) {
