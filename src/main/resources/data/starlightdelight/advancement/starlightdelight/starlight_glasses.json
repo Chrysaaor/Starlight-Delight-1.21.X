@@ -13,6 +13,7 @@
     }
   },
   "display": {
+    "hidden": true,
     "description": {
       "translate": "advancements.starlightdelight.starlight_glasses.description"
     },
