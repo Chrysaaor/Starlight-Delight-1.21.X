@@ -94,7 +94,6 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
         if (!this.filling) {
             this.context.run((world, pos) -> updateResult(this, world, this.player, this.input, this.result, null));
         }
-
     }
 
     public void onInputSlotFillStart() {

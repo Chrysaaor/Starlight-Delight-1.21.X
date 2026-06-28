@@ -23,13 +23,16 @@
 		],
 		"client": [
 			"net.chrysaor.starlightdelight.StarlightDelightClient"
+		],
+		"jei_mod_plugin": [
+			"net.chrysaor.starlightdelight.compat.JEIStarlightDelightPlugin"
 		]
 	},
 	"mixins": [
 		"starlightdelight.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.18.4",
+		"fabricloader": ">=0.19.3",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*"
