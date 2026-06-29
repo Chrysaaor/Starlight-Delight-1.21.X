@@ -3,7 +3,11 @@ package net.chrysaor.starlightdelight.compat;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.gui.drawable.IDrawable;
+import mezz.jei.api.gui.drawable.IDrawableAnimated;
 import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
+import mezz.jei.api.gui.placement.HorizontalAlignment;
+import mezz.jei.api.gui.placement.VerticalAlignment;
+import mezz.jei.api.gui.widgets.IRecipeExtrasBuilder;
 import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
@@ -21,7 +25,9 @@ import org.jetbrains.annotations.Nullable;
 
 public class FermenterRecipeCategory implements IRecipeCategory<FermenterRecipe> {
     public static final Identifier UID = Identifier.of(StarlightDelight.MOD_ID, "fermenter");
-    public static final Identifier TEXTURE = Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/fermenter_gui.png");
+    public static final Identifier TEXTURE = Identifier.of(StarlightDelight.MOD_ID, "textures/gui/jei/fermenter_jei_gui.png");
+    public final int cookingTime;
+    protected final IDrawableAnimated arrow;
 
     public static final RecipeType<FermenterRecipe> FERMENTER_RECIPE_RECIPE_TYPE =
             new RecipeType<>(UID, FermenterRecipe.class);
@@ -29,8 +35,11 @@ public class FermenterRecipeCategory implements IRecipeCategory<FermenterRecipe>
     private final IDrawable background;
     private final IDrawable icon;
 
-    public FermenterRecipeCategory(IGuiHelper guiHelper) {
-        this.background = guiHelper.createDrawable(TEXTURE, 0, 0, 176, 70);
+    public FermenterRecipeCategory(int cookingTime, IGuiHelper guiHelper) {
+        this.cookingTime = cookingTime;
+        this.arrow = guiHelper.drawableBuilder(TEXTURE, 100, 0, 24, 16)
+                .buildAnimated(600, IDrawableAnimated.StartDirection.LEFT, false);
+        this.background = guiHelper.createDrawable(TEXTURE, 0, 0, 88, 45);
         this.icon = guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.FERMENTER));
     }
 
@@ -52,24 +61,42 @@ public class FermenterRecipeCategory implements IRecipeCategory<FermenterRecipe>
 
     @Override
     public int getWidth() {
-        return 176;
+        return 88;
     }
 
     @Override
     public int getHeight() {
-        return 70;
+        return 40;
     }
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, FermenterRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 54, 34).addIngredients(recipe.getIngredients().getFirst());
+        builder.addSlot(RecipeIngredientRole.INPUT, 11, 9).addIngredients(recipe.getIngredients().getFirst());
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 104, 34).addItemStack(recipe.getResult(null));
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 61, 9).addItemStack(recipe.getResult(null));
+    }
+
+    @Override
+    public void createRecipeExtras(IRecipeExtrasBuilder builder, FermenterRecipe recipe, IFocusGroup focuses) {
+        addCookTime(builder);
+    }
+
+
+
+    protected void addCookTime(IRecipeExtrasBuilder builder) {
+        int cookTimeSeconds = cookingTime / 20;
+        Text timeString = Text.translatable("gui.jei.category.smelting.time.seconds", cookTimeSeconds);
+        builder.addText(timeString, getWidth() - 20, 10)
+                .setPosition(0, 0, getWidth(), getHeight(), HorizontalAlignment.RIGHT, VerticalAlignment.BOTTOM)
+                .setTextAlignment(HorizontalAlignment.RIGHT)
+                .setTextAlignment(VerticalAlignment.BOTTOM)
+                .setColor(0xFF808080);
     }
 
     @Override
     public void draw(FermenterRecipe recipe, IRecipeSlotsView recipeSlotsView, DrawContext guiGraphics, double mouseX, double mouseY) {
         IRecipeCategory.super.draw(recipe, recipeSlotsView, guiGraphics, mouseX, mouseY);
         background.draw(guiGraphics);
+        arrow.draw(guiGraphics, 29, 10);
     }
 }

@@ -21,7 +21,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class CookingTableRecipeCategory implements IRecipeCategory<CookingTableRecipe> {
     public static final Identifier UID = Identifier.of(StarlightDelight.MOD_ID, "cooking_table");
-    public static final Identifier TEXTURE = Identifier.of(StarlightDelight.MOD_ID, "textures/gui/cooking_table/cooking_table_gui.png");
+    public static final Identifier TEXTURE = Identifier.of(StarlightDelight.MOD_ID, "textures/gui/jei/cooking_table_jei_gui.png");
 
     public static final RecipeType<CookingTableRecipe> COOKING_TABLE_RECIPE_RECIPE_TYPE =
             new RecipeType<>(UID, CookingTableRecipe.class);
@@ -30,7 +30,7 @@ public class CookingTableRecipeCategory implements IRecipeCategory<CookingTableR
     private final IDrawable icon;
 
     public CookingTableRecipeCategory(IGuiHelper guiHelper) {
-        this.background = guiHelper.createDrawable(TEXTURE, 0, 0, 176, 70);
+        this.background = guiHelper.createDrawable(TEXTURE, 0, 0, 176, 45);
         this.icon = guiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.COOKING_TABLE));
     }
 
@@ -52,21 +52,21 @@ public class CookingTableRecipeCategory implements IRecipeCategory<CookingTableR
 
     @Override
     public void setRecipe(IRecipeLayoutBuilder builder, CookingTableRecipe recipe, IFocusGroup focuses) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 15, 35).addIngredients(recipe.getInput1());
-        builder.addSlot(RecipeIngredientRole.INPUT, 42, 35).addIngredients(recipe.getInput2());
-        builder.addSlot(RecipeIngredientRole.INPUT, 69, 35).addIngredients(recipe.getInput3());
+        builder.addSlot(RecipeIngredientRole.INPUT, 11, 13).addIngredients(recipe.getInput1());
+        builder.addSlot(RecipeIngredientRole.INPUT, 38, 13).addIngredients(recipe.getInput2());
+        builder.addSlot(RecipeIngredientRole.INPUT, 65, 13).addIngredients(recipe.getInput3());
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 124, 35).addItemStack(recipe.getOutput());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 120, 13).addItemStack(recipe.getOutput());
     }
 
     @Override
     public int getWidth() {
-        return 176;
+        return 146;
     }
 
     @Override
     public int getHeight() {
-        return 70;
+        return 42;
     }
 
     @Override

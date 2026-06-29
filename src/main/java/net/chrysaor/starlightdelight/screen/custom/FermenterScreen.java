@@ -13,7 +13,7 @@ public class FermenterScreen extends HandledScreen<FermenterScreenHandler> {
     private static final Identifier GUI_TEXTURE =
             Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/fermenter_gui.png");
     private static final Identifier ARROW_TEXTURE =
-            Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/ferment_progress.png");
+            Identifier.of(StarlightDelight.MOD_ID, "textures/gui/fermenter/fermenter_progress.png");
 
 
     public FermenterScreen(FermenterScreenHandler handler, PlayerInventory inventory, Text title) {

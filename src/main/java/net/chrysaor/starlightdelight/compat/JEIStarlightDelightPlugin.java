@@ -3,9 +3,11 @@ package net.chrysaor.starlightdelight.compat;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.registration.IGuiHandlerRegistration;
+import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.chrysaor.starlightdelight.StarlightDelight;
+import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.recipe.CookingTableRecipe;
 import net.chrysaor.starlightdelight.recipe.FermenterRecipe;
 import net.chrysaor.starlightdelight.recipe.ModRecipes;
@@ -15,22 +17,25 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.NotNull;
+import net.minecraft.util.annotation.MethodsReturnNonnullByDefault;
 
 import java.util.List;
 
 @JeiPlugin
+@MethodsReturnNonnullByDefault
+@SuppressWarnings("unused")
 public class JEIStarlightDelightPlugin implements IModPlugin {
 
+    private static final Identifier ID = Identifier.of(StarlightDelight.MOD_ID, "jei_plugin");
 
     @Override
-    public @NotNull Identifier getPluginUid() {
-        return Identifier.of(StarlightDelight.MOD_ID, "jei_plugin");
+    public Identifier getPluginUid() {
+        return ID;
     }
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
-        registration.addRecipeCategories(new FermenterRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(new FermenterRecipeCategory(600, registration.getJeiHelpers().getGuiHelper()));
 
         registration.addRecipeCategories(new CookingTableRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
@@ -53,7 +58,14 @@ public class JEIStarlightDelightPlugin implements IModPlugin {
         registration.addRecipeClickArea(FermenterScreen.class, 74, 30, 22, 20,
                 FermenterRecipeCategory.FERMENTER_RECIPE_RECIPE_TYPE);
 
+
         registration.addRecipeClickArea(CookingTableScreen.class, 90, 30, 22, 20,
                 CookingTableRecipeCategory.COOKING_TABLE_RECIPE_RECIPE_TYPE);
+    }
+
+    @Override
+    public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+        registration.addRecipeCatalyst(ModBlocks.FERMENTER, FermenterRecipeCategory.FERMENTER_RECIPE_RECIPE_TYPE);
+        registration.addRecipeCatalyst(ModBlocks.COOKING_TABLE, CookingTableRecipeCategory.COOKING_TABLE_RECIPE_RECIPE_TYPE);
     }
 }
