@@ -1,0 +1,37 @@
+{
+  "parent": "starlightdelight:starlightdelight/new_food",
+  "criteria": {
+    "golden_potato_fries": {
+      "conditions": {
+        "items": [
+          {
+            "items": "starlightdelight:golden_potato_fries"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancements.starlightdelight.golden_potato_fries.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "starlightdelight:golden_potato_fries"
+    },
+    "title": {
+      "translate": "advancements.starlightdelight.golden_potato_fries.title"
+    }
+  },
+  "requirements": [
+    [
+      "golden_potato_fries"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  }
+}
