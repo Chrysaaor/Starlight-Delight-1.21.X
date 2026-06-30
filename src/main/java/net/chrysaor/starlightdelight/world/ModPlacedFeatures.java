@@ -37,7 +37,7 @@ public class ModPlacedFeatures {
 
         register(context, CINNAMON_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CINNAMON_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 1), ModBlocks.CINNAMON_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(0, 0.02f, 1), ModBlocks.CINNAMON_SAPLING));
 
     }
 

@@ -1,8 +1,8 @@
-// 1.21.1	2026-06-30T03:31:15.8351003	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-06-30T12:42:51.6371102	Starlight & Delight/Tags for minecraft:block
 858b4736f63a64046a40e9dbd025c709c79d7cb2 data\starlightdelight\tags\block\incorrect_drakon_egg_hatch.json
 6ee960b8a832d0b99d3ead9b81c46b9284d00f88 data\minecraft\tags\block\fences.json
-f6fc9b6dcbd06c917c4d14446dc51697799b1089 data\minecraft\tags\block\mineable\axe.json
 c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
+f6fc9b6dcbd06c917c4d14446dc51697799b1089 data\minecraft\tags\block\mineable\axe.json
 b21c0aaffe78823a26ddd9b732e142a87e4e1b57 data\minecraft\tags\block\mineable\pickaxe.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
 09120de3b3e57eea8797ba21a33a23063f872f80 data\minecraft\tags\block\doors.json

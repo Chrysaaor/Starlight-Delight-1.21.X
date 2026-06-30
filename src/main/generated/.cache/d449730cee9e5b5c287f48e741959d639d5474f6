@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-30T03:31:15.8360999	Starlight & Delight/Block Loot Tables
+// 1.21.1	2026-06-30T12:42:51.6371102	Starlight & Delight/Block Loot Tables
 c0aa5c47d571a24a3aeb5a425278d463516ad1ee data\starlightdelight\loot_table\blocks\stripped_cinnamon_log.json
 3376a3b7e16414458cac51546e00d35d601d93e4 data\starlightdelight\loot_table\blocks\cinnamon_sapling.json
 5067aca04ce565d352c183f35e50295aa67d2ba9 data\starlightdelight\loot_table\blocks\pink_garnet_pressure_plate.json
@@ -21,8 +21,8 @@ aeee98c65fdf5c68bc7037792a3ec17ff3330cc4 data\starlightdelight\loot_table\blocks
 349a57804da1f32957b825a9b19ad5172c0b43b2 data\starlightdelight\loot_table\blocks\raw_pink_garnet_block.json
 0025ad0a36184d7a4c412b15d66f9488e230536f data\starlightdelight\loot_table\blocks\pedestal.json
 2672ead04b1b6a160229e9ca3f08d13b370d00ce data\starlightdelight\loot_table\blocks\pink_garnet_fence.json
-16bf7c07f0bb93c1fb4a09f67144de9d6f4971a8 data\starlightdelight\loot_table\blocks\stripped_cinnamon_wood.json
 2d9a262866869ea256c37574280ae9eb9d0ddc84 data\starlightdelight\loot_table\blocks\cinnamon_planks.json
+16bf7c07f0bb93c1fb4a09f67144de9d6f4971a8 data\starlightdelight\loot_table\blocks\stripped_cinnamon_wood.json
 fc8c39bba3cd31be8405887532af0a77584cb9e6 data\starlightdelight\loot_table\blocks\cauliflower_crop.json
 50fc159a44755aa466d025d363eabc793743c7df data\starlightdelight\loot_table\blocks\pink_garnet_fence_gate.json
 91736ecc26d62d2b333ca727cd593ab65aac5b13 data\starlightdelight\loot_table\blocks\starlight_deepslate_ore.json
