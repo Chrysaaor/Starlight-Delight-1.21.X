@@ -41,7 +41,30 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.FERMENTER)
-                .add(ModBlocks.COOKING_TABLE);
+                .add(ModBlocks.COOKING_TABLE)
+
+                .add(ModBlocks.CINNAMON_LOG)
+                .add(ModBlocks.CINNAMON_WOOD)
+                .add(ModBlocks.STRIPPED_CINNAMON_LOG)
+                .add(ModBlocks.STRIPPED_CINNAMON_WOOD)
+
+                .add(ModBlocks.CINNAMON_PLANKS)
+                .add(ModBlocks.CINNAMON_STAIRS)
+                .add(ModBlocks.CINNAMON_SLAB)
+
+                .add(ModBlocks.CINNAMON_FENCE)
+                .add(ModBlocks.CINNAMON_FENCE_GATE)
+
+                .add(ModBlocks.CINNAMON_DOOR)
+                .add(ModBlocks.CINNAMON_TRAPDOOR)
+
+                .add(ModBlocks.CINNAMON_PRESSURE_PLATE)
+                .add(ModBlocks.CINNAMON_BUTTON)
+
+                .add(ModBlocks.CINNAMON_SIGN)
+                .add(ModBlocks.CINNAMON_WALL_SIGN)
+                .add(ModBlocks.CINNAMON_HANGING_SIGN)
+                .add(ModBlocks.CINNAMON_WALL_HANGING_SIGN);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -49,13 +72,28 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STARLIGHT_ORE)
                 .add(ModBlocks.STARLIGHT_DEEPSLATE_ORE);
 
-        getOrCreateTagBuilder(BlockTags.FENCES).add(ModBlocks.PINK_GARNET_FENCE);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.PINK_GARNET_FENCE_GATE);
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.PINK_GARNET_WALL);
-        getOrCreateTagBuilder(BlockTags.DOORS).add(ModBlocks.PINK_GARNET_DOOR);
-        getOrCreateTagBuilder(BlockTags.TRAPDOORS).add(ModBlocks.PINK_GARNET_TRAPDOOR);
-        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES).add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
-        getOrCreateTagBuilder(BlockTags.BUTTONS).add(ModBlocks.PINK_GARNET_BUTTON);
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.PINK_GARNET_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.PINK_GARNET_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.PINK_GARNET_WALL);
+
+        getOrCreateTagBuilder(BlockTags.DOORS)
+                .add(ModBlocks.PINK_GARNET_DOOR)
+                .add(ModBlocks.CINNAMON_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.TRAPDOORS)
+                .add(ModBlocks.PINK_GARNET_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.PRESSURE_PLATES)
+                .add(ModBlocks.PINK_GARNET_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.PINK_GARNET_BUTTON);
+
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_PINK_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
@@ -72,5 +110,62 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_CINNAMON_LOG)
                 .add(ModBlocks.CINNAMON_WOOD)
                 .add(ModBlocks.STRIPPED_CINNAMON_WOOD);
+
+        getOrCreateTagBuilder(BlockTags.OVERWORLD_NATURAL_LOGS)
+                .add(ModBlocks.CINNAMON_LOG);
+
+        getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(ModBlocks.CINNAMON_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.CINNAMON_TRAPDOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
+                .add(ModBlocks.CINNAMON_DOOR);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.CINNAMON_BUTTON);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.CINNAMON_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.CINNAMON_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.CINNAMON_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(ModBlocks.CINNAMON_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.SAPLINGS)
+                .add(ModBlocks.CINNAMON_SAPLING);
+
+        getOrCreateTagBuilder(BlockTags.FLOWERS)
+                .add(ModBlocks.POTTED_CINNAMON_SAPLING);
+
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.CINNAMON_LEAVES);
+
+        getOrCreateTagBuilder(BlockTags.STANDING_SIGNS)
+                .add(ModBlocks.CINNAMON_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(ModBlocks.CINNAMON_WALL_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.SIGNS).addTag(BlockTags.STANDING_SIGNS).addTag(BlockTags.WALL_SIGNS);
+
+        getOrCreateTagBuilder(BlockTags.CEILING_HANGING_SIGNS)
+                .add(ModBlocks.CINNAMON_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.WALL_HANGING_SIGNS)
+                .add(ModBlocks.CINNAMON_WALL_HANGING_SIGN);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.CINNAMON_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
+                .add(ModBlocks.CINNAMON_LEAVES);
+
     }
 }

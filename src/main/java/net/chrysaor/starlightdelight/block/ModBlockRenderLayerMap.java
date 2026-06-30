@@ -17,5 +17,9 @@ public class ModBlockRenderLayerMap {
         registry.putBlock(ModBlocks.PINK_GARNET_TRAPDOOR, RenderLayer.getCutout());
 
         registry.putBlock(ModBlocks.CINNAMON_SAPLING, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.CINNAMON_LEAVES, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.CINNAMON_DOOR, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.CINNAMON_TRAPDOOR, RenderLayer.getCutout());
+        registry.putBlock(ModBlocks.POTTED_CINNAMON_SAPLING, RenderLayer.getCutout());
     }
 }

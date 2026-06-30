@@ -3,6 +3,7 @@ package net.chrysaor.starlightdelight.datagen;
 import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.item.ModItems;
+import net.chrysaor.starlightdelight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.*;
@@ -11,6 +12,8 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
+import net.minecraft.resource.featuretoggle.FeatureSet;
 import net.minecraft.util.Identifier;
 
 import java.util.List;
@@ -73,6 +76,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
+        generateFamily(recipeExporter, ModModelProvider.CINNAMON_BLOCK_FAMILY, FeatureSet.of(FeatureFlags.VANILLA));
+        offerPlanksRecipe(recipeExporter, ModBlocks.CINNAMON_PLANKS, ModTags.Items.CINNAMON_LOGS_ITEM, 4);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.CINNAMON_WOOD, ModBlocks.CINNAMON_LOG);
+        offerBarkBlockRecipe(recipeExporter, ModBlocks.STRIPPED_CINNAMON_WOOD, ModBlocks.STRIPPED_CINNAMON_LOG);
+        offerHangingSignRecipe(recipeExporter, ModItems.CINNAMON_HANGING_SIGN, ModBlocks.STRIPPED_CINNAMON_LOG);
+
+
         List<ItemConvertible> PINK_GARNET_SMELTABLES = List.of(ModItems.RAW_PINK_GARNET, ModBlocks.PINK_GARNET_ORE,
                 ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 

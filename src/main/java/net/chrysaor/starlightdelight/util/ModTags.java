@@ -26,6 +26,9 @@ public class ModTags {
 
     public static class Items {
 
+        public static final TagKey<Item> CINNAMON_LOGS_ITEM = createTag("cinnamon_logs");
+
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(StarlightDelight.MOD_ID, name));
         }

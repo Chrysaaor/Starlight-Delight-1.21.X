@@ -1,6 +1,23 @@
 {
   "values": [
     "starlightdelight:fermenter",
-    "starlightdelight:cooking_table"
+    "starlightdelight:cooking_table",
+    "starlightdelight:cinnamon_log",
+    "starlightdelight:cinnamon_wood",
+    "starlightdelight:stripped_cinnamon_log",
+    "starlightdelight:stripped_cinnamon_wood",
+    "starlightdelight:cinnamon_planks",
+    "starlightdelight:cinnamon_stairs",
+    "starlightdelight:cinnamon_slab",
+    "starlightdelight:cinnamon_fence",
+    "starlightdelight:cinnamon_fence_gate",
+    "starlightdelight:cinnamon_door",
+    "starlightdelight:cinnamon_trapdoor",
+    "starlightdelight:cinnamon_pressure_plate",
+    "starlightdelight:cinnamon_button",
+    "starlightdelight:cinnamon_sign",
+    "starlightdelight:cinnamon_wall_sign",
+    "starlightdelight:cinnamon_hanging_sign",
+    "starlightdelight:cinnamon_wall_hanging_sign"
   ]
 }

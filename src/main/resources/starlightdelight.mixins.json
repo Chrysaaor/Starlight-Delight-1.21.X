@@ -12,7 +12,8 @@
     "ModelLoaderMixin",
     "PlayerEntityMixin",
     "GameRendererMixin",
-    "AbstractFurnaceBlockEntityMixin"
+    "AbstractFurnaceBlockEntityMixin",
+    "BlockEntityTypeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

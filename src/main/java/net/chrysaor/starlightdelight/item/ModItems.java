@@ -49,6 +49,11 @@ public class ModItems {
             .food(ModFoodComponents.QUICHE)));
 
 
+    public static final Item CINNAMON_SIGN = registerItem("cinnamon_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.CINNAMON_SIGN, ModBlocks.CINNAMON_WALL_SIGN));
+    public static final Item CINNAMON_HANGING_SIGN = registerItem("cinnamon_hanging_sign", new HangingSignItem(ModBlocks.CINNAMON_HANGING_SIGN, ModBlocks.CINNAMON_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
+    public static final Item CINNAMON_DOOR = registerItem("cinnamon_door", new TallBlockItem(ModBlocks.CINNAMON_DOOR, new Item.Settings()));
+
+
     //Starlight Upgrade Items
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings().fireproof()));
     public static final Item STARLIGHT_SHARD = registerItem("starlight_shard", new Item(new Item.Settings().fireproof()));

@@ -132,10 +132,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_CINNAMON_LOG);
                         entries.add(ModBlocks.STRIPPED_CINNAMON_WOOD);
 
+                        entries.add(ModBlocks.CINNAMON_PLANKS);
+                        entries.add(ModBlocks.CINNAMON_STAIRS);
+                        entries.add(ModBlocks.CINNAMON_SLAB);
+                        entries.add(ModBlocks.CINNAMON_FENCE);
+                        entries.add(ModBlocks.CINNAMON_FENCE_GATE);
+                        entries.add(ModItems.CINNAMON_DOOR);
+                        entries.add(ModBlocks.CINNAMON_TRAPDOOR);
+                        entries.add(ModBlocks.CINNAMON_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CINNAMON_BUTTON);
+                        entries.add(ModItems.CINNAMON_SIGN);
+                        entries.add(ModItems.CINNAMON_HANGING_SIGN);
+
                         entries.add(ModBlocks.CINNAMON_SAPLING);
                         entries.add(ModBlocks.CINNAMON_LEAVES);
-                        
-                        entries.add(ModBlocks.CINNAMON_PLANKS);
+
 
 
 

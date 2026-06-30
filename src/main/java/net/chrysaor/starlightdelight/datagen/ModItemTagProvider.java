@@ -3,6 +3,7 @@ package net.chrysaor.starlightdelight.datagen;
 
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.item.ModItems;
+import net.chrysaor.starlightdelight.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -102,5 +103,43 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.CINNAMON_PLANKS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(ModBlocks.CINNAMON_SAPLING.asItem());
+
+        getOrCreateTagBuilder(ItemTags.LEAVES)
+                .add(ModBlocks.CINNAMON_LEAVES.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.CINNAMON_BUTTON.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_DOORS)
+                .add(ModBlocks.CINNAMON_DOOR.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
+                .add(ModBlocks.CINNAMON_FENCE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES)
+                .add(ModBlocks.CINNAMON_FENCE_GATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.CINNAMON_SLAB.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
+                .add(ModBlocks.CINNAMON_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.CINNAMON_PRESSURE_PLATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WOODEN_TRAPDOORS)
+                .add(ModBlocks.CINNAMON_TRAPDOOR.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.CINNAMON_LOGS_ITEM).add(
+                ModBlocks.CINNAMON_LOG.asItem(),
+                ModBlocks.CINNAMON_WOOD.asItem(),
+                ModBlocks.STRIPPED_CINNAMON_LOG.asItem(),
+                ModBlocks.STRIPPED_CINNAMON_WOOD.asItem()
+        );
+
     }
 }

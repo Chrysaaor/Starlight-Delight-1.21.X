@@ -1,5 +1,6 @@
 package net.chrysaor.starlightdelight.datagen;
 
+import com.google.common.collect.ImmutableMap;
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.block.custom.CauliflowerCropBlock;
 import net.chrysaor.starlightdelight.block.custom.GrapeBushBlock;
@@ -7,10 +8,14 @@ import net.chrysaor.starlightdelight.block.custom.PinkGarnetLampBlock;
 import net.chrysaor.starlightdelight.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
+import net.minecraft.data.family.BlockFamilies;
+import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
+import java.util.Map;
 import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -18,9 +23,27 @@ public class ModModelProvider extends FabricModelProvider {
         super(output);
     }
 
+    private final Map<Block, TexturedModel> uniqueModels = ImmutableMap.<Block, TexturedModel>builder()
+            .build();
+
+    public static BlockFamily CINNAMON_BLOCK_FAMILY = BlockFamilies.register(ModBlocks.CINNAMON_PLANKS)
+            .button(ModBlocks.CINNAMON_BUTTON)
+            .fence(ModBlocks.CINNAMON_FENCE)
+            .fenceGate(ModBlocks.CINNAMON_FENCE_GATE)
+            .pressurePlate(ModBlocks.CINNAMON_PRESSURE_PLATE)
+            .sign(ModBlocks.CINNAMON_SIGN, ModBlocks.CINNAMON_WALL_SIGN)
+            .slab(ModBlocks.CINNAMON_SLAB)
+            .stairs(ModBlocks.CINNAMON_STAIRS)
+            .door(ModBlocks.CINNAMON_DOOR)
+            .trapdoor(ModBlocks.CINNAMON_TRAPDOOR)
+            .group("wooden")
+            .unlockCriterionName("has_planks")
+            .build();
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         BlockStateModelGenerator.BlockTexturePool pinkGarnetPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.PINK_GARNET_BLOCK);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_PINK_GARNET_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
@@ -52,12 +75,12 @@ public class ModModelProvider extends FabricModelProvider {
                 GrapeBushBlock.AGE, 0, 1, 2, 3);
 
 
+        this.registerFamily(blockStateModelGenerator, CINNAMON_BLOCK_FAMILY);
         blockStateModelGenerator.registerLog(ModBlocks.CINNAMON_LOG).log(ModBlocks.CINNAMON_LOG).wood(ModBlocks.CINNAMON_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CINNAMON_LOG).log(ModBlocks.STRIPPED_CINNAMON_LOG).wood(ModBlocks.STRIPPED_CINNAMON_WOOD);
-
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CINNAMON_PLANKS);
         blockStateModelGenerator.registerSingleton(ModBlocks.CINNAMON_LEAVES, TexturedModel.LEAVES);
-        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CINNAMON_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_CINNAMON_LOG, ModBlocks.CINNAMON_HANGING_SIGN, ModBlocks.CINNAMON_WALL_HANGING_SIGN);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.CINNAMON_SAPLING, ModBlocks.POTTED_CINNAMON_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -127,8 +150,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
 
-        itemModelGenerator.register(ModBlocks.CINNAMON_SAPLING.asItem(),  Models.GENERATED);
+    }
 
-
+    private void registerFamily(BlockStateModelGenerator generator, BlockFamily family) {
+        TexturedModel texturedModel = this.uniqueModels.getOrDefault(family.getBaseBlock(), TexturedModel.CUBE_ALL.get(family.getBaseBlock()));
+        generator.new BlockTexturePool(texturedModel.getTextures()).base(family.getBaseBlock(), texturedModel.getModel()).family(family);
     }
 }

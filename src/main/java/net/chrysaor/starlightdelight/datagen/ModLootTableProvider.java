@@ -87,8 +87,25 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.CINNAMON_WOOD);
         addDrop(ModBlocks.STRIPPED_CINNAMON_LOG);
         addDrop(ModBlocks.STRIPPED_CINNAMON_WOOD);
+
         addDrop(ModBlocks.CINNAMON_PLANKS);
+        addDrop(ModBlocks.CINNAMON_STAIRS);
+        addDrop(ModBlocks.CINNAMON_SLAB, slabDrops(ModBlocks.CINNAMON_SLAB));
+
+        addDrop(ModBlocks.CINNAMON_FENCE);
+        addDrop(ModBlocks.CINNAMON_FENCE_GATE);
+
+        addDrop(ModBlocks.CINNAMON_DOOR, doorDrops(ModBlocks.CINNAMON_DOOR));
+        addDrop(ModBlocks.CINNAMON_TRAPDOOR);
+
+        addDrop(ModBlocks.CINNAMON_PRESSURE_PLATE);
+        addDrop(ModBlocks.CINNAMON_BUTTON);
+
+        addDrop(ModBlocks.CINNAMON_SIGN);
+        addDrop(ModBlocks.CINNAMON_HANGING_SIGN);
+
         addDrop(ModBlocks.CINNAMON_SAPLING);
+        addPottedPlantDrops(ModBlocks.POTTED_CINNAMON_SAPLING);
 
         addDrop(ModBlocks.CINNAMON_LEAVES, leavesDrops(ModBlocks.CINNAMON_LEAVES, ModBlocks.CINNAMON_SAPLING, 0.0625f));
 
