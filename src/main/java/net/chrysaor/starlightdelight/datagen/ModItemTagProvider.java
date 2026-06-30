@@ -141,5 +141,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 ModBlocks.STRIPPED_CINNAMON_WOOD.asItem()
         );
 
+        getOrCreateTagBuilder(ItemTags.DOORS)
+                .add(ModBlocks.CINNAMON_DOOR.asItem());
+
+        getOrCreateTagBuilder(ItemTags.TRAPDOORS)
+                .add(ModBlocks.PINK_GARNET_TRAPDOOR.asItem());
     }
 }

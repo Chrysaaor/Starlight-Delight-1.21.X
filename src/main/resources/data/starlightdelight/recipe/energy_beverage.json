@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "minecraft:apple"
+  },
+  "input2": {
+    "item": "minecraft:sugar"
+  },
+  "input3": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": {
+    "count": 2,
+    "id": "starlightdelight:energy_beverage"
+  }
+}

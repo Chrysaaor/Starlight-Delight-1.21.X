@@ -90,6 +90,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SWEET_BERRIES_PIE);
                         entries.add(ModItems.KOUIGN_AMANN);
                         entries.add(ModItems.CINNAMON_ROLL);
+                        entries.add(ModItems.APPLE_CRUMBLE);
+                        entries.add(ModItems.ENERGY_BEVERAGE);
 
                     }).build());
 
@@ -117,7 +119,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_FENCE_GATE);
                         entries.add(ModBlocks.PINK_GARNET_WALL);
 
-                        entries.add(ModBlocks.PINK_GARNET_DOOR);
+                        entries.add(ModItems.PINK_GARNET_DOOR);
                         entries.add(ModBlocks.PINK_GARNET_TRAPDOOR);
 
                         entries.add(ModBlocks.PINK_GARNET_LAMP);

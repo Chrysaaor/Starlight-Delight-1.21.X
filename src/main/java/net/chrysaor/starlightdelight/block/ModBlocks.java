@@ -58,7 +58,7 @@ public class ModBlocks {
     public static final Block PINK_GARNET_WALL = registerBlock("pink_garnet_wall",
             new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
-    public static final Block PINK_GARNET_DOOR = registerBlock("pink_garnet_door",
+    public static final Block PINK_GARNET_DOOR = registerBlockWithoutBlockItem("pink_garnet_door",
             new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PINK_GARNET_TRAPDOOR = registerBlock("pink_garnet_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f, 6f).requiresTool().nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));

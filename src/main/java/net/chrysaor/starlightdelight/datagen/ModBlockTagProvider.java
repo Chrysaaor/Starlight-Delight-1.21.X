@@ -82,8 +82,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.PINK_GARNET_WALL);
 
         getOrCreateTagBuilder(BlockTags.DOORS)
-                .add(ModBlocks.PINK_GARNET_DOOR)
-                .add(ModBlocks.CINNAMON_DOOR);
+                .add(ModBlocks.PINK_GARNET_DOOR);
 
         getOrCreateTagBuilder(BlockTags.TRAPDOORS)
                 .add(ModBlocks.PINK_GARNET_TRAPDOOR);

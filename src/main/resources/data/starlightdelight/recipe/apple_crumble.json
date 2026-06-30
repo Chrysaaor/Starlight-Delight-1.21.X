@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "minecraft:apple"
+  },
+  "input2": {
+    "item": "minecraft:sugar"
+  },
+  "input3": {
+    "item": "starlightdelight:flour"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:apple_crumble"
+  }
+}
