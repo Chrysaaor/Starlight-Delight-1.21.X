@@ -16,12 +16,12 @@ import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
 import net.minecraft.screen.*;
-import net.minecraft.screen.slot.CraftingResultSlot;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -49,7 +49,12 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
         this.result = new CraftingResultInventory();
         this.context = context;
         this.player = playerInventory.player;
-        this.addSlot(new CraftingResultSlot(playerInventory.player, this.input, this.result, 0, 124, 35));
+        this.addSlot(new Slot(this.result,0, 124, 35) {
+            @Override
+            public void onTakeItem(PlayerEntity player, ItemStack itemStack) {
+                CookingTableScreenHandler.this.onTakeItem(player, itemStack);
+            }
+        });
 
         this.addSlot(new Slot(this.input, 0, 15, 35));
         this.addSlot(new Slot(this.input, 1, 42, 35));
@@ -178,6 +183,15 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
         }
 
         return itemStack;
+    }
+
+    public void onTakeItem(PlayerEntity player, ItemStack stack) {
+        stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
+        this.result.unlockLastRecipe(player, List.of(this.input.getStack(0), this.input.getStack(1), this.input.getStack(2)));
+
+        this.input.removeStack(0, 1);
+        this.input.removeStack(1, 1);
+        this.input.removeStack(2, 1);
     }
 
     public boolean canInsertIntoSlot(ItemStack stack, Slot slot) {
