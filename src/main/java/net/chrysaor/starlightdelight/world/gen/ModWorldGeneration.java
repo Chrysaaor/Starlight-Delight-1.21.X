@@ -7,6 +7,7 @@ public class ModWorldGeneration {
 
         ModEntitySpawns.addSpawns();
 
+        ModVegetationGeneration.generateTrees();
         ModVegetationGeneration.generateBushes();
 
     }

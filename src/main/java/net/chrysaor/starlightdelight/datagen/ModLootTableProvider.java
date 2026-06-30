@@ -81,6 +81,17 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
                                                 .with(ItemEntry.builder(ModItems.GRAPES))
                                                 .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0F, 2.0F)))
                                                 .apply(ApplyBonusLootFunction.uniformBonusCount(impl.getOrThrow(Enchantments.FORTUNE))))));
+
+
+        addDrop(ModBlocks.CINNAMON_LOG);
+        addDrop(ModBlocks.CINNAMON_WOOD);
+        addDrop(ModBlocks.STRIPPED_CINNAMON_LOG);
+        addDrop(ModBlocks.STRIPPED_CINNAMON_WOOD);
+        addDrop(ModBlocks.CINNAMON_PLANKS);
+        addDrop(ModBlocks.CINNAMON_SAPLING);
+
+        addDrop(ModBlocks.CINNAMON_LEAVES, leavesDrops(ModBlocks.CINNAMON_LEAVES, ModBlocks.CINNAMON_SAPLING, 0.0625f));
+
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

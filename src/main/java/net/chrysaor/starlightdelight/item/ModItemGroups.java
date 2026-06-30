@@ -126,6 +126,19 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.FERMENTER);
                         entries.add(ModBlocks.COOKING_TABLE);
+
+                        entries.add(ModBlocks.CINNAMON_LOG);
+                        entries.add(ModBlocks.CINNAMON_WOOD);
+                        entries.add(ModBlocks.STRIPPED_CINNAMON_LOG);
+                        entries.add(ModBlocks.STRIPPED_CINNAMON_WOOD);
+
+                        entries.add(ModBlocks.CINNAMON_SAPLING);
+                        entries.add(ModBlocks.CINNAMON_LEAVES);
+                        
+                        entries.add(ModBlocks.CINNAMON_PLANKS);
+
+
+
                     }).build());
 
 

@@ -1,6 +1,7 @@
 package net.chrysaor.starlightdelight.datagen;
 
 
+import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -91,5 +92,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.STARLIGHT_UPGRADE_SMITHING_TEMPLATE);
+
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.STRIPPED_CINNAMON_LOG.asItem())
+                .add(ModBlocks.STRIPPED_CINNAMON_WOOD.asItem())
+                .add(ModBlocks.CINNAMON_LOG.asItem())
+                .add(ModBlocks.CINNAMON_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.CINNAMON_PLANKS.asItem());
     }
 }

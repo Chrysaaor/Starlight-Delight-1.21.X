@@ -2,6 +2,7 @@ package net.chrysaor.starlightdelight.block;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.block.custom.*;
+import net.chrysaor.starlightdelight.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -79,9 +80,68 @@ public class ModBlocks {
     public static final Block COOKING_TABLE = registerBlock("cooking_table",
             new CookingTableBlock(AbstractBlock.Settings.create().nonOpaque().sounds(BlockSoundGroup.WOOD).strength(2.5F)));
 
-    public static  final Block DRAKON_EGG = registerBlock("drakon_egg",
+    public static final Block DRAKON_EGG = registerBlock("drakon_egg",
             new DrakonEggBlock(AbstractBlock.Settings.create().mapColor(MapColor.TERRACOTTA_WHITE)
                     .strength(0.75f).sounds(BlockSoundGroup.METAL).nonOpaque()));
+
+
+    //Cinnamon blocks
+    public static final Block CINNAMON_LOG = registerBlock("cinnamon_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_LOG)));
+    public static final Block STRIPPED_CINNAMON_LOG = registerBlock("stripped_cinnamon_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_SPRUCE_LOG)));
+    public static final Block CINNAMON_WOOD = registerBlock("cinnamon_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.SPRUCE_WOOD)));
+    public static final Block STRIPPED_CINNAMON_WOOD = registerBlock("stripped_cinnamon_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_SPRUCE_WOOD)));
+
+    public static final Block CINNAMON_PLANKS = registerBlock("cinnamon_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
+
+//    public static final Block CINNAMON_STAIRS = registerBlock("cinnamon_stairs",
+//            new StairsBlock(CINNAMON_PLANKS.getDefaultState(), AbstractBlock.Settings.copy(CINNAMON_PLANKS)));
+//
+//    public static final Block CINNAMON_SLAB = registerBlock("cinnamon_slab",
+//            new SlabBlock(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD).burnable()));
+//
+//    public static final Block CINNAMON_TRAPDOOR = registerBlock("cinnamon_trapdoor",
+//            new TrapdoorBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS).strength(3.0F).nonOpaque().allowsSpawning(Blocks::never).burnable()));
+//
+//    public static final Block CINNAMON_DOOR = registerBlock("cinnamon_door",
+//            new DoorBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS).strength(3.0F).nonOpaque().burnable().pistonBehavior(PistonBehavior.DESTROY)));
+//
+//    public static final Block CINNAMON_FENCE = registerBlock("cinnamon_fence",
+//            new FenceBlock(AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).burnable().sounds(BlockSoundGroup.WOOD)));
+//
+//    public static final Block CINNAMON_FENCE_GATE = registerBlock("cinnamon_fence_gate",
+//            new FenceGateBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).strength(2.0F, 3.0F).burnable()));
+//
+//    public static final Block CINNAMON_PRESSURE_PLATE = registerBlock("cinnamon_pressure_plate",
+//            new PressurePlateBlock(BlockSetType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(0.5F).burnable().pistonBehavior(PistonBehavior.DESTROY)));
+//
+//    public static final Block CINNAMON_BUTTON = registerBlock("cinnamon_button",
+//            new ButtonBlock(BlockSetType.SPRUCE, 30, AbstractBlock.Settings.create().noCollision().strength(0.5F).pistonBehavior(PistonBehavior.DESTROY)));
+//
+//    public static final Block CINNAMON_SIGN = registerBlock("cinnamon_sign",
+//            new SignBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(1.0F).burnable()));
+//
+//    public static final Block CINNAMON_WALL_SIGN = registerBlock("cinnamon_wall_sign",
+//            new WallSignBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(1.0F).dropsLike(CINNAMON_SIGN).burnable()));
+//
+//    public static final Block CINNAMON_HANGING_SIGN = registerBlock("cinnamon_hanging_sign",
+//            new HangingSignBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(1.0F).burnable()));
+//
+//    public static final Block CINNAMON_WALL_HANGING_SIGN = registerBlock("cinnamon_wall_hanging_sign",
+//            new WallHangingSignBlock(WoodType.SPRUCE, AbstractBlock.Settings.create().mapColor(MapColor.SPRUCE_BROWN).solid().instrument(NoteBlockInstrument.BASS).noCollision().strength(1.0F).dropsLike(CINNAMON_HANGING_SIGN).burnable()));
+
+    public static final Block CINNAMON_SAPLING = registerBlock("cinnamon_sapling",
+            new SaplingBlock(ModSaplingGenerators.CINNAMON, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_CINNAMON_SAPLING = registerBlock("potted_cinnamon_sapling",
+            new FlowerPotBlock(CINNAMON_SAPLING, AbstractBlock.Settings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY)));
+
+    public static final Block CINNAMON_LEAVES = registerBlock("cinnamon_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "starlightdelight:block/stripped_cinnamon_log_top",
+    "side": "starlightdelight:block/stripped_cinnamon_log"
+  }
+}

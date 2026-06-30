@@ -1,6 +1,7 @@
 package net.chrysaor.starlightdelight.world;
 
 import net.chrysaor.starlightdelight.StarlightDelight;
+import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -18,6 +19,7 @@ public class ModPlacedFeatures {
 
      public static final RegistryKey<PlacedFeature> GRAPE_BUSH_PLACED_KEY = registerKey("grape_bush_placed");
 
+     public static final RegistryKey<PlacedFeature> CINNAMON_PLACED_KEY = registerKey("cinnamon_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -32,6 +34,11 @@ public class ModPlacedFeatures {
 
         register(context, GRAPE_BUSH_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.GRAPE_BUSH_KEY),
                 RarityFilterPlacementModifier.of(64), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
+        register(context, CINNAMON_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.CINNAMON_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.1f, 1), ModBlocks.CINNAMON_SAPLING));
+
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

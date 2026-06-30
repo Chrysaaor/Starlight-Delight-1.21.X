@@ -66,5 +66,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_DRAKON_EGG_HATCH)
                 .add(Blocks.OBSIDIAN)
                 .add(Blocks.CRYING_OBSIDIAN);
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.CINNAMON_LOG)
+                .add(ModBlocks.STRIPPED_CINNAMON_LOG)
+                .add(ModBlocks.CINNAMON_WOOD)
+                .add(ModBlocks.STRIPPED_CINNAMON_WOOD);
     }
 }

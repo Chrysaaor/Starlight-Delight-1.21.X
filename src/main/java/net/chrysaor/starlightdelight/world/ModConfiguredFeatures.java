@@ -11,16 +11,23 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.LargeOakFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.LargeOakTrunkPlacer;
 
 import java.util.List;
+import java.util.OptionalInt;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_GARNET_ORE_KEY = registryKey("pink_garnet_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> STARLIGHT_ORE_KEY = registryKey("starlight_ore");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> GRAPE_BUSH_KEY = registryKey("grape_bush");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CINNAMON_KEY = registryKey("cinnamon");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -42,6 +49,16 @@ public class ModConfiguredFeatures {
                         new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.GRAPE_BUSH
                                 .getDefaultState().with(GrapeBushBlock.AGE, 3))),
                         List.of(Blocks.GRASS_BLOCK)));
+
+
+        register(context, CINNAMON_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.CINNAMON_LOG),
+                new LargeOakTrunkPlacer(3, 11, 0),
+
+                BlockStateProvider.of(ModBlocks.CINNAMON_LEAVES),
+                new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(4), 4),
+
+                new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4))).ignoreVines().build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registryKey(String name) {

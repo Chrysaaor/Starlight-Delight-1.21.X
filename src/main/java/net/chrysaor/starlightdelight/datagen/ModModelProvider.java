@@ -50,6 +50,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerCrop(ModBlocks.CAULIFLOWER_CROP, CauliflowerCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.GRAPE_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
                 GrapeBushBlock.AGE, 0, 1, 2, 3);
+
+
+        blockStateModelGenerator.registerLog(ModBlocks.CINNAMON_LOG).log(ModBlocks.CINNAMON_LOG).wood(ModBlocks.CINNAMON_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_CINNAMON_LOG).log(ModBlocks.STRIPPED_CINNAMON_LOG).wood(ModBlocks.STRIPPED_CINNAMON_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CINNAMON_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.CINNAMON_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.CINNAMON_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -118,5 +126,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
+
+        itemModelGenerator.register(ModBlocks.CINNAMON_SAPLING.asItem(),  Models.GENERATED);
+
+
     }
 }

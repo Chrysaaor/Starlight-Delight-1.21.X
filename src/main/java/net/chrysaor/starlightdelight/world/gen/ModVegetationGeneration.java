@@ -11,4 +11,9 @@ public class ModVegetationGeneration {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.MEADOW),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.GRAPE_BUSH_PLACED_KEY);
     }
+
+    public static void generateTrees(){
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.JUNGLE, BiomeKeys.FLOWER_FOREST, BiomeKeys.BIRCH_FOREST, BiomeKeys.FOREST, BiomeKeys.SPARSE_JUNGLE),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.CINNAMON_PLACED_KEY);
+    }
 }
