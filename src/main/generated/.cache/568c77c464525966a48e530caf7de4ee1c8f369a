@@ -1,14 +1,14 @@
-// 1.21.1	2026-06-30T20:38:54.015226	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-06-30T21:57:32.3124163	Starlight & Delight/Tags for minecraft:block
 7fe2a7f676ad3b37dcd6c30641b98fda780f8bbf data\minecraft\tags\block\wall_hanging_signs.json
-c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
 d0bf48ecf8cbcba490b18b5eb325e32c5caac8a4 data\minecraft\tags\block\mineable\axe.json
+c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
 2331a35e0e91132080d44a1b8b135494ce638841 data\minecraft\tags\block\mineable\hoe.json
 b21c0aaffe78823a26ddd9b732e142a87e4e1b57 data\minecraft\tags\block\mineable\pickaxe.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
 a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\block\wooden_slabs.json
 6b73b5252f0ac0d9b3638ee3daa894966a3d0290 data\minecraft\tags\block\ceiling_hanging_signs.json
-3e3327b366a878a1dabd25e5ccd9770b6244c8ca data\minecraft\tags\block\logs_that_burn.json
 d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\block\wooden_doors.json
+3e3327b366a878a1dabd25e5ccd9770b6244c8ca data\minecraft\tags\block\logs_that_burn.json
 f0f92c5f0b5c5412980a4ca8436b4cb180919deb data\starlightdelight\tags\block\drakon_egg_hatch_boost.json
 bf2500b1ac43fe352ff54be9a5543a7f503ff65d data\minecraft\tags\block\wooden_buttons.json
 1c443f7ce29328d22d990ece1df625429fc0dea8 data\minecraft\tags\block\standing_signs.json
@@ -19,8 +19,8 @@ d2289d48da78a4a4686b8d41b20f3cc69f27e423 data\minecraft\tags\block\overworld_nat
 858b4736f63a64046a40e9dbd025c709c79d7cb2 data\starlightdelight\tags\block\incorrect_drakon_egg_hatch.json
 6ee960b8a832d0b99d3ead9b81c46b9284d00f88 data\minecraft\tags\block\fences.json
 6c8e4167d896c6411af4b4ed72ee660661b5a145 data\minecraft\tags\block\wooden_pressure_plates.json
-2e39009883eda5b51c79d998168c46eee59d92c1 data\minecraft\tags\block\signs.json
 09120de3b3e57eea8797ba21a33a23063f872f80 data\minecraft\tags\block\doors.json
+2e39009883eda5b51c79d998168c46eee59d92c1 data\minecraft\tags\block\signs.json
 cfffa071740d21d6ffd80dd0a9d7da37a4129882 data\minecraft\tags\block\fence_gates.json
 c9a74314b26165bc155effe1e2f400ec1645d64b data\minecraft\tags\block\pressure_plates.json
 8ada839c7b3790c22b3e9dcf8185a6d2120a4a6f data\minecraft\tags\block\wall_signs.json

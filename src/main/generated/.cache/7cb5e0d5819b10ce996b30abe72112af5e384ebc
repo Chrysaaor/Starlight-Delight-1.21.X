@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-30T20:38:54.0122245	Starlight & Delight/Recipes
+// 1.21.1	2026-06-30T21:57:32.3089094	Starlight & Delight/Recipes
 d120f00b6217c4403d7fc31699b7484f258c88a4 data\starlightdelight\recipe\pink_garnet_door_from_pink_garnet_block_stonecutting.json
 20d5aa39ad773957f2795db10a7e1f10325ed1aa data\starlightdelight\advancement\recipes\redstone\pink_garnet_lamp.json
 296364bb48389c513fd8f6f5352481253bc9408c data\starlightdelight\recipe\pink_garnet_fence.json
@@ -21,8 +21,8 @@ a6d7404993ce3acfd6c6bed6c7e8824b85737eac data\starlightdelight\advancement\recip
 e7f9a9116ad4279b08c499c00622502b135dd28a data\starlightdelight\recipe\pink_garnet_pressure_plate.json
 c29d1899b4418f685acf2a9bcc69c8202ffe0dc4 data\starlightdelight\recipe\pink_garnet_button.json
 c0e16a92bfa2be760b52af9ef6a1115381e75ac9 data\starlightdelight\recipe\pink_garnet_from_smelting_pink_garnet_ore.json
-d76b34d0df34f83fff82c29e603a80ba434cbc1e data\starlightdelight\recipe\cinnamon_sign.json
 e2331fc04cabafdd710176a05488c63c92a4ed4f data\starlightdelight\advancement\recipes\redstone\cinnamon_trapdoor.json
+d76b34d0df34f83fff82c29e603a80ba434cbc1e data\starlightdelight\recipe\cinnamon_sign.json
 9c977dc15b84298165079815b67686793223df38 data\starlightdelight\recipe\starlight_boots_smithing.json
 11fdbec531c7d088ce6452bb8186bf6af260be53 data\starlightdelight\advancement\recipes\misc\raw_pink_garnet_from_raw_pink_garnet_block.json
 68684bb17ac802139d60d8707476e39d7b543020 data\starlightdelight\recipe\starlight_pickaxe_smithing.json

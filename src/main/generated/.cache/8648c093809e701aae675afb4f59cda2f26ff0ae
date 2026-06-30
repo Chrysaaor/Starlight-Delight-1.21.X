@@ -1,21 +1,13 @@
-// 1.21.1	2026-06-30T20:38:54.0172266	Starlight & Delight/Tags for minecraft:item
+// 1.21.1	2026-06-30T21:57:32.3134187	Starlight & Delight/Tags for minecraft:item
 f857c05519d80fbaefaab948d9cb70313a1195ac data\minecraft\tags\item\enchantable\bow.json
-d8b2af388f47b1648f1f64a16c31774c956ac1d1 data\minecraft\tags\item\saplings.json
-ad413580d3de0481dfbdd4c2b63478cd1c5bc71c data\minecraft\tags\item\hoes.json
-c95db0c1c42abf10ee7de81f2846dba0d361b5c0 data\minecraft\tags\item\axes.json
-4f8cbdb8d3300a4a5f5a57482d6f1612de05bd66 data\minecraft\tags\item\wooden_trapdoors.json
-25141329a15fea5227dce84cd7b97b43697bbc32 data\minecraft\tags\item\trimmable_armor.json
-6c8e4167d896c6411af4b4ed72ee660661b5a145 data\minecraft\tags\item\wooden_pressure_plates.json
-f8a8e71b55ed5636c556b74406702dce82b096c4 data\minecraft\tags\item\shovels.json
-bf2500b1ac43fe352ff54be9a5543a7f503ff65d data\minecraft\tags\item\wooden_buttons.json
-1dd3b6c15507520e0292cee1c314005e8f1d704c data\minecraft\tags\item\fence_gates.json
-c2d31fb95505325ea44d1f95369dacc749abc440 data\starlightdelight\tags\item\cinnamon_logs.json
-e21db15c13a8030f136686af6c31c767f258905f data\minecraft\tags\item\pickaxes.json
-d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\item\doors.json
 81ba4bab655c2e425552c5e3e64a1863e522fb8f data\minecraft\tags\item\swords.json
+d8b2af388f47b1648f1f64a16c31774c956ac1d1 data\minecraft\tags\item\saplings.json
 1f2422b49f6a04933112e224b9506bc07f3f406e data\minecraft\tags\item\logs_that_burn.json
 48b1cae61f068c968cf68a57782da50023349779 data\minecraft\tags\item\enchantable\durability.json
+ad413580d3de0481dfbdd4c2b63478cd1c5bc71c data\minecraft\tags\item\hoes.json
+c95db0c1c42abf10ee7de81f2846dba0d361b5c0 data\minecraft\tags\item\axes.json
 34d3638247d08602fd0e85a42caa57b2c5c5c6a6 data\minecraft\tags\item\wooden_stairs.json
+4f8cbdb8d3300a4a5f5a57482d6f1612de05bd66 data\minecraft\tags\item\wooden_trapdoors.json
 435adde9a27ec79972122f2828800f9f2570c8ad data\minecraft\tags\item\head_armor.json
 2331a35e0e91132080d44a1b8b135494ce638841 data\minecraft\tags\item\leaves.json
 d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\item\wooden_doors.json
@@ -23,8 +15,16 @@ a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\item\wooden_slabs.j
 1fcd8ea189cbc98622ca9d60b674ec115a0db837 data\minecraft\tags\item\foot_armor.json
 65661e602921c4879be1a97aa059315aadd0500c data\minecraft\tags\item\planks.json
 65af79e31c9af8713eedd29fcd6a9acd62602e22 data\minecraft\tags\item\chest_armor.json
+25141329a15fea5227dce84cd7b97b43697bbc32 data\minecraft\tags\item\trimmable_armor.json
 79f978cd104038af3e64786c27ea58b5f67c2640 data\minecraft\tags\item\trapdoors.json
+6c8e4167d896c6411af4b4ed72ee660661b5a145 data\minecraft\tags\item\wooden_pressure_plates.json
 d58af0c2a08a12eee22b4d057fc0742a47731382 data\minecraft\tags\item\wooden_fences.json
+f8a8e71b55ed5636c556b74406702dce82b096c4 data\minecraft\tags\item\shovels.json
 ea5c9809d6a8ad99c6b98ac5b217be8322f57f44 data\minecraft\tags\item\trim_templates.json
 5e7fcb5f8822ef032542905c93d6e8fb01ecc22e data\minecraft\tags\item\enchantable\mining.json
+bf2500b1ac43fe352ff54be9a5543a7f503ff65d data\minecraft\tags\item\wooden_buttons.json
+1dd3b6c15507520e0292cee1c314005e8f1d704c data\minecraft\tags\item\fence_gates.json
 3d261eda8f1a7c07f78a802e399c871585ee1060 data\minecraft\tags\item\leg_armor.json
+c2d31fb95505325ea44d1f95369dacc749abc440 data\starlightdelight\tags\item\cinnamon_logs.json
+e21db15c13a8030f136686af6c31c767f258905f data\minecraft\tags\item\pickaxes.json
+d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\item\doors.json
