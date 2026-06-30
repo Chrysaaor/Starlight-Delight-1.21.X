@@ -88,6 +88,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RACLETTE);
                         entries.add(ModItems.QUICHE);
                         entries.add(ModItems.SWEET_BERRIES_PIE);
+                        entries.add(ModItems.CARROT_CAKE);
                         entries.add(ModItems.KOUIGN_AMANN);
                         entries.add(ModItems.CINNAMON_ROLL);
                         entries.add(ModItems.APPLE_CRUMBLE);

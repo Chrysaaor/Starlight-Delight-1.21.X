@@ -35,8 +35,8 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.25f).alwaysEdible().build();
 
     public static final FoodComponent ENERGY_BEVERAGE = new FoodComponent.Builder().nutrition(0).saturationModifier(0.2F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 2), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.1f).alwaysEdible().build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.2f).alwaysEdible().build();
 
     public static final FoodComponent KOUIGN_AMANN = new FoodComponent.Builder().nutrition(8).saturationModifier(2.2F)
             .build();
@@ -46,4 +46,7 @@ public class ModFoodComponents {
 
     public static final FoodComponent APPLE_CRUMBLE = new FoodComponent.Builder().nutrition(6).saturationModifier(0.9f)
             .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 60), 1.0f).build();
+
+    public static final FoodComponent CARROT_CAKE = new FoodComponent.Builder().nutrition(7).saturationModifier(0.9f)
+            .build();
 }

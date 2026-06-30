@@ -51,6 +51,8 @@ public class ModItems {
             .food(ModFoodComponents.APPLE_CRUMBLE)));
     public static final Item ENERGY_BEVERAGE = registerItem("energy_beverage", new EnergyBeverageItem(new Item.Settings()
             .food(ModFoodComponents.ENERGY_BEVERAGE).maxCount(16)));
+    public static final Item CARROT_CAKE = registerItem("carrot_cake", new Item(new Item.Settings()
+            .food(ModFoodComponents.CARROT_CAKE)));
 
 
 

@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "minecraft:carrot"
+  },
+  "input2": {
+    "item": "starlightdelight:cinnamon"
+  },
+  "input3": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": {
+    "count": 1,
+    "id": "starlightdelight:carrot_cake"
+  }
+}

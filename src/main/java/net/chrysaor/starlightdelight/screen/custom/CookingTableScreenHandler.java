@@ -12,6 +12,7 @@ import net.minecraft.inventory.CraftingResultInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.RecipeInputInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.network.packet.s2c.play.ScreenHandlerSlotUpdateS2CPacket;
 import net.minecraft.recipe.*;
 import net.minecraft.recipe.book.RecipeBookCategory;
@@ -189,9 +190,25 @@ public class CookingTableScreenHandler extends AbstractRecipeScreenHandler<Cooki
         stack.onCraftByPlayer(player.getWorld(), player, stack.getCount());
         this.result.unlockLastRecipe(player, List.of(this.input.getStack(0), this.input.getStack(1), this.input.getStack(2)));
 
-        this.input.removeStack(0, 1);
-        this.input.removeStack(1, 1);
-        this.input.removeStack(2, 1);
+        if (this.input.getStack(0).isOf(Items.MILK_BUCKET) && !this.input.getStack(1).isOf(Items.MILK_BUCKET) && !this.input.getStack(2).isOf(Items.MILK_BUCKET)) {
+            this.input.setStack(0, new ItemStack(Items.BUCKET));
+            this.input.removeStack(1, 1);
+            this.input.removeStack(2, 1);
+        }
+        if (!this.input.getStack(0).isOf(Items.MILK_BUCKET) && this.input.getStack(1).isOf(Items.MILK_BUCKET) && !this.input.getStack(2).isOf(Items.MILK_BUCKET)) {
+            this.input.setStack(1, new ItemStack(Items.BUCKET));
+            this.input.removeStack(0, 1);
+            this.input.removeStack(2, 1);
+        }
+        if (!this.input.getStack(0).isOf(Items.MILK_BUCKET) && !this.input.getStack(1).isOf(Items.MILK_BUCKET) && this.input.getStack(2).isOf(Items.MILK_BUCKET)) {
+            this.input.setStack(2, new ItemStack(Items.BUCKET));
+            this.input.removeStack(0, 1);
+            this.input.removeStack(1, 1);
+        } else {
+            this.input.removeStack(0, 1);
+            this.input.removeStack(1, 1);
+            this.input.removeStack(2, 1);
+        }
     }
 
     public boolean canInsertIntoSlot(ItemStack stack, Slot slot) {
