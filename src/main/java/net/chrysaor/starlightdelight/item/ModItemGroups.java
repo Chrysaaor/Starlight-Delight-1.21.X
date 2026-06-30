@@ -71,7 +71,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
 
-                        entries.add(ModItems.DRAKON_EGG);
+                        //entries.add(ModItems.DRAKON_EGG);
 
                         entries.add(ModItems.CAULIFLOWER_SEEDS);
                         entries.add(ModItems.CAULIFLOWER);
