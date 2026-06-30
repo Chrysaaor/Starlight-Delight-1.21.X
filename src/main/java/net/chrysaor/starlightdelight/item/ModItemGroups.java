@@ -93,6 +93,8 @@ public class ModItemGroups {
                         entries.add(ModItems.CINNAMON_ROLL);
                         entries.add(ModItems.APPLE_CRUMBLE);
                         entries.add(ModItems.ENERGY_BEVERAGE);
+                        entries.add(ModItems.POTATO_FRIES);
+                        entries.add(ModItems.GOLDEN_POTATO_FRIES);
 
                     }).build());
 

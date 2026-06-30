@@ -53,6 +53,10 @@ public class ModItems {
             .food(ModFoodComponents.ENERGY_BEVERAGE).maxCount(16)));
     public static final Item CARROT_CAKE = registerItem("carrot_cake", new Item(new Item.Settings()
             .food(ModFoodComponents.CARROT_CAKE)));
+    public static final Item POTATO_FRIES = registerItem("potato_fries", new Item(new Item.Settings()
+            .food(ModFoodComponents.POTATO_FRIES)));
+    public static final Item GOLDEN_POTATO_FRIES = registerItem("golden_potato_fries", new Item(new Item.Settings()
+            .food(ModFoodComponents.GOLDEN_POTATO_FRIES).fireproof().rarity(Rarity.RARE)));
 
 
 

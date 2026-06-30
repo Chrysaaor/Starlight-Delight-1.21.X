@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-30T21:57:32.3124163	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-06-30T23:27:45.5813704	Starlight & Delight/Tags for minecraft:block
 7fe2a7f676ad3b37dcd6c30641b98fda780f8bbf data\minecraft\tags\block\wall_hanging_signs.json
 d0bf48ecf8cbcba490b18b5eb325e32c5caac8a4 data\minecraft\tags\block\mineable\axe.json
 c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
@@ -7,8 +7,8 @@ b21c0aaffe78823a26ddd9b732e142a87e4e1b57 data\minecraft\tags\block\mineable\pick
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
 a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\block\wooden_slabs.json
 6b73b5252f0ac0d9b3638ee3daa894966a3d0290 data\minecraft\tags\block\ceiling_hanging_signs.json
-d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\block\wooden_doors.json
 3e3327b366a878a1dabd25e5ccd9770b6244c8ca data\minecraft\tags\block\logs_that_burn.json
+d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\block\wooden_doors.json
 f0f92c5f0b5c5412980a4ca8436b4cb180919deb data\starlightdelight\tags\block\drakon_egg_hatch_boost.json
 bf2500b1ac43fe352ff54be9a5543a7f503ff65d data\minecraft\tags\block\wooden_buttons.json
 1c443f7ce29328d22d990ece1df625429fc0dea8 data\minecraft\tags\block\standing_signs.json
