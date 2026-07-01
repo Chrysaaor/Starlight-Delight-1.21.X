@@ -60,7 +60,7 @@ public class ModItems {
 
 
 
-
+    //Cinnamon Wood Item
     public static final Item CINNAMON_SIGN = registerItem("cinnamon_sign", new SignItem(new Item.Settings().maxCount(16), ModBlocks.CINNAMON_SIGN, ModBlocks.CINNAMON_WALL_SIGN));
     public static final Item CINNAMON_HANGING_SIGN = registerItem("cinnamon_hanging_sign", new HangingSignItem(ModBlocks.CINNAMON_HANGING_SIGN, ModBlocks.CINNAMON_WALL_HANGING_SIGN, new Item.Settings().maxCount(16)));
     public static final Item CINNAMON_DOOR = registerItem("cinnamon_door", new TallBlockItem(ModBlocks.CINNAMON_DOOR, new Item.Settings()));
@@ -177,10 +177,12 @@ public class ModItems {
     public static final Item PINK_GARNET_HORSE_ARMOR = registerItem("pink_garnet_horse_armor",
         new AnimalArmorItem(ModArmorMaterials.PINK_GARNET_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
+    //Climber's Bandanna
     public static final Item CLIMBER_BANDANNA = registerItem("climber_bandanna",
             new ArmorItem(ModArmorMaterials.CLIMBER_BANDANNA, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(20))));
 
+    //Tomahawk items
     public static final Item IRON_TOMAHAWK = registerItem("iron_tomahawk",
             new TomahawkItem(new Item.Settings().maxCount(16)));
     public static final Item GOLD_TOMAHAWK = registerItem("gold_tomahawk",
@@ -190,14 +192,20 @@ public class ModItems {
     public static final Item DIAMOND_TOMAHAWK = registerItem("diamond_tomahawk",
             new TomahawkItem(new Item.Settings().maxCount(16)));
 
+
     public static final Item CAULIFLOWER_SEEDS = registerItem("cauliflower_seeds",
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
+
 
     public static final Item DRAKON_EGG = registerItem("drakon_egg",
             new AliasedBlockItem(ModBlocks.DRAKON_EGG, new Item.Settings()));
 
+
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));
+
+
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(StarlightDelight.MOD_ID, name), item);

@@ -22,8 +22,6 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,20 +65,12 @@ public class StarlightDelight implements ModInitializer {
 
 		ModRecipes.registerRecipes();
 
+
 		ModRegistries.registerModFuels();
 		ModRegistries.registerModCropCompostable();
+		ModRegistries.registerModFlammableBlock();
+		ModRegistries.registerModStrippableBlock();
 
-		StrippableBlockRegistry.register(ModBlocks.CINNAMON_LOG, ModBlocks.STRIPPED_CINNAMON_LOG);
-		StrippableBlockRegistry.register(ModBlocks.CINNAMON_WOOD, ModBlocks.STRIPPED_CINNAMON_WOOD);
-
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CINNAMON_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CINNAMON_WOOD, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_CINNAMON_LOG, 5, 5);
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_CINNAMON_WOOD, 5, 5);
-
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CINNAMON_LEAVES, 30, 60);
-
-		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CINNAMON_PLANKS, 5, 20);
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 		PlayerBlockBreakEvents.BEFORE.register(new StarlightHoeUsageEvent());

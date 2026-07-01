@@ -13,6 +13,7 @@ public class ModParticles extends ParticleTypes {
 
 
     public static void registerParticle() {
+        StarlightDelight.LOGGER.info("Registering Particles for " + StarlightDelight.MOD_ID);
         Registry.register(Registries.PARTICLE_TYPE, Identifier.of(StarlightDelight.MOD_ID, "hoely_beheader_sweep_particle"),
                 HOELY_BEHEADER_SWEEP_ATTACK_PARTICLE);
     }

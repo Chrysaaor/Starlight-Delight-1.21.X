@@ -161,9 +161,5 @@ public class ModBlocks {
     public static void registerModBlocks() {
         StarlightDelight.LOGGER.info("Registering Mod Blocks for " + StarlightDelight.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.PINK_GARNET_BLOCK);
-            entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
-        });
     }
 }
