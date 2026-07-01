@@ -21,7 +21,7 @@ public abstract class ItemRendererMixin {
             at = @At(value = "HEAD"), argsOnly = true
     )
     public BakedModel useInHandModel(BakedModel value, ItemStack stack, ModelTransformationMode renderMode, boolean leftHanded, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        if (stack.isOf(ModItems.HOELY_BEHEADER) && renderMode != ModelTransformationMode.GUI && renderMode != ModelTransformationMode.GROUND && renderMode != ModelTransformationMode.FIXED) {
+        if (stack.isOf(ModItems.HOELY_BEHEADER) && renderMode != ModelTransformationMode.GUI && renderMode != ModelTransformationMode.GROUND) {
             return ((ItemRendererAccessor) this).hoely3d$getModels().getModelManager().getModel(ModelIdentifier.ofInventoryVariant(Identifier.of(MOD_ID, "hoely_beheader_in_hand")));
         }
         return value;

@@ -50,10 +50,10 @@ public class ModFoodComponents {
     public static final FoodComponent CARROT_CAKE = new FoodComponent.Builder().nutrition(7).saturationModifier(0.9f)
             .build();
 
-    public static final FoodComponent POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.8f)
+    public static final FoodComponent POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.4f)
             .snack().build();
 
-    public static final FoodComponent GOLDEN_POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.8f)
+    public static final FoodComponent GOLDEN_POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.6f)
             .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 200, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 4800, 0), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 2400), 1.0f).alwaysEdible().build();
