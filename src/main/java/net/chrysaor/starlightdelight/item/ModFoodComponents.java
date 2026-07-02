@@ -1,5 +1,6 @@
 package net.chrysaor.starlightdelight.item;
 
+import net.chrysaor.starlightdelight.effect.ModEffects;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -22,9 +23,11 @@ public class ModFoodComponents {
     public static final FoodComponent RACLETTE = new FoodComponent.Builder().nutrition(10).saturationModifier(1.4f)
             .statusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 600, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 2, 1), 1.0f)
+            .statusEffect(new StatusEffectInstance(ModEffects.SATIATED, 6000), 1.0f)
             .build();
 
     public static final FoodComponent QUICHE = new FoodComponent.Builder().nutrition(7).saturationModifier(1.2f)
+            .statusEffect(new StatusEffectInstance(ModEffects.SATIATED, 6000), 1.0f)
             .build();
 
     public static final FoodComponent GRAPES = new FoodComponent.Builder().nutrition(2).saturationModifier(0.25f)
@@ -39,6 +42,7 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.2f).alwaysEdible().build();
 
     public static final FoodComponent KOUIGN_AMANN = new FoodComponent.Builder().nutrition(8).saturationModifier(2.2F)
+            .statusEffect(new StatusEffectInstance(ModEffects.SATIATED, 3600), 1.0f)
             .build();
 
     public static final FoodComponent CINNAMON_ROLL = new FoodComponent.Builder().nutrition(6).saturationModifier(1.2f)
@@ -48,6 +52,7 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.LEVITATION, 60), 1.0f).build();
 
     public static final FoodComponent CARROT_CAKE = new FoodComponent.Builder().nutrition(7).saturationModifier(0.9f)
+            .statusEffect(new StatusEffectInstance(ModEffects.SATIATED, 1200), 1.0f)
             .build();
 
     public static final FoodComponent POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.4f)
