@@ -40,7 +40,7 @@ public class ModEffects {
                             -0.25f, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .applySound(ModSounds.ZAPPED));
 
-    public static final RegistryEntry<StatusEffect> SATIATED = registerStatusEffect("test",
+    public static final RegistryEntry<StatusEffect> SATIATED = registerStatusEffect("satiated",
             new SatiatedEffect(StatusEffectCategory.BENEFICIAL, 0xF3B300));
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {

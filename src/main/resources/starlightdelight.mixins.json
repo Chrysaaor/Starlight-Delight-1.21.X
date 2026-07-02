@@ -15,7 +15,10 @@
     "AbstractFurnaceBlockEntityMixin",
     "BlockEntityTypeMixin",
     "HungerDrainWithSatiatedEffectMixin",
-    "SaturationDrainWithSatiatedEffectMixin"
+    "SaturationDrainWithSatiatedEffectMixin",
+    "SatiatedAlwaysEatMixin",
+    "SatiatedHungerBarShakeMixin",
+    "InGameHudMixin"
   ],
   "injectors": {
     "defaultRequire": 1
