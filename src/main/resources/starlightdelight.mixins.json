@@ -13,9 +13,14 @@
     "PlayerEntityMixin",
     "GameRendererMixin",
     "AbstractFurnaceBlockEntityMixin",
-    "BlockEntityTypeMixin"
+    "BlockEntityTypeMixin",
+    "HungerDrainWithSatiatedEffectMixin",
+    "SaturationDrainWithSatiatedEffectMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-	}
+	},
+  "mixinextras": {
+  "minVersion": "0.5.4"
+    }
 }

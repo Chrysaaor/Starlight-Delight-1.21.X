@@ -40,6 +40,9 @@ public class ModEffects {
                             -0.25f, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)
                     .applySound(ModSounds.ZAPPED));
 
+    public static final RegistryEntry<StatusEffect> SATIATED = registerStatusEffect("test",
+            new SatiatedEffect(StatusEffectCategory.BENEFICIAL, 0xF3B300));
+
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(StarlightDelight.MOD_ID, name), statusEffect);
     }
