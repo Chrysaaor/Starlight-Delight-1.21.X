@@ -24,7 +24,7 @@ import java.util.List;
 @JeiPlugin
 @MethodsReturnNonnullByDefault
 @SuppressWarnings("unused")
-public class JEIStarlightDelightPlugin implements IModPlugin {
+public class JEIPlugin implements IModPlugin {
 
     private static final Identifier ID = Identifier.of(StarlightDelight.MOD_ID, "jei_plugin");
 

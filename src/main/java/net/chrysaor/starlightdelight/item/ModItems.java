@@ -57,6 +57,8 @@ public class ModItems {
             .food(ModFoodComponents.POTATO_FRIES)));
     public static final Item GOLDEN_POTATO_FRIES = registerItem("golden_potato_fries", new Item(new Item.Settings()
             .food(ModFoodComponents.GOLDEN_POTATO_FRIES).fireproof().rarity(Rarity.EPIC)));
+    public static final Item HASHBROWNS = registerItem("hashbrowns", new Item(new Item.Settings()
+            .food(ModFoodComponents.HASHBROWNS)));
 
 
 

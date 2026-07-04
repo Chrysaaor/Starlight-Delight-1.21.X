@@ -95,6 +95,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ENERGY_BEVERAGE);
                         entries.add(ModItems.POTATO_FRIES);
                         entries.add(ModItems.GOLDEN_POTATO_FRIES);
+                        entries.add(ModItems.HASHBROWNS);
 
                     }).build());
 
