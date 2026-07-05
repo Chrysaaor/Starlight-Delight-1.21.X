@@ -38,7 +38,7 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200), 0.25f).alwaysEdible().build();
 
     public static final FoodComponent ENERGY_BEVERAGE = new FoodComponent.Builder().nutrition(0).saturationModifier(0.2F)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 1), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 1200, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 100), 0.2f).alwaysEdible().build();
 
     public static final FoodComponent KOUIGN_AMANN = new FoodComponent.Builder().nutrition(8).saturationModifier(2.2F)
