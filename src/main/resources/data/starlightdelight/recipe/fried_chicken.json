@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "minecraft:cooked_chicken"
+  },
+  "result": {
+    "id": "starlightdelight:fried_chicken"
+  }
+}

@@ -67,4 +67,7 @@ public class ModFoodComponents {
 
     public static final FoodComponent HASHBROWNS = new FoodComponent.Builder().nutrition(6).saturationModifier(0.7f)
             .build();
+
+    public static final FoodComponent FRIED_CHICKEN = new FoodComponent.Builder().nutrition(6).saturationModifier(0.6f)
+            .snack().build();
 }

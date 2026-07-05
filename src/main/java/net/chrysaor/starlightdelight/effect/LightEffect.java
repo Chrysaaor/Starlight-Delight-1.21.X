@@ -14,7 +14,7 @@ public class LightEffect extends StatusEffect {
     public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
         if (entity.horizontalCollision && entity.isSneaking()) {
             Vec3d intialVec = entity.getVelocity();
-            Vec3d climbVec = new Vec3d(intialVec.x, 0.2D, intialVec.z);
+            Vec3d climbVec = new Vec3d(intialVec.x, 0.25D, intialVec.z);
             entity.setVelocity(climbVec.multiply(0.96D));
             return true;
         }

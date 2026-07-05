@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-04T16:51:00.6926028	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-07-05T16:35:13.858204	Starlight & Delight/Tags for minecraft:block
 6b73b5252f0ac0d9b3638ee3daa894966a3d0290 data\minecraft\tags\block\ceiling_hanging_signs.json
 d58af0c2a08a12eee22b4d057fc0742a47731382 data\minecraft\tags\block\wooden_fences.json
 c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
@@ -8,8 +8,8 @@ d8b2af388f47b1648f1f64a16c31774c956ac1d1 data\minecraft\tags\block\saplings.json
 a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\block\wooden_slabs.json
 3e3327b366a878a1dabd25e5ccd9770b6244c8ca data\minecraft\tags\block\logs_that_burn.json
 6ee960b8a832d0b99d3ead9b81c46b9284d00f88 data\minecraft\tags\block\fences.json
-1c443f7ce29328d22d990ece1df625429fc0dea8 data\minecraft\tags\block\standing_signs.json
 34d3638247d08602fd0e85a42caa57b2c5c5c6a6 data\minecraft\tags\block\wooden_stairs.json
+1c443f7ce29328d22d990ece1df625429fc0dea8 data\minecraft\tags\block\standing_signs.json
 49d46e9a003524301f2393dee6bc927b1db1c2b0 data\minecraft\tags\block\walls.json
 6c8e4167d896c6411af4b4ed72ee660661b5a145 data\minecraft\tags\block\wooden_pressure_plates.json
 d2289d48da78a4a4686b8d41b20f3cc69f27e423 data\minecraft\tags\block\overworld_natural_logs.json
@@ -22,12 +22,12 @@ cfffa071740d21d6ffd80dd0a9d7da37a4129882 data\minecraft\tags\block\fence_gates.j
 858b4736f63a64046a40e9dbd025c709c79d7cb2 data\starlightdelight\tags\block\incorrect_drakon_egg_hatch.json
 b21c0aaffe78823a26ddd9b732e142a87e4e1b57 data\minecraft\tags\block\mineable\pickaxe.json
 2e39009883eda5b51c79d998168c46eee59d92c1 data\minecraft\tags\block\signs.json
-32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
 09120de3b3e57eea8797ba21a33a23063f872f80 data\minecraft\tags\block\doors.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data\starlightdelight\tags\block\needs_pink_garnet_tool.json
 2331a35e0e91132080d44a1b8b135494ce638841 data\minecraft\tags\block\leaves.json
 4f8cbdb8d3300a4a5f5a57482d6f1612de05bd66 data\minecraft\tags\block\wooden_trapdoors.json
 e2cc3c455c76a8ad16f35470520349bf724fcdf1 data\minecraft\tags\block\flowers.json
 8ada839c7b3790c22b3e9dcf8185a6d2120a4a6f data\minecraft\tags\block\wall_signs.json
-d0bf48ecf8cbcba490b18b5eb325e32c5caac8a4 data\minecraft\tags\block\mineable\axe.json
 bf2500b1ac43fe352ff54be9a5543a7f503ff65d data\minecraft\tags\block\wooden_buttons.json
+d0bf48ecf8cbcba490b18b5eb325e32c5caac8a4 data\minecraft\tags\block\mineable\axe.json
 79f978cd104038af3e64786c27ea58b5f67c2640 data\minecraft\tags\block\trapdoors.json
