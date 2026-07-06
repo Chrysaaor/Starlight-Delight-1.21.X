@@ -61,6 +61,8 @@ public class ModItems {
             .food(ModFoodComponents.HASHBROWNS)));
     public static final Item FRIED_CHICKEN = registerItem("fried_chicken", new Item(new Item.Settings()
             .food(ModFoodComponents.FRIED_CHICKEN)));
+    public static final Item PASTEL_DE_NATA = registerItem("pastel_de_nata", new Item(new Item.Settings()
+            .food(ModFoodComponents.PASTEL_DE_NATA)));
 
 
 

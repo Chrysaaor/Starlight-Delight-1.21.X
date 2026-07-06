@@ -55,6 +55,9 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(ModEffects.SATIATED, 1200), 1.0f)
             .build();
 
+    public static final FoodComponent PASTEL_DE_NATA = new FoodComponent.Builder().nutrition(5).saturationModifier(0.7f)
+            .build();
+
     public static final FoodComponent POTATO_FRIES = new FoodComponent.Builder().nutrition(5).saturationModifier(0.4f)
             .snack().build();
 

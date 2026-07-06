@@ -1,0 +1,16 @@
+{
+  "type": "starlightdelight:cooking_table",
+  "input1": {
+    "item": "starlightdelight:dough"
+  },
+  "input2": {
+    "item": "minecraft:egg"
+  },
+  "input3": {
+    "item": "minecraft:milk_bucket"
+  },
+  "result": {
+    "count": 4,
+    "id": "starlightdelight:pastel_de_nata"
+  }
+}
