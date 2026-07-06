@@ -111,7 +111,7 @@ public class ModItems {
             new StarlightShovelItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(StarlightShovelItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 1.5F, -3.0f)).fireproof()));
     public static final Item STARLIGHT_BOW = registerItem("starlight_bow",
-            new StarlightBowItem(new Item.Settings().maxDamage(600).fireproof()));
+            new StarlightBowItem(new Item.Settings().maxDamage(768).fireproof()));
     public static final Item STARLIGHT_SWORD = registerItem("starlight_sword",
             new StarlightSwordItem(ModToolMaterials.STARLIGHT_FRAGMENT, new Item.Settings()
                     .attributeModifiers(StarlightSwordItem.createAttributeModifiers(ModToolMaterials.STARLIGHT_FRAGMENT, 3, -2.2F)).fireproof()));
