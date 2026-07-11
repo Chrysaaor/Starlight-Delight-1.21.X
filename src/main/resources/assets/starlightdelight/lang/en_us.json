@@ -50,6 +50,9 @@
   "item.starlightdelight.hoely_beheader": "§4§l◊ Hoely Beheader ◊§r",
 
   "item.starlightdelight.mantis_spawn_egg": "Mantis Spawn Egg",
+  "item.starlightdelight.shrimp_spawn_egg": "Shrimp Spawn Egg",
+
+  "item.starlightdelight.shrimp_bucket": "Bucket of Shrimp",
 
   "item.starlightdelight.iron_tomahawk": "Iron Tomahawk",
   "item.starlightdelight.gold_tomahawk": "Golden Tomahawk",
@@ -78,6 +81,8 @@
   "item.starlightdelight.golden_potato_fries": "Golden Potato Fries",
   "item.starlightdelight.hashbrowns": "Hash Browns",
   "item.starlightdelight.fried_chicken": "Fried Chicken",
+  "item.starlightdelight.raw_shrimp": "Raw Shrimp",
+  "item.starlightdelight.cooked_shrimp": "Cooked Shrimp",
 
   "item.starlightdelight.drakon_egg": "Drakon Egg",
 
@@ -164,6 +169,7 @@
 
 
   "entity.starlightdelight.mantis": "Mantis",
+  "entity.starlightdelight.shrimp": "Shrimp",
   "entity.starlightdelight.iron_tomahawk": "Iron Tomahawk",
   "entity.starlightdelight.gold_tomahawk": "Golden Tomahawk",
   "entity.starlightdelight.pink_garnet_tomahawk": "Pink Garnet Tomahawk",
@@ -175,7 +181,6 @@
 
 
   "container.starlightdelight.cooking_table": "Prepare some Food !",
-  "container.starlightdelight.cooking_table.error_tooltip": "This recipe doesn't exist",
 
 
   "advancements.starlightdelight.root.title": "Starlight & Delight",
