@@ -32,6 +32,9 @@ public class StarlightDelightClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(MantisModel.MANTIS, MantisModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.MANTIS, MantisRenderer::new);
 
+        EntityModelLayerRegistry.registerModelLayer(ShrimpEntityModel.SHRIMP, ShrimpEntityModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.SHRIMP, ShrimpEntityRenderer::new);
+
         EntityModelLayerRegistry.registerModelLayer(StarlightSwordProjectileModel.STARLIGHT_SWORD, StarlightSwordProjectileModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.STARLIGHT_SWORD, StarlightSwordProjectileRenderer::new);
 

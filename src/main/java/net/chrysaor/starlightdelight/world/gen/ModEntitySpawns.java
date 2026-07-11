@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.SpawnLocationTypes;
 import net.minecraft.entity.SpawnRestriction;
+import net.minecraft.entity.mob.WaterCreatureEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
@@ -18,5 +19,13 @@ public class ModEntitySpawns {
 
         SpawnRestriction.register(ModEntities.MANTIS, SpawnLocationTypes.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
+
+        BiomeModifications.addSpawn(BiomeSelectors.includeByKey(
+                BiomeKeys.OCEAN, BiomeKeys.COLD_OCEAN, BiomeKeys.DEEP_OCEAN, BiomeKeys.DEEP_COLD_OCEAN, BiomeKeys.LUKEWARM_OCEAN,
+                BiomeKeys.DEEP_LUKEWARM_OCEAN, BiomeKeys.WARM_OCEAN),
+                SpawnGroup.WATER_AMBIENT, ModEntities.SHRIMP, 10, 3, 7);
+
+        SpawnRestriction.register(ModEntities.SHRIMP, SpawnLocationTypes.IN_WATER,
+                Heightmap.Type.OCEAN_FLOOR, WaterCreatureEntity::canSpawn);
     }
 }

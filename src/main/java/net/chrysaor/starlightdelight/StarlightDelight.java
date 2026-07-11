@@ -7,6 +7,7 @@ import net.chrysaor.starlightdelight.effect.ModEffects;
 import net.chrysaor.starlightdelight.enchantment.ModEnchantmentEffects;
 import net.chrysaor.starlightdelight.entity.ModEntities;
 import net.chrysaor.starlightdelight.entity.custom.MantisEntity;
+import net.chrysaor.starlightdelight.entity.custom.ShrimpEntity;
 import net.chrysaor.starlightdelight.item.ModRegistries;
 import net.chrysaor.starlightdelight.item.ModItemGroups;
 import net.chrysaor.starlightdelight.item.ModItems;
@@ -76,5 +77,6 @@ public class StarlightDelight implements ModInitializer {
 		PlayerBlockBreakEvents.BEFORE.register(new StarlightHoeUsageEvent());
 
 		FabricDefaultAttributeRegistry.register(ModEntities.MANTIS, MantisEntity.createAttributes());
+		FabricDefaultAttributeRegistry.register(ModEntities.SHRIMP, ShrimpEntity.createShrimpAttributes());
 	}
 }

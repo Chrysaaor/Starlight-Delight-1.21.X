@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "starligthdelight:raw_shrimp"
+  },
+  "result": {
+    "id": "starlightdelight:cooked_shrimp"
+  }
+}

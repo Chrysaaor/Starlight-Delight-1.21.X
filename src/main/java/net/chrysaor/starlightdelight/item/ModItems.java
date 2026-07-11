@@ -4,10 +4,14 @@ import net.chrysaor.starlightdelight.StarlightDelight;
 import net.chrysaor.starlightdelight.block.ModBlocks;
 import net.chrysaor.starlightdelight.entity.ModEntities;
 import net.chrysaor.starlightdelight.item.custom.*;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.NbtComponent;
+import net.minecraft.fluid.Fluids;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -63,6 +67,10 @@ public class ModItems {
             .food(ModFoodComponents.FRIED_CHICKEN)));
     public static final Item PASTEL_DE_NATA = registerItem("pastel_de_nata", new Item(new Item.Settings()
             .food(ModFoodComponents.PASTEL_DE_NATA)));
+    public static final Item RAW_SHRIMP = registerItem("raw_shrimp", new Item(new Item.Settings()
+            .food(ModFoodComponents.RAW_SHRIMP)));
+    public static final Item COOKED_SHRIMP = registerItem("cooked_shrimp", new Item(new Item.Settings()
+            .food(ModFoodComponents.COOKED_SHRIMP)));
 
 
 
@@ -206,6 +214,14 @@ public class ModItems {
     public static final Item DRAKON_EGG = registerItem("drakon_egg",
             new AliasedBlockItem(ModBlocks.DRAKON_EGG, new Item.Settings()));
 
+    public static final Item SHRIMP_BUCKET = registerItem("shrimp_bucket", new EntityBucketItem(
+            ModEntities.SHRIMP,
+            Fluids.WATER,
+            SoundEvents.ITEM_BUCKET_EMPTY_FISH,
+            new Item.Settings().maxCount(1).component(DataComponentTypes.BUCKET_ENTITY_DATA, NbtComponent.DEFAULT)));
+
+    public static final Item SHRIMP_SPAWN_EGG = registerItem("shrimp_spawn_egg",
+            new SpawnEggItem(ModEntities.SHRIMP, 0xffc2fa, 0xbf75b9, new Item.Settings()));
 
     public static final Item MANTIS_SPAWN_EGG = registerItem("mantis_spawn_egg",
             new SpawnEggItem(ModEntities.MANTIS, 0x9dc783, 0xbfaf5f, new Item.Settings()));

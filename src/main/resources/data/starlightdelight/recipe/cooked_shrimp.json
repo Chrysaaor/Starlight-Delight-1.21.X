@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "ingredient": {
+    "item": "starlightdelight:raw_shrimp"
+  },
+  "result": {
+    "id": "starlightdelight:cooked_shrimp"
+  }
+}

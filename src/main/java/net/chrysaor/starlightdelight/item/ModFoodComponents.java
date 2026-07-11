@@ -73,4 +73,12 @@ public class ModFoodComponents {
 
     public static final FoodComponent FRIED_CHICKEN = new FoodComponent.Builder().nutrition(6).saturationModifier(0.6f)
             .snack().build();
+
+    public static final FoodComponent RAW_SHRIMP = new FoodComponent.Builder().nutrition(1).saturationModifier(0.2F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 600, 0), 0.3F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 200, 0), 0.3F)
+            .build();
+
+    public static final FoodComponent COOKED_SHRIMP = new FoodComponent.Builder().nutrition(5).saturationModifier(0.5F)
+            .build();
 }

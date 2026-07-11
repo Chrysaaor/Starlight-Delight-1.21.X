@@ -111,8 +111,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HASHBROWNS, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_CHICKEN, Models.GENERATED);
         itemModelGenerator.register(ModItems.PASTEL_DE_NATA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_SHRIMP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_SHRIMP, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.DRAKON_EGG, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SHRIMP_BUCKET, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.HOELY_BEHEADER, Models.HANDHELD);
 
@@ -158,6 +162,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MANTIS_SPAWN_EGG,
                 new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
 
+        itemModelGenerator.register(ModItems.SHRIMP_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 
     private void registerFamily(BlockStateModelGenerator generator, BlockFamily family) {

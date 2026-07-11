@@ -14,6 +14,11 @@ public class ModEntities {
             EntityType.Builder.create(MantisEntity::new, SpawnGroup.CREATURE)
                     .dimensions(2, 2.5f).build());
 
+    public static final EntityType<ShrimpEntity> SHRIMP = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(StarlightDelight.MOD_ID, "shrimp"),
+            EntityType.Builder.create(ShrimpEntity::new, SpawnGroup.WATER_AMBIENT)
+                    .dimensions(0.4f, 0.4f).build());
+
     public static final EntityType<StarlightSwordProjectileEntity> STARLIGHT_SWORD = Registry.register(Registries.ENTITY_TYPE,
             Identifier.of(StarlightDelight.MOD_ID, "starlight_sword"),
             EntityType.Builder.<StarlightSwordProjectileEntity>create(StarlightSwordProjectileEntity::new, SpawnGroup.MISC)

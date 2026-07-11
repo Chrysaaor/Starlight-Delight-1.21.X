@@ -1,8 +1,8 @@
-// 1.21.1	2026-07-06T16:09:15.6519134	Starlight & Delight/Tags for minecraft:block
+// 1.21.1	2026-07-11T13:41:56.5041615	Starlight & Delight/Tags for minecraft:block
 6b73b5252f0ac0d9b3638ee3daa894966a3d0290 data\minecraft\tags\block\ceiling_hanging_signs.json
 d58af0c2a08a12eee22b4d057fc0742a47731382 data\minecraft\tags\block\wooden_fences.json
-c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
 f0f92c5f0b5c5412980a4ca8436b4cb180919deb data\starlightdelight\tags\block\drakon_egg_hatch_boost.json
+c9e549d6b95ad00713d127daf84d3e80c74a53ba data\minecraft\tags\block\needs_iron_tool.json
 7fe2a7f676ad3b37dcd6c30641b98fda780f8bbf data\minecraft\tags\block\wall_hanging_signs.json
 d8b2af388f47b1648f1f64a16c31774c956ac1d1 data\minecraft\tags\block\saplings.json
 a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\block\wooden_slabs.json
@@ -15,8 +15,8 @@ a6fca05ce496179547db252fd97996c906359b8a data\minecraft\tags\block\wooden_slabs.
 d2289d48da78a4a4686b8d41b20f3cc69f27e423 data\minecraft\tags\block\overworld_natural_logs.json
 2331a35e0e91132080d44a1b8b135494ce638841 data\minecraft\tags\block\mineable\hoe.json
 c9a74314b26165bc155effe1e2f400ec1645d64b data\minecraft\tags\block\pressure_plates.json
-d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\block\wooden_doors.json
 65661e602921c4879be1a97aa059315aadd0500c data\minecraft\tags\block\planks.json
+d9ba287409e14c4bf1cf92de901df92c31272beb data\minecraft\tags\block\wooden_doors.json
 cfffa071740d21d6ffd80dd0a9d7da37a4129882 data\minecraft\tags\block\fence_gates.json
 59292314275034598832508ebfc9745abb98e142 data\minecraft\tags\block\buttons.json
 858b4736f63a64046a40e9dbd025c709c79d7cb2 data\starlightdelight\tags\block\incorrect_drakon_egg_hatch.json

@@ -69,6 +69,10 @@ public class ModItemGroups {
 
                         entries.add(ModItems.HOELY_BEHEADER);
 
+                        entries.add(ModItems.SHRIMP_BUCKET);
+
+                        entries.add(ModItems.SHRIMP_SPAWN_EGG);
+
                         entries.add(ModItems.MANTIS_SPAWN_EGG);
 
                         //entries.add(ModItems.DRAKON_EGG);
@@ -98,6 +102,8 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_POTATO_FRIES);
                         entries.add(ModItems.HASHBROWNS);
                         entries.add(ModItems.FRIED_CHICKEN);
+                        entries.add(ModItems.RAW_SHRIMP);
+                        entries.add(ModItems.COOKED_SHRIMP);
 
                     }).build());
 
