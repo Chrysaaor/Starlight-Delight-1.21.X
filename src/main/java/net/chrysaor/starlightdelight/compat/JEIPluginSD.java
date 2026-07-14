@@ -24,13 +24,11 @@ import java.util.List;
 @JeiPlugin
 @MethodsReturnNonnullByDefault
 @SuppressWarnings("unused")
-public class JEIPlugin implements IModPlugin {
-
-    private static final Identifier ID = Identifier.of(StarlightDelight.MOD_ID, "jei_plugin");
+public class JEIPluginSD implements IModPlugin {
 
     @Override
     public Identifier getPluginUid() {
-        return ID;
+        return Identifier.of(StarlightDelight.MOD_ID, "jei_plugin");
     }
 
     @Override
