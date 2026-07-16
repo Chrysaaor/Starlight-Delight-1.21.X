@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 0.2,
   "ingredient": {
-    "item": "starligthdelight:raw_shrimp"
+    "item": "starlightdelight:raw_shrimp"
   },
   "result": {
     "id": "starlightdelight:cooked_shrimp"
