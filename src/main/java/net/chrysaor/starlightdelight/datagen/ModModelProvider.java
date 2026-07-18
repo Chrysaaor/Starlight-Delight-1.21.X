@@ -114,7 +114,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_SHRIMP, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_SHRIMP, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.DRAKON_EGG, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.DRAKON_EGG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SHRIMP_BUCKET, Models.GENERATED);
 

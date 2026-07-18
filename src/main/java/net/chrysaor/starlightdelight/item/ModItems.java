@@ -211,8 +211,8 @@ public class ModItems {
         new AliasedBlockItem(ModBlocks.CAULIFLOWER_CROP, new Item.Settings()));
 
 
-    public static final Item DRAKON_EGG = registerItem("drakon_egg",
-            new AliasedBlockItem(ModBlocks.DRAKON_EGG, new Item.Settings()));
+//    public static final Item DRAKON_EGG = registerItem("drakon_egg",
+//            new AliasedBlockItem(ModBlocks.DRAKON_EGG, new Item.Settings()));
 
     public static final Item SHRIMP_BUCKET = registerItem("shrimp_bucket", new EntityBucketItem(
             ModEntities.SHRIMP,
