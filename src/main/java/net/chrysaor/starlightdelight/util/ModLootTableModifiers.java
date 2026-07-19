@@ -18,13 +18,13 @@ public class ModLootTableModifiers {
     private static final Identifier SIMPLE_DUNGEON_ID =
             Identifier.ofVanilla("chests/simple_dungeon");
     private static final Identifier ABANDONED_MINESHAFT =
-            Identifier.of("chests/abandoned_mineshaft");
+            Identifier.ofVanilla("chests/abandoned_mineshaft");
     private static final Identifier ANCIENT_CITY =
-            Identifier.of("chests/ancient_city");
+            Identifier.ofVanilla("chests/ancient_city");
     private static final Identifier JUNGLE_TEMPLE =
-            Identifier.of("chests/jungle_temple");
+            Identifier.ofVanilla("chests/jungle_temple");
     private static final Identifier DESERT_PYRAMID =
-            Identifier.of("chests/desert_pyramid");
+            Identifier.ofVanilla("chests/desert_pyramid");
 
     private static final Identifier SHORT_GRASS_ID =
             Identifier.ofVanilla("blocks/short_grass");
